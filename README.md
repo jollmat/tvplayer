@@ -1,2 +1,0 @@
-# tvplayer
-Custom tv player
