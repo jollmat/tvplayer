@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StreamService } from './services/stream.service';
+import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
 
 @Component({
   selector: 'app-root',
@@ -20,25 +21,45 @@ export class AppComponent implements OnInit {
   headers: any = {};
   hlsBitrates: any;
   streamUrl!: string;
-  streamUrls: {name: string, url: string} [] = []
+  channels: TdtChannelDto [] = []
   streamForm!: FormGroup;
 
   constructor(
     private streamService: StreamService
   ) {}
 
-  doUpdateStreamUrl(event: any) {
-    console.log(event);
-    this.streamUrl = event;
+  doUpdateStreamUrl(channelName: string) {
+    const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
+    this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
   }
 
   ngOnInit(): void {
-    this.streamService.getStreams().subscribe((_streams) => {
-      this.streamUrls = _streams;
-      this.streamUrl = this.streamUrls[0].url;
-      this.streamForm = new FormGroup({
-        streamUrl: new FormControl(this.streamUrl, [])
+    this.streamService.getStreams().subscribe((_streamResponse) => {
+      this.channels = []
+      console.log(_streamResponse);
+
+      _streamResponse.countries.forEach((_country) => {
+        _country.ambits.forEach((_ambit) => {
+          _ambit.channels.forEach((_channel) => {
+            if (_channel.options) {
+              const streamingOptionIndex: number = _channel.options.findIndex((_option) => _option.format==='m3u8');
+              if (streamingOptionIndex>=0) {
+                _channel.options = [_channel.options[streamingOptionIndex]];
+                this.channels.push(_channel);
+              }
+            }
+          });
+        });
       });
+
+      this.channels.sort((a,b) => {
+        return a.name<b.name ? -1 : 1;
+      });
+
+      this.streamForm = new FormGroup({
+        channel: new FormControl(this.channels[0].name)
+      });
+      this.streamUrl = this.channels[0].options[0].url;
     });    
   }
 }
