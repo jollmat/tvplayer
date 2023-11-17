@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 /* Importing Datetimepicker CSS file. */
-@import "~@danielmoncada/angular-datetime-picker/assets/style/picker.min.css";
+@import "../node_modules/@danielmoncada/angular-datetime-picker/assets/style/picker.min.css";
 
 /* Importing NGSELECT CSS file. */
-@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
 
 /* Importing Toastr */
 @import 'ngx-toastr/toastr';
