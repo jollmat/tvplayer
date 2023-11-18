@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StreamService } from './services/stream.service';
 import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { OTHER_CHANNELS_LIST } from 'src/assets/data/other-channels-list';
+import { VgHlsDirective } from '@videogular/ngx-videogular/streaming';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +13,13 @@ import { OTHER_CHANNELS_LIST } from 'src/assets/data/other-channels-list';
 })
 export class AppComponent implements OnInit {
 
+  @ViewChild(VgHlsDirective) vgHls!: VgHlsDirective;
+
   isMobile!: boolean;
   isTablet!: boolean;
+  isWindows!: boolean;
+  isIOS!: boolean;
+  isAndroid!: boolean;
   orientation!: string;
   
   title = 'tvplayer';
@@ -45,6 +51,10 @@ export class AppComponent implements OnInit {
     this.isMobile = this.deviceDetector.isMobile();
     this.isTablet = this.deviceDetector.isTablet();
     this.orientation = this.deviceDetector.orientation;
+    this.isWindows = this.deviceDetector.os === 'Windows';
+    this.isIOS = this.deviceDetector.os === 'iOS';
+    this.isAndroid = this.deviceDetector.os === 'Android';
+    console.log(this.deviceDetector.os);
 
     this.streamService.getStreams().subscribe((_streamResponse) => {
       this.channels = []

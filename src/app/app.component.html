@@ -16,8 +16,8 @@
                                 <div class="d-flex align-items-center">
                                     <img [src]="item.logo" class="logo me-2">
                                     {{item.name}}
-                                    <i *ngIf="item.country" class="ms-2 fi fi-{{item.country}}"></i>
                                 </div>
+                                <i *ngIf="item.country" class="ms-auto fi fi-{{item.country}}"></i>
                             </div>
                         </ng-template>
                         <ng-template ng-option-tmp let-item="item" let-index="index">
@@ -36,16 +36,40 @@
        
         <div  [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
             <ng-container *ngIf="streamUrl">
-                <vg-player>
-                    <video #myMedia
-                           [vgHls]="streamUrl"
-                           [vgHlsHeaders]="headers"
-                           (onGetBitrates)="hlsBitrates = $event"
-                           id="my-video"
-                           type="video/mp4"
-                           controls>
-                    </video>
-                </vg-player>
+
+                <ng-container *ngIf="isWindows || isAndroid">
+                    <vg-player>
+                        <video #myMedia
+                               [vgHls]="streamUrl"
+                               [vgHlsHeaders]="headers"
+                               (onGetBitrates)="hlsBitrates = $event"
+                               id="my-video"
+                               type="video/mp4"
+                               preload="metadata"
+                               [muted]="true"
+                               autoplay
+                               controls>
+                        </video>
+                    </vg-player>
+                </ng-container>
+
+                <ng-container *ngIf="isIOS">
+                    <vg-player>
+                        <video #myMedia
+                               [vgHls]="streamUrl"
+                               [vgHlsHeaders]="headers"
+                               (onGetBitrates)="hlsBitrates = $event"
+                               id="my-video"
+                               type="video/mp4"
+                               preload="metadata"
+                               [muted]="true"
+                               autoplay
+                               controls>
+                        </video>
+                    </vg-player>
+                    
+                </ng-container>
+                
             </ng-container>
         </div>
     </div>
