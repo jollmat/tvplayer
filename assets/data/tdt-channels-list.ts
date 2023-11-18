@@ -6923,6 +6923,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rtve.es/play/videos/directo/tve-internacional-europa/",
                 "logo": "https://graph.facebook.com/tveInternacional/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'es',
                 "options": [
                   {
                     "format": "m3u8",
@@ -6946,6 +6947,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.ccma.cat/3cat/directes/tv3/",
                 "logo": "https://pbs.twimg.com/profile_images/1269286508625891328/rVes9BS__200x200.png",
                 "epg_id": "TVC.TV",
+                "country": 'es',
                 "options": [
                   {
                     "format": "m3u8",
@@ -6962,6 +6964,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.eitb.eus/es/television/eitb-basque/",
                 "logo": "https://graph.facebook.com/eitb/picture?width=200&height=200",
                 "epg_id": "ETBSAT.TV",
+                "country": 'es',
                 "options": [
                   {
                     "format": "m3u8",
@@ -6978,6 +6981,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "http://www.crtvg.es/tvg/tvg-en-directo/canle/galicia-tv-america",
                 "logo": "https://graph.facebook.com/CRTVG/picture?width=200&height=200",
                 "epg_id": "TVGA.TV",
+                "country": 'es',
                 "options": [
                   {
                     "format": "m3u8",
@@ -6994,6 +6998,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.telemadrid.es/emision-en-directo-telemadrid-int/",
                 "logo": "https://graph.facebook.com/telemadrid/picture?width=200&height=200",
                 "epg_id": "TeleMadridInt.TV",
+                "country": 'es',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7010,6 +7015,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.andorradifusio.ad/endirecte/atv",
                 "logo": "https://graph.facebook.com/rtva.andorra/picture?width=200&height=200",
                 "epg_id": "ATVHD.TV",
+                "country": 'ad',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7028,6 +7034,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.andorradifusio.ad/endirecte/canalweb",
                 "logo": "https://graph.facebook.com/rtva.andorra/picture?width=200&height=200",
                 "epg_id": "ATVCW.TV",
+                "country": 'ad',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7046,6 +7053,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "http://loriatv.com",
                 "logo": "https://graph.facebook.com/LoriaTV/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'ad',
                 "options": [
                   {
                     "format": "youtube",
@@ -7064,6 +7072,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.gbc.gi/tv/watch-live",
                 "logo": "https://graph.facebook.com/GBCNewsroom/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'gb',
                 "options": [],
                 "extra_info": []
               },
@@ -7104,6 +7113,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://cnnespanol.cnn.com",
                 "logo": "https://graph.facebook.com/cnninternational/picture?width=320&height=320",
                 "epg_id": "CNNInt.TV",
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7129,6 +7139,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.bloomberg.com/live/europe",
                 "logo": "https://pbs.twimg.com/profile_images/991792042094354432/DG1Ruupb_200x200.jpg",
                 "epg_id": "Bloom.TV",
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7145,6 +7156,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.france24.com/es/en-vivo",
                 "logo": "https://graph.facebook.com/FRANCE24/picture?width=200&height=200",
                 "epg_id": "France24.TV",
+                "country": 'fr',
                 "options": [
                   {
                     "format": "youtube",
@@ -7177,6 +7189,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.bfmtv.com/en-direct/",
                 "logo": "https://graph.facebook.com/BFMTV/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'fr',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7193,6 +7206,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://europe.tv5monde.com/en/live",
                 "logo": "https://graph.facebook.com/tv5mondeofficiel/picture?width=200&height=200",
                 "epg_id": "TV5Monde.TV",
+                "country": 'fr',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7209,6 +7223,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.francetvinfo.fr/en-direct/tv.html",
                 "logo": "https://graph.facebook.com/franceinfo/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'fr',
                 "options": [
                   {
                     "format": "youtube",
@@ -7227,6 +7242,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.cnews.fr/le-direct",
                 "logo": "https://graph.facebook.com/CNEWSofficiel/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'fr',
                 "options": [
                   {
                     "format": "stream",
@@ -7245,6 +7261,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rainews.it/dl/rainews/live/ContentItem-3156f2f2-dc70-4953-8e2f-70d7489d4ce9.html",
                 "logo": "https://graph.facebook.com/rainews.it/picture?width=200&height=200",
                 "epg_id": "RaiN.TV",
+                "country": 'it',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7261,6 +7278,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://sportitalia.com/video/index",
                 "logo": "https://graph.facebook.com/sportitaliatv/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'it',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7291,6 +7309,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://tg.la7.it/dirette-tv",
                 "logo": "https://graph.facebook.com/tgla7/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'it',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7307,6 +7326,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.la7.it/live-la7d",
                 "logo": "https://graph.facebook.com/la7fb/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'it',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7323,6 +7343,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.dw.com/es/multimedia/tv-en-vivo/s-100837",
                 "logo": "https://graph.facebook.com/dw.espanol/picture?width=200&height=200",
                 "epg_id": "DW.TV",
+                "country": 'de',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7353,6 +7374,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://live.daserste.de",
                 "logo": "https://graph.facebook.com/DasErste/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'de',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7369,6 +7391,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www1.wdr.de/fernsehen/livestream/",
                 "logo": "https://graph.facebook.com/WDR/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'de',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7385,6 +7408,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.ndr.de/fernsehen/livestream/",
                 "logo": "https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'de',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7401,6 +7425,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.tagesschau.de/multimedia/livestreams/livestream1",
                 "logo": "https://pbs.twimg.com/profile_images/2178044567/TS24-LOGO-Twitter_500_500_200x200.jpg",
                 "epg_id": null,
+                "country": 'de',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7417,6 +7442,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://news.sky.com/watch-live",
                 "logo": "https://graph.facebook.com/skynews/picture?width=200&height=200",
                 "epg_id": "SkyN.TV",
+                "country": 'gb',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7440,6 +7466,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.gbnews.uk",
                 "logo": "https://graph.facebook.com/GBNewsOnline/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'gb',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7465,6 +7492,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rtp.pt/play/direto/rtp1",
                 "logo": "https://graph.facebook.com/rtp1.pt/picture?width=200&height=200",
                 "epg_id": "RTP1.TV",
+                "country": 'pt',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7484,6 +7512,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rtp.pt/play/direto/rtp2",
                 "logo": "https://graph.facebook.com/rtpdois/picture?width=200&height=200",
                 "epg_id": "RTP2.TV",
+                "country": 'pt',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7503,6 +7532,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rtp.pt/play/direto/rtp3",
                 "logo": "https://graph.facebook.com/rtp/picture?width=200&height=200",
                 "epg_id": "RTP3.TV",
+                "country": 'pt',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7522,6 +7552,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rtp.pt/play/direto/rtpmadeira",
                 "logo": "https://graph.facebook.com/rtpmadeira/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'pt',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7537,10 +7568,11 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "RTP A\u00e7ores Portugal",
+                "name": "RTP Açores Portugal",
                 "web": "https://www.rtp.pt/play/direto/rtpacores",
                 "logo": "https://graph.facebook.com/rtpacores/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'pt',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7560,6 +7592,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://cnnportugal.iol.pt/direto",
                 "logo": "https://graph.facebook.com/cnnportugal/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'pt',
                 "options": [],
                 "extra_info": [
                   "W3U",
@@ -7572,6 +7605,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "http://portocanal.sapo.pt/live",
                 "logo": "https://graph.facebook.com/portocanal/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'pt',
                 "options": [
                   {
                     "format": "stream",
@@ -7590,6 +7624,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.ln24.be/direct",
                 "logo": "https://graph.facebook.com/LN24LesNews24/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'be',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7606,6 +7641,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.digi24.ro/live/digi24",
                 "logo": "https://graph.facebook.com/Digi24HD/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'ro',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7622,6 +7658,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://polonia.tvp.pl/44562671/tvp-polonia-stream",
                 "logo": "https://graph.facebook.com/tvppolonia/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'pl',
                 "options": [
                   {
                     "format": "stream",
@@ -7640,6 +7677,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.rte.ie/news/player/live/",
                 "logo": "https://graph.facebook.com/rtenews/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'ie',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7656,6 +7694,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.tvm.com.mt/mt/tvmi/live/",
                 "logo": "https://graph.facebook.com/TelevisionMalta/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'mt',
                 "options": [
                   {
                     "format": "stream",
@@ -7681,6 +7720,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.trthaber.com/canli-yayin-izle.html",
                 "logo": "https://graph.facebook.com/trthaber/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'tr',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7704,6 +7744,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://rtcg.me/cir/tv/gledaj-tvcgmne.html",
                 "logo": "https://graph.facebook.com/RTCG.me/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'me',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7722,6 +7763,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.ruv.is/sjonvarp/beint/ruv",
                 "logo": "https://graph.facebook.com/RUVohf/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'is',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7745,6 +7787,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.sanmarinortv.sm/programmi/web-tv",
                 "logo": "https://graph.facebook.com/SanMarinoRTV/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'sm',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7768,6 +7811,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://1plus1.video/tvguide/1plus1/online",
                 "logo": "https://graph.facebook.com/1plus1.ua/picture?width=200&height=200",
                 "epg_id": "IntUA.TV",
+                "country": 'ua',
                 "options": [
                   {
                     "format": "youtube",
@@ -7786,6 +7830,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://u24.ua",
                 "logo": "https://graph.facebook.com/www.ukraine24.ua/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'ua',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7802,6 +7847,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://ictv.ua/ua/online/",
                 "logo": "https://graph.facebook.com/ICTVchannel/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'ua',
                 "options": [
                   {
                     "format": "youtube",
@@ -7820,6 +7866,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://uatv.ua/live/",
                 "logo": "https://graph.facebook.com/kanalfreedom/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'ua',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7857,6 +7904,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.foxnews.com",
                 "logo": "https://graph.facebook.com/livenowfox/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7873,6 +7921,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://abcnews.go.com/Live",
                 "logo": "https://graph.facebook.com/ABCNews/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7889,6 +7938,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.nbcnews.com/now",
                 "logo": "https://graph.facebook.com/NBCNews/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "youtube",
@@ -7907,6 +7957,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.cbsnews.com/live/",
                 "logo": "https://graph.facebook.com/CBSNews/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7923,6 +7974,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://cheddar.com/live",
                 "logo": "https://graph.facebook.com/cheddar/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7939,6 +7991,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.bloomberg.com/live/us/btv",
                 "logo": "https://pbs.twimg.com/profile_images/991792042094354432/DG1Ruupb_200x200.jpg",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7962,6 +8015,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.courttv.com/title/court-tv-live-stream-web/",
                 "logo": "https://graph.facebook.com/courttv/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7978,6 +8032,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.nasa.gov/multimedia/nasatv/#public",
                 "logo": "https://graph.facebook.com/NASA/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -7994,6 +8049,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.nasa.gov/multimedia/nasatv/#media",
                 "logo": "https://graph.facebook.com/NASA/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8010,6 +8066,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.weathernationtv.com",
                 "logo": "https://graph.facebook.com/WeatherNation/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8026,6 +8083,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://americasvoice.news",
                 "logo": "https://graph.facebook.com/RealAmericasVoice/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8042,6 +8100,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://buzzrtv.com/watch",
                 "logo": "https://graph.facebook.com/BUZZRtv/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8058,6 +8117,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.newsmaxtv.com",
                 "logo": "https://graph.facebook.com/newsmax/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8074,6 +8134,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.americateve.com/vivo",
                 "logo": "https://graph.facebook.com/americateve/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'us',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8090,6 +8151,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.ntn24.com/en-vivo/",
                 "logo": "https://graph.facebook.com/NTN24/picture?width=200&height=200",
                 "epg_id": "NTN24.TV",
+                "country": 'us',
                 "options": [
                   {
                     "format": "youtube",
@@ -8108,6 +8170,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.multimedios.com/video",
                 "logo": "https://graph.facebook.com/multimediostv/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'mx',
                 "options": [
                   {
                     "format": "m3u8",
@@ -8124,6 +8187,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.milenio.com/mileniotv",
                 "logo": "https://graph.facebook.com/MilenioDiario/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'mx',
                 "options": [
                   {
                     "format": "youtube",
@@ -8142,6 +8206,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "web": "https://www.elfinanciero.com.mx/tv",
                 "logo": "https://graph.facebook.com/ElFinancieroMx/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'mx',
                 "options": [
                   {
                     "format": "mpd",
