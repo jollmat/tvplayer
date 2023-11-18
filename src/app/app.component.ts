@@ -63,6 +63,7 @@ export class AppComponent implements OnInit {
       _streamResponse.countries.forEach((_country) => {
         _country.ambits.forEach((_ambit) => {
           _ambit.channels.forEach((_channel) => {
+            _channel.country = _country.name === 'Spain' ? 'es' : _channel.country;
             if (_channel.options) {
               const streamingOptionIndex: number = _channel.options.findIndex((_option) => _option.format==='m3u8');
               if (streamingOptionIndex>=0) {
