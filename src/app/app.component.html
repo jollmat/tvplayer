@@ -1,63 +1,46 @@
-<div class="w-100 h-100 px-3" style="height: calc(100vh) !important;overflow: auto;">
-    <div class="d-flex flex-column w-100 p-3">
-        <!--
-        <div class="d-flex flex-column w-100">
-            <h3>Basic Video Player</h3>
-            <div class="w-100">
-                
+<div class="w-100 h-100" style="height: calc(100vh) !important;overflow: auto;">
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+        <div class="my-3" [ngClass]="{'w-50': !isMobile, 'w-100': isMobile}">
+            <ng-container *ngIf="channels.length>0">
+                <form [formGroup]="streamForm">
+                    <ng-select
+                        [items]="channels"
+                        (ngModelChange)="doUpdateStreamUrl($event)"
+                        formControlName="channel"
+                        name="type"
+                        bindValue="name"
+                        bindLabel="name"
+                        placeholder="Cerca per tipus">
+                        <ng-template ng-label-tmp let-item="item">
+                            <div class="d-flex align-items-center">
+                                <img [src]="item.logo" class="logo me-2">
+                                {{item.name}}
+                            </div>
+                        </ng-template>
+                        <ng-template ng-option-tmp let-item="item" let-index="index">
+                            <div class="d-flex">
+                                <img [src]="item.logo" class="logo me-2">
+                                {{item.name}}
+                            </div>
+                        </ng-template>
+                    </ng-select>
+                </form>
+            </ng-container>
+        </div>
+       
+        <div  [ngClass]="{'w-50': !isMobile, 'w-100': isMobile}">
+            <ng-container *ngIf="streamUrl">
                 <vg-player>
-                    <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
-                        <source src="{{videoUrl}}" type="video/mp4">
+                    <video #myMedia
+                           [vgHls]="streamUrl"
+                           [vgHlsHeaders]="headers"
+                           (onGetBitrates)="hlsBitrates = $event"
+                           id="my-video"
+                           type="video/mp4"
+                           controls>
                     </video>
                 </vg-player>
-                
-            </div>
-        </div>
-        -->
-        <div class="d-flex flex-column w-100">
-            <div class="w-100 mb-2">
-                <ng-container *ngIf="channels.length>0">
-                    <form [formGroup]="streamForm">
-                        <ng-select
-                            [items]="channels"
-                            (ngModelChange)="doUpdateStreamUrl($event)"
-                            formControlName="channel"
-                            name="type"
-                            bindValue="name"
-                            bindLabel="name"
-                            placeholder="Cerca per tipus">
-                            <ng-template ng-label-tmp let-item="item">
-                                <div class="d-flex align-items-center">
-                                    <img [src]="item.logo" class="logo me-2">
-                                    {{item.name}}
-                                </div>
-                            </ng-template>
-                            <ng-template ng-option-tmp let-item="item" let-index="index">
-                                <div class="d-flex">
-                                    <img [src]="item.logo" class="logo me-2">
-                                    {{item.name}}
-                                </div>
-                            </ng-template>
-                        </ng-select>
-                    </form>
-                </ng-container>
-            </div>
-           
-            <div class="w-100">
-                <ng-container *ngIf="streamUrl">
-                    <vg-player>
-                        <video #myMedia
-                               [vgHls]="streamUrl"
-                               [vgHlsHeaders]="headers"
-                               (onGetBitrates)="hlsBitrates = $event"
-                               id="my-video"
-                               type="video/mp4"
-                               controls>
-                        </video>
-                    </vg-player>
-                </ng-container>
-            </div>
+            </ng-container>
         </div>
     </div>
-    
 </div>

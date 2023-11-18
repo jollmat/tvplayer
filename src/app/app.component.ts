@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StreamService } from './services/stream.service';
 import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
+import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,8 @@ import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+
+  isMobile!: boolean;
   
   title = 'tvplayer';
   
@@ -25,7 +28,8 @@ export class AppComponent implements OnInit {
   streamForm!: FormGroup;
 
   constructor(
-    private streamService: StreamService
+    private streamService: StreamService,
+    private deviceDetector: DeviceDetectorService
   ) {}
 
   doUpdateStreamUrl(channelName: string) {
@@ -34,6 +38,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.isMobile = this.deviceDetector.isMobile();
+
     this.streamService.getStreams().subscribe((_streamResponse) => {
       this.channels = []
       console.log(_streamResponse);
