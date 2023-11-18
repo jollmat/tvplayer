@@ -1,6 +1,6 @@
 <div class="w-100 h-100" style="height: calc(100vh) !important;overflow: auto;">
-    <div class="d-flex flex-column align-items-center w-100 h-100" [ngClass]="{'justify-content-start': isMobile, 'justify-content-center': !isMobile}">
-        <div class="my-3" [ngClass]="{'w-50': !isMobile, 'w-100': isMobile}">
+    <div class="d-flex flex-column align-items-center w-100 h-100" [ngClass]="{'justify-content-start': true}">
+        <div class="my-3" [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
             <ng-container *ngIf="channels.length>0">
                 <form [formGroup]="streamForm">
                     <ng-select
@@ -10,17 +10,23 @@
                         name="type"
                         bindValue="name"
                         bindLabel="name"
-                        placeholder="Cerca per tipus">
+                        placeholder="Search a channel">
                         <ng-template ng-label-tmp let-item="item">
-                            <div class="d-flex align-items-center">
-                                <img [src]="item.logo" class="logo me-2">
-                                {{item.name}}
+                            <div class="d-flex align-items-center justify-content-between w-100">
+                                <div class="d-flex align-items-center">
+                                    <img [src]="item.logo" class="logo me-2">
+                                    {{item.name}}
+                                    <i *ngIf="item.country" class="ms-2 fi fi-{{item.country}}"></i>
+                                </div>
                             </div>
                         </ng-template>
                         <ng-template ng-option-tmp let-item="item" let-index="index">
-                            <div class="d-flex">
-                                <img [src]="item.logo" class="logo me-2">
-                                {{item.name}}
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img [src]="item.logo" class="logo me-2">
+                                    {{item.name}}
+                                </div>
+                                <i *ngIf="item.country" class="ms-auto fi fi-{{item.country}}"></i>
                             </div>
                         </ng-template>
                     </ng-select>
@@ -28,7 +34,7 @@
             </ng-container>
         </div>
        
-        <div  [ngClass]="{'w-50': !isMobile, 'w-100': isMobile}">
+        <div  [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
             <ng-container *ngIf="streamUrl">
                 <vg-player>
                     <video #myMedia

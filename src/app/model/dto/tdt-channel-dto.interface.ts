@@ -3,6 +3,7 @@ export interface TdtChannelDto {
     web?: string | null,
     logo: string,
     epg_id?: string | null,
+    country?: string,
     options: {
         format: string,
         url: string,
