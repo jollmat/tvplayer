@@ -1,6 +1,6 @@
 export interface TdtChannelDto {
     name: string,
-    web: string,
+    web?: string | null,
     logo: string,
     epg_id?: string | null,
     options: {
