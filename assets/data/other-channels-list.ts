@@ -618,6 +618,358 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
+        name: 'Sport2U',
+        logo: 'https://i.imgur.com/WW0lNk1.png',
+        epg_id: 'sport2u.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream9.xdevel.com/video0s976916-1685/stream/playlist_dvr.m3u8'
+          }
+        ]
+      },{
+        name: 'Full Moon',
+        logo: 'https://i.imgur.com/0xT7bZP.jpg',
+        epg_id: 'full-moon.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://minerva-fullmoon-1-it.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Canale Europa',
+        logo: 'https://i.imgur.com/Zw2ZIfz.jpg',
+        epg_id: 'canale_europa.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://canaleeuropa-canaleeuropa-1-it.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Reuters TV',
+        logo: 'https://i.imgur.com/AbvCnoH.png',
+        epg_id: 'ReutersTV.us',
+        country: 'us',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://reuters-reutersnow-1-eu.rakuten.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'CBS News US',
+        logo: 'https://i.imgur.com/nki2HDQ.png',
+        epg_id: 'CBSNews.us',
+        country: 'us',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8'
+          }
+        ]
+      },{
+        name: 'ABC News US',
+        logo: 'https://i.imgur.com/nki2HDQ.png',
+        epg_id: 'CBSNews.us',
+        country: 'us',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8'
+          }
+        ]
+      },{
+        name: 'PBS America',
+        logo: 'https://i.imgur.com/J4zE5z9.jpg',
+        epg_id: 'PBSAmerica.uk',
+        country: 'gb',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://pbs-samsunguk.amagi.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'TVM 3',
+        logo: 'https://i.imgur.com/3v6iZE6.png',
+        epg_id: 'TVM3.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://livevideo.infomaniak.com/streaming/livecast/tvm3/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'JOJ',
+        logo: 'https://i.imgur.com/5BAWD0z.png',
+        epg_id: 'TVJOJ.sk',
+        country: 'sk',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.cdn.joj.sk/live/andromeda/joj-1080.m3u8'
+          }
+        ]
+      },{
+        name: 'JOJ Plus',
+        logo: 'https://i.imgur.com/fKPliTj.png',
+        epg_id: 'JOJPlus.sk',
+        country: 'sk',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.cdn.joj.sk/live/andromeda/plus-1080.m3u8'
+          }
+        ]
+      },{
+        name: 'Telestar1',
+        logo: 'https://i.imgur.com/UZQjEsd.png',
+        epg_id: 'Telestar1.ro',
+        country: 'ro',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://89.47.97.15/telestar/telestar.m3u8'
+          }
+        ]
+      },{
+        name: 'Prima TV',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Prima_TV_%28Rumaenien%29_Logo.svg/512px-Prima_TV_%28Rumaenien%29_Logo.svg.png',
+        epg_id: 'PrimaTV.ro',
+        country: 'ro',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'ADtv',
+        logo: 'https://i.imgur.com/FvlcU3z.png',
+        epg_id: 'adtv.pt',
+        country: 'pt',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://playout172.livextend.cloud/liveiframe/_definst_/ngrp:liveartvabr_abr/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Frikanalen',
+        logo: 'https://i.imgur.com/rY3Owxl.png',
+        epg_id: 'Frikanalen.no',
+        country: 'no',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://frikanalen.no/stream/index.m3u8'
+          }
+        ]
+      },{
+        name: 'INTV',
+        logo: 'https://i.imgur.com/K7BSjqY.png',
+        epg_id: 'intvaustralia.com',
+        country: 'mk',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://tv1.intv.mk:1935/live/intv/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Folk Club TV',
+        logo: 'https://i.imgur.com/vkGFSl8.png',
+        epg_id: 'folkclubtv.com',
+        country: 'mk',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://tv1.intv.mk:1935/live2/folkklub/index.m3u8'
+          }
+        ]
+      },{
+        name: 'TVCG MNE',
+        logo: 'https://i.imgur.com/pf8VEwf.png',
+        epg_id: 'TVCGMNE.me',
+        country: 'me',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cdn3.bcdn.rs:1935/cgsat/smil:cgsat.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'TVCG 3',
+        logo: 'https://i.imgur.com/XC7zVog.png',
+        epg_id: 'Parlamentarnikanal.me',
+        country: 'me',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://parlament.rtcg.me:1936/pr/smil:parlament.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'TVCG 2',
+        logo: 'https://i.imgur.com/WECmUKH.png',
+        epg_id: 'TVCG2.me',
+        country: 'me',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cdn3.bcdn.rs:1935/cg2/smil:cg2.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'NRT 4 Monclova',
+        logo: 'https://i.imgur.com/IudKE0n.png',
+        epg_id: 'noticiasnrt.com',
+        country: 'mx',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://59e88b197fb16.streamlock.net:4443/live/canal4/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Alcarria TV',
+        logo: 'https://i.imgur.com/zNSuxVZ.jpg',
+        epg_id: 'AlcarriaTV.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cls.alcarria.tv/live/alcarriatv-livestream.m3u8'
+          }
+        ]
+      },{
+        name: 'LRT Lituanica',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/LRT_Lituanica_Logo_2022.svg/640px-LRT_Lituanica_Logo_2022.svg.png',
+        epg_id: 'LRTLituanica.lt',
+        country: 'lt',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://lituanica.lrt.lt/lituanica/master.m3u8'
+          }
+        ]
+      },{
+        name: 'EBS English',
+        logo: 'https://i.imgur.com/qceaIf7.png',
+        epg_id: 'EBSEnglish.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'EBS Plus 2',
+        logo: 'https://i.imgur.com/mgFRZFq.png',
+        epg_id: 'EBSPlus2.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'EBS Plus 1',
+        logo: 'https://i.imgur.com/ImUHRG2.png',
+        epg_id: 'EBSPlus1.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Arirang',
+        logo: 'https://i.imgur.com/RuHZ6Dx.png',
+        epg_id: 'ArirangTV.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'JIBS TV',
+        logo: 'https://i.imgur.com/RVWpBoz.png',
+        epg_id: 'JIBSTV.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://123.140.197.22/stream/1/play.m3u8'
+          }
+        ]
+      },{
+        name: 'CJB TV',
+        logo: 'https://i.imgur.com/MvxdZhX.png',
+        epg_id: 'CJBTV.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://1.222.207.80:1935/live/cjbtv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'QVC',
+        logo: 'https://i.imgur.com/B74hZKd.png',
+        epg_id: 'QVCJapan.jp',
+        country: 'jp',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cdn-live1.qvc.jp/iPhone/800/800.m3u8'
+          }
+        ]
+      },{
+        name: 'WLTV',
+        logo: 'https://i.imgur.com/aL8jKtU.png',
+        epg_id: 'wltv.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5db313b643fd8.streamlock.net/WLTV/WLTV/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Vuemme Tv',
+        logo: 'https://i.imgur.com/x5A0xU6.png',
+        epg_id: 'vuemmetv.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Vintage Radio Tv',
+        logo: 'https://i.imgur.com/n3LtBNT.jpg',
+        epg_id: 'vintageradiotv.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5f22d76e220e1.streamlock.net/vintageradiotv/vintageradiotv/playlist.m3u8'
+          }
+        ]
+      },{
         name: '+1',
         logo: '',
         epg_id: '',
@@ -625,7 +977,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         options: [
           {
             format: 'm3u8',
-            url: 'https://live.tv2bornholm.dk/stream/live/playlist.m3u8'
+            url: 'https://5f22d76e220e1.streamlock.net/vintageradiotv/vintageradiotv/playlist.m3u8'
           }
         ]
       }
