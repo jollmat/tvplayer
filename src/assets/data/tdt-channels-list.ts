@@ -7387,7 +7387,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "WDR Alemania",
+                "name": "WDR",
                 "web": "https://www1.wdr.de/fernsehen/livestream/",
                 "logo": "https://graph.facebook.com/WDR/picture?width=200&height=200",
                 "epg_id": null,
@@ -7759,7 +7759,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "R\u00daV Islandia",
+                "name": "R\u00daV",
                 "web": "https://www.ruv.is/sjonvarp/beint/ruv",
                 "logo": "https://graph.facebook.com/RUVohf/picture?width=200&height=200",
                 "epg_id": null,

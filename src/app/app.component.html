@@ -5,6 +5,7 @@
                 <form [formGroup]="streamForm">
 
                     <ng-select
+                        class="mb-2"
                         [items]="countries"
                         (ngModelChange)="doFilterByCountry()"
                         formControlName="country"

@@ -970,15 +970,953 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: '+1',
+        name: 'VB33',
+        logo: 'https://i.imgur.com/ygDuIxU.png',
+        epg_id: 'vb33.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.ipstream.it/vb33/vb33.stream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Vera Tv',
+        logo: 'https://i.imgur.com/djMvkvN.png',
+        epg_id: 'veratv.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Umbria Tv',
+        logo: 'https://i.imgur.com/kccGe02.png',
+        epg_id: 'umbria-tv.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Tvr Xenon',
+        logo: 'https://i.imgur.com/kLzW1Pf.jpg',
+        epg_id: 'tvr-xenon.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn3-ger.azotosolutions.com/cdnedge4/live4/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'TVR Più TeleRegione',
+        logo: 'https://i.imgur.com/Wzb5qaT.png',
+        epg_id: 'tvr-piu-teleregione.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://dacastmmd.mmdlive.lldns.net/dacastmmd/a14a9d0455b34b02842e05e6a4ad0572/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Tva Vicenza',
+        logo: 'https://i.imgur.com/FtFuPCC.png',
+        epg_id: 'tva-vicenza.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://fms.tvavicenza.it:1935/live/diretta_1/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Tv Yes',
+        logo: 'https://i.imgur.com/1wsO8U7.png',
+        epg_id: 'tv-yes.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream1.aswifi.it/radioyes/live/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Tv Qui Modena',
+        logo: 'https://i.imgur.com/4bOYlfg.png',
+        epg_id: 'tv-qui-modena',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Tv Prato',
+        logo: 'https://i.imgur.com/zDeVpZd.png',
+        epg_id: 'tv-prato.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/mono.m3u8'
+          }
+        ]
+      },{
+        name: 'Tuscia Sabina 2000Tv',
+        logo: 'https://i.imgur.com/Tq5nEAy.png',
+        epg_id: 'tuscia-sabina-200tv.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/chunks.m3u8'
+          }
+        ]
+      },{
+        name: 'Tele Nord Genova',
+        logo: 'https://i.imgur.com/I6yegEK.png',
+        epg_id: 'tele-nord-genova.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5db313b643fd8.streamlock.net/Telenord/Telenord/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Tele Mantova',
+        logo: 'https://i.imgur.com/bkSPcs4.png',
+        epg_id: 'tele-mantova.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Senato TV',
+        logo: 'https://i.imgur.com/FoQoNZW.png',
+        epg_id: 'SenatoTV.it',
+        country: 'it',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Knesset',
+        logo: 'https://i.imgur.com/PEdXHSE.png',
+        epg_id: 'Knesset.il',
+        country: 'il',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'חינוכית',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/KanHinuchit.svg/640px-KanHinuchit.svg.png',
+        epg_id: 'KanEducational.il',
+        country: 'il',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8'
+          }
+        ]
+      },{
+        name: 'مكان 33',
+        logo: 'https://upload.wikimedia.org/wikipedia/en/5/56/MeKan_33_logo_2017.png',
+        epg_id: 'Makan33.il',
+        country: 'il',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8'
+          }
+        ]
+      },{
+        name: 'ערוץ 14',
+        logo: 'https://i.imgur.com/Iq2Kb69.png',
+        epg_id: 'Now14.il',
+        country: 'il',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://now14.g-mana.live/media/91517161-44ab-4e46-af70-e9fe26117d2e/mainManifest.m3u8'
+          }
+        ]
+      },{
+        name: 'ערוץ 13',
+        logo: 'https://upload.wikimedia.org/wikipedia/he/thumb/1/17/Reshet13Logo2022.svg/559px-Reshet13Logo2022.svg.png',
+        epg_id: 'Channel13.il',
+        country: 'il',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8'
+          }
+        ]
+      },{
+        name: 'כאן 11',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kan11Logo.svg/640px-Kan11Logo.svg.png',
+        epg_id: 'Kan11.il',
+        country: 'il',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Zagros TV',
+        logo: 'https://i.imgur.com/UjIuIQX.png',
+        epg_id: 'ZagrosTV.iq',
+        country: 'iq',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'iNEWS',
+        logo: 'https://i.imgur.com/PeuBkaH.png',
+        epg_id: 'INews.iq',
+        country: 'iq',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://svs.itworkscdn.net/inewsiqlive/inewsiq.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Dijlah Tarab',
+        logo: 'https://i.imgur.com/2SBjjBQ.png',
+        epg_id: 'DijlahTarab.iq',
+        country: 'iq',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ghaasiflu.online/tarab/tracks-v1a1/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Al-Sharqiya',
+        logo: 'https://i.imgur.com/bPYyXNf.png',
+        epg_id: 'AlSharqiya.iq',
+        country: 'iq',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5d94523502c2d.streamlock.net/home/mystream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Al-Sharqiya News',
+        logo: 'https://i.imgur.com/P6p17ZY.jpg',
+        epg_id: 'AlSharqiyaNews.iq',
+        country: 'iq',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Press TV',
+        logo: 'https://i.imgur.com/X3YP2Gg.png',
+        epg_id: 'PressTV.ir',
+        country: 'ir',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdnlive.presstv.ir/cdnlive/smil:cdnlive.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'ABP News',
+        logo: 'https://i.imgur.com/DKHUFVQ.png',
+        epg_id: 'ABPNews.in',
+        country: 'in',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8'
+          }
+        ]
+      },{
+        name: 'RÚV 2',
+        logo: 'https://i.imgur.com/yDKRuXQ.png',
+        epg_id: 'RUV2.is',
+        country: 'is',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ruvlive.akamaized.net/out/v1/2ff7673de40f419fa5164498fae89089/index.m3u8'
+          }
+        ]
+      },{
+        name: 'TV Eger',
+        logo: 'https://i.imgur.com/GUVW073.png',
+        epg_id: 'TVEger.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://stream.tveger.hu:8010/live.m3u8'
+          }
+        ]
+      },{
+        name: 'Vásárhelyi Televízió',
+        logo: 'https://i.imgur.com/WOEqdmx.png',
+        epg_id: 'VasarhelyiTelevizio.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream.vasarhelyitelevizio.hu/stream/stream.m3u8'
+          }
+        ]
+      },{
+        name: 'Bajai TV',
+        logo: 'https://i.imgur.com/cyReGWh.png',
+        epg_id: 'BajaiTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cloudfront41.lexanetwork.com:1344/relay01/livestream002.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'DTV',
+        logo: 'https://i.imgur.com/YSpqmSO.png',
+        epg_id: 'DTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cloudfront44.lexanetwork.com:1732/hlsrelay003/hls/livestream.sdp.m3u8'
+          }
+        ]
+      },{
+        name: 'Zalaegerszeg TV',
+        logo: 'https://zegtv.hu/wp-content/themes/assembly/images/zegtv-logo.png',
+        epg_id: 'ZalaegerszegiTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cloudfront44.lexanetwork.com:1344/freerelay/zegtv.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Lóverseny közvetítés',
+        logo: 'https://kincsempark.hu/wp-content/uploads/2016/11/fejlec_logo_f-1.png',
+        epg_id: 'Lóversenyközvetítés.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cloudfront41.lexanetwork.com:1344/xrelay/loverseny2.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Kecskemét TV',
+        logo: 'https://kecskemetitv.hu/templates/kecskemetitv/img/ktv_logo.png',
+        epg_id: 'KecskemetiTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://eurobioinvest.hu:444/live/ktv.m3u8'
+          }
+        ]
+      },{
+        name: 'Gyöngyös TV',
+        logo: 'https://i.imgur.com/RHgaPCk.png',
+        epg_id: 'GyongyosiTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cloudfront41.lexanetwork.com:1344/relay02/livestream005.sdp/playlist.m3u8?key=hkNHP'
+          }
+        ]
+      },{
+        name: 'AlföldTV',
+        logo: 'http://www.dealood.com/content/uploads/images/March2019/5c9721a07ea87-images-large.png',
+        epg_id: 'AlföldTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cloudfront41.lexanetwork.com:1344/relay01/livestream006.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'CityTV (Belváros Lipótváros)',
+        logo: 'https://www.citytv.hu/images/logo.png',
+        epg_id: 'CityTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://citytv.hu/media/live/stream.m3u8'
+          }
+        ]
+      },{
+        name: '16TV',
+        logo: 'http://www.16tv.hu/images/xlogo-green.png.pagespeed.ic.79XBdS6JYn.png',
+        epg_id: '16TV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Hegyvidék TV',
+        logo: 'https://hegyvidektv.hu/wp-content/uploads/2020/08/hegyvidek.jpg',
+        epg_id: 'HegyvidekTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tv.hegyvidek.hu/hvtv/hvstream.m3u8'
+          }
+        ]
+      },{
+        name: 'TV7 Bekescsaba',
+        logo: 'https://i.imgur.com/G9Ib5K3.png',
+        epg_id: 'TV7Bekescsaba.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream.y5.hu/stream/stream_bekescsaba/stream.m3u8'
+          }
+        ]
+      },{
+        name: 'Balaton TV',
+        logo: 'https://i.imgur.com/ip8L5Vt.jpg',
+        epg_id: 'BalatonTV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream.iptvservice.eu/hls/balatontv.m3u8'
+          }
+        ]
+      },{
+        name: 'ATV',
+        logo: 'https://onlinestream.live/logos/4739.png',
+        epg_id: 'ATV.hu',
+        country: 'hu',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://streamservers.atv.hu:80/atvlive/atvstream_2_aac/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Kontra',
+        logo: 'https://i.imgur.com/zMgczHY.png',
+        epg_id: 'KontraChannel.gr',
+        country: 'gr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Open TV',
+        logo: 'https://i.imgur.com/T99OSnk.png',
+        epg_id: 'OpenTV.gr',
+        country: 'gr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Skai TV',
+        logo: 'https://i.imgur.com/TSg7B8X.png',
+        epg_id: 'SkaiTV.gr',
+        country: 'gr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://skai-live.siliconweb.com/media/cambria4/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Star',
+        logo: 'https://i.imgur.com/CJOtJlL.png',
+        epg_id: 'StarChannel.gr',
+        country: 'gr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8'
+          }
+        ]
+      },{
+        name: 'NDR International',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
+        epg_id: 'NDRFernsehenInternational.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ndrint.akamaized.net/hls/live/2020766/ndr_int/index.m3u8'
+          }
+        ]
+      },{
+        name: 'DW Deutsch+',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Deutsche_Welle_Logo.svg/320px-Deutsche_Welle_Logo.svg.png',
+        epg_id: 'DWDeutschPlus.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/index.m3u8'
+          }
+        ]
+      },{
+        name: 'DW Deutsch',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Deutsche_Welle_Logo.svg/320px-Deutsche_Welle_Logo.svg.png',
+        epg_id: 'DWDeutsch.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8'
+          }
+        ]
+      },{
+        name: 'SR',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/SR_Fernsehen.svg/639px-SR_Fernsehen.svg.png',
+        epg_id: 'SRFernsehen.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8'
+          }
+        ]
+      },{
+        name: 'NDR Schleswig-Holstein',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
+        epg_id: 'NDRFernsehenSchleswigHolstein.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8'
+          }
+        ]
+      },{
+        name: 'NDR Niedersachsen',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
+        epg_id: 'NDRFernsehenNiedersachsen.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8'
+          }
+        ]
+      },{
+        name: 'NDR Mecklenburg-Vorpommern',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
+        epg_id: 'NDRFernsehenMecklenburgVorpommern.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8'
+          }
+        ]
+      },{
+        name: 'NDR Hamburg',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
+        epg_id: 'NDRFernsehenHamburg.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8'
+          }
+        ]
+      },{
+        name: 'HR',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hr-fernsehen_Logo_2015.svg/640px-Hr-fernsehen_Logo_2015.svg.png',
+        epg_id: 'HRFernsehen.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://hrhls.akamaized.net/hls/live/2024525/hrhls/master.m3u8'
+          }
+        ]
+      },{
+        name: 'BR Süd',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Logo_BR_Fernsehen_2021.svg/768px-Logo_BR_Fernsehen_2021.svg.png',
+        epg_id: 'BRFernsehenSud.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Deluxe Lounge HD',
+        logo: 'https://i.imgur.com/JN6Kd0q.png',
+        epg_id: 'DeluxeLoungeHD.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream.ads.ottera.tv/playlist.m3u8?network_id=2664'
+          }
+        ]
+      },{
+        name: 'Schlager Deluxe',
+        logo: 'https://i.imgur.com/YPpgUOg.png',
+        epg_id: 'SchlagerDeluxe.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8'
+          }
+        ]
+      },{
+        name: 'Deluxe Music',
+        logo: 'https://i.imgur.com/E65GQN9.png',
+        epg_id: 'DeluxeMusic.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8'
+          }
+        ]
+      },{
+        name: 'ARD Alpha',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/ARD_alpha_Logo.jpg" tvg-id="ARDalpha.de',
+        epg_id: 'ARD-Alpha.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Das Erste',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Das_Erste_2014.svg/640px-Das_Erste_2014.svg.png',
+        epg_id: 'DasErste.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://mcdn.daserste.de/daserste/de/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Formula',
+        logo: 'https://i.imgur.com/fsqBn8G.png',
+        epg_id: 'Formula.ge',
+        country: 'ge',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Mtavari Arkhi',
+        logo: 'https://i.imgur.com/tLtGnJW.png',
+        epg_id: 'MtavariArkhi.ge',
+        country: 'ge',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://bozztv.com/36bay2/mtavariarxi/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Imedi TV',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Imlogo_2020.png',
+        epg_id: 'ImediTV.ge',
+        country: 'ge',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tv.cdn.xsg.ge/imedihd/index.m3u8'
+          }
+        ]
+      },{
+        name: 'First Channel - Education (2TV)',
+        logo: 'https://upload.wikimedia.org/wikipedia/ka/c/c9/2_Tv_Logo.jpg',
+        epg_id: '2TV.ge',
+        country: 'ge',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8'
+          }
+        ]
+      },{
+        name: 'First Channel (1TV)',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/512px-Pirveli_Arkhi_Logo_2022.svg.png',
+        epg_id: '1TV.ge',
+        country: 'ge',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8'
+          }
+        ]
+      },{
+        name: 'TV5 Monde Europe',
+        logo: 'https://i.imgur.com/uPmwTo9.png',
+        epg_id: 'TV5MondeEurope.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8'
+          }
+        ]
+      },{
+        name: 'TV5 Monde Info',
+        logo: 'https://i.imgur.com/NcysrWH.png',
+        epg_id: 'TV5MondeInfo.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8'
+          }
+        ]
+      },{
+        name: 'CGTN Français',
+        logo: 'https://i.imgur.com/fMsJYzl.png',
+        epg_id: 'CGTNFrench.cn',
+        country: 'cn',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://news.cgtn.com/resource/live/french/cgtn-f.m3u8'
+          }
+        ]
+      },{
+        name: 'När-TV',
+        logo: 'https://i.imgur.com/Ht5yePq.png',
+        epg_id: 'NarTV.fi',
+        country: 'fi',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://streaming.nartv.fi/live/ngrp:NAR_TV.stream_all/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'MTV Uutiset Live',
+        logo: 'https://i.imgur.com/IyB6mIb.png',
+        epg_id: 'MTVUutiset.fi',
+        country: 'fi',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.streaming.a2d.tv/asset/20025962.isml/.m3u8'
+          }
+        ]
+      },{
+        name: 'Himlen TV7',
+        logo: 'https://i.imgur.com/a4iNVXA.png',
+        epg_id: 'HimlenTV7.fi',
+        country: 'fi',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vod.tv7.fi/tv7-se/_definst_/smil:tv7-se.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Taivas TV7',
+        logo: 'https://i.imgur.com/a4iNVXA.png',
+        epg_id: 'TaivasTV7.fi',
+        country: 'fi',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vod.tv7.fi/tv7-fi/_definst_/smil:tv7-fi.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'OnniTV',
+        logo: 'https://i.imgur.com/HzILf2H.png',
+        epg_id: 'KotiTV.fi',
+        country: 'fi',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://kotitv.digitacdn.net/amlst:kotitv.amlst/playlist.m3u8?organizationId=83459409&suiteItemId=83459780'
+          }
+        ]
+      },{
+        name: 'TBN Baltia',
+        logo: 'https://i.imgur.com/rKBaK56.png',
+        epg_id: 'TBNBaltia.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://dc.tbnbaltia.eu:8088/dvr/rewind-21600.m3u8'
+          }
+        ]
+      },{
+        name: 'Life TV Europe',
+        logo: 'https://i.imgur.com/JhrTB82.png',
+        epg_id: 'LifeTVEurope.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://lifetv.bitflip.ee/live/stream1.m3u8'
+          }
+        ]
+      },{
+        name: 'Life TV Estonia',
+        logo: 'https://i.imgur.com/JhrTB82.png',
+        epg_id: 'LifeTV.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://lifetv.bitflip.ee/live/stream2.m3u8'
+          }
+        ]
+      },{
+        name: 'Taevas TV7',
+        logo: 'https://i.imgur.com/usXedIj.png',
+        epg_id: 'TaevasTV7.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vod.tv7.fi/tv7-ee/_definst_/smil:tv7-ee.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'ETV+',
+        logo: 'https://i.imgur.com/YAubPlU.png',
+        epg_id: 'ETVPlus.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://sb.err.ee/live/etvpluss.m3u8'
+          }
+        ]
+      },{
+        name: 'ETV2',
+        logo: 'https://i.imgur.com/fUjGHDa.png',
+        epg_id: 'ETV2.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://sb.err.ee/live/etv2.m3u8'
+          }
+        ]
+      },{
+        name: 'ETV',
+        logo: 'https://i.imgur.com/5URjPgG.png',
+        epg_id: 'ETV.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://sb.err.ee/live/etv.m3u8'
+          }
+        ]
+      },{
+        name: 'Canal RTVD 4',
+        logo: 'https://static.wikia.nocookie.net/logopedia/images/4/4e/CERTV_4_2015.png',
+        epg_id: 'Canal4RD.do',
+        country: 'do',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Viaplay xtra',
+        logo: 'https://i.imgur.com/kzZHsLp.png',
+        epg_id: 'ViaplayXtra.uk',
+        country: 'gb',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://i.mjh.nz/SamsungTVPlus/GBBB4300001NX.m3u8'
+          }
+        ]
+      },{
+        name: 'TG4',
+        logo: 'https://i.imgur.com/DslaAXr.png',
+        epg_id: 'TG4.ie',
+        country: 'ie',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://dx4452e0qv6r9.cloudfront.net/tg4_vod_national.m3u8'
+          }
+        ]
+      },{
+        name: 'Oireachtas TV',
+        logo: 'https://i.imgur.com/aC4fsCI.png',
+        epg_id: 'OireachtasTV.ie',
+        country: 'ie',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://d33zah5htxvoxb.cloudfront.net/el/live/oirtv/hls.m3u8'
+          }
+        ]
+      }
+      /*
+      ,{
+        name: '',
         logo: '',
         epg_id: '',
         country: '',
         options: [
           {
             format: 'm3u8',
-            url: 'https://5f22d76e220e1.streamlock.net/vintageradiotv/vintageradiotv/playlist.m3u8'
+            url: 'http://195.24.89.82/VH1_SD/index.m3u8'
           }
         ]
       }
+      */
 ];
