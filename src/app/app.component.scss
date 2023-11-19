@@ -2,6 +2,12 @@ img.logo {
     width: 25px;
 }
 
+small {
+    &.country_name {
+        color: #999;
+    }
+}
+
 ::ng-deep {
 
     .ng-select .ng-select-container {

@@ -5,6 +5,7 @@ import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { OTHER_CHANNELS_LIST } from 'src/assets/data/other-channels-list';
 import { VgHlsDirective } from '@videogular/ngx-videogular/streaming';
+import { COUNTRIES } from 'src/assets/data/countries';
 
 @Component({
   selector: 'app-root',
@@ -24,17 +25,16 @@ export class AppComponent implements OnInit {
   
   title = 'tvplayer';
   
-  // Video
-  videoUrl: string = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
-  //url: string = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
-  
-
   // Streaming
   headers: any = {};
   hlsBitrates: any;
   streamUrl!: string;
-  channels: TdtChannelDto [] = []
+  channels: TdtChannelDto [] = [];
+  channelsFiltered: TdtChannelDto [] = [];
+
   streamForm!: FormGroup;
+
+  countries: { name: string, iso2: string }[] = [];
 
   constructor(
     private streamService: StreamService,
@@ -44,6 +44,25 @@ export class AppComponent implements OnInit {
   doUpdateStreamUrl(channelName: string) {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
     this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
+  }
+
+  getCountryName(iso2: string) {
+    let countryName: string = '';
+    const country = (COUNTRIES as {cca2: string, name: { common: string }}[]).find((_country) => {
+      return _country.cca2.toLowerCase() === iso2.toLowerCase();
+    });
+    return country ? country.name.common : countryName;
+  }
+
+  doFilterByCountry() {
+    console.log(this.streamForm.get('country')?.value);
+    if (this.streamForm.get('country')?.value.length===0) {
+      this.channelsFiltered = [...this.channels];
+    } else {
+      this.channelsFiltered = [...this.channels.filter((_channel) => _channel.country===this.streamForm.get('country')?.value )]
+    }
+    this.streamForm.patchValue({'channel': this.channelsFiltered[0].name});
+    this.streamUrl = this.channelsFiltered[0].options[0].url;
   }
 
   ngOnInit(): void {
@@ -58,7 +77,6 @@ export class AppComponent implements OnInit {
 
     this.streamService.getStreams().subscribe((_streamResponse) => {
       this.channels = []
-      console.log(_streamResponse);
 
       _streamResponse.countries.forEach((_country) => {
         _country.ambits.forEach((_ambit) => {
@@ -77,30 +95,33 @@ export class AppComponent implements OnInit {
 
       this.channels = this.channels.concat(OTHER_CHANNELS_LIST);
 
-      /*
-      ,{
-        name: '+1',
-        logo: '',
-        epg_id: '',
-        country: '',
-        options: [
-          {
-            format: 'm3u8',
-            url: ''
-          }
-        ]
-      }
-      */
+      this.channels.forEach((_channel) => {
+        if (_channel.country && _channel.country?.length>0 && !this.countries.find((_c) => _c.iso2===_channel.country )) {
+          this.countries.push({
+            iso2: _channel.country,
+            name: this.getCountryName(_channel.country)
+          });
+        }
+      });
+
+      this.countries.sort((a,b) => a.name<=b.name ? -1 : 1 );
+      this.countries.unshift({ name: 'Tots els països', iso2: '' });
 
       this.channels.sort((a,b) => {
         return a.name<b.name ? -1 : 1;
       });
 
-      console.log(this.channels);
+      this.channelsFiltered = [...this.channels];
+
+      console.log('channels', this.channels);
+
+      // Init forms
 
       this.streamForm = new FormGroup({
-        channel: new FormControl(this.channels[0].name)
+        channel: new FormControl(this.channels[0].name),
+        country: new FormControl('')
       });
+
       this.streamUrl = this.channels[0].options[0].url;
     });    
   }

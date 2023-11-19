@@ -1,10 +1,34 @@
 <div class="w-100 h-100" style="height: calc(100vh) !important;overflow: auto;">
     <div class="d-flex flex-column align-items-center w-100 h-100" [ngClass]="{'justify-content-start': true}">
         <div class="my-3" [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
-            <ng-container *ngIf="channels.length>0">
+            <ng-container *ngIf="channels.length>0 && streamForm">
                 <form [formGroup]="streamForm">
+
                     <ng-select
-                        [items]="channels"
+                        [items]="countries"
+                        (ngModelChange)="doFilterByCountry()"
+                        formControlName="country"
+                        [clearable]="false"
+                        name="type"
+                        bindValue="iso2"
+                        bindLabel="name"
+                        placeholder="Search a country">
+                        <ng-template ng-label-tmp let-item="item">
+                            <div class="d-flex align-items-center justify-content-start w-100">
+                                <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
+                                {{item.name}}
+                            </div>
+                        </ng-template>
+                        <ng-template ng-option-tmp let-item="item" let-index="index">
+                            <div class="d-flex align-items-center justify-content-start w-100">
+                                <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
+                                {{item.name}}
+                            </div>
+                        </ng-template>
+                    </ng-select>
+
+                    <ng-select
+                        [items]="channelsFiltered"
                         (ngModelChange)="doUpdateStreamUrl($event)"
                         formControlName="channel"
                         name="type"
@@ -17,7 +41,7 @@
                                     <img [src]="item.logo" class="logo me-2">
                                     {{item.name}}
                                 </div>
-                                <i *ngIf="item.country?.length>0" class="ms-auto fi fi-{{item.country}}"></i>
+                                <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
                             </div>
                         </ng-template>
                         <ng-template ng-option-tmp let-item="item" let-index="index">
@@ -26,10 +50,14 @@
                                     <img [src]="item.logo" class="logo me-2">
                                     {{item.name}}
                                 </div>
-                                <i *ngIf="item.country?.length>0" class="ms-auto fi fi-{{item.country}}"></i>
+                                <div>
+                                    <small class="me-2 country_name">{{item.country}}</small>
+                                    <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
+                                </div>
                             </div>
                         </ng-template>
                     </ng-select>
+                    
                 </form>
             </ng-container>
         </div>
