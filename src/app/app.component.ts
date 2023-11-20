@@ -23,6 +23,8 @@ export class AppComponent implements OnInit {
   isIOS!: boolean;
   isAndroid!: boolean;
   orientation!: string;
+  portrait!: boolean;
+  landscape!: boolean;
   
   title = 'tvplayer';
   
@@ -60,12 +62,13 @@ export class AppComponent implements OnInit {
     const channel: TdtChannelDto | undefined = this.getChannel(channelId);
     this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
     if (channel?.epg_id) {
-      this.history = this.history.filter((_id) => _id!==channel.epg_id);
+      this.history = this.history.filter((_id) => _id!==channelId);
       this.history.unshift(channel.epg_id);
       this.history = this.history.slice(0,5);
       this.updateHistory(this.history);
-      this.streamForm.patchValue({'country': ''});
-      this.streamForm.patchValue({'channel': channel.name});
+      //this.streamForm.patchValue({'country': ''});
+      //this.streamForm.patchValue({'channel': channel.name});
+      this.doFilterByCountry(channel);
     }
   }
 
@@ -77,15 +80,15 @@ export class AppComponent implements OnInit {
     return country ? country.name.common : countryName;
   }
 
-  doFilterByCountry() {
+  doFilterByCountry(selectedChannel?: TdtChannelDto) {
     console.log(this.streamForm.get('country')?.value);
     if (this.streamForm.get('country')?.value.length===0) {
       this.channelsFiltered = [...this.channels];
     } else {
       this.channelsFiltered = [...this.channels.filter((_channel) => _channel.country===this.streamForm.get('country')?.value )]
     }
-    this.streamForm.patchValue({'channel': this.channelsFiltered[0].name});
-    this.streamUrl = this.channelsFiltered[0].options[0].url;
+    this.streamForm.patchValue({'channel': (selectedChannel) ? selectedChannel.name : this.channelsFiltered[0].name});
+    this.streamUrl = (selectedChannel) ? selectedChannel.options[0].url : this.channelsFiltered[0].options[0].url;
   }
 
   recoverHistory() {
@@ -109,12 +112,16 @@ export class AppComponent implements OnInit {
 
     this.isMobile = this.deviceDetector.isMobile();
     this.isTablet = this.deviceDetector.isTablet();
-    this.orientation = this.deviceDetector.orientation;
+    // this.orientation = this.deviceDetector.orientation;
     this.isWindows = this.deviceDetector.os === 'Windows';
     this.isMac = this.deviceDetector.os === 'Mac';
     this.isIOS = this.deviceDetector.os === 'iOS';
     this.isAndroid = this.deviceDetector.os === 'Android';
+    this.portrait = this.deviceDetector.orientation === 'portrait';
+    this.landscape = this.deviceDetector.orientation === 'lanscape';
+
     console.log(this.deviceDetector.os);
+    console.log(this.deviceDetector.orientation);
 
     this.streamService.getStreams().subscribe((_streamResponse) => {
       this.channels = []
