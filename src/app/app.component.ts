@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   isMobile!: boolean;
   isTablet!: boolean;
   isWindows!: boolean;
+  isMac!: boolean;
   isIOS!: boolean;
   isAndroid!: boolean;
   orientation!: string;
@@ -71,6 +72,7 @@ export class AppComponent implements OnInit {
     this.isTablet = this.deviceDetector.isTablet();
     this.orientation = this.deviceDetector.orientation;
     this.isWindows = this.deviceDetector.os === 'Windows';
+    this.isMac = this.deviceDetector.os === 'Mac';
     this.isIOS = this.deviceDetector.os === 'iOS';
     this.isAndroid = this.deviceDetector.os === 'Android';
     console.log(this.deviceDetector.os);

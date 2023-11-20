@@ -66,7 +66,7 @@
         <div  [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
             <ng-container *ngIf="streamUrl">
 
-                <ng-container *ngIf="isWindows || isAndroid">
+                <ng-container *ngIf="isWindows || isAndroid || isMac">
                     <vg-player>
                         <video #myMedia
                                [vgHls]="streamUrl"
