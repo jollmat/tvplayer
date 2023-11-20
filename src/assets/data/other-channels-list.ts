@@ -673,17 +673,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'ABC News US',
-        logo: 'https://i.imgur.com/nki2HDQ.png',
-        epg_id: 'CBSNews.us',
-        country: 'us',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8'
-          }
-        ]
-      },{
         name: 'PBS America',
         logo: 'https://i.imgur.com/J4zE5z9.jpg',
         epg_id: 'PBSAmerica.uk',

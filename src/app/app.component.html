@@ -1,6 +1,6 @@
 <div class="w-100 h-100" style="height: calc(100vh) !important;overflow: auto;">
-    <div class="d-flex flex-column align-items-center w-100 h-100" [ngClass]="{'justify-content-start': true}">
-        <div class="my-3" [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
+    <div class="d-flex flex-column align-items-center w-100 h-100 px-1" [ngClass]="{'justify-content-start': true}">
+        <div class="mt-1 mb-3" [ngClass]="{'w-75': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
             <ng-container *ngIf="channels.length>0 && streamForm">
                 <form [formGroup]="streamForm">
 
@@ -63,43 +63,54 @@
             </ng-container>
         </div>
        
-        <div  [ngClass]="{'w-50': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
-            <ng-container *ngIf="streamUrl">
-
-                <ng-container *ngIf="isWindows || isAndroid || isMac">
-                    <vg-player>
-                        <video #myMedia
-                               [vgHls]="streamUrl"
-                               [vgHlsHeaders]="headers"
-                               (onGetBitrates)="hlsBitrates = $event"
-                               id="my-video"
-                               type="video/mp4"
-                               preload="metadata"
-                               [muted]="true"
-                               autoplay
-                               controls>
-                        </video>
-                    </vg-player>
+        <div class="d-flex justify-content-between align-items-top w-100" [ngClass]="{'w-75': !isMobile || orientation==='landscape', 'w-100': isMobile && orientation!=='landscape'}">
+            
+            <div class="d-flex flex-column justify-content-between w-10">
+                <ng-container *ngFor="let channelId of history">
+                    <button class="btn btn-sm" (click)="selectChannelFromHistory(channelId)">
+                        <img [title]="getChannel(channelId)?.name" class="me-2 w-100 history_img" [src]="getChannel(channelId)?.logo">
+                    </button>
                 </ng-container>
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-top w-90">
+                <ng-container *ngIf="streamUrl">
 
-                <ng-container *ngIf="isIOS">
-                    <vg-player>
-                        <video #myMedia
-                               [vgHls]="streamUrl"
-                               [vgHlsHeaders]="headers"
-                               (onGetBitrates)="hlsBitrates = $event"
-                               id="my-video"
-                               type="video/mp4"
-                               preload="metadata"
-                               [muted]="true"
-                               autoplay
-                               controls>
-                        </video>
-                    </vg-player>
+                    <ng-container *ngIf="isWindows || isAndroid || isMac">
+                        <vg-player>
+                            <video #myMedia
+                                   [vgHls]="streamUrl"
+                                   [vgHlsHeaders]="headers"
+                                   (onGetBitrates)="hlsBitrates = $event"
+                                   id="my-video"
+                                   type="video/mp4"
+                                   preload="metadata"
+                                   [muted]="true"
+                                   autoplay
+                                   controls>
+                            </video>
+                        </vg-player>
+                    </ng-container>
+    
+                    <ng-container *ngIf="isIOS">
+                        <vg-player>
+                            <video #myMedia
+                                   [vgHls]="streamUrl"
+                                   [vgHlsHeaders]="headers"
+                                   (onGetBitrates)="hlsBitrates = $event"
+                                   id="my-video"
+                                   type="video/mp4"
+                                   preload="metadata"
+                                   [muted]="true"
+                                   autoplay
+                                   controls>
+                            </video>
+                        </vg-player>
+                        
+                    </ng-container>
                     
                 </ng-container>
-                
-            </ng-container>
+            </div>
+            
         </div>
     </div>
 </div>

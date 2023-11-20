@@ -2,10 +2,14 @@ img.logo {
     width: 25px;
 }
 
+img.history_img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
 small {
-    &.country_name {
-        color: #999;
-    }
+    &.country_name { color: #999; }
+    &.title { color: #999; }
 }
 
 ::ng-deep {

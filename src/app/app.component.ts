@@ -37,6 +37,8 @@ export class AppComponent implements OnInit {
 
   countries: { name: string, iso2: string }[] = [];
 
+  history: string[] = [];
+
   constructor(
     private streamService: StreamService,
     private deviceDetector: DeviceDetectorService
@@ -45,6 +47,26 @@ export class AppComponent implements OnInit {
   doUpdateStreamUrl(channelName: string) {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
     this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
+    console.log(channel);
+    if (channel?.epg_id) {
+      this.history = this.history.filter((_id) => _id!==channel.epg_id);
+      this.history.unshift(channel.epg_id);
+      this.history = this.history.slice(0,5);
+      this.updateHistory(this.history);
+    }
+  }
+
+  selectChannelFromHistory(channelId: string) {
+    const channel: TdtChannelDto | undefined = this.getChannel(channelId);
+    this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
+    if (channel?.epg_id) {
+      this.history = this.history.filter((_id) => _id!==channel.epg_id);
+      this.history.unshift(channel.epg_id);
+      this.history = this.history.slice(0,5);
+      this.updateHistory(this.history);
+      this.streamForm.patchValue({'country': ''});
+      this.streamForm.patchValue({'channel': channel.name});
+    }
   }
 
   getCountryName(iso2: string) {
@@ -66,6 +88,23 @@ export class AppComponent implements OnInit {
     this.streamUrl = this.channelsFiltered[0].options[0].url;
   }
 
+  recoverHistory() {
+    const strHistory: string | null = localStorage.getItem('APP_TVPLAYER_HISTORY');
+    if (strHistory!=null && strHistory.length>0) {
+      this.history = JSON.parse(strHistory);
+    } else {
+      this.history = [];
+    }
+  }
+
+  updateHistory(history: string[]) {
+    localStorage.setItem('APP_TVPLAYER_HISTORY', JSON.stringify(history))
+  }
+
+  getChannel(channelId: string): TdtChannelDto | undefined {
+    return this.channels.find((_channel) => _channel.epg_id===channelId);
+  }
+
   ngOnInit(): void {
 
     this.isMobile = this.deviceDetector.isMobile();
@@ -84,6 +123,9 @@ export class AppComponent implements OnInit {
         _country.ambits.forEach((_ambit) => {
           _ambit.channels.forEach((_channel) => {
             _channel.country = _country.name === 'Spain' ? 'es' : _channel.country;
+            if (!_channel.epg_id || _channel.epg_id.trim().length===0) {
+              _channel.epg_id = _channel.name.trim().replace(/\s/g, '_') + '.' + _channel.country;
+            }
             if (_channel.options) {
               const streamingOptionIndex: number = _channel.options.findIndex((_option) => _option.format==='m3u8');
               if (streamingOptionIndex>=0) {
@@ -117,14 +159,26 @@ export class AppComponent implements OnInit {
 
       console.log('channels', this.channels);
 
+      // History
+      this.recoverHistory();
+      let channelName: string;
+
+      if (this.history.length>0) {
+        const lasChannelViewed: TdtChannelDto | undefined = this.getChannel(this.history[0]);
+        this.streamUrl = lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url;
+        channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
+      } else {
+        this.streamUrl = this.channels[0].options[0].url;
+        channelName = this.channels[0].name;
+      }
+
       // Init forms
 
       this.streamForm = new FormGroup({
-        channel: new FormControl(this.channels[0].name),
+        channel: new FormControl(channelName),
         country: new FormControl('')
       });
-
-      this.streamUrl = this.channels[0].options[0].url;
+      
     });    
   }
 }
