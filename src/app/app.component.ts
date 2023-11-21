@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
 
   @ViewChild(VgHlsDirective) vgHls!: VgHlsDirective;
 
-  supportedFormats: string[] = ['m3u8', 'mp3'];
+  supportedFormats: string[] = ['m3u8', 'mp3', 'youtube'];
   MediaTypesEnum = MediaTypesEnum;
   currentFormat?: MediaTypesEnum;
 
@@ -42,6 +42,9 @@ export class AppComponent implements OnInit {
   channels: TdtChannelDto [] = [];
   channelsFiltered: TdtChannelDto [] = [];
 
+  private youtubeApiLoaded = false;
+  youtubeVideoId?: string;
+
   streamForm!: FormGroup;
 
   countries: { name: string, iso2: string }[] = [];
@@ -52,6 +55,7 @@ export class AppComponent implements OnInit {
     private streamService: StreamService,
     private deviceDetector: DeviceDetectorService
   ) {
+
     this.streamUrl$.subscribe((url) => {
       console.log(url);
       this.currentFormat = undefined;
@@ -66,6 +70,10 @@ export class AppComponent implements OnInit {
             this.streamUrl = url;
             this.currentFormat = MediaTypesEnum.MP3;
           }, 1000);
+        } else if (url.startsWith('https://www.youtube.com')) {
+          this.streamUrl = url;
+          this.youtubeVideoId = url.substring(url.indexOf('v=')).replace('v=', '');
+          this.currentFormat = MediaTypesEnum.YOUTUBE;
         } else {
           this.streamUrl = url;
           this.currentFormat = undefined;
@@ -152,7 +160,6 @@ export class AppComponent implements OnInit {
 
     this.isMobile = this.deviceDetector.isMobile();
     this.isTablet = this.deviceDetector.isTablet();
-    // this.orientation = this.deviceDetector.orientation;
     this.isWindows = this.deviceDetector.os === 'Windows';
     this.isMac = this.deviceDetector.os === 'Mac';
     this.isIOS = this.deviceDetector.os === 'iOS';
@@ -163,6 +170,15 @@ export class AppComponent implements OnInit {
     console.log(this.deviceDetector.os);
     console.log(this.deviceDetector.orientation);
 
+    // Youtube API load
+    if(!this.youtubeApiLoaded) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.body.appendChild(tag);
+      this.youtubeApiLoaded = true;
+    }
+
+    // Get stream list
     this.streamService.getStreams().subscribe((_streamResponse) => {
       this.channels = []
 

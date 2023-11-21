@@ -18,11 +18,14 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { ToastrModule } from 'ngx-toastr';
 import { HighlighterPipe } from './pipes/highlighter.pipe';
+import { SafeUrlPipe } from './pipes/safe-url.pipe';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HighlighterPipe
+    HighlighterPipe,
+    SafeUrlPipe
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { HighlighterPipe } from './pipes/highlighter.pipe';
       timeOut: 3000,
       positionClass: 'toast-bottom-right',
       preventDuplicates: true
-    })
+    }),
+    YouTubePlayerModule
   ],
   providers: [
     {provide: OWL_DATE_TIME_LOCALE, useValue: 'ca'}
