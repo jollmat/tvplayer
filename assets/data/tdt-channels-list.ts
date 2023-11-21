@@ -351,31 +351,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Euronews",
-                "web": "https://es.euronews.com/embed/live",
-                "logo": "https://graph.facebook.com/es.euronews/picture?width=200&height=200",
-                "epg_id": "Euronews.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://euronews-euronews-spanish-2-mx.samsung.wurl.com/manifest/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCyoGb3SMlTlB8CLGVH4c8Rw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "El Pa\u00eds",
                 "web": "https://elpais.com",
                 "logo": "https://graph.facebook.com/elpais/picture?width=200&height=200",
@@ -391,42 +366,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "youtube",
                     "url": "https://www.youtube.com/channel/UCnsvJeZO4RigQ898WdDNoBw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "La Vanguardia",
-                "web": "https://www.lavanguardia.com",
-                "logo": "https://graph.facebook.com/LaVanguardia/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UClLLRs_mFTsNT5U-DqTYAGg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Agencia EFE",
-                "web": "https://www.efe.com",
-                "logo": "https://graph.facebook.com/AgenciaEFEnoticias/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCvJS-YNyaWyOucx8bGrHVvw/live",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -461,15 +400,8 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "epg_id": "Negocios.TV",
                 "options": [
                   {
-                    "format": "m3u8",
-                    "url": "https://streaming013.gestec-video.com/hls/negociostv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCwd8Byi93KbnsYmCcKLExvQ/live",
+                    "url": "https://www.youtube.com/watch?v=7m6v_0NTvmw",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -804,24 +736,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "MARCA",
-                "web": "https://www.marca.com",
-                "logo": "https://graph.facebook.com/MARCA/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCop57Z1sYHrtCyxCpE2z2Bg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "AS",
@@ -2186,7 +2100,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCHVquS6wXQAsESO2bwZ7esw/live",
+                    "url": "https://www.youtube.com/watch?v=Qx20n1qcgNk",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -2657,24 +2571,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "\u00c9cija Comarca TV",
-                "web": "https://tvm.ecija.es",
-                "logo": "https://graph.facebook.com/ecijacomarcatelevision/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCXwvKOSEF5TK1Y8TMq1pzNA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Marbella TV",
                 "web": "https://rtvmarbella.tv/tv-en-directo/",
                 "logo": "https://graph.facebook.com/RTVMarbella/picture?width=200&height=200",
@@ -2716,7 +2612,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCoMWImnPAur6JhXDK63dpAg/live",
+                    "url": "https://www.youtube.com/watch?v=8MQbkxsMhKQ",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -2973,7 +2869,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCRniQmtUlHJedl36F0Mehvw/live",
+                    "url": "https://www.youtube.com/watch?v=sO_POlKFZxI",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -3408,7 +3304,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCTQrUTmzCWIfG6h4EVCdOCQ/live",
+                    "url": "https://www.youtube.com/watch?v=6LlZXt8nk4s",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -4998,7 +4894,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCoFs7RGrmWQkqU5KNNGvCjA/live",
+                    "url": "https://www.youtube.com/watch?v=QaVsxXTk6k4",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -5068,7 +4964,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCGXp77nMffJ9lk5If2dYj3w/live",
+                    "url": "https://www.youtube.com/watch?v=qcEyduUWWIw",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -5218,7 +5114,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UChMCkc02GVSi89TrvhbRasA/live",
+                    "url": "https://www.youtube.com/watch?v=5YFRxFpdRGo",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -5281,7 +5177,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCky112obBMG68Nw5MrSNNPA/live",
+                    "url": "https://www.youtube.com/watch?v=zNEHMu8-MUU",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -6390,7 +6286,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCff_CBVJDTHP4wOHPjP5BMg/live",
+                    "url": "https://www.youtube.com/watch?v=MOSIGlJRNVU",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -7011,44 +6907,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "ATV Andorra",
-                "web": "https://www.andorradifusio.ad/endirecte/atv",
-                "logo": "https://graph.facebook.com/rtva.andorra/picture?width=200&height=200",
-                "epg_id": "ATVHD.TV",
-                "country": 'ad',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://videos.rtva.ad/live/rtva/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "ATV Web Andorra",
-                "web": "https://www.andorradifusio.ad/endirecte/canalweb",
-                "logo": "https://graph.facebook.com/rtva.andorra/picture?width=200&height=200",
-                "epg_id": "ATVCW.TV",
-                "country": 'ad',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://videos.rtva.ad/live/web/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EXTA"
-                ]
-              },
-              {
                 "name": "L\u00f2ria TV Andorra",
                 "web": "http://loriatv.com",
                 "logo": "https://graph.facebook.com/LoriaTV/picture?width=200&height=200",
@@ -7075,38 +6933,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "country": 'gb',
                 "options": [],
                 "extra_info": []
-              },
-              {
-                "name": "Euronews Internacional",
-                "web": "https://es.euronews.com/live",
-                "logo": "https://graph.facebook.com/es.euronews/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCSrZ3UV4jOidv8ppoVuvW9Q/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCW2QcKZiU8aUGg4yxCIditg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCUmEPYxmnyQDeRUcFkslmQw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "PT"
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "CNN Internacional",
@@ -7160,7 +6986,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCUdOoVWuWmgo1wByzcsyKDQ/live",
+                    "url": "https://www.youtube.com/watch?v=l8PMl7tUDIE",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -7219,7 +7045,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "franceinfo: Francia",
+                "name": "franceinfo",
                 "web": "https://www.francetvinfo.fr/en-direct/tv.html",
                 "logo": "https://graph.facebook.com/franceinfo/picture?width=200&height=200",
                 "epg_id": null,
@@ -7227,7 +7053,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCO6K_kkdP-lnSCiO3tPx7WA/live",
+                    "url": "https://www.youtube.com/watch?v=Z-Nwo-ypKtM",
                     "geo2": null,
                     "res": null,
                     "lang": "FR"
@@ -7942,7 +7768,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCeY0bbntWzzVIaj2z3QigXg/live",
+                    "url": "https://www.youtube.com/watch?v=S9wmU9hA9os",
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
@@ -8155,7 +7981,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCEJs1fTF3KszRJGxJY14VrA/live",
+                    "url": "https://www.youtube.com/watch?v=JxpMmv1Wm2M",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8191,7 +8017,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCFxHplbcoJK9m70c4VyTIxg/live",
+                    "url": "https://www.youtube.com/watch?v=f3zGoEXJhz8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8227,7 +8053,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/live",
+                    "url": "https://www.youtube.com/watch?v=INIvWnWMR_w",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8351,15 +8177,8 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "country": 'co',
                 "options": [
                   {
-                    "format": "m3u8",
-                    "url": "https://mdstrm.com/live-stream-playlist/632391734be92a791e2750e6.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC2Xq2PK-got3Rtz9ZJ32hLQ/live",
+                    "url": "https://www.youtube.com/watch?v=Q6GkCmXiGhE",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8486,7 +8305,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live",
+                    "url": "https://www.youtube.com/watch?v=cb12KmMMDJA",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8505,7 +8324,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCFgk2Q2mVO1BklRQhSv6p0w/live",
+                    "url": "https://www.youtube.com/watch?v=Tqwhq_8QAGk",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8543,7 +8362,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live",
+                    "url": "https://www.youtube.com/watch?v=4e8Iw3Frf1A",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8562,7 +8381,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC6NVDkuzY2exMOVFw4i9oHw/live",
+                    "url": "https://www.youtube.com/watch?v=zcWXboTnous",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8581,7 +8400,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCs231K71Bnu5295_x0MB5Pg/live",
+                    "url": "https://www.youtube.com/watch?v=RHG_uCpqbX0",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8718,7 +8537,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCfJtBtmhnIyfUB6RqXeImMw/live",
+                    "url": "https://www.youtube.com/watch?v=3StxxE01rHM",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8845,7 +8664,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCsRnhjcUCR78Q3Ud6OXCTNg/live",
+                    "url": "https://www.youtube.com/watch?v=Rb2c5JQOfsE",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8864,7 +8683,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCkccyEbqhhM3uKOI6Shm-4Q/live",
+                    "url": "https://www.youtube.com/watch?v=QO4pGCG96lU",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9181,7 +9000,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCvdwhh_fDyWccR42-rReZLw/live",
+                    "url": "https://www.youtube.com/watch?v=_UIm7yCgUDM",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9212,7 +9031,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCuiLR4p6wQ3xLEm15pEn1Xw/live",
+                    "url": "https://www.youtube.com/watch?v=bSzRle57VBk",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9405,14 +9224,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC5BMQOsAB8hKUyHu9KI6yig/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCWw_gejTX29Yn89LLpcINZQ/live",
+                    "url": "https://www.youtube.com/watch?v=yC0OLhiEMLg",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9465,7 +9277,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCMmpLL2ucRHAXbNHiCPyIyg/live",
+                    "url": "https://www.youtube.com/watch?v=sUKwTVAc0Vo",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9501,7 +9313,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCTur7oM6mLL0rM2k0znuZpQ/live",
+                    "url": "https://www.youtube.com/watch?v=Jxu33YZtq4g",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9635,7 +9447,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC5nwNW4KdC0SzrhF9BXEYOQ/live",
+                    "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9654,14 +9466,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC2TuODJhC03pLgd6MpWP0iw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCoNYj9OFHZn3ACmmeRCPwbA/live",
+                    "url": "https://www.youtube.com/watch?v=oZdzzvxTfUY",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9680,7 +9485,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC3XaG-7UVi2vD8ZZEMNnnpw/live",
+                    "url": "https://www.youtube.com/watch?v=RATzL-BmxoQ",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9799,7 +9604,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC1_E8NeF5QHY2dtdLRBCCLA/live",
+                    "url": "https://www.youtube.com/watch?v=NQjabLGdP5g",
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
@@ -9837,7 +9642,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCEXGDNclvmg6RW0vipJYsTQ/live",
+                    "url": "https://www.youtube.com/watch?v=ENHYOYm-kUE",
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
@@ -10121,7 +9926,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/user/FIBAWorld/live",
+                    "url": "https://www.youtube.com/watch?v=YiW26xS_Sl8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -10174,7 +9979,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCcYfZbinuodyF8rVkl4u7Lw/live",
+                    "url": "https://www.youtube.com/watch?v=Rdd4kovguK4",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -10612,7 +10417,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCsN8M73DMWa8SPp5o_0IAQQ/live",
+                    "url": "https://www.youtube.com/watch?v=dCpd6_S0rnI",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -10783,14 +10588,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCoRXPcv8XK5fAplLbk9PTww/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCITH7URIRpb8yoshUwGE9jg/live",
+                    "url": "https://www.youtube.com/watch?v=JVocS7Yftw8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -11633,7 +11431,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCnB5vfb9FMMNTnC6-kAT3fQ/live",
+                    "url": "https://www.youtube.com/watch?v=2D-wQobeZRs",
                     "geo2": null,
                     "res": null,
                     "lang": null

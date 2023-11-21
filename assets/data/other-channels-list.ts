@@ -2069,5 +2069,93 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://radioserver.radiomaricel.cat/proxy/radio_maricel?mp=/stream.mp3'
           }
         ]
+      },{
+        name: 'La Vanguardia',
+        logo: 'https://correquevuelas.com/wp-content/uploads/la-vanguardia-vector-logo.png',
+        epg_id: 'LaVanguardia.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=hbYkpzg69w4'
+          }
+        ]
+      },{
+        name: 'Agencia EFE',
+        logo: 'https://agenciaefe.es/wp-content/uploads/2021/12/logo-efe.jpeg',
+        epg_id: 'AgenciaEFE.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=eP1mQ1VslII'
+          }
+        ]
+      },{
+        name: 'Euronews (esp)',
+        logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
+        epg_id: 'Euronews.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=O9mOtdZ-nSk'
+          }
+        ]
+      },{
+        name: 'Euronews (eng)',
+        logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
+        epg_id: 'Euronews.uk',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=pykpO5kQJ98'
+          }
+        ]
+      },{
+        name: 'Euronews (por)',
+        logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
+        epg_id: 'Euronews.pt',
+        country: 'pt',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=fLtn2L7OdeI'
+          }
+        ]
+      },{
+        name: 'Euronews (fra)',
+        logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
+        epg_id: 'Euronews.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=NiRIbKwAejk'
+          }
+        ]
+      },{
+        name: 'Marca TV',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Marca.svg/800px-Marca.svg.png',
+        epg_id: 'MarcaTv.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=g2lhYkUne7s'
+          }
+        ]
+      },{
+        name: '',
+        logo: '',
+        epg_id: '',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=8MQbkxsMhKQ'
+          }
+        ]
       }
 ];
