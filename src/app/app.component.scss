@@ -3,6 +3,11 @@ img.logo {
 }
 
 img.history_img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+img.radio_img {
     max-width: 100px;
     max-height: 100px;
 }
@@ -10,6 +15,10 @@ img.history_img {
 small {
     &.country_name { color: #999; }
     &.title { color: #999; }
+}
+
+.audio-player-container {
+    
 }
 
 ::ng-deep {

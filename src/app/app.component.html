@@ -13,7 +13,7 @@
                         [items]="countries"
                         (ngModelChange)="doFilterByCountry()"
                         formControlName="country"
-                        [clearable]="false"
+                        [clearable]="true"
                         name="type"
                         bindValue="iso2"
                         bindLabel="name"
@@ -82,37 +82,51 @@
                 }">
                 <ng-container *ngIf="streamUrl">
 
-                    <ng-container *ngIf="isWindows || isAndroid || isMac">
-                        <vg-player>
-                            <video #myMedia
-                                   [vgHls]="streamUrl"
-                                   [vgHlsHeaders]="headers"
-                                   (onGetBitrates)="hlsBitrates = $event"
-                                   id="my-video"
-                                   type="video/mp4"
-                                   preload="metadata"
-                                   [muted]="true"
-                                   autoplay
-                                   controls>
-                            </video>
-                        </vg-player>
+                    <ng-container *ngIf="currentFormat===MediaTypesEnum.M3U8">
+                        <ng-container *ngIf="isWindows || isAndroid || isMac">
+                            <vg-player>
+                                <video #myMedia
+                                       [vgHls]="streamUrl"
+                                       [vgHlsHeaders]="headers"
+                                       (onGetBitrates)="hlsBitrates = $event"
+                                       id="my-video"
+                                       type="video/mp4"
+                                       preload="metadata"
+                                       [muted]="true"
+                                       [autoplay]="true"
+                                       autoplay
+                                       controls>
+                                </video>
+                            </vg-player>
+                        </ng-container>
+        
+                        <ng-container *ngIf="isIOS">
+                            <vg-player>
+                                <video #myMedia
+                                       [vgHls]="streamUrl"
+                                       [vgHlsHeaders]="headers"
+                                       (onGetBitrates)="hlsBitrates = $event"
+                                       id="my-video"
+                                       type="video/mp4"
+                                       preload="metadata"
+                                       [muted]="true"
+                                       [autoplay]="true"
+                                       autoplay
+                                       controls>
+                                </video>
+                            </vg-player>
+                        </ng-container>
                     </ng-container>
-    
-                    <ng-container *ngIf="isIOS">
-                        <vg-player>
-                            <video #myMedia
-                                   [vgHls]="streamUrl"
-                                   [vgHlsHeaders]="headers"
-                                   (onGetBitrates)="hlsBitrates = $event"
-                                   id="my-video"
-                                   type="video/mp4"
-                                   preload="metadata"
-                                   [muted]="true"
-                                   autoplay
-                                   controls>
-                            </video>
-                        </vg-player>
-                        
+
+                    <ng-container *ngIf="currentFormat===MediaTypesEnum.MP3">
+                        <div class="d-flex flex-column audio-player-container justify-content-start align-items-start p-5">
+                            <img *ngIf="history && history.length>0" class="radio_img m-2" [src]="getChannel(history[0])?.logo">
+                            <vg-player>
+                                <audio #myMedia id="my-audio" [muted]="false" [autoplay]="true" autoplay controls>
+                                    <source [src]="streamUrl" [type]="'audio/mp3'">
+                                </audio>
+                            </vg-player>
+                        </div>
                     </ng-container>
                     
                 </ng-container>
