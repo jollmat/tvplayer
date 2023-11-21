@@ -1893,19 +1893,181 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://d33zah5htxvoxb.cloudfront.net/el/live/oirtv/hls.m3u8'
           }
         ]
-      }
-      /*
-      ,{
-        name: '',
-        logo: '',
-        epg_id: '',
-        country: '',
+      },{
+        name: 'Catalunya Ràdio',
+        logo: 'https://images.radio.orange.com/radios/large_radio_catalonia.png',
+        epg_id: 'CatalunyaRadio.es',
+        country: 'es',
         options: [
           {
             format: 'm3u8',
-            url: 'http://195.24.89.82/VH1_SD/index.m3u8'
+            url: 'https://directes-radio-int.ccma.cat/live-content/catalunya-radio-hls/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Canal Sur Radio',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Canal_Sur_Radio.png',
+        epg_id: 'CanalSurRadio.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdnlive.codev8.net/rtvalive/smil:channel4.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Euskadi Irratia',
+        logo: 'https://images11.eitb.eus/multimedia/images/2012/01/24/602517/602517_euskadi_irratia_logo4_foto610x342.jpg',
+        epg_id: 'EuskadiIrratia.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://multimedia.eitb.eus/live-content/euskadirratia-hls/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Cadena 100',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cadena100.svg/1200px-Cadena100.svg.png',
+        epg_id: 'Cadena100.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cadena100-cope.flumotion.com/chunks.m3u8'
+          }
+        ]
+      },{
+        name: 'Europa FM',
+        logo: 'https://fotografias.atresmediapublicidad.com/clipping/cmsimages01/2022/10/05/49FAFB71-2DCC-44D8-AB04-FC5C8EEBFAE4/nuevo-logo-europa-fmdegradado-fondo-blanco_58.jpg',
+        epg_id: 'EuropaFM.e',
+        country: 'ses',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://livefastly-webs.europafm.com/europafm/audio/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Rock FM',
+        logo: 'https://rockfm-cdnsta.agilecontent.com/rockfm-frontend/public/assets/img/default-image-f7d2568e0307650b0c23f03e46649312.svg',
+        epg_id: 'RockFM.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rockfm-cope.flumotion.com/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Radio Clásica RNE',
+        logo: 'https://myradioonline.es/public/uploads/radio_img/radio-clasica/fb_cover.jpg',
+        epg_id: 'RadioClasicaRNE.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rtvelivestream.akamaized.net/rtvesec/rne/rne_r2_main.m3u8'
+          }
+        ]
+      },{
+        name: 'Catalunya Informació',
+        logo: 'https://static.mytuner.mobi/media/tvos_radios/AHxQzFyFbJ.png',
+        epg_id: 'CatalunyaInformacio.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://directes-radio-int.ccma.cat/live-content/catalunya-informacio-hls/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Catalunya Música',
+        logo: 'https://static.mytuner.mobi/media/tvos_radios/Ld3QR4ngWx.png',
+        epg_id: 'CatalunyaMusica.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://directes-radio-int.ccma.cat/live-content/catalunya-musica-hls/master.m3u8'
+          }
+        ]
+      },{
+        name: 'RAC1',
+        logo: 'https://d2xcuvj0f1yuza.cloudfront.net/2020/01/LOGO-RAC1.png',
+        epg_id: 'RAC1.es',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_1.mp3'
+          }
+        ]
+      },{
+        name: 'Radio Marca',
+        logo: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/46/bf/80/46bf8000-16fe-bc2c-733c-fbdfe66ae5a5/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
+        epg_id: 'RadioMarca.es',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMARCA_NACIONAL.mp3'
+          }
+        ]
+      },{
+        name: 'Radio Tele-Taxi',
+        logo: 'https://myradioonline.es/public/uploads/radio_img/radio-teletaxi/fb_cover.jpg',
+        epg_id: 'RadioTeleTaxi.es',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'https://radiott-web.streaming-pro.com:6103/radiott.mp3'
+          }
+        ]
+      },{
+        name: 'SER Catalunya',
+        logo: 'https://sdmedia.playser.cadenaser.com/playser/image/20231/20/1674202565250_957.jpeg',
+        epg_id: 'SERCatalunya.es',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/SER_CAT.mp3'
+          }
+        ]
+      },{
+        name: 'COPE Barcelona Miramar',
+        logo: 'https://static.mytuner.mobi/media/tvos_radios/SapDLY5pB3.png',
+        epg_id: 'COPEBarcelona',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'https://wecast-b01-04.flumotion.com/copesedes/barcelona.mp3'
+          }
+        ]
+      },{
+        name: 'Canal Blau Ràdio',
+        logo: 'https://fegp.cat/wp-content/uploads/images/radio-canal-blau.png',
+        epg_id: 'CanalBlauRadio.es',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'http://streaming.enantena.com:8000/canalblau128.mp3'
+          }
+        ]
+      },{
+        name: 'Radio Maricel',
+        logo: 'https://www.radiomaricel.cat/wp-content/uploads/2022/10/maricel_logo_a_03072019-scaled.jpg',
+        epg_id: 'RadioMaricel.es',
+        country: 'es',
+        options: [
+          {
+            format: 'mp3',
+            url: 'https://radioserver.radiomaricel.cat/proxy/radio_maricel?mp=/stream.mp3'
           }
         ]
       }
-      */
 ];
