@@ -2146,6 +2146,127 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://www.youtube.com/watch?v=g2lhYkUne7s'
           }
         ]
+      },{
+        name: '12 канал',
+        logo: 'https://i.imgur.com/OA9hm6e.png',
+        epg_id: 'Channel12.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://12channel.bonus-tv.ru/cdn/12channel/playlist.m3u8'
+          }
+        ]
+      },{
+        name: '24 Техно',
+        logo: 'https://i.imgur.com/1W6R14o.png',
+        epg_id: 'T24.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/24techno/index.m3u8'
+          }
+        ]
+      },{
+        name: '365 дней ТВ',
+        logo: 'https://i.imgur.com/NfnAiTR.png',
+        epg_id: '365daysTV.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/365day/index.m3u8'
+          }
+        ]
+      },{
+        name: 'HD Life',
+        logo: 'https://i.imgur.com/tKgmhxh.png',
+        epg_id: 'HDL.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/hdlife/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Da Vinci Russia',
+        logo: 'https://i.imgur.com/iBx7K1M.png',
+        epg_id: 'DaVinci.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/davinci/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Leomax 24',
+        logo: 'https://i.imgur.com/qU9ohQu.png',
+        epg_id: 'Leomax24.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tvshops.bonus-tv.ru/cdn/shop24/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'MMA-TV.com',
+        logo: 'https://i.imgur.com/QhdxNsB.png',
+        epg_id: 'MMATVcom.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/m1/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Music Box Russia',
+        logo: 'https://i.imgur.com/iWJdeD1.png',
+        epg_id: 'MusicBoxRussia.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://strm.yandex.ru/kal/rmbox/rmbox0.m3u8'
+          }
+        ]
+      },{
+        name: 'Астрахань.Ru Sport (Astrahan.Ru Sport)',
+        logo: 'https://i.imgur.com/BKaEtqL.png',
+        epg_id: 'AstrahanRuSport.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Астрахань.Ru TV (Astrahan.Ru TV)',
+        logo: 'https://i.imgur.com/w4ys6zm.png',
+        epg_id: 'AstrahanRuTV.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Белгород 24 (Belgorod 24)',
+        logo: 'https://i.imgur.com/EEirvyx.png',
+        epg_id: 'Belgorod24.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8'
+          }
+        ]
       }/*,{
         name: '',
         logo: '',
@@ -2153,8 +2274,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         country: '',
         options: [
           {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=8MQbkxsMhKQ'
+            format: 'm3u8',
+            url: 'http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8'
           }
         ]
       }*/
