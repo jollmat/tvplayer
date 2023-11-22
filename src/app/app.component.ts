@@ -90,8 +90,6 @@ export class AppComponent implements OnInit {
   doUpdateStreamUrl(channelName: string) {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
-    // this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
-    console.log(channel);
     if (channel?.epg_id) {
       this.history = this.history.filter((_id) => _id!==channel.epg_id);
       this.history.unshift(channel.epg_id);
@@ -103,14 +101,11 @@ export class AppComponent implements OnInit {
   selectChannelFromHistory(channelId: string) {
     const channel: TdtChannelDto | undefined = this.getChannel(channelId);
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
-    // this.streamUrl = (channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '';
     if (channel?.epg_id) {
       this.history = this.history.filter((_id) => _id!==channelId);
       this.history.unshift(channel.epg_id);
       this.history = this.history.slice(0,5);
       this.updateHistory(this.history);
-      //this.streamForm.patchValue({'country': ''});
-      //this.streamForm.patchValue({'channel': channel.name});
       this.doFilterByCountry(channel);
     }
   }
@@ -124,23 +119,21 @@ export class AppComponent implements OnInit {
   }
 
   doFilterByCountry(selectedChannel?: TdtChannelDto) {
-    console.log(this.streamForm.get('country')?.value);
     if (!this.streamForm.get('country')?.value || this.streamForm.get('country')?.value.length===0) {
       this.channelsFiltered = [...this.channels];
     } else {
       this.channelsFiltered = [...this.channels.filter((_channel) => _channel.country===this.streamForm.get('country')?.value )];
-      this.channelSelector.open();
+      if (!selectedChannel) {
+        //this.channelSelector.open();
+      }
     }
     if (!selectedChannel) {
       this.streamForm.patchValue({'channel': undefined});
     } else {
       this.streamForm.patchValue({'country': selectedChannel.country});
       this.streamForm.patchValue({'channel': selectedChannel.name});
-      // this.streamUrl = selectedChannel.options[0].url;
       this.streamUrl$.next(selectedChannel.options[0].url);
     }
-    
-    
   }
 
   recoverHistory() {

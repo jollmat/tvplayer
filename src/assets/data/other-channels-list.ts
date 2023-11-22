@@ -2147,7 +2147,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: '12 канал',
+        name: '12 канал (Channel12)',
         logo: 'https://i.imgur.com/OA9hm6e.png',
         epg_id: 'Channel12.ru',
         country: 'ru',
@@ -2158,7 +2158,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: '24 Техно',
+        name: '24 Техно (T24)',
         logo: 'https://i.imgur.com/1W6R14o.png',
         epg_id: 'T24.ru',
         country: 'ru',
@@ -2169,7 +2169,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: '365 дней ТВ',
+        name: '365 дней ТВ (365 Days TV)',
         logo: 'https://i.imgur.com/NfnAiTR.png',
         epg_id: '365daysTV.ru',
         country: 'ru',
@@ -2267,15 +2267,466 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8'
           }
         ]
+      },{
+        name: 'Бокс ТВ (Boks TV)',
+        logo: 'https://i.imgur.com/R1UjyfX.png',
+        epg_id: 'BoksTV.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/boxtv/index.m3u8'
+          }
+        ]
+      },{
+        name: 'БСТ (BST)',
+        logo: 'https://i.imgur.com/IDotHmQ.png',
+        epg_id: 'BST.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Дагестан (Dagestan)',
+        logo: 'https://i.imgur.com/jumkRvc.png',
+        epg_id: 'Dagestan.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://dagestan.mediacdn.ru/cdn/dagestan/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Детский мир (Detski Mir)',
+        logo: 'https://i.imgur.com/bBVEP0S.png',
+        epg_id: 'Detskimir.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/detskymir/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Диалоги о рыбалке (Dialogi o rybalke)',
+        logo: 'https://i.imgur.com/OuBtnGU.png',
+        epg_id: 'Dialogiorybalke.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://strm.yandex.ru/kal/dialogi/dialogi0.m3u8'
+          }
+        ]
+      },{
+        name: 'Дождь (TV Rain)',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tvrain.svg/512px-Tvrain.svg.png',
+        epg_id: 'TVRain.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://1527562093.rsc.cdn77.org/transcode/ngrp:ses_all/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Еврокино (Eurokino)',
+        logo: 'https://i.imgur.com/8LPtPf6.png',
+        epg_id: 'Evrokino.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/eurokino/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Звезда (Zvezda)',
+        logo: 'https://i.imgur.com/4PAcpfM.png',
+        epg_id: 'Zvezda.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Иллюзион+ (Illusions+)',
+        logo: 'https://i.imgur.com/9GvuHQ5.png',
+        epg_id: 'IllusionPlus.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/illuzionplus/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Индийское Кино (Indiyskoye Kino)',
+        logo: 'https://i.imgur.com/LL8GyCh.png',
+        epg_id: 'IndiyskoyeKino.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/indiyskoekino/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Конный Мир (Konniy Mir)',
+        logo: 'https://i.imgur.com/X6otbK0.png',
+        epg_id: 'KonniyMir.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cdn-01.bonus-tv.ru/konnyimir/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Кто есть кто (Kto est kto)',
+        logo: 'https://i.imgur.com/PmD17UQ.png',
+        epg_id: 'Ktoestkto.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tbs01-edge11.itdc.ge/ktoestkto/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Миллет (Millet)',
+        logo: 'https://i.imgur.com/hUjLRLy.png',
+        epg_id: 'Millet.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.trkmillet.ru/millet/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Мир 24 (Mir 24)',
+        logo: 'https://i.imgur.com/dj9c8Yd.png',
+        epg_id: 'Mir24.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Мир (Mir)',
+        logo: 'https://i.imgur.com/AqWaJT8.png',
+        epg_id: 'Mir.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://strm.yandex.ru/kal/mir24/mir0.m3u8'
+          }
+        ]
+      },{
+        name: 'Мир Белагорья (MirBelogorya)',
+        logo: 'https://mirbelogorya.ru/images/logo/Logo_Mir_Belogorya_purple_gradient.png',
+        epg_id: 'MirBelogorya.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8'
+          }
+        ]
+      },{
+        name: 'МТВ (Волгоград)',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MTV-2021.svg/512px-MTV-2021.svg.png',
+        epg_id: 'MTV.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Наша Сибирь (Nasha Sibir)',
+        logo: 'https://i.imgur.com/uXOz2d9.png',
+        epg_id: 'NashaSibir.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://strm.yandex.ru/kal/sibir/sibir0.m3u8'
+          }
+        ]
+      },{
+        name: 'Небеса ТВ7 (Nebesa TV7)',
+        logo: 'https://www.nebesatv7.com/wp-content/themes/tv7-theme/assets/img/logo_nebesa_short.png',
+        epg_id: 'NebesaTV7.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vod.tv7.fi/tv7-ru/tv7-ru.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Нижний Новгород 24 (Nizhniy Novgorod 24)',
+        logo: 'https://i.imgur.com/ZWgPVIC.png',
+        epg_id: 'NizhniyNovgorod24.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live-vestinn.cdnvideo.ru/vestinn/nn24-khl/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Ника ТВ (Nika TV)',
+        logo: 'https://i.imgur.com/dccsFAu.png',
+        epg_id: 'NikaTV.ru',
+        country: 'ru',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: '20 Minutes TV',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/20_Minutes_TV_IDF_logo_%282023%29.png/320px-20_Minutes_TV_IDF_logo_%282023%29.png',
+        epg_id: '20MinutesTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://lives.digiteka.com/stream/86d3e867-a272-496b-8412-f59aa0104771/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Alpe d\'Huez TV',
+        logo: 'https://i.imgur.com/090tCQ5.png',
+        epg_id: 'AlpedHuezTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8'
+          }
+        ]
+      },{
+        name: 'BIP TV',
+        logo: 'https://i.imgur.com/YQjm4U5.png',
+        epg_id: 'BIPTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://biptv.tv/live/biptvstream_orig/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Caillou',
+        logo: 'https://i.imgur.com/RgKaoe4.png',
+        epg_id: 'Caillou.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://dhx-caillou-1-es.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Canal 32',
+        logo: 'https://i.imgur.com/lAsE6kN.png',
+        epg_id: 'Canal32.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://livevideo.vedge.infomaniak.com/livecast/ik:canal32/manifest.m3u8'
+          }
+        ]
+      },{
+        name: 'Central TV',
+        logo: 'https://i.imgur.com/2DU22BN.png',
+        epg_id: 'CentralTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Chérie 25',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Logo_Ch%C3%A9rie_25.svg/512px-Logo_Ch%C3%A9rie_25.svg.png',
+        epg_id: 'Cherie25.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cherie25.nrjaudio.fm/hls/live/2038375/c25/FHD.m3u8'
+          }
+        ]
+      },{
+        name: 'ILTV',
+        logo: 'https://i.imgur.com/fVhrJHK.png',
+        epg_id: 'ILTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.creacast.com/iltv/smil:iltv.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'KTO',
+        logo: 'https://i.imgur.com/EY6TsdV.png',
+        epg_id: 'KTO.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8'
+          }
+        ]
+      },{
+        name: 'MDL',
+        logo: 'https://i.imgur.com/REN30bx.png',
+        epg_id: 'MDL.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Museum TV',
+        logo: 'https://i.imgur.com/WbjURLo.png',
+        epg_id: 'MuseumTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live2.creacast.com/museum-france/smil:museum-france.smil/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Nancy Web TV',
+        logo: 'https://i.imgur.com/a1OO1t6.png',
+        epg_id: 'NancyWebTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8'
+          }
+        ]
+      },{
+        name: 'NRJ 12',
+        logo: 'https://i.imgur.com/Lv66Gcv.png',
+        epg_id: 'NRJ12.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://nrj12.nrjaudio.fm/hls/live/2038374/nrj_12/master.m3u8'
+          }
+        ]
+      },{
+        name: 'P2M TV',
+        logo: 'https://i.imgur.com/TrecSeG.png',
+        epg_id: 'P2MTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vdo2.pro-fhi.net:3207/stream/play.m3u8'
+          }
+        ]
+      },{
+        name: 'Rakuten TV Films Action',
+        logo: 'https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/03804a72867cda7ba7b5',
+        epg_id: 'RakutenTVActionMoviesFrance.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rakuten-actionmovies-7-eu.rakuten.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Rakuten TV Top Films',
+        logo: 'https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/03804a72867cda7ba7b5',
+        epg_id: 'RakutenTVTopMoviesFrance.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rakuten-topfree-7-eu.rakuten.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Vià Matélé',
+        logo: 'https://i.imgur.com/XVCV9rj.png',
+        epg_id: 'ViaMatele.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5dd226f8f01e8.streamlock.net/via-matele-live/matelelive_1080/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Vià MoselleTV',
+        logo: 'https://i.imgur.com/hrm5QnU.png',
+        epg_id: 'MoselleTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.creacast.com/mirabelletv/smil:mirabelletv.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Vià Télé Paese',
+        logo: 'https://i.imgur.com/TLZsAKK.png',
+        epg_id: 'viaTelePaese.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://srv.webtvmanager.fr:3118/live/viatelepaeselive.m3u8'
+          }
+        ]
+      },{
+        name: 'Vosges Télévision',
+        logo: 'https://i.imgur.com/7y7ancc.png',
+        epg_id: 'VosgesTV.fr',
+        country: 'fr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8'
+          }
+        ]
       }/*,{
         name: '',
         logo: '',
         epg_id: '',
-        country: '',
+        country: 'fr',
         options: [
           {
             format: 'm3u8',
-            url: 'http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8'
+            url: 'https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8'
           }
         ]
       }*/

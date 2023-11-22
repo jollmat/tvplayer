@@ -20,6 +20,19 @@ small {
     &.num_channels { color: #999; }
 }
 
+.wrap-125 {
+    width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wrap-200 {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 ::ng-deep {
 
@@ -29,9 +42,7 @@ small {
         border-radius: 0px;
         border: 1px solid darkslategrey;
         min-height: 36px;
-        align-items: center;
-
-        
+        align-items: center;       
     }
 
     .ng-select.ng-select-opened>.ng-select-container {

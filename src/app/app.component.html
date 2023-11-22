@@ -19,7 +19,7 @@
                         <ng-select
                             class="mb-2"
                             [items]="countries"
-                            (ngModelChange)="doFilterByCountry()"
+                            (ngModelChange)="doFilterByCountry(undefined)"
                             (clear)="doFilterByCountry()"
                             [hideSelected]="true"
                             formControlName="country"
@@ -65,7 +65,7 @@
                                 <div class="d-flex align-items-center justify-content-between w-100">
                                     <div class="d-flex align-items-center">
                                         <img [src]="item.logo" class="logo me-2">
-                                        {{item.name}}
+                                        <div [ngClass]="{'wrap-200':isMobile}">{{item.name}}</div>
                                     </div>
                                     <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
                                 </div>
@@ -74,7 +74,7 @@
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
                                         <img [src]="item.logo" class="logo me-2">
-                                        {{item.name}}
+                                        <div [ngClass]="{'wrap-200':isMobile}">{{item.name}}</div>
                                     </div>
                                     <div>
                                         <small class="me-2 country_name">{{item.country}}</small>
