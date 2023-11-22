@@ -9199,23 +9199,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Arirang TV Korea",
-                "web": "https://www.arirang.com/live",
-                "logo": "https://graph.facebook.com/arirangtv/picture?width=200&height=200",
-                "epg_id": "Arirang.TV",
-                "country": 'jp',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "KBS World Korea",
                 "web": "http://world.kbs.co.kr",
                 "logo": "https://graph.facebook.com/KBSWORLD/picture?width=200&height=200",
