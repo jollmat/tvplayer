@@ -2146,7 +2146,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://www.youtube.com/watch?v=g2lhYkUne7s'
           }
         ]
-      },{
+      }/*,{
         name: '',
         logo: '',
         epg_id: '',
@@ -2157,5 +2157,5 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://www.youtube.com/watch?v=8MQbkxsMhKQ'
           }
         ]
-      }
+      }*/
 ];

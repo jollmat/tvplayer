@@ -8,6 +8,7 @@ import { VgHlsDirective } from '@videogular/ngx-videogular/streaming';
 import { COUNTRIES } from 'src/assets/data/countries';
 import { MediaTypesEnum } from './model/enum/media-types.enum';
 import { BehaviorSubject } from 'rxjs';
+import { NgSelectComponent } from '@ng-select/ng-select';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,8 @@ import { BehaviorSubject } from 'rxjs';
 export class AppComponent implements OnInit {
 
   @ViewChild(VgHlsDirective) vgHls!: VgHlsDirective;
+
+  @ViewChild('channelSelector') channelSelector!: NgSelectComponent;
 
   supportedFormats: string[] = ['m3u8', 'mp3', 'youtube'];
   MediaTypesEnum = MediaTypesEnum;
@@ -47,7 +50,7 @@ export class AppComponent implements OnInit {
 
   streamForm!: FormGroup;
 
-  countries: { name: string, iso2: string }[] = [];
+  countries: { name: string, iso2: string, numChannels: number }[] = [];
 
   history: string[] = [];
 
@@ -122,10 +125,11 @@ export class AppComponent implements OnInit {
 
   doFilterByCountry(selectedChannel?: TdtChannelDto) {
     console.log(this.streamForm.get('country')?.value);
-    if (this.streamForm.get('country')?.value.length===0) {
+    if (!this.streamForm.get('country')?.value || this.streamForm.get('country')?.value.length===0) {
       this.channelsFiltered = [...this.channels];
     } else {
-      this.channelsFiltered = [...this.channels.filter((_channel) => _channel.country===this.streamForm.get('country')?.value )]
+      this.channelsFiltered = [...this.channels.filter((_channel) => _channel.country===this.streamForm.get('country')?.value )];
+      this.channelSelector.open();
     }
     if (!selectedChannel) {
       this.streamForm.patchValue({'channel': undefined});
@@ -204,15 +208,19 @@ export class AppComponent implements OnInit {
 
       this.channels.forEach((_channel) => {
         if (_channel.country && _channel.country?.length>0 && !this.countries.find((_c) => _c.iso2===_channel.country )) {
-          this.countries.push({
-            iso2: _channel.country,
-            name: this.getCountryName(_channel.country)
-          });
+          const countryName: string = this.getCountryName(_channel.country);
+          if (countryName?.length>0) {
+            this.countries.push({
+              iso2: _channel.country,
+              name: this.getCountryName(_channel.country),
+              numChannels: this.channels.filter((_c) => _c.country===_channel.country ).length
+            });
+          }
         }
       });
 
       this.countries.sort((a,b) => a.name<=b.name ? -1 : 1 );
-      this.countries.unshift({ name: 'Tots els països', iso2: '' });
+      this.countries.unshift({ name: 'All countries', iso2: '', numChannels: this.channels.length });
 
       this.channels.sort((a,b) => {
         return a.name<b.name ? -1 : 1;
@@ -220,6 +228,7 @@ export class AppComponent implements OnInit {
 
       this.channelsFiltered = [...this.channels];
 
+      console.log('countries', this.countries);
       console.log('channels', this.channels);
 
       // History

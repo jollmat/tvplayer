@@ -1,67 +1,89 @@
 <div class="w-100 h-100" style="height: calc(100vh) !important;overflow: auto;">
-    <div class="d-flex flex-column align-items-center w-100 h-100 px-1" [ngClass]="{'justify-content-start': true}">
-        <div class="mt-2 mb-3" 
+    <div class="d-flex align-items-center w-100 h-100 px-1" 
+        [ngClass]="{
+            'justify-content-start': true,
+            'flex-column': true
+        }">
+        <div class="d-flex mt-2 mb-3" 
             [ngClass]="{
                 'w-75': !(isMobile && portrait), 
-                'w-100': isMobile && portrait
+                'w-100': isMobile && portrait                
             }">
             <ng-container *ngIf="channels.length>0 && streamForm">
-                <form [formGroup]="streamForm">
-
-                    <ng-select
-                        class="mb-2"
-                        [items]="countries"
-                        (ngModelChange)="doFilterByCountry()"
-                        formControlName="country"
-                        [clearable]="true"
-                        name="type"
-                        bindValue="iso2"
-                        bindLabel="name"
-                        placeholder="Search a country">
-                        <ng-template ng-label-tmp let-item="item">
-                            <div class="d-flex align-items-center justify-content-start w-100">
-                                <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
-                                {{item.name}}
-                            </div>
-                        </ng-template>
-                        <ng-template ng-option-tmp let-item="item" let-index="index">
-                            <div class="d-flex align-items-center justify-content-start w-100">
-                                <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
-                                {{item.name}}
-                            </div>
-                        </ng-template>
-                    </ng-select>
-
-                    <ng-select
-                        [items]="channelsFiltered"
-                        (ngModelChange)="doUpdateStreamUrl($event)"
-                        formControlName="channel"
-                        name="type"
-                        bindValue="name"
-                        bindLabel="name"
-                        placeholder="Search a channel">
-                        <ng-template ng-label-tmp let-item="item">
-                            <div class="d-flex align-items-center justify-content-between w-100">
-                                <div class="d-flex align-items-center">
-                                    <img [src]="item.logo" class="logo me-2">
-                                    {{item.name}}
+                <form [formGroup]="streamForm" class="w-100 d-flex" [ngClass]="{'d-flex': !isMobile}">
+                    <div 
+                        [ngClass]="{
+                            'w-50': !isMobile,
+                            'w-100': isMobile 
+                        }">
+                        <ng-select
+                            class="mb-2"
+                            [items]="countries"
+                            (ngModelChange)="doFilterByCountry()"
+                            (clear)="doFilterByCountry()"
+                            [hideSelected]="true"
+                            formControlName="country"
+                            [clearable]="true"
+                            name="type"
+                            bindValue="iso2"
+                            bindLabel="name"
+                            placeholder="Search a country">
+                            <ng-template ng-label-tmp let-item="item">
+                                <div class="d-flex align-items-center justify-content-start w-100">
+                                    <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
+                                    {{item.name}} <small class="num_channels ms-2">({{item.numChannels}} channels)</small>
                                 </div>
-                                <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
-                            </div>
-                        </ng-template>
-                        <ng-template ng-option-tmp let-item="item" let-index="index">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <img [src]="item.logo" class="logo me-2">
-                                    {{item.name}}
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-index="index">
+                                <div class="d-flex align-items-center justify-content-between w-100">
+                                    <div>
+                                        <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
+                                        {{item.name}}
+                                    </div>
+                                     <small class="num_channels ms-2">({{item.numChannels}} channels)</small>
                                 </div>
-                                <div>
-                                    <small class="me-2 country_name">{{item.country}}</small>
+                            </ng-template>
+                        </ng-select>
+                    </div>
+                    <div 
+                        [ngClass]="{
+                            'w-50': !isMobile,
+                            'w-100': isMobile,
+                            'ps-1': !isMobile
+                        }">
+                        <ng-select
+                            #channelSelector
+                            [items]="channelsFiltered"
+                            (ngModelChange)="doUpdateStreamUrl($event)"
+                            [hideSelected]="true"
+                            formControlName="channel"
+                            name="type"
+                            bindValue="name"
+                            bindLabel="name"
+                            placeholder="Search a channel">
+                            <ng-template ng-label-tmp let-item="item">
+                                <div class="d-flex align-items-center justify-content-between w-100">
+                                    <div class="d-flex align-items-center">
+                                        <img [src]="item.logo" class="logo me-2">
+                                        {{item.name}}
+                                    </div>
                                     <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
                                 </div>
-                            </div>
-                        </ng-template>
-                    </ng-select>
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-index="index">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img [src]="item.logo" class="logo me-2">
+                                        {{item.name}}
+                                    </div>
+                                    <div>
+                                        <small class="me-2 country_name">{{item.country}}</small>
+                                        <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ng-select>
+                    </div>
                     
                 </form>
             </ng-container>
@@ -142,7 +164,7 @@
 </div>
 
 <ng-template #historyTemplate>
-    <div class="d-flex justify-content-between" 
+    <div class="d-flex justify-content-around" 
         [ngClass]="{
             'w-15': !(isMobile && portrait), 
             'w-100': isMobile && portrait,
