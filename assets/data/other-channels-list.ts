@@ -2861,15 +2861,312 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://edge.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8'
           }
         ]
+      },{
+        name: 'Misión Vida TV',
+        logo: 'https://i.imgur.com/8JgBuTm.png',
+        epg_id: 'MisionVidaTV.uy',
+        country: 'uy',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://59825a54e4454.streamlock.net:8443/jorge854/jorge854/playlist.m3u8'
+          }
+        ]
+      },{
+        name: '13 Siam Thai',
+        logo: 'https://i.imgur.com/FvEp1S2.png',
+        epg_id: '13SiamThai.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.x2.co.th/live/13livetv-th.m3u8'
+          }
+        ]
+      },{
+        name: '@TV',
+        logo: 'https://i.imgur.com/svjrvw0.png',
+        epg_id: 'AtTV.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://49.0.87.24:1936/HDAttv/Attv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'ALTV',
+        logo: 'https://i.imgur.com/MCbCSWv.png',
+        epg_id: 'ALTV.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8'
+          }
+        ]
+      },{
+        name: 'ASTV News 1',
+        logo: 'https://i.imgur.com/NNxzCPk.png',
+        epg_id: 'News1.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://news1.live14.com/stream/news1.m3u8'
+          }
+        ]
+      },{
+        name: 'Channel 5',
+        logo: 'https://i.imgur.com/wOIaqg7.png',
+        epg_id: 'Channel5.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Channel 7',
+        logo: 'https://i.imgur.com/tehHdZN.png',
+        epg_id: 'Channel7.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://streaming-hwc.ch7.com/livech7hd/HD_1080p.m3u8'
+          }
+        ]
+      },{
+        name: 'Chomyut Channel',
+        logo: 'https://i.imgur.com/Zb9Yfn2.png',
+        epg_id: 'ChomyutChannel.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://49.0.87.24:1936/HDJomyut/Jomyut/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 1',
+        logo: 'https://i.imgur.com/nLzdGeX.png',
+        epg_id: 'DLTV1.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv01.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 2',
+        logo: 'https://i.imgur.com/lDBSTfE.png',
+        epg_id: 'DLTV2.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv02.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 3',
+        logo: 'https://i.imgur.com/wmrxerm.png',
+        epg_id: 'DLTV3.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv03.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 4',
+        logo: 'https://i.imgur.com/WkpoQhU.png',
+        epg_id: 'DLTV4.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv04.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 5',
+        logo: 'https://i.imgur.com/J1E89jX.png',
+        epg_id: 'DLTV5.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv05.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 6',
+        logo: 'https://i.imgur.com/qeIHWC0.png',
+        epg_id: 'DLTV6.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv06.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 7',
+        logo: 'https://i.imgur.com/OjYwMe3.png',
+        epg_id: 'DLTV7.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv07.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 8',
+        logo: 'https://i.imgur.com/xIwn5Ha.png',
+        epg_id: 'DLTV8.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv08.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 9',
+        logo: 'https://i.imgur.com/yPeSAry.png',
+        epg_id: 'DLTV9.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv09.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 10',
+        logo: 'https://i.imgur.com/TgN81Zr.png',
+        epg_id: 'DLTV10.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv10.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 11',
+        logo: 'https://i.imgur.com/hFk2b5s.png',
+        epg_id: 'DLTV11.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv11.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 12',
+        logo: 'https://i.imgur.com/ITt6lY7.png',
+        epg_id: 'DLTV12.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv12.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 13',
+        logo: 'https://i.imgur.com/asB5w3v.png',
+        epg_id: 'DLTV13.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv13.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 14',
+        logo: 'https://i.imgur.com/HOjZRNS.png',
+        epg_id: 'DLTV14.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv14.m3u8'
+          }
+        ]
+      },{
+        name: 'DLTV 15',
+        logo: 'https://i.imgur.com/onJi2b6.png',
+        epg_id: 'DLTV15.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-live.dltv.ac.th/dltv15.m3u8'
+          }
+        ]
+      },{
+        name: 'ETV',
+        logo: 'https://i.imgur.com/Dsgpo4I.png',
+        epg_id: 'ETV.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://150.95.66.20:1935/live/livestream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Good Idea TV',
+        logo: 'https://i.imgur.com/ETgVyTy.png',
+        epg_id: 'GoodIdeaTV.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://stream1.ai-net.net:1935/gtv1/_definst_/smil:gtv.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Mangorn',
+        logo: 'https://i.imgur.com/Mmtx65h.png',
+        epg_id: 'Mangorn.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://49.0.87.24:1936/HDDragon/Dragon/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'NBT 11 Central',
+        logo: 'https://i.imgur.com/8hYQIxS.png',
+        epg_id: 'NBT11Central.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-edge-ott.prd.go.th/live_vlc/smil:01f1-8b4b-971e-aa35-d5fa.smil/playlist.m3u8?DVR'
+          }
+        ]
       }/*,{
         name: '',
         logo: '',
         epg_id: '',
-        country: 'ch',
+        country: 'th',
         options: [
           {
             format: 'm3u8',
-            url: 'https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/ch/M.m3u8'
+            url: 'https://cdn6.goprimetime.info/feed/202306140918/chonehd/index.m3u8'
           }
         ]
       }*/
