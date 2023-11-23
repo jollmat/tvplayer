@@ -56,6 +56,8 @@ export class AppComponent implements OnInit {
 
   testURL: string = '';
 
+  isLocalhost: boolean = false;
+
   constructor(
     private streamService: StreamService,
     private deviceDetector: DeviceDetectorService
@@ -91,13 +93,16 @@ export class AppComponent implements OnInit {
 
   doTestURL() {
     const testUrl: string = this.testURL;
-    if (testUrl?.length>0 && testUrl.toLowerCase().endsWith('.m3u8')) {
+    if (
+      testUrl?.length>0 && 
+      (testUrl.toLowerCase().endsWith('.m3u8') || testUrl.startsWith('https://www.youtube.com/watch?v='))) {
       this.streamUrl$.next(testUrl);
     }
   }
 
   doUpdateStreamUrl(channelName: string) {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
+    console.log('doUpdateStreamUrl('+channelName+')', channel);
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     if (channel?.epg_id) {
       this.history = this.history.filter((_id) => _id!==channel.epg_id);
@@ -164,6 +169,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.isLocalhost = window.location.hostname === 'localhost';
+
     this.isMobile = this.deviceDetector.isMobile();
     this.isTablet = this.deviceDetector.isTablet();
     this.isWindows = this.deviceDetector.os === 'Windows';
@@ -206,7 +213,15 @@ export class AppComponent implements OnInit {
         });
       });
 
-      this.channels = this.channels.concat(OTHER_CHANNELS_LIST);
+      let otherChannels: TdtChannelDto[] = OTHER_CHANNELS_LIST;
+      otherChannels = otherChannels.map((_channel) => {
+        if (!_channel.epg_id || _channel.epg_id.trim().length===0) {
+          _channel.epg_id = _channel.name.replace(/\s/g, '_') + '.' + (_channel.country && _channel.country.length>0 ? _channel.country : _channel.options[0].format);
+        }
+        return _channel;
+      });
+
+      this.channels = this.channels.concat(otherChannels);
 
       this.channels.forEach((_channel) => {
 

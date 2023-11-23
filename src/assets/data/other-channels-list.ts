@@ -3642,16 +3642,38 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8'
           }
         ]
-      }/*,{
-        name: '',
+      },{
+        name: 'Fireplace 4k with Crackling Fire Sounds',
         logo: '',
         epg_id: '',
-        country: 'at',
+        country: '',
         options: [
           {
-            format: 'm3u8',
-            url: 'https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8'
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=O9palxot6BU'
           }
         ]
-      }*/
+      },{
+        name: 'Christmas Fireplace Music',
+        logo: '',
+        epg_id: '',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=c0MrSpTWc8o'
+          }
+        ]
+      },{
+        name: 'Live Webcam around the World',
+        logo: '',
+        epg_id: '',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=8KGXSjtS5pk'
+          }
+        ]
+      }
 ];
