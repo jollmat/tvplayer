@@ -200,6 +200,13 @@ export class AppComponent implements OnInit {
       this.channels = this.channels.concat(OTHER_CHANNELS_LIST);
 
       this.channels.forEach((_channel) => {
+
+        // Set no image
+        if (!_channel.logo || _channel.logo.length===0) {
+          _channel.logo = '/assets/img/img-not-found.jpg';
+        }
+
+        // Get countries
         if (_channel.country && _channel.country?.length>0 && !this.countries.find((_c) => _c.iso2===_channel.country )) {
           const countryName: string = this.getCountryName(_channel.country);
           if (countryName?.length>0) {

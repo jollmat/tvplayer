@@ -3158,16 +3158,368 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://cdn-edge-ott.prd.go.th/live_vlc/smil:01f1-8b4b-971e-aa35-d5fa.smil/playlist.m3u8?DVR'
           }
         ]
-      }/*,{
-        name: '',
-        logo: '',
-        epg_id: '',
+      },{
+        name: 'Suwannabhumi Channel',
+        logo: 'https://i.imgur.com/6AGKP0A.png',
+        epg_id: 'SuwannabhumiChannel.th',
         country: 'th',
         options: [
           {
             format: 'm3u8',
-            url: 'https://cdn6.goprimetime.info/feed/202306140918/chonehd/index.m3u8'
+            url: 'https://live.bangkokstream.com:19360/suwannabhumi/suwannabhumi.m3u8'
           }
         ]
-      }*/
+      },{
+        name: 'Top News',
+        logo: 'https://i.imgur.com/tRFnV9M.png',
+        epg_id: 'TopNews.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.topnews.co.th/hls/topnews_a_720.m3u8'
+          }
+        ]
+      },{
+        name: 'White Channel',
+        logo: 'https://i.imgur.com/Chx0AV9.png',
+        epg_id: 'WhiteChannel.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://symc-cdn.violin.co.th:1935/tndedge/whitechannel/chunklist.m3u8'
+          }
+        ]
+      },{
+        name: 'Zabb Channel',
+        logo: 'https://i.imgur.com/4TMtUjW.png',
+        epg_id: 'ZabbChannel.th',
+        country: 'th',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://vdo.plathong.net/flash7057/flash7057/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'A2 CNN',
+        logo: 'https://i.imgur.com/TgO3Lzi.png',
+        epg_id: 'A2CNN.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tv.a2news.com/live/smil:a2cnnweb.stream.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'ALPO',
+        logo: 'https://i.imgur.com/Pr4ixiA.png',
+        epg_id: 'AlpoTV.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://5d00db0e0fcd5.streamlock.net/7236/7236/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'CNA',
+        logo: 'https://codeit.al/wp-content/uploads/2020/08/cna.png',
+        epg_id: 'CNA.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live1.mediadesk.al/cnatvlive.m3u8'
+          }
+        ]
+      },{
+        name: 'Kanali 7',
+        logo: 'https://i.imgur.com/rL2v9pM.png',
+        epg_id: 'Kanali7.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://fe.tring.al/delta/105/out/u/1200_1.m3u8'
+          }
+        ]
+      },{
+        name: 'News 24 Albania',
+        logo: 'https://i.imgur.com/PWGMnzW.jpg',
+        epg_id: 'News24.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://tv.balkanweb.com:8081/news24/livestream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Ora News',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ora_News_%28Albania%29.svg/512px-Ora_News_%28Albania%29.svg.png',
+        epg_id: 'OraNews.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live1.mediadesk.al/oranews.m3u8'
+          }
+        ]
+      },{
+        name: 'Panorama TV',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Panorama_logo.svg/512px-Panorama_logo.svg.png',
+        epg_id: 'PanoramaTV.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://198.244.188.94/panorama/livestream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Report TV',
+        logo: 'https://i.imgur.com/C9lM1KP.png',
+        epg_id: 'ReportTV.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://deb10stream.duckdns.org/hls/stream.m3u8'
+          }
+        ]
+      },{
+        name: 'Tropoja TV',
+        logo: 'https://i.imgur.com/D3hNOVS.png',
+        epg_id: 'TropojaTelevizion.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.prostream.al/al/smil:tropojatv.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'TV 7 Albania',
+        logo: 'https://i.imgur.com/k9WqPLZ.png',
+        epg_id: 'TV7Albania.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://media.az-mediaserver.com:1935/7064/7064/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'TV Apollon',
+        logo: 'https://i.imgur.com/gUz2AjM.png',
+        epg_id: 'TVApollon.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live.apollon.tv/Apollon-WEB/video.m3u8?token=tnt3u76re30d2'
+          }
+        ]
+      },{
+        name: 'Vizion Plus',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Vizion_Plus.svg/512px-Vizion_Plus.svg.png',
+        epg_id: 'VizionPlus.al',
+        country: 'al',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://fe.tring.al/delta/105/out/u/rdghfhsfhfshs.m3u8'
+          }
+        ]
+      },{
+        name: '2GB Sydney',
+        logo: 'https://i.ibb.co/jwM8DFG/2GB-1.png',
+        epg_id: '2GB.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://2gblive.akamaized.net/hls/live/2033805/2GB/index.m3u8'
+          }
+        ]
+      },{
+        name: '3AW Melbourne',
+        logo: 'https://i.imgur.com/Z4MdB0S.png',
+        epg_id: '3AW.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://3awlive.akamaized.net/hls/live/2032295/3AW/index.m3u8'
+          }
+        ]
+      },{
+        name: '6PR Perth',
+        logo: 'https://i.imgur.com/Q9iCxg1.png',
+        epg_id: '6PR.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://6prlive.akamaized.net/hls/live/2033806/6PR/index.m3u8'
+          }
+        ]
+      },{
+        name: 'AUS Tamil TV',
+        logo: 'https://i.imgur.com/7xcDrJw.png',
+        epg_id: 'AUSTamilTV.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://bk7l2pn7dx53-hls-live.5centscdn.com/austamil/fe01ce2a7fbac8fafaed7c982a04e229.sdp/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Ausbiz TV',
+        logo: 'https://i.imgur.com/8vGGdB0.png',
+        epg_id: 'AusbizTV.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ausbiztv-ausbiz-1-nz.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Channel 44',
+        logo: 'https://i.imgur.com/P2wUGh9.png',
+        epg_id: 'Channel44.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://d1k6kax80wecy5.cloudfront.net/WFqZJc/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Folk Klub',
+        logo: 'https://i.imgur.com/Seq7Od7.png',
+        epg_id: 'FolkKlubTV.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://tv1.intv.mk:1935/live2/folkklub/index.m3u8'
+          }
+        ]
+      },{
+        name: 'INTV Australia',
+        logo: 'https://i.imgur.com/1nJl0Pv.png',
+        epg_id: 'INTVAustralia.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://tv1.intv.mk:1935/live/intv/index.m3u8'
+          }
+        ]
+      },{
+        name: 'Racing.com',
+        logo: 'https://i.imgur.com/Q55HX1O.png',
+        epg_id: 'Racingcom.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://racingvic-i.akamaized.net/hls/live/598695/racingvic/index1500.m3u8'
+          }
+        ]
+      },{
+        name: 'Sky News Extra 1',
+        logo: 'https://i.imgur.com/ZsPb8nL.png',
+        epg_id: 'SkyNewsExtra1.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Sky News Extra 2',
+        logo: 'https://i.imgur.com/ZsPb8nL.png',
+        epg_id: 'SkyNewsExtra2.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Sky News Extra 3',
+        logo: 'https://i.imgur.com/ZsPb8nL.png',
+        epg_id: 'SkyNewsExtra3.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Tastemade Australia',
+        logo: '',
+        epg_id: 'TastemadeAustralia.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tmint-aus-samsungau.amagi.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Ticker News',
+        logo: 'https://i.imgur.com/z7M0QxV.png',
+        epg_id: 'tickerNews.au',
+        country: 'au',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01486-tickernews-tickernewsweb-ono/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Balkan Radio Salzburg',
+        logo: 'https://i.imgur.com/UDyxgXf.png',
+        epg_id: 'BalkanRadioSalzburg.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://channel.streams.ovh:1936/balkanradiosalzburgtv/balkanradiosalzburgtv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Dorf TV',
+        logo: 'https://i.imgur.com/L0q19NR.png',
+        epg_id: 'DorfTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream.openplayout.org/hls/dorftv/live.m3u8'
+          }
+        ]
+      },{
+        name: '',
+        logo: '',
+        epg_id: '',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://stream.openplayout.org/hls/dorftv/live.m3u8'
+          }
+        ]
+      }
 ];
