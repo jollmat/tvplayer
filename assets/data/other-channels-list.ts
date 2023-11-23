@@ -2718,15 +2718,158 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8'
           }
         ]
+      },{
+        name: 'Arise News',
+        logo: 'https://i.imgur.com/B5IXKIb.png',
+        epg_id: 'AriseNews.uk',
+        country: 'gb',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://liveedge-arisenews.visioncdn.com/live-hls/arisenews/arisenews/arisenews_web/master.m3u8'
+          }
+        ]
+      },{
+        name: 'DiscoverFilm',
+        logo: 'https://i.imgur.com/oMnpsQ5.png',
+        epg_id: 'DiscoverFilm.uk',
+        country: 'gb',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://discoverfilm-discoverfilm-1-nl.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Alpenland TV',
+        logo: 'https://i.imgur.com/NPB6ciB.png',
+        epg_id: 'AlpenlandTV.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge14.vedge.infomaniak.com/livecast/ik:alpen-wellelivestream/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Canal 9 (en français)',
+        logo: 'https://i.imgur.com/TNciMh2.png',
+        epg_id: 'Canal9.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:livehd/master.m3u8'
+          }
+        ]
+      },{
+        name: 'Canal Alpha Jura',
+        logo: 'https://i.imgur.com/eQ8xHK9.jpg',
+        epg_id: 'CanalAlphaJura.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://canalalphaju.vedge.infomaniak.com/livecast/ik:canalalphaju/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Canal Alpha Neuchatel',
+        logo: 'https://i.imgur.com/eQ8xHK9.jpg',
+        epg_id: 'CanalAlphaNeuchatel.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:canalalpha/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Carac 1',
+        logo: 'https://www.bejart.ch/wp-content/uploads//carac-400x304.png',
+        epg_id: 'Carac1.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:event/.m3u8'
+          }
+        ]
+      },{
+        name: 'Carac 2',
+        logo: 'https://www.bejart.ch/wp-content/uploads//carac-400x304.png',
+        epg_id: 'Carac2.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:onefmmd/.m3u8'
+          }
+        ]
+      },{
+        name: 'Carac 3',
+        logo: 'https://www.bejart.ch/wp-content/uploads//carac-400x304.png',
+        epg_id: 'Carac3.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:lfmmd/.m3u8'
+          }
+        ]
+      },{
+        name: 'Carac 4',
+        logo: 'https://www.bejart.ch/wp-content/uploads//carac-400x304.png',
+        epg_id: 'Carac4.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:compack_media_1/.m3u8'
+          }
+        ]
+      },{
+        name: 'Couleur 3',
+        logo: 'https://i.imgur.com/VOIwYYd.png',
+        epg_id: 'Couleur3.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rtsc3video.akamaized.net/hls/live/2042837/c3video/3/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Die Neue Zeit',
+        logo: 'https://cdn.hd-plus.de/senderlogos/bright-cropped/24464-1.png',
+        epg_id: 'DieNeueZeitTV.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://bild-und-ton.stream/die-neue-zeit-tv-live/smil:dnz-de.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Kanal 9 (auf Deutsch)',
+        logo: 'https://i.imgur.com/TNciMh2.png',
+        epg_id: 'Kanal9.ch',
+        country: 'ch',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://edge.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8'
+          }
+        ]
       }/*,{
         name: '',
         logo: '',
         epg_id: '',
-        country: 'fr',
+        country: 'ch',
         options: [
           {
             format: 'm3u8',
-            url: 'https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8'
+            url: 'https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/ch/M.m3u8'
           }
         ]
       }*/
