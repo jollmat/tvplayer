@@ -54,6 +54,8 @@ export class AppComponent implements OnInit {
 
   history: string[] = [];
 
+  testURL: string = '';
+
   constructor(
     private streamService: StreamService,
     private deviceDetector: DeviceDetectorService
@@ -85,6 +87,13 @@ export class AppComponent implements OnInit {
         this.streamUrl = undefined;
       }
     });
+  }
+
+  doTestURL() {
+    const testUrl: string = this.testURL;
+    if (testUrl?.length>0 && testUrl.toLowerCase().endsWith('.m3u8')) {
+      this.streamUrl$.next(testUrl);
+    }
   }
 
   doUpdateStreamUrl(channelName: string) {

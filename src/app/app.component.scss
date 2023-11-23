@@ -33,6 +33,43 @@ small {
     text-overflow: ellipsis;
 }
 
+#testURL {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0px;
+    border: 1px solid darkslategrey;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: darkslategrey !important;
+}
+
+::placeholder {
+    color: darkgray;
+    opacity: 1; /* Firefox */
+    font-weight: 100;
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: darkgray;
+    font-weight: 100;
+}
+
 
 ::ng-deep {
 

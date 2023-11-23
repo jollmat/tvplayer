@@ -10,7 +10,7 @@ import {VgStreamingModule} from '@videogular/ngx-videogular/streaming';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OWL_DATE_TIME_LOCALE, OwlDateTimeModule, OwlNativeDateTimeModule } from '@danielmoncada/angular-datetime-picker';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgSelectModule} from "@ng-select/ng-select";
@@ -37,6 +37,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     VgStreamingModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
     ReactiveFormsModule,
     OwlDateTimeModule,
     OwlNativeDateTimeModule,

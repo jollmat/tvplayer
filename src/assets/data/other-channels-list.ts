@@ -3511,6 +3511,138 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
+        name: 'FS1 Salzburg',
+        logo: 'https://i.imgur.com/74gMaPK.png',
+        epg_id: 'FS1Salzburg.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://stream.fs1.tv:8080/hls/webstream.m3u8'
+          }
+        ]
+      },{
+        name: 'Hitradio Ö3',
+        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hitradio_%C3%963.svg/512px-Hitradio_%C3%963.svg.png',
+        epg_id: 'HitradioO3.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://studiocam-oe3.mdn.ors.at/out/u/studiocam_oe3/q6a/manifest_1.m3u8'
+          }
+        ]
+      },{
+        name: 'Krone.TV',
+        logo: '',
+        epg_id: 'KroneTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8'
+          }
+        ]
+      },{
+        name: 'Kronehit',
+        logo: 'Kronehit.at',
+        epg_id: 'https://i.imgur.com/dQJQv1X.png',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Kurier TV',
+        logo: 'https://i.imgur.com/c53h8cz.png',
+        epg_id: 'KurierTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://schautv.mdn.ors.at/out/u/schautv-nodrm.m3u8'
+          }
+        ]
+      },{
+        name: 'Ländle TV',
+        logo: 'https://i.imgur.com/omLVQ4r.png',
+        epg_id: 'LandleTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://streaming13.huberwebmedia.at/LiveApp/streams/985585225397790082777809.m3u8'
+          }
+        ]
+      },{
+        name: 'oe24 TV',
+        logo: '',
+        epg_id: 'Oe24TV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Okto TV',
+        logo: '',
+        epg_id: 'OktoTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'RTV',
+        logo: 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/rtvat.png',
+        epg_id: 'RTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://iptv.rtv-ooe.at/stream.m3u8'
+          }
+        ]
+      },{
+        name: 'Schladming-Dachstein TV',
+        logo: 'https://i.ibb.co/VjnzhMM/Logo-Schl-Dachstein-TV-HP-JPG.jpg',
+        epg_id: 'SchladmingDachsteinTV.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://m317.video-stream-hosting.de/gzSoftware-live/_definst_/smil:livestream.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Uppera Balkan',
+        logo: 'https://i.imgur.com/eqcmi5G.png',
+        epg_id: 'UpperaBalkan.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'http://89.187.168.245:8080/live/sUPPERchannel2/index.m3u8'
+          }
+        ]
+      },{
+        name: 'W24',
+        logo: 'https://i.imgur.com/FpVNrxk.png',
+        epg_id: 'W24.at',
+        country: 'at',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8'
+          }
+        ]
+      }/*,{
         name: '',
         logo: '',
         epg_id: '',
@@ -3518,8 +3650,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         options: [
           {
             format: 'm3u8',
-            url: 'https://stream.openplayout.org/hls/dorftv/live.m3u8'
+            url: 'https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8'
           }
         ]
-      }
+      }*/
 ];
