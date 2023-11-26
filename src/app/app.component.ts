@@ -227,7 +227,8 @@ export class AppComponent implements OnInit {
 
         // Set no image
         if (!_channel.logo || _channel.logo.length===0) {
-          _channel.logo = '/assets/img/img-not-found.jpg';
+          console.log(_channel);
+          _channel.logo = './assets/img/img-not-found.jpg';
         }
 
         // Get countries

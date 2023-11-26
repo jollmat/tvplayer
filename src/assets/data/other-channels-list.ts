@@ -167,17 +167,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'El Nueve',
-        logo: 'https://i.imgur.com/EtcVSm4.png',
-        epg_id: 'ElNueve.ar',
-        country: 'ar',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://octubre-live.cdn.vustreams.com/live/channel09/live.isml/live.m3u8'
-          }
-        ]
-      },{
         name: 'ABC News Australia',
         logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ABC_News_Channel.svg/640px-ABC_News_Channel.svg.png',
         epg_id: 'ABCNews.au',
