@@ -8335,25 +8335,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Telef\u00e9 Noticias Argentina",
-                "web": "https://telefenoticias.com.ar",
-                "logo": "https://graph.facebook.com/telefe/picture?width=200&height=200",
-                "epg_id": "Telefe.TV",
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "La Naci\u00f3n Argentina",
                 "web": "https://lnmas.lanacion.com.ar",
                 "logo": "https://graph.facebook.com/lanacion/picture?width=200&height=200",
@@ -8382,25 +8363,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "youtube",
                     "url": "https://www.youtube.com/watch?v=zcWXboTnous",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "TV P\u00fablica Argentina",
-                "web": "http://www.tvpublica.com.ar",
-                "logo": "https://graph.facebook.com/TVPublica/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=RHG_uCpqbX0",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9020,25 +8982,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "W3U",
                   "EXTA"
-                ]
-              },
-              {
-                "name": "Record News Brasil",
-                "web": "https://noticias.r7.com/record-news",
-                "logo": "https://graph.facebook.com/recordnews/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'br',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=bSzRle57VBk",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
                 ]
               },
               {
@@ -9715,7 +9658,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Int. Otros",
             "channels": [
               {
-                "name": "ABC Australia",
+                "name": "ABC News Australia",
                 "web": "https://iview.abc.net.au/show/abc-live-stream",
                 "logo": "https://graph.facebook.com/abcnews.au/picture?width=200&height=200",
                 "epg_id": null,
@@ -10628,30 +10571,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "First Music Channel Bielorrusia",
-                "web": "http://www.1muz.com",
-                "logo": "https://graph.facebook.com/onemusicchannel/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'by',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://hz1.teleport.cc/HLS/HD.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "http://hz1.teleport.cc/HLS/SD.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Otto FM Italia",
                 "web": "http://ottofm.com/otto-fm-tv-limpronta-digitale-degli-anni-ottanta/",
                 "logo": "https://graph.facebook.com/ottofm/picture?width=200&height=200",
@@ -11167,23 +11086,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   "EXTA",
                   "NONAV"
                 ]
-              },
-              {
-                "name": "Music Top Argentina",
-                "web": "https://www.diario26.com/musictop/",
-                "logo": "https://graph.facebook.com/Musictop.Ok/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Portal Foxmix Chile",

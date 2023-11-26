@@ -112,17 +112,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'TN Todo Noticias',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TN_todo_noticias_logo.svg/200px-TN_todo_noticias_logo.svg.png',
-        epg_id: 'TodoNoticias.ar',
-        country: 'ar',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://live-01-01-tn.vodgc.net/TN24/index.m3u8'
-          }
-        ]
-      },{
         name: 'Tec TV',
         logo: 'https://i.imgur.com/EGCq1wc.png',
         epg_id: 'TECTV.ar',
@@ -167,28 +156,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'El Nueve',
-        logo: 'https://i.imgur.com/EtcVSm4.png',
-        epg_id: 'ElNueve.ar',
-        country: 'ar',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://octubre-live.cdn.vustreams.com/live/channel09/live.isml/live.m3u8'
-          }
-        ]
-      },{
-        name: 'ABC News Australia',
-        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ABC_News_Channel.svg/640px-ABC_News_Channel.svg.png',
-        epg_id: 'ABCNews.au',
-        country: 'au',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index.m3u8'
-          }
-        ]
-      },{
         name: 'OE24',
         logo: 'https://i.imgur.com/8UTkcPn.png',
         epg_id: 'Oe24TV.at',
@@ -197,28 +164,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/chunklist_b1900000.m3u8'
-          }
-        ]
-      },{
-        name: 'W24',
-        logo: 'https://i.imgur.com/PGb4wYw.png',
-        epg_id: 'W24.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8'
-          }
-        ]
-      },{
-        name: 'RTV',
-        logo: 'https://i.imgur.com/oD7GQxT.pn',
-        epg_id: 'RTV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://iptv.rtv-ooe.at/stream.m3u8'
           }
         ]
       },{
@@ -3534,24 +3479,13 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ]
       },{
         name: 'Krone.TV',
-        logo: '',
+        logo: 'https://kel.at/wp-content/uploads/2020/08/krone.png',
         epg_id: 'KroneTV.at',
         country: 'at',
         options: [
           {
             format: 'm3u8',
             url: 'https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8'
-          }
-        ]
-      },{
-        name: 'Kronehit',
-        logo: 'Kronehit.at',
-        epg_id: 'https://i.imgur.com/dQJQv1X.png',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8'
           }
         ]
       },{
@@ -3589,7 +3523,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ]
       },{
         name: 'Okto TV',
-        logo: '',
+        logo: 'https://www.europadialog.eu/wp-content/uploads/2015/02/OKTO_Logo-weiss_MailChimp.png',
         epg_id: 'OktoTV.at',
         country: 'at',
         options: [
@@ -3600,7 +3534,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ]
       },{
         name: 'RTV',
-        logo: 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/rtvat.png',
+        logo: '',
         epg_id: 'RTV.at',
         country: 'at',
         options: [
