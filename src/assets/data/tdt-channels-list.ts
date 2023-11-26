@@ -520,57 +520,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Arag\u00f3n Deporte",
-                "web": "https://www.cartv.es/aragondeporte/directo",
-                "logo": "https://graph.facebook.com/aragondeporte/picture?width=200&height=200",
-                "epg_id": "AragonD.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv-streaming.aranova.es/hls/live/adeportes_deporte5.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv.streaming.aranova.es/hls/live/adeportes_deporte1.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv.streaming.aranova.es/hls/live/adeportes_deporte2.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv.streaming.aranova.es/hls/live/adeportes_deporte3.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv.streaming.aranova.es/hls/live/adeportes_deporte4.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv.streaming.aranova.es/hls/live/adeportes_deporte6.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Vinx TV Asturias",
                 "web": "https://vinxtv.es/en-directo/",
                 "logo": "https://graph.facebook.com/VinxTV/picture?width=200&height=200",
@@ -586,24 +535,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "youtube",
                     "url": "https://www.youtube.com/channel/UCJDjXO0kv_ZOtLntIO0d4bw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "IB3 Esports",
-                "web": "https://ib3.org/directe",
-                "logo": "https://graph.facebook.com/EsportsIB3/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCOmWJETLyAlFrHkmccOQ-3w/live",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -662,100 +593,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Real Sociedad TV",
-                "web": "https://www.realsociedad.eus/es/noticias",
-                "logo": "https://graph.facebook.com/RealSociedadFutbol/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCfeqewEKWQ8CXY8OiXoMxxw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "RCD Espanyol de Barcelona TV",
-                "web": "https://www.rcdespanyol.com",
-                "logo": "https://graph.facebook.com/RCDEspanyol/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UClywhnD01yUU5kO6OgAeHUQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "C\u00e1diz CF TV",
-                "web": "https://tv.cadizcf.com/directo",
-                "logo": "https://graph.facebook.com/cadizclubdefutbol/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": []
-              },
-              {
-                "name": "RCD Mallorca TV",
-                "web": "https://www.rcdmallorca.es/contenidos/videos",
-                "logo": "https://graph.facebook.com/RCDMallorcaOficial/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/c/OficialRCDMallorca/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "UD Las Palmas TV",
-                "web": "https://playud.udlaspalmas.es/es/udtv-en-directo",
-                "logo": "https://graph.facebook.com/udlaspalmasoficial/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdn307.fractalmedia.es/live317/hls/cudtv/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "AS",
-                "web": "https://as.com",
-                "logo": "https://graph.facebook.com/diarioas/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/diarioas/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "El 10 del Bar\u00e7a",
                 "web": "https://xn--el10delbara-v9a.com",
                 "logo": "https://graph.facebook.com/El10delBarsa/picture?width=200&height=200",
@@ -763,43 +600,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC4eDUzl7Ik9TlkltsqCXvDA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "OKLIGA TV",
-                "web": "https://okliga.tv",
-                "logo": "https://yt3.ggpht.com/ytc/AKedOLRCpkRZNcBfZLGvM1SO_Qf77p_xtv6OnU26aa23Vw=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC6RLLzXQJWy1yCAEysy1Wgw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "FedHielo TV",
-                "web": "https://www.rfedh.es/fedhielo-tv/",
-                "logo": "https://graph.facebook.com/fedhielo/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCuys7LUNfFcwwToSG3yMocw/live",
+                    "url": "https://www.youtube.com/watch?v=2YbxNZBOues",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -919,42 +720,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Pocoy\u00f3",
-                "web": "https://www.pocoyo.com",
-                "logo": "https://graph.facebook.com/pocoyo/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCnB5W_ZJgiDFnklejRGADxw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Warner Bros Kids",
-                "web": "https://www.wbkidsgo.com",
-                "logo": "https://graph.facebook.com/WarnerBrosPicturesEspana/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCB82v6uKp1S-I-DVoL2neDA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Cartoon Network Latino",
                 "web": "https://cnapp.cartoonnetworkla.com/now/freelive1",
                 "logo": "https://graph.facebook.com/cartoonnetwork.spain/picture?width=200&height=200",
@@ -985,7 +750,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCP-Ng5SXUEt0VE-TXqRdL6g/live",
+                    "url": "https://www.youtube.com/watch?v=_i3JW8ZI7eM",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -1003,7 +768,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCHicabXz9rUMWLcdMqBtbxQ/live",
+                    "url": "https://www.youtube.com/watch?v=Thrl_DXz1os",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -1021,25 +786,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCC9R-cxQeOpPhq2lAru0V8w/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Paka Paka",
-                "web": "http://www.pakapaka.gob.ar/envivo/",
-                "logo": "https://graph.facebook.com/canalpakapaka/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCVVNYxncuD4EfHpKDlPIYcQ/live",
+                    "url": "https://www.youtube.com/watch?v=xeR3ASwhyCo",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -1098,78 +845,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://ztnr.rtve.es/ztnr/6108721.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "+tdp",
-                "web": "https://www.rtve.es/play/videos/directo/deportes/",
-                "logo": "https://graph.facebook.com/teledeporteRTVE/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712432.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712453.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712402.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712407.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712431.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712410.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712426.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712411.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6712456.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -1518,38 +1193,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "La Moncloa (Presidente)",
-                "web": "https://www.lamoncloa.gob.es/multimedia/videos/presidente/Paginas/directo.aspx",
-                "logo": "https://graph.facebook.com/PalaciodelaMoncloa/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdnswitch-mediahub.overon.es/stream/stream.m3u8?key=R6w5wbcxW3dLF9aNOGEsHuoNhqfSJoiRWNDWLLfNslI&pwd=QheEdHkaeHFGDHJgIwzUDoqcVjjFMef8TMGuGvkMets&stream=y3-IxQxNk4XjlfJDtBjIh7tfO628d9gbkd010uKioms&output=ginkIjHWeyffMLRZNMVovht3RnH_feedjshkMm7sr14&channel=D1tXjvcs_5NeEEMxP6mrmSggh3Uyu3kE5jyqGlgCZ4A&protocol=4CMm-Q0epGZ0SHQGeELoqqA2gfzFVCFwoiACYszyPM4&type=3pIgQ1TALsxZg7Zf0kZLkA4InWPfKONROAImuoufxKg",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "La Moncloa (Ministros)",
-                "web": "https://www.lamoncloa.gob.es/multimedia/videos/consejoministros/Paginas/directo.aspx",
-                "logo": "https://graph.facebook.com/PalaciodelaMoncloa/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdnswitch-mediahub.overon.es/stream/stream.m3u8?key=R6w5wbcxW3dLF9aNOGEsHuoNhqfSJoiRWNDWLLfNslI&pwd=QheEdHkaeHFGDHJgIwzUDoqcVjjFMef8TMGuGvkMets&stream=o0RCNMRf-BPdBiuDSId7vbxANj4YFVpbXkxNkFKm35s&output=z3mwepuDBMOnja63VsgAcCGwmmOPD-I5yFYOiyCvBcc&channel=FBDoImE2NP77XpNbdycjnwCkI0YjxLeqTKr8QGV9bAI&protocol=4CMm-Q0epGZ0SHQGeELoqqA2gfzFVCFwoiACYszyPM4&type=3pIgQ1TALsxZg7Zf0kZLkA4InWPfKONROAImuoufxKg",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Radio Nacional",
                 "web": "https://www.rtve.es/play/radio/",
                 "logo": "https://graph.facebook.com/radionacionalrne/picture?width=200&height=200",
@@ -1596,409 +1239,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Onda Cero",
-                "web": "https://www.ondacero.es",
-                "logo": "https://graph.facebook.com/ondacero/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live-estudio.ondacero.es/estudio_oc-pull/video/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Del 40 al 1",
-                "web": "https://del40al1.los40.com",
-                "logo": "https://graph.facebook.com/del40al1/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://prisaradio-live.prisasd.com/live-content/directo40al1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "COPE",
-                "web": "https://www.cope.es/directos/video",
-                "logo": "https://graph.facebook.com/COPE/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://hls-directo01-cope-stream.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              }
-            ]
-          },
-          {
-            "name": "Streaming",
-            "channels": [
-              {
-                "name": "Ibai",
-                "web": "https://www.twitch.tv/ibai",
-                "logo": "https://yt3.googleusercontent.com/pk-jnYnbdNBUKEtBdc3buYbCM0Xu0_TDcVfYON1qAez3CVPbA-FWGyCbF4BaRF1T9MqxjG-mugk=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=ibai&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@IbaiLlanos",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Auronplay",
-                "web": "https://www.twitch.tv/auronplay",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJUPEKR92FAWkKk7XniD6J5Zdy5b-BH0u02P5LDAMw=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=auronplay&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@AuronPlay",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "TheGrefg",
-                "web": "https://www.twitch.tv/thegrefg",
-                "logo": "https://yt3.googleusercontent.com/j4G0Bz4qEl9T-pWVlngT_ZYrqclnlODWSxoK6eEjGYARiqAY4lsOwSW6Z9HilJ4lntnxhYyKm10=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=thegrefg&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@TheGrefg",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Rubius",
-                "web": "https://www.twitch.tv/rubius",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJUK-iBPKMsn6Ql-CW7tnirEnh6GWrmRLpTG9OluyWA=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=Rubius&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@elrubiusOMG",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Illojuan",
-                "web": "https://www.twitch.tv/illojuan",
-                "logo": "https://yt3.googleusercontent.com/0yT-Bb_JksIE12twsg726ffdrGbRfuoy_rMrgSOqoNJsY7wvm0pcYQfeDbNFTOrwwRY3T9_98g8=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=Illojuan&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@IlloJuan_",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Juansguarnizo",
-                "web": "https://www.twitch.tv/juansguarnizo",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJXIHF_Oc2KsUnn62RutoClTgrWxcXXHfG6zwCnYjA=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=juansguarnizo&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@JuanSGuarnizo",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Elxokas",
-                "web": "https://www.twitch.tv/elxokas",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJWZJXM8TB4P4cdyZdxF5B4tQFHCyzBZwOoxEwdM1A=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=elxokas&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@elxokas",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Alexby11",
-                "web": "https://www.twitch.tv/alexby11",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJVmSVuqk1f2gI_owzIOxe7uJ4I49SfVesqU6BOE=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=alexby11&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@xAlexBY11",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "IamCristinini",
-                "web": "https://www.twitch.tv/iamcristinini",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJW0v2dloqL3xrStQYfxTrMUH_fD9IJhJ3SdpAzgFw=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=iamcristinini&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@Cristinini",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "biyin_",
-                "web": "https://www.twitch.tv/biyin_",
-                "logo": "https://yt3.googleusercontent.com/pdxNr8Ltx2cJJko6yxANY_XCF6p02e7OYLS7M6CP_MvCguEHr4mpg16rZvWN2JL-cNbM0hlS-w=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=biyin_&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@biyin2447",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "LOLITOFDEZ",
-                "web": "https://www.twitch.tv/lolitofdez",
-                "logo": "https://yt3.googleusercontent.com/gTMGbmYVeZc63YLSZBhdeKiOl3xNHR-pvBnErmiW5kdqFeQ9n25N_zi6Ej_QeH4JFPL2WuBHzQ=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=lolitofdez&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@LOLiTOFDEZ",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Shadoune666",
-                "web": "https://www.twitch.tv/shadoune666",
-                "logo": "https://yt3.googleusercontent.com/lwsuAhWzsYboI7jLitc5m5KoghscFy39zn0N9UdFhbwoqRN_hzCXcXxmgXx6gww6bGqYIHsc=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=shadoune666&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@Shadoune666",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Kings League",
-                "web": "https://www.twitch.tv/kingsleague",
-                "logo": "https://graph.facebook.com/kingsleague.pro/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=kingsleague&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCtwslQPB_xJfaFuZv0OETNw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Gerard Romero",
-                "web": "https://www.twitch.tv/gerardromero",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJWYz4vMGrfae-n-0qgGieuUNdwgDypMKpxoCCCfoA=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=gerardromero&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@gerardromero1700",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               }
             ]
           },
@@ -2150,22 +1390,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "M95 Marbella",
-                "web": "http://m95tv.es",
-                "logo": "https://graph.facebook.com/m95tvmarbella/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://limited2.todostreaming.es/live/m95-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Huelva TV",
                 "web": "http://huelvatv.com/directo/",
                 "logo": "https://graph.facebook.com/Huelvatv/picture?width=200&height=200",
@@ -2230,54 +1454,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "NONAV"
                 ]
-              },
-              {
-                "name": "C\u00f3rdoba TV",
-                "web": "https://www.cordoba-tv.com",
-                "logo": "https://graph.facebook.com/cordobatvonline/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8020/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "101TV Sevilla",
-                "web": "https://www.101tvsevilla.es/directo/",
-                "logo": "https://graph.facebook.com/101TVSevilla/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming101tv.es/hls/websevilla.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Costa Noroeste TV",
-                "web": "http://www.costanoroestetv.net",
-                "logo": "https://graph.facebook.com/Costanoroestetv/picture?width=200&height=200",
-                "epg_id": "CostaNO.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Teleonuba",
@@ -2399,22 +1575,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "TV Centro Andaluc\u00eda",
-                "web": "https://tvcentroandalucia.com",
-                "logo": "https://graph.facebook.com/TVCentroAndalucia/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5fa5de1a545ae.streamlock.net/8052/8052/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Canal San Roque",
                 "web": "https://tv.multimediasanroque.com/videos/12315-san-roque-directo",
                 "logo": "https://yt3.googleusercontent.com/tV-0_Cp9qnamXNVbcuRx3F_9UvUt1s3_ieQmV3RRaF50bHpZIlyLZn4iHYmL32lsz1Zv_ZmFHA=s200",
@@ -2517,24 +1677,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Axarqu\u00eda TV",
-                "web": "https://www.youtube.com/channel/UC0N3U1saaQQWMt2rRPbU0DQ",
-                "logo": "https://graph.facebook.com/AxarquiaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC0N3U1saaQQWMt2rRPbU0DQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "PTV Linares",
                 "web": "https://www.ptvtelecom.com/canales/linares.html",
                 "logo": "https://graph.facebook.com/tvlinares/picture?width=200&height=200",
@@ -2587,24 +1729,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "TG7",
-                "web": "https://www.granada.org/inet/tg7.nsf/byclave/endirecto",
-                "logo": "https://graph.facebook.com/TG7tv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC4svqJ0E5nUlvjo_fuzvjzA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "M\u00e1laga 24h TV",
                 "web": "http://malaga24h.com",
                 "logo": "https://graph.facebook.com/Malaga24hTv/picture?width=200&height=200",
@@ -2620,24 +1744,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ],
                 "extra_info": [
                   "EMB"
-                ]
-              },
-              {
-                "name": "Torrevisi\u00f3n",
-                "web": "https://torremolinostv.com/tv-en-directo/",
-                "logo": "https://graph.facebook.com/torremolinostv/picture?width=200&height=200",
-                "epg_id": "Torrevision.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://api.new.livestream.com/accounts/2614936/events/10365077/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
                 ]
               },
               {
@@ -2716,7 +1822,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCx5_sA41mFHsZio4umTH3Qw/live",
+                    "url": "https://www.youtube.com/watch?v=G_suTKIcImc",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -2830,22 +1936,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "9 la Loma TV",
-                "web": "https://9laloma.tv/directo/",
-                "logo": "https://graph.facebook.com/9laloma/picture?width=200&height=200",
-                "epg_id": "9LaLoma.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://9laloma.tv/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Vivam\u00f3vil TV",
                 "web": "https://vivamovil.es/vivamoviltv",
                 "logo": "https://pbs.twimg.com/profile_images/1401880197578870789/_8jMKpKE_200x200.jpg",
@@ -2860,24 +1950,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "TV Carmona",
-                "web": "https://www.televisioncarmona.com",
-                "logo": "https://graph.facebook.com/126011457417096/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=sO_POlKFZxI",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "Canal M\u00e1laga",
@@ -2944,22 +2016,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "NONAV"
                 ]
-              },
-              {
-                "name": "TeleGilena",
-                "web": "http://www.telegilena.com/directo/",
-                "logo": "https://graph.facebook.com/tele.gilena/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/Directo1/Directo1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Fuengirola TV",
@@ -3046,58 +2102,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "8 TV C\u00e1diz",
-                "web": "https://www.8cadiz.es/directo/",
-                "logo": "https://graph.facebook.com/8tvcadiz/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8289/smil:8289.smil/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Cancionero TV",
-                "web": "http://www.cancionero.es/tv/",
-                "logo": "https://www.cancionero.es/portal/images/imagesweb/LogoTV_Trans.png",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://89.140.229.5/hls1/cancionero.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Manilva TV",
-                "web": "https://www.rtvmanilva.com/tvdirecto/",
-                "logo": "https://graph.facebook.com/rtvmanilva/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://stream.castr.com/627a72d21914543be01c1720/live_e2ae1780dc2a11eca660b7b17b7952a5/tracks-v1a1/mono.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "REFC1"
-                ],
-                "referer": "https://player.castr.com/"
-              },
-              {
                 "name": "Play Andaluc\u00eda TV",
                 "web": "https://live.playandalucia.tv/",
                 "logo": "https://i0.wp.com/www.audiovisual451.com/wp-content/uploads/2023/03/AndaluciaTV_logo-y-web-1.jpg?resize=250%2C200",
@@ -3116,22 +2120,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "La F\u00e1brica TV",
-                "web": "https://app.lafabricatv.es/canal-en-directo",
-                "logo": "https://graph.facebook.com/LaFabricaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://mejorestrucos.com:5443/LiveApp/streams/854077030689510682594068.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "PTV Almer\u00eda",
                 "web": "https://ptvtelecom.com/canales/almeria.html",
                 "logo": "https://yt3.googleusercontent.com/xpmtGgfJkNyRXmRDBCaI1UwgnNESJbc0edjazTUsNNdGPq_NvYz6quCiuJMwx-uF9pTWx5hcqQ=s200",
@@ -3148,22 +2136,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "NONAV"
                 ]
-              },
-              {
-                "name": "Onda C\u00e1diz 24h",
-                "web": "https://ondacadiz.es/index.php/canal-24-horas",
-                "logo": "https://graph.facebook.com/ondacadiz/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ondacadiztv.es:30443/octv/24h/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Parlamento de Andaluc\u00eda",
@@ -3224,40 +2196,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Arag\u00f3n Noticias",
-                "web": "https://www.cartv.es/aragonnoticias/directo",
-                "logo": "https://graph.facebook.com/AragonNoticias/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cartv-streaming.aranova.es/hls/live/anoticias_canal3.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Calamocha TV",
-                "web": "http://www.mijilocatv.es",
-                "logo": "https://graph.facebook.com/CalamochaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCl03PpRWoRjkiK5VT4uDKgA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Canal 25 Barbastro TV",
                 "web": "http://www.canal25tv.es/index.php/ct-menu-item-5",
                 "logo": "https://graph.facebook.com/tvbarbastro/picture?width=200&height=200",
@@ -3272,24 +2210,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Antena Arag\u00f3n",
-                "web": "https://diarioaragones.com",
-                "logo": "https://yt3.ggpht.com/ytc/AL5GRJWC1oJVC1hgcGBN1OHnroVVoe_pcgLvGJWvOA8aGQ=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCk4-yZ_grYVb2N4ZcAnCApA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               }
             ]
           },
@@ -3305,24 +2225,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "youtube",
                     "url": "https://www.youtube.com/watch?v=6LlZXt8nk4s",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "GranCanariaTV.com",
-                "web": "https://www.grancanariatv.com",
-                "logo": "https://graph.facebook.com/GranCanariaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCDdnBGLNmifjQqHjAA_DUrA/live",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -3429,22 +2331,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "RTV Mog\u00e1n",
-                "web": "https://www.mogan.es/45-radio-television-de-mogan/3382-ver-television-mogan",
-                "logo": "https://graph.facebook.com/radiotelevisionmogan/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8028/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Lancelot TV",
                 "web": "https://www.lancelot.tv/directo/",
                 "logo": "https://graph.facebook.com/288850935035196/picture?width=200&height=200",
@@ -3479,46 +2365,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Canal 4 Telde TV",
-                "web": "https://canal4tvtelde.com/web/en-directo",
-                "logo": "https://graph.facebook.com/canal4tvtelde/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://stream.castr.com/63516516d5d3d0036518a3cd/live_73194be0508a11edb25de99cc96ba4dc/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "REFC1"
-                ],
-                "referer": "https://player.castr.com/"
-              },
-              {
-                "name": "Noroeste TV",
-                "web": "http://www.noroestetv.es",
-                "logo": "https://graph.facebook.com/noroestetvladesiempre/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://stream.castr.com/5f64ae0f634f513c4b37d23e/live_5dfc3d60e44d11edaa0a918d6859a7b8/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "REFC1"
-                ],
-                "referer": "https://player.castr.com/"
-              },
-              {
                 "name": "Fuerteventura TV",
                 "web": "https://fuerteventuratelevision.com",
                 "logo": "https://yt3.ggpht.com/NGDcQX5v1Px2BBFD5G4aHYNrCyDWoEkRF5Gpsyfz-b_9swNpy6s-Z7-Glu-9WDr7JpP_MsCB=s200",
@@ -3527,22 +2373,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Onda Gran Canaria TV",
-                "web": "https://www.ondagrancanaria.com/estaticas/tv-en-directo.html",
-                "logo": "https://graph.facebook.com/OndaGranCanaria/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live.cloudhostservers.com:3473/stream/play.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -3588,42 +2418,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Cantabria",
             "channels": [
               {
-                "name": "Cantabria TV",
-                "web": "http://www.cantabriatv.es",
-                "logo": "https://graph.facebook.com/vegavisiontvcantabria/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC0sXB5ZoIoXWvqdizegaifg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "11 TV Laredo",
-                "web": "https://www.11tv.es",
-                "logo": "https://graph.facebook.com/11TvCantabria/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCuPHaVBv7cd-wWx3ztpALQw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Popular TV Cantabria",
                 "web": "https://populartvcantabria.com/en-directo/",
                 "logo": "https://graph.facebook.com/populartvcantabria/picture?width=200&height=200",
@@ -3664,22 +2458,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "TV Hell\u00edn",
-                "web": "https://www.televisionhellin.com/tv-en-directo/",
-                "logo": "https://graph.facebook.com/tvhellin/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://hellin-hls-live.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Guada TV Media",
                 "web": "http://www.guadatv.tv/streaming/",
                 "logo": "https://graph.facebook.com/GuadaTV.TV/picture?width=200&height=200",
@@ -3717,24 +2495,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Im\u00e1s TV",
-                "web": "http://imastv.es/ver-imastv-en-directo",
-                "logo": "https://graph.facebook.com/television.imas/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://secure3.todostreaming.es/live/imastv-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
                 "name": "CanalImagen Almansa",
                 "web": "https://zonacliente.almatelecom.es/videos/canalimagen",
                 "logo": "https://graph.facebook.com/TvAlmansa/picture?width=200&height=200",
@@ -3746,47 +2506,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   "REF"
                 ],
                 "referer": "https://zonacliente.almatelecom.es/videos/canalimagen"
-              },
-              {
-                "name": "Alcarria TV",
-                "web": "https://www.alcarria.tv/ver-en-directo/",
-                "logo": "https://graph.facebook.com/AlcarriaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cls.alcarria.tv/live/alcarriatv-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "http://217.182.77.27/live/alcarriatv-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Ciudad Real TV",
-                "web": "https://www.ciudadreal.es/servicios-municipales/cr-tv.html",
-                "logo": "https://graph.facebook.com/1765736930414544/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCNxFBlUBOaI3iQW37T3hFww/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "Canal 4 Mancha Centro",
@@ -3803,25 +2522,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "TeleToledo",
-                "web": "https://www.teletoledo.es",
-                "logo": "https://graph.facebook.com/Teletoledo/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/teletoledo/teletoledo.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
               },
               {
                 "name": "Canal 2000",
@@ -3963,24 +2663,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "W3U",
                   "EXTA"
-                ]
-              },
-              {
-                "name": "987 Live",
-                "web": "https://987tv.es",
-                "logo": "https://pbs.twimg.com/profile_images/1496162819590479879/4sM-HkAD_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC41bdA6AiwEb34_S7KcMHOw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
                 ]
               },
               {
@@ -4325,22 +3007,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Canal 4 Televisi\u00f3",
-                "web": "https://www.grup4.com/?page_id=14505",
-                "logo": "https://graph.facebook.com/GRUP4COM/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://limited35.todostreaming.es/live/mitjans-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Canal Terres de l'Ebre",
                 "web": "https://canalte.cat/en-directe/",
                 "logo": "https://graph.facebook.com/canal.terresdelebre/picture?width=200&height=200",
@@ -4357,42 +3023,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Canal Reus TV",
-                "web": "http://www.canalreustv.cat",
-                "logo": "https://graph.facebook.com/canalreustelevisio/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/canalreustvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "El 9 TV",
-                "web": "https://el9nou.cat/el9tv/",
-                "logo": "https://graph.facebook.com/el9nou/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta360.cdnmedia.tv/9tvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
                 "name": "Empord\u00e0 TV",
                 "web": "https://www.empordadigital.cat/directe/",
                 "logo": "https://graph.facebook.com/empordatv/picture?width=200&height=200",
@@ -4407,24 +3037,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "BDN",
-                "web": "https://www.bdncom.cat/directe/",
-                "logo": "https://pbs.twimg.com/profile_images/1705169494958624768/uSn1eFVm_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/badalonatvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
               },
               {
                 "name": "TAC 12",
@@ -4459,102 +3071,12 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Canal 21 Ebre",
-                "web": "https://www.canal21ebre.com/en-directe/",
-                "logo": "https://graph.facebook.com/Canal21Ebre/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/canal21ebrelive/smil:canal21.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "Lleida TV",
-                "web": "https://lleidatv.alacarta.cat/endirecte",
-                "logo": "https://graph.facebook.com/LleidaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/lleidatvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "TV Costa Brava",
-                "web": "https://www.tvcostabrava.com/canals-online/televisio-costa-brava-online",
-                "logo": "https://graph.facebook.com/tvcostabrava/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/costabravatvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
                 "name": "La Xarxa",
                 "web": "https://laxarxames.cat/directe",
                 "logo": "https://graph.facebook.com/laxarxa/picture?width=200&height=200",
                 "epg_id": null,
                 "options": [],
                 "extra_info": []
-              },
-              {
-                "name": "Olot TV",
-                "web": "https://www.olot.tv/olot-televisio-en-directe/",
-                "logo": "https://graph.facebook.com/olotelevisio/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/olottvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "Canal Blau",
-                "web": "https://canalblau.alacarta.cat/televisio-en-directe",
-                "logo": "https://graph.facebook.com/CanalBlau/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/blautvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
               },
               {
                 "name": "Canal Taronja Central",
@@ -4565,60 +3087,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://ingest1-video.streaming-pro.com/canaltaronja/central/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "TV L'Hospitalet",
-                "web": "https://lhdigital.cat/en-directe/",
-                "logo": "https://graph.facebook.com/lhdigital/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/tvhospitaletlive/smil:tvhospitalet.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "TV del Bergued\u00e0",
-                "web": "https://tvbergueda.alacarta.cat",
-                "logo": "https://graph.facebook.com/televisiodelbergueda/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/berguedatvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "RTV El Vendrell",
-                "web": "https://www.rtvelvendrell.cat/directes/televisio/",
-                "logo": "https://graph.facebook.com/rtvelvendrell/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/tvvendrelllive/smil:directe.smil/playlist.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -4647,58 +3115,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Cugat M\u00e8dia",
-                "web": "https://www.cugat.cat/tv/directe",
-                "logo": "https://graph.facebook.com/cugatmedia/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/cugatcatlive/smil:rtmp01.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "VOTV",
-                "web": "https://votv.cat/votv-en-directe/",
-                "logo": "https://graph.facebook.com/votv.cat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "RTV Ulldecona",
-                "web": "https://www.uradio.cat",
-                "logo": "https://graph.facebook.com/radioulldecona/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCONoC_N5uhMiorZWmDQ2XRg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Canal Taronja Osona i Moian\u00e9s",
                 "web": "https://www.canaltaronja.cat/osona/canal-taronja-en-directe/",
                 "logo": "https://graph.facebook.com/TaronjaTV/picture?width=200&height=200",
@@ -4713,42 +3129,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "tvmatar\u00f3",
-                "web": "https://mataroaudiovisual.alacarta.cat/directe",
-                "logo": "https://graph.facebook.com/tvmataro/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/m1tvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "RTV Vilafranca",
-                "web": "https://www.rtvvilafranca.cat/penedes-televisio-en-directe/",
-                "logo": "https://graph.facebook.com/rtvvilafranca/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/rtvvilafrancalive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
               },
               {
                 "name": "TV de Girona",
@@ -4783,24 +3163,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "RTV Cardedeu",
-                "web": "https://www.rtvc.cat/tele/",
-                "logo": "https://graph.facebook.com/TelevisioCardedeu/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/tvcardedeulive/smil:rtmp01.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
                 "name": "Canal 10 Empord\u00e0",
                 "web": "http://www.canal10.cat/endirecte",
                 "logo": "https://graph.facebook.com/canal10emporda/picture?width=200&height=200",
@@ -4815,60 +3177,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Vall\u00e8s Visi\u00f3",
-                "web": "https://www.vallesvisio.cat/directe/",
-                "logo": "https://graph.facebook.com/tvvallesvisio/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/vallesvisiotvlive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "TV del Ripoll\u00e8s",
-                "web": "https://www.corisamediagrup.com/tvr-en-directe/",
-                "logo": "https://graph.facebook.com/televisiodelripolles/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/tvripolleslive/smil:live.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "etv",
-                "web": "http://www.etv.cat",
-                "logo": "https://graph.facebook.com/etv.llobregat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/tvetvlive/smil:rtmp01.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
               },
               {
                 "name": "Mar TV",
@@ -4939,24 +3247,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "RTV10 Sesrovires",
-                "web": "https://rtv10.alacarta.cat",
-                "logo": "https://graph.facebook.com/rtv10sesrovires/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta318.cdnmedia.tv/tvstestevelive/smil:tele.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
                 "name": "TV de Sant Mart\u00ed",
                 "web": "https://granviaradio8.wixsite.com/rtvsm/directe",
                 "logo": "https://graph.facebook.com/1397103013646307/picture?width=200&height=200",
@@ -5002,62 +3292,12 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "El Faro",
-                "web": "https://farotv.es",
-                "logo": "https://graph.facebook.com/ElFarodeCeuta/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCJkirQzX68T-DiLB4-YP-TA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               }
             ]
           },
           {
             "name": "C. de Madrid",
             "channels": [
-              {
-                "name": "Telemadrid",
-                "web": "https://www.telemadrid.es/emision-en-directo/",
-                "logo": "https://graph.facebook.com/telemadrid/picture?width=200&height=200",
-                "epg_id": "Telemadrid.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://telemadrid-23.secure2.footprint.net/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "LaOtra",
-                "web": "https://www.telemadrid.es/emision-en-directo-laotra/",
-                "logo": "https://pbs.twimg.com/profile_images/1279727978268839938/jSZUiboT_200x200.jpg",
-                "epg_id": "LaOtra.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://laotra-1-23.secure2.footprint.net/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
               {
                 "name": "Webcam OndaMadrid",
                 "web": "https://www.telemadrid.es/emision-en-directo-ondamadrid/",
@@ -5105,24 +3345,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "D\u00e9jate de Historias TV",
-                "web": "https://dejatedehistorias.es/emision-online",
-                "logo": "https://graph.facebook.com/DejateDeHistoriasTV/picture?width=200&height=200",
-                "epg_id": "Dejate.TV",
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=5YFRxFpdRGo",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "Telesur Madrid",
@@ -5219,24 +3441,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Xaloa Telebista",
-                "web": "https://xaloatelebista.eus/zuzenean/",
-                "logo": "https://graph.facebook.com/xaloatb/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming.mediacast.pro:9443/hls/xaloa/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
                 "name": "Parlamento de Navarra",
                 "web": "https://www.parlamentodenavarra.es",
                 "logo": "https://pbs.twimg.com/profile_images/1517046445030924289/r4OIw84T_200x200.jpg",
@@ -5297,56 +3501,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Intercomarcal TV",
-                "web": "https://www.intercomarcal.com",
-                "logo": "https://graph.facebook.com/Intercomarcal.Television/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streamingtvi.gestec-video.com/hls/tvixa.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://streamingtvi.gestec-video.com/hls/tvixa1.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://streamingtvi.gestec-video.com/hls/tvixa3.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "TeleElx",
-                "web": "https://teleelx.es/directo/",
-                "logo": "https://graph.facebook.com/teleelx/picture?width=200&height=200",
-                "epg_id": "TeleElx.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://tvdirecto.teleelx.es/stream/teleelx.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
                 "name": "Ribera TV",
                 "web": "https://www.riberatelevisio.com/en-directe/",
                 "logo": "https://graph.facebook.com/grup.televisio/picture?width=200&height=200",
@@ -5361,24 +3515,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "8 La Marina TV",
-                "web": "https://8lamarinatv.com",
-                "logo": "https://graph.facebook.com/8lamarinatelevision/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming005.gestec-video.com/hls/canal24.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
               },
               {
                 "name": "La 8 Mediterr\u00e1neo",
@@ -5397,24 +3533,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Alacant\u00ed TV",
-                "web": "http://www.alacantitv.com/en-directo/",
-                "logo": "https://graph.facebook.com/alacantitv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
                 "name": "TV Castell\u00f3",
                 "web": "https://tvcs.tv/en-directe/",
                 "logo": "https://graph.facebook.com/TelevisiondeCastellon/picture?width=200&height=200",
@@ -5430,24 +3548,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ],
                 "extra_info": [
                   "EMB"
-                ]
-              },
-              {
-                "name": "TV Artequatre",
-                "web": "https://www.tv-a.es",
-                "logo": "https://graph.facebook.com/tvArtequatre/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming007.gestec-video.com/hls/artequatreTVA.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
                 ]
               },
               {
@@ -5488,22 +3588,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "TV de San Vicente",
-                "web": "https://www.televisiondesanvicente.es/alacarta/endirecto/",
-                "logo": "https://graph.facebook.com/televisiondesanvicente/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://emision.arpamedia.es:4343/hls/tvsanvicenteweb.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "TV Vega Baja",
                 "web": "http://programas.televisionvegabaja.es/directo",
                 "logo": "https://graph.facebook.com/TVVegaBaja/picture?width=200&height=200",
@@ -5512,22 +3596,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://streaming.tvt.es:8080/hls/tvb_interno/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "TV 4 Vall de Ux\u00f3",
-                "web": "https://teve4lavall.com",
-                "logo": "https://graph.facebook.com/TV4LaVall/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://limited09.todostreaming.es/live/tarson-livestream.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -5566,58 +3634,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "telesafor",
-                "web": "https://telesafor.com",
-                "logo": "https://graph.facebook.com/Tele7Safor/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://video.telesafor.com/hls/video.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Elche 7 TV",
-                "web": "https://elche7tv.es/tv-en-directo/",
-                "logo": "https://pbs.twimg.com/profile_images/1543985670066245632/cX_NvIkT_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://elche7tv.gestec-video.com/hls/canal2.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "Canal 56",
-                "web": "https://canal56.com/online/",
-                "logo": "https://graph.facebook.com/canal56televisio/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://videos.canal56.com/directe/stream/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
               },
               {
                 "name": "Tevequatre TV",
@@ -5700,22 +3716,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Canal 3 Biar",
-                "web": "https://canal3biar.es/directe/",
-                "logo": "https://graph.facebook.com/canal3biar/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://avantstreaming.es/hls/canal3.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "R\u00e0dio Bocairent TV",
                 "web": "https://radiobocairent.com",
                 "logo": "https://graph.facebook.com/radiobocairent/picture?width=200&height=200",
@@ -5787,24 +3787,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Une Vinalop\u00f3",
-                "web": "https://www.unevinalopo.es/directo/",
-                "logo": "https://graph.facebook.com/UneVinalopo/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streamingtvi.gestec-video.com/hls/unesd.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
               },
               {
                 "name": "Veteve",
@@ -5956,24 +3938,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   "REFG1"
                 ],
                 "referer": "https://player.streamingconnect.com/"
-              },
-              {
-                "name": "Villafranca TV",
-                "web": "http://www.villafrancadelosbarros.es/index.php/medios-de-comunicacion",
-                "logo": "https://pbs.twimg.com/profile_images/1180389927709810688/BgzpxkjA_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCIp5TEcJidiaN3p_mguOrTQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               }
             ]
           },
@@ -6169,22 +4133,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "TV Ferrol",
-                "web": "https://tvferrol.es/es/contenido.php?c=4",
-                "logo": "https://graph.facebook.com/tvferrol/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://directo.tvferrol.es/tv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "TeleVigo",
                 "web": "http://www.televigo.com",
                 "logo": "https://graph.facebook.com/televigo/picture?width=200&height=200",
@@ -6202,24 +4150,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   "REF"
                 ],
                 "referer": "http://www.televigo.com"
-              },
-              {
-                "name": "Telemi\u00f1o",
-                "web": "https://www.teleminho.com",
-                "logo": "https://graph.facebook.com/teleminho/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCIfXJopeFMqPigsB_NqfLXQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "Hermes TV",
@@ -6263,7 +4193,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC4xDk-vc3i4CB45U7_wmm5g/live",
+                    "url": "https://www.youtube.com/watch?v=kyZXzeEONf4",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -6352,22 +4282,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "La Rioja",
             "channels": [
               {
-                "name": "TV Rioja",
-                "web": "https://www.tvr.es/directo-20210408161442-nt.html",
-                "logo": "https://graph.facebook.com/tvrtelevision/picture?width=200&height=200",
-                "epg_id": "TVR.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5924d3ad0efcf.streamlock.net/riojatv/riojatvlive/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "7 La Rioja",
                 "web": "https://www.7rioja.tv/Directo",
                 "logo": "https://graph.facebook.com/7riojatv/picture?width=200&height=200",
@@ -6376,22 +4290,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "EMB"
                 ]
-              },
-              {
-                "name": "Parlamento de La Rioja",
-                "web": "https://mediateca.parlamento-larioja.org/live",
-                "logo": "https://graph.facebook.com/ParlamentodeLaRioja/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://media.parlamento-larioja.org:1943/live/parlarioja/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Cocina Familiar",
@@ -6426,22 +4324,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://tvmelilla-hls-rm-lw.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Popular TV Melilla",
-                "web": "http://populartvmelilla.com",
-                "logo": "https://graph.facebook.com/populartvml/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8009/8009/master.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -6615,25 +4497,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "TeleBilbao",
-                "web": "https://www.telebilbao.es/directo/",
-                "logo": "https://graph.facebook.com/312994995454199/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloudbilbao.todostreaming.es/live/telebilbao-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "UAG"
-                ]
-              },
-              {
                 "name": "Erlo TV",
                 "web": "http://www.erlotelebista.eus",
                 "logo": "https://graph.facebook.com/542582126141223/picture?width=200&height=200",
@@ -6642,22 +4505,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://5940924978228.streamlock.net/8159/8159/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Oizmendi TV",
-                "web": "http://www.oizmendi.eus",
-                "logo": "https://graph.facebook.com/oizmenditelebista/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8161/8161/master.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -6785,24 +4632,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Canal 6 Totana",
-                "web": "http://www.totanaweb.es",
-                "logo": "https://graph.facebook.com/TotanaWeb/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCO_V53zJvyne-sroV8RzU2A/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               }
             ]
           }
@@ -7011,23 +4840,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "BFM TV Francia",
-                "web": "https://www.bfmtv.com/en-direct/",
-                "logo": "https://graph.facebook.com/BFMTV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'fr',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://bfmtvalive1-a.akamaihd.net/r253dc974e55741fdaa2b250a83d40fa2/eu-central-1/876450610001/7b4151e1e2434a7cacdb9936db7a7910/playlist_ssaiM.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "TV5Monde Francia",
                 "web": "https://europe.tv5monde.com/en/live",
                 "logo": "https://graph.facebook.com/tv5mondeofficiel/picture?width=200&height=200",
@@ -7196,23 +5008,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Das Erste Alemania",
-                "web": "https://live.daserste.de",
-                "logo": "https://graph.facebook.com/DasErste/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'de',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://mcdn.daserste.de/daserste/int/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "DE"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "WDR",
                 "web": "https://www1.wdr.de/fernsehen/livestream/",
                 "logo": "https://graph.facebook.com/WDR/picture?width=200&height=200",
@@ -7222,23 +5017,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "DE"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "NDR Niedersachsen Alemania",
-                "web": "https://www.ndr.de/fernsehen/livestream/",
-                "logo": "https://graph.facebook.com/ndrniedersachsen/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'de',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ndrint.akamaized.net/hls/live/2020766/ndr_int/master.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": "DE"
@@ -7499,23 +5277,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "RT\u00c9 News Irlanda",
-                "web": "https://www.rte.ie/news/player/live/",
-                "logo": "https://graph.facebook.com/rtenews/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ie',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live.rte.ie/live/a/channel3/news.isml/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Televixin Malta",
                 "web": "https://www.tvm.com.mt/mt/tvmi/live/",
                 "logo": "https://graph.facebook.com/TelevisionMalta/picture?width=200&height=200",
@@ -7641,7 +5402,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ/live",
+                    "url": "https://www.youtube.com/watch?v=ASndlvhI8p0",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -7677,7 +5438,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCG26bSkEjJc7SqGsxoHNnbA/live",
+                    "url": "https://www.youtube.com/watch?v=T88RnpKNN_s",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -7779,40 +5540,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "CBS News USA",
-                "web": "https://www.cbsnews.com/live/",
-                "logo": "https://graph.facebook.com/CBSNews/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Cheddar USA",
-                "web": "https://cheddar.com/live",
-                "logo": "https://graph.facebook.com/cheddar/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cheddar.samsung.wurl.com/manifest/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Bloomberg USA",
                 "web": "https://www.bloomberg.com/live/us/btv",
                 "logo": "https://pbs.twimg.com/profile_images/991792042094354432/DG1Ruupb_200x200.jpg",
@@ -7849,40 +5576,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "NASA TV Public",
-                "web": "https://www.nasa.gov/multimedia/nasatv/#public",
-                "logo": "https://graph.facebook.com/NASA/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "NASA TV Media",
-                "web": "https://www.nasa.gov/multimedia/nasatv/#media",
-                "logo": "https://graph.facebook.com/NASA/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ntv2.akamaized.net/hls/live/2013923/NASA-NTV2-HLS/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
                   }
                 ],
                 "extra_info": []
@@ -7934,40 +5627,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Newsmax TV USA",
-                "web": "https://www.newsmaxtv.com",
-                "logo": "https://graph.facebook.com/newsmax/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://nmxlive.akamaized.net/hls/live/529965/Live_1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "America TeVe USA",
-                "web": "https://www.americateve.com/vivo",
-                "logo": "https://graph.facebook.com/americateve/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://uni01rtmp.tulix.tv/americateve1/americateve1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
                   }
                 ],
                 "extra_info": []
@@ -8170,25 +5829,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Noticias Caracol Colombia",
-                "web": "https://noticias.caracoltv.com/ahora",
-                "logo": "https://graph.facebook.com/NoticiasCaracol/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'co',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Q6GkCmXiGhE",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
                 "name": "Canal Capital Colombia",
                 "web": "https://www.canalcapital.gov.co/content/canal-capital-vivo",
                 "logo": "https://pbs.twimg.com/profile_images/1678109025399865347/m07Vwdd6_200x200.jpg",
@@ -8204,25 +5844,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Teleantioquia Colombia",
-                "web": "https://www.teleantioquia.co/al-aire/",
-                "logo": "https://graph.facebook.com/CanalTeleantioquia/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'co',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist_DVR.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
               },
               {
                 "name": "Se\u00f1al Colombia",
@@ -8257,44 +5878,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Canal Telecaribe Colombia",
-                "web": "https://www.play.telecaribe.co/live",
-                "logo": "https://pbs.twimg.com/profile_images/1653856228198567949/Kg6qiIEv_200x200.jpg",
-                "epg_id": null,
-                "country": 'co',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta118.cdnmedia.tv/telecaribetvlive/smil:rtmp01.smil/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
-              },
-              {
-                "name": "Canal TRO Colombia",
-                "web": "https://www.canaltro.com/senal-en-vivo-2/",
-                "logo": "https://graph.facebook.com/canaltro/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'co',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "UAGLI"
-                ]
               },
               {
                 "name": "Todo Noticias Argentina",
@@ -8335,25 +5918,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Telef\u00e9 Noticias Argentina",
-                "web": "https://telefenoticias.com.ar",
-                "logo": "https://graph.facebook.com/telefe/picture?width=200&height=200",
-                "epg_id": "Telefe.TV",
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UChxGASjdNEYHhVKpl667Huw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "La Naci\u00f3n Argentina",
                 "web": "https://lnmas.lanacion.com.ar",
                 "logo": "https://graph.facebook.com/lanacion/picture?width=200&height=200",
@@ -8382,25 +5946,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "youtube",
                     "url": "https://www.youtube.com/watch?v=zcWXboTnous",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "TV P\u00fablica Argentina",
-                "web": "http://www.tvpublica.com.ar",
-                "logo": "https://graph.facebook.com/TVPublica/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=RHG_uCpqbX0",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -8529,25 +6074,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Globovision Venezuela",
-                "web": "https://globovision.com",
-                "logo": "https://graph.facebook.com/globovision/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 've',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=3StxxE01rHM",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Venezolana de Televisi\u00f3n",
                 "web": "https://vtv.gob.ve/en-vivo/",
                 "logo": "https://graph.facebook.com/VTVtuCanal/picture?width=200&height=200",
@@ -8565,23 +6091,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "EMB"
                 ]
-              },
-              {
-                "name": "Televen TV Venezuela",
-                "web": "http://www.televen.com/enlinea/",
-                "logo": "https://graph.facebook.com/TelevenTV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 've',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloud.streamingconnect.tv/hls/televen/televenweb.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "VPI TV Venezuela",
@@ -8620,80 +6129,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Canal Antigua Guatemala",
-                "web": "https://canalantigua.tv",
-                "logo": "https://graph.facebook.com/canalantigua/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'gt',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streannlivefeedlatino.cachefly.net/feedlatino1/feedlatino1/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "24h Chile",
-                "web": "https://www.24horas.cl/envivo/",
-                "logo": "https://graph.facebook.com/24horas.cl/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cl',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCTXNz3gjAypWp3EhlIATEJQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "TELE13 Chile",
-                "web": "https://www.t13.cl/en-vivo",
-                "logo": "https://graph.facebook.com/teletrece/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cl',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Rb2c5JQOfsE",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Meganoticias Chile",
-                "web": "https://www.meganoticias.cl/senal-en-vivo/",
-                "logo": "https://graph.facebook.com/meganoticiascl/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cl',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=QO4pGCG96lU",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "TC TV Ecuador",
                 "web": "https://www.tctelevision.com/en-vivo",
                 "logo": "https://graph.facebook.com/tctelevision10/picture?width=200&height=200",
@@ -8713,52 +6148,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "TeleAmazonas Ecuador",
-                "web": "http://www.teleamazonas.com/teleamazonas-en-vivo/",
-                "logo": "https://graph.facebook.com/TeleamazonasEcuador/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ec',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://api.new.livestream.com/accounts/1359588/events/9942377/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Bolivia 7.1 TV",
-                "web": "http://www.boliviatv.bo/principal/vivo71.php",
-                "logo": "https://graph.facebook.com/BoliviaTvCanalOficial/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'bo',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Bolivia 7.2 TV",
-                "web": "http://www.boliviatv.bo/principal/vivo72.php",
-                "logo": "https://graph.facebook.com/BoliviaTvCanalOficial/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'bo',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Red Pat Bolivia",
                 "web": "https://www.redpat.tv/envivolpz",
                 "logo": "https://graph.facebook.com/patboliviahd/picture?width=200&height=200",
@@ -8776,27 +6165,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Cubavisi\u00f3n TV",
-                "web": "https://teveo.cu/live/video/AKDdWvMTYzfsfnNJ/embed?auto=true",
-                "logo": "https://graph.facebook.com/CubavisionInternacional/picture?width=200&height=200",
-                "epg_id": "Cubavision.TV",
-                "country": 'cu',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdn.teveo.cu/live/video/A36pWmuWvZBQskuZ/ngrp:gppfydfzpSUn9Udy.stream/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "REF",
-                  "NONAV"
-                ],
-                "referer": "https://teveo.cu/live/video/AKDdWvMTYzfsfnNJ/embed?auto=true"
-              },
-              {
                 "name": "CDN 37 Rep\u00fablica Dominicana",
                 "web": "https://cdn.com.do/envivo/",
                 "logo": "https://graph.facebook.com/cdn.com.do/picture?width=200&height=200",
@@ -8807,23 +6175,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   "W3U",
                   "EXTA"
                 ]
-              },
-              {
-                "name": "Telemicro Rep\u00fablica Dominicana",
-                "web": "https://telemicro.com.do/web/telemicro-en-vivo/",
-                "logo": "https://graph.facebook.com/telemicro5/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'do',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://api.new.livestream.com/accounts/28126860/events/8825282/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Color Visi\u00f3n Rep\u00fablica Dominicana",
@@ -8956,23 +6307,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "TeleDiario Costa Rica",
-                "web": "https://www.telediario.cr/television",
-                "logo": "https://graph.facebook.com/MultimediosCR/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cr',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Trece Costa Rica",
                 "web": "https://costaricamedios.cr/envivo",
                 "logo": "https://yt3.ggpht.com/ytc/AMLnZu9k8cMAf0m3UXLYXyfrvzKd3nmOuIYOc5k4ZGOWnA=s200",
@@ -9001,37 +6335,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "youtube",
                     "url": "https://www.youtube.com/watch?v=_UIm7yCgUDM",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "SBT Interior Brasil",
-                "web": "https://sbtinterior.com/aovivo/",
-                "logo": "https://graph.facebook.com/sbtnointerior/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'br',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Record News Brasil",
-                "web": "https://noticias.r7.com/record-news",
-                "logo": "https://graph.facebook.com/recordnews/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'br',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=bSzRle57VBk",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -9348,31 +6651,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Times Now India",
-                "web": "https://timesofindia.indiatimes.com/live-tv",
-                "logo": "https://graph.facebook.com/Timesnow/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'in',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://timesnow-lh.akamaihd.net/i/TNHD_1@129288/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://etnowweblive-lh.akamaihd.net/i/ETN_1@348070/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Republic World TV India",
+                "name": "Republic World TV",
                 "web": "https://www.republicworld.com/livetv",
                 "logo": "https://graph.facebook.com/RepublicWorld/picture?width=200&height=200",
                 "epg_id": null,
@@ -9503,30 +6782,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "RTHK 31 32 Hong Kong",
-                "web": "https://www.rthk.hk/tv",
-                "logo": "https://graph.facebook.com/RTHK.HK/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'hk',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Teledifus\u00e3o de Macau",
                 "web": "https://www.tdm.com.mo/zh-hant/live",
                 "logo": "https://graph.facebook.com/Canal.Macau/picture?width=200&height=200",
@@ -9636,23 +6891,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "NBS TV Uganda",
-                "web": "https://nbs.ug/live/",
-                "logo": "https://graph.facebook.com/nbstelevision/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ug',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdn1.rea.cdn.moderntv.eu/readymedia/stream/NBSTV/10-hls/live-media.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "TVGE 1 Guinea Ecuatorial",
                 "web": "http://www.tvgelive.gq/live.php",
                 "logo": "http://www.tvgelive.gq/images/logo-dark.png",
@@ -9715,7 +6953,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Int. Otros",
             "channels": [
               {
-                "name": "ABC Australia",
+                "name": "ABC News Australia",
                 "web": "https://iview.abc.net.au/show/abc-live-stream",
                 "logo": "https://graph.facebook.com/abcnews.au/picture?width=200&height=200",
                 "epg_id": null,
@@ -9954,25 +7192,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Meridiano Venezuela",
-                "web": "https://meridiano.net/meridianotv.html",
-                "logo": "https://graph.facebook.com/Meridiano.Dearmas/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 've',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Rdd4kovguK4",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Channel Fight",
                 "web": "https://www.channelfight.com",
                 "logo": "https://graph.facebook.com/channelfightofficial/picture?width=200&height=200",
@@ -9981,23 +7200,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://api-ott.channelfight.com/loggingmediaurlpassthrough/a.m3u8?version=12&id=269&partner=TDTChannels",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Stadium USA",
-                "web": "https://watchstadium.com/live/",
-                "logo": "https://graph.facebook.com/watchstadium/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://bcovlive-a.akamaihd.net/79ebca453e6340dcb32b09707ce3fb82/us-east-1/5994000126001/8036529875f74c81b5f50851bffbc421/playlist_ssaiM.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
@@ -10136,23 +7338,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "EuroLatina TV Espa\u00f1a",
-                "web": "https://eurolatinatelevision.com/senal-en-vivo/",
-                "logo": "https://graph.facebook.com/eurolatinatelevisioneuropa/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://media2.streambrothers.com:1936/8150/8150/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Spektra TV Espa\u00f1a",
                 "web": "https://spektratv.com",
                 "logo": "https://graph.facebook.com/SpektraTelevision/picture?width=200&height=200",
@@ -10189,53 +7374,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   "NONAV"
                 ],
                 "referer": "https://stztelebista.com"
-              },
-              {
-                "name": "VIVA RTV Espa\u00f1a",
-                "web": "https://viva-rtv.es/viva-tv.html",
-                "logo": "https://graph.facebook.com/ProduccionesAudiovisuales.CV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://video20.klm99.com:3212/stream/play.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://video20.klm99.com:3959/stream/play.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://video20.klm99.com:3716/stream/play.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://video20.klm99.com:3242/stream/play.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://video20.klm99.com:3919/stream/play.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
               },
               {
                 "name": "Verbena TV Espa\u00f1a",
@@ -10428,57 +7566,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Ocko Chequia",
-                "web": "https://ocko.tv/zive",
-                "logo": "https://graph.facebook.com/tvocko/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cz',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist/cze/live_hq.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "CZ"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Ocko Star Chequia",
-                "web": "https://ocko.tv/zive?channel=star",
-                "logo": "https://graph.facebook.com/ockostar/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cz',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist/cze/live_hq.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "CZ"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Ocko Expres Chequia",
-                "web": "https://ocko.tv/zive?channel=expres",
-                "logo": "https://graph.facebook.com/OckoExpres/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cz',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist/cze/live_hq.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "CZ"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "NumberOne Turqu\u00eda",
                 "web": "https://www.numberone.com.tr/2015/12/18/nr1-tv-canli-yayin/",
                 "logo": "https://graph.facebook.com/Number1FM/picture?width=200&height=200",
@@ -10522,23 +7609,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "NRG91 Grecia",
-                "web": "https://nrg91.gr/nrgtv.html",
-                "logo": "https://graph.facebook.com/NRG91/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'gr',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5c389faa13be3.streamlock.net:9553/onweb/live/playlist.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -10611,47 +7681,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "RadioU TV USA",
-                "web": "https://radiou.com/tv/",
-                "logo": "https://graph.facebook.com/RadioU/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://1826200335.rsc.cdn77.org/1826200335/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "First Music Channel Bielorrusia",
-                "web": "http://www.1muz.com",
-                "logo": "https://graph.facebook.com/onemusicchannel/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'by',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://hz1.teleport.cc/HLS/HD.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "http://hz1.teleport.cc/HLS/SD.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Otto FM Italia",
                 "web": "http://ottofm.com/otto-fm-tv-limpronta-digitale-degli-anni-ottanta/",
                 "logo": "https://graph.facebook.com/ottofm/picture?width=200&height=200",
@@ -10684,25 +7713,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Caf\u00e9 del Mar Ibiza",
-                "web": "https://cafedelmar.com",
-                "logo": "https://graph.facebook.com/cafedelmaribizaofficialpage/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCha0QKR45iw7FCUQ3-1PnhQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "Sonus FM Alemania",
@@ -11169,23 +8179,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Music Top Argentina",
-                "web": "https://www.diario26.com/musictop/",
-                "logo": "https://graph.facebook.com/Musictop.Ok/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Portal Foxmix Chile",
                 "web": "https://www.portalfoxmix.cl/tv/",
                 "logo": "https://yt3.ggpht.com/ytc/AAUvwnj90kC8kqjZ69oiVT718JUs9iedB5o1w9cKfApo=s200",
@@ -11283,25 +8276,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Abadia de Montserrat Espa\u00f1a",
-                "web": "https://abadiamontserrat.cat/montserrat-tv/",
-                "logo": "https://estatics.montserratvisita.com/img/imgTxtGenerals/foto_banners_nous_base117.jpg",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCFrlaCzXVVlK_eiVNvYoezA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Ecclesia COPE Espa\u00f1a",
                 "web": "https://www.cope.es/religion",
                 "logo": "https://graph.facebook.com/ecclesiacope/picture?width=200&height=200",
@@ -11389,23 +8363,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Cetelmon TV Espa\u00f1a",
-                "web": "https://www.cetelmon.tv",
-                "logo": "https://graph.facebook.com/cetelmon.television/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://player.cetelmon.tv/protecteddfd43c2f3a8b41f3f28582bf8993aca6/992_high.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Vatican News",
                 "web": "https://www.vaticannews.va/es.html",
                 "logo": "https://graph.facebook.com/vaticannews.es/picture?width=200&height=200",
@@ -11475,27 +8432,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Enlace TV Costa Rica",
-                "web": "https://www.enlace.org/envivo/",
-                "logo": "https://graph.facebook.com/enlacetv/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cr',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://11554-1.b.cdn13.com/LiveHTTPOrigin/live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "REF",
-                  "NONAV"
-                ],
-                "referer": "https://www.enlace.org/envivo/"
               },
               {
                 "name": "Emmanuel TV Nigeria",

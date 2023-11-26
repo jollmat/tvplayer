@@ -112,17 +112,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'TN Todo Noticias',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TN_todo_noticias_logo.svg/200px-TN_todo_noticias_logo.svg.png',
-        epg_id: 'TodoNoticias.ar',
-        country: 'ar',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://live-01-01-tn.vodgc.net/TN24/index.m3u8'
-          }
-        ]
-      },{
         name: 'Tec TV',
         logo: 'https://i.imgur.com/EGCq1wc.png',
         epg_id: 'TECTV.ar',
@@ -167,17 +156,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'ABC News Australia',
-        logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ABC_News_Channel.svg/640px-ABC_News_Channel.svg.png',
-        epg_id: 'ABCNews.au',
-        country: 'au',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index.m3u8'
-          }
-        ]
-      },{
         name: 'OE24',
         logo: 'https://i.imgur.com/8UTkcPn.png',
         epg_id: 'Oe24TV.at',
@@ -186,28 +164,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/chunklist_b1900000.m3u8'
-          }
-        ]
-      },{
-        name: 'W24',
-        logo: 'https://i.imgur.com/PGb4wYw.png',
-        epg_id: 'W24.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8'
-          }
-        ]
-      },{
-        name: 'RTV',
-        logo: 'https://i.imgur.com/oD7GQxT.pn',
-        epg_id: 'RTV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://iptv.rtv-ooe.at/stream.m3u8'
           }
         ]
       },{
@@ -263,17 +219,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://5cf4a2c2512a2.streamlock.net/dgrau/dgrau/chunklist.m3u8'
-          }
-        ]
-      },{
-        name: 'SBT',
-        logo: 'https://logodownload.org/wp-content/uploads/2013/12/sbt-logo.png',
-        epg_id: 'SBTNacional.br',
-        country: 'br',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://wz4.dnip.com.br/bemtv/bemtv.sdp/playlist.m3u8'
           }
         ]
       },{
@@ -1256,17 +1201,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Vásárhelyi Televízió',
-        logo: 'https://i.imgur.com/WOEqdmx.png',
-        epg_id: 'VasarhelyiTelevizio.hu',
-        country: 'hu',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://stream.vasarhelyitelevizio.hu/stream/stream.m3u8'
-          }
-        ]
-      },{
         name: 'Bajai TV',
         logo: 'https://i.imgur.com/cyReGWh.png',
         epg_id: 'BajaiTV.hu',
@@ -1583,17 +1517,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8'
-          }
-        ]
-      },{
-        name: 'Deluxe Music',
-        logo: 'https://i.imgur.com/E65GQN9.png',
-        epg_id: 'DeluxeMusic.de',
-        country: 'de',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8'
           }
         ]
       },{
@@ -2059,29 +1982,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'La Vanguardia',
-        logo: 'https://correquevuelas.com/wp-content/uploads/la-vanguardia-vector-logo.png',
-        epg_id: 'LaVanguardia.es',
-        country: 'es',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=hbYkpzg69w4'
-          }
-        ]
-      },{
-        name: 'Agencia EFE',
-        logo: 'https://agenciaefe.es/wp-content/uploads/2021/12/logo-efe.jpeg',
-        epg_id: 'AgenciaEFE.es',
-        country: 'es',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=eP1mQ1VslII'
-          }
-        ]
-      },{
-        name: 'Euronews (esp)',
+        name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
         epg_id: 'Euronews.es',
         country: 'es',
@@ -2092,7 +1993,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Euronews (eng)',
+        name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
         epg_id: 'Euronews.uk',
         country: 'gb',
@@ -2103,7 +2004,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Euronews (por)',
+        name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
         epg_id: 'Euronews.pt',
         country: 'pt',
@@ -2114,7 +2015,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Euronews (fra)',
+        name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
         epg_id: 'Euronews.fr',
         country: 'fr',
@@ -2122,17 +2023,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'youtube',
             url: 'https://www.youtube.com/watch?v=NiRIbKwAejk'
-          }
-        ]
-      },{
-        name: 'Marca TV',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Marca.svg/800px-Marca.svg.png',
-        epg_id: 'MarcaTv.es',
-        country: 'es',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=g2lhYkUne7s'
           }
         ]
       },{
@@ -2523,7 +2413,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
       },{
         name: 'Caillou',
         logo: 'https://i.imgur.com/RgKaoe4.png',
-        epg_id: 'Caillou.fr',
+        epg_id: 'Caillou.es',
         country: 'fr',
         options: [
           {
@@ -2545,8 +2435,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
       },{
         name: 'Central TV',
         logo: 'https://i.imgur.com/2DU22BN.png',
-        epg_id: 'CentralTV.fr',
-        country: 'fr',
+        epg_id: 'CentralTV.es',
+        country: 'es',
         options: [
           {
             format: 'm3u8',
@@ -2606,17 +2496,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://live2.creacast.com/museum-france/smil:museum-france.smil/master.m3u8'
-          }
-        ]
-      },{
-        name: 'Nancy Web TV',
-        logo: 'https://i.imgur.com/a1OO1t6.png',
-        epg_id: 'NancyWebTV.fr',
-        country: 'fr',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8'
           }
         ]
       },{
@@ -3523,24 +3402,13 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ]
       },{
         name: 'Krone.TV',
-        logo: '',
+        logo: 'https://kel.at/wp-content/uploads/2020/08/krone.png',
         epg_id: 'KroneTV.at',
         country: 'at',
         options: [
           {
             format: 'm3u8',
             url: 'https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8'
-          }
-        ]
-      },{
-        name: 'Kronehit',
-        logo: 'Kronehit.at',
-        epg_id: 'https://i.imgur.com/dQJQv1X.png',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8'
           }
         ]
       },{
@@ -3578,7 +3446,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ]
       },{
         name: 'Okto TV',
-        logo: '',
+        logo: 'https://www.europadialog.eu/wp-content/uploads/2015/02/OKTO_Logo-weiss_MailChimp.png',
         epg_id: 'OktoTV.at',
         country: 'at',
         options: [
@@ -3589,7 +3457,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ]
       },{
         name: 'RTV',
-        logo: 'https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/rtvat.png',
+        logo: '',
         epg_id: 'RTV.at',
         country: 'at',
         options: [
@@ -3662,6 +3530,105 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'youtube',
             url: 'https://www.youtube.com/watch?v=8KGXSjtS5pk'
+          }
+        ]
+      },{
+        name: 'Popworld TV',
+        logo: 'https://i.imgur.com/LQB6G3s.jpg',
+        epg_id: 'POPWorldTV.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://www.youtube.com/watch?v=8KGXSjtS5pk'
+          }
+        ]
+      },{
+        name: 'Rakuten TV Action Movies',
+        logo: '',
+        epg_id: 'RakutenTVActionMoviesSpain.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rakuten-actionmovies-2-es.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Rakuten TV Comedy Movies',
+        logo: '',
+        epg_id: 'RakutenTVComedyMoviesSpain.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rakuten-comedymovies-2-es.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Rakuten TV Drama Movies',
+        logo: '',
+        epg_id: 'RakutenTVDramaMoviesSpain.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rakuten-tvshows-2-es.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'Rakuten TV Family Movies',
+        logo: '',
+        epg_id: 'RakutenTVFamilyMoviesSpain.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rakuten-family-2-es.samsung.wurl.tv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: 'XPTV 1',
+        logo: 'https://i.imgur.com/Ty7GkoN.png',
+        epg_id: 'XPTV1.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://janus.xpbroadcasting.com:8443/hls/xptv1.m3u8'
+          }
+        ]
+      },{
+        name: 'XPTV 2',
+        logo: 'https://i.imgur.com/74Z8ATB.png',
+        epg_id: 'XPTV1.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://janus.xpbroadcasting.com:8443/hls/xptv2.m3u8'
+          }
+        ]
+      },{
+        name: 'XPTV US',
+        logo: 'https://i.imgur.com/1m7kDmc.png',
+        epg_id: 'XPTVUS.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://janus.xpbroadcasting.com:8443/hls/xptvUS.m3u8'
+          }
+        ]
+      },{
+        name: 'Vallés Oriental TV',
+        logo: 'https://i.imgur.com/1g2Z64L.png',
+        epg_id: 'VOTV.es',
+        country: 'es',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8'
           }
         ]
       }
