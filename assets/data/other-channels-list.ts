@@ -3631,5 +3631,126 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8'
           }
         ]
-      }
+      },{
+        name: '1-2-3 TV',
+        logo: 'https://i.imgur.com/slSUDNX.png',
+        epg_id: '123tv.de',
+        country: 'de',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://123tv-mx1.flex-cdn.net/index.m3u8'
+          }
+        ]
+      },{
+        name: '1Almere TV',
+        logo: 'https://i.imgur.com/XfkbTrU.png',
+        epg_id: '1AlmereTV.nl',
+        country: 'nl',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://d3472rjicrodic.cloudfront.net/nlpo/clr-nlpo/709d5260/index.m3u8'
+          }
+        ]
+      },{
+        name: '1Twente TV',
+        logo: 'https://i.imgur.com/ftiuNK3.png',
+        epg_id: '1TwenteTV.nl',
+        country: 'nl',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://ms2.mx-cd.net/dtv-10/198-989148/1Twente_TV.smil/playlist.m3u8'
+          }
+        ]
+      },{
+        name: '2M Monde',
+        logo: 'https://i.imgur.com/MvpntzA.png',
+        epg_id: '2MInternational.ma',
+        country: 'ma',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8'
+          }
+        ]
+      },{
+        name: '2TV',
+        logo: 'https://i.imgur.com/FJBL6zI.png',
+        epg_id: '2TV.ge',
+        country: 'ge',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8'
+          }
+        ]
+      },{
+        name: '4DmásNoticias TV',
+        logo: 'https://i.ibb.co/1fb5BtN/unnamed.png',
+        epg_id: '4DmasNoticiasTV.py',
+        country: 'py',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: '4FUN TV',
+        logo: 'https://i.imgur.com/rI1wo2l.png',
+        epg_id: '4FunTV.pl',
+        country: 'pl',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://rds3.desdeparaguay.net/4dmasnoticiastv/4dmasnoticiastv/playlist.m3u8'
+          }
+        ]
+      },{
+        name: '4U TV',
+        logo: 'https://i.imgur.com/PexhKwp.png',
+        epg_id: '4UTV.tr',
+        country: 'tr',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://hls.4utv.live/hls/stream.m3u8'
+          }
+        ]
+      },{
+        name: '8TV',
+        logo: 'https://i.imgur.com/Jkx9W88.png',
+        epg_id: '8TV.my',
+        country: 'my',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://live-streams-ssai-01.tonton.com.my/live/a884c33b-6b11-4433-8bf9-a8899939e224/live.isml/.m3u8'
+          }
+        ]
+      },{
+        name: '9XM',
+        logo: 'https://i.imgur.com/F17QtN2.png',
+        epg_id: '9XM.in',
+        country: 'in',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8'
+          }
+        ]
+      }/*,{
+        name: '',
+        logo: '',
+        epg_id: '',
+        country: '',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8'
+          }
+        ]
+      }*/
 ];
