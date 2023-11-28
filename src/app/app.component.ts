@@ -246,7 +246,7 @@ export class AppComponent implements OnInit {
 
       let otherChannels: TdtChannelDto[] = OTHER_CHANNELS_LIST;
       otherChannels = otherChannels.map((_channel) => {
-        if (!_channel.epg_id || _channel.epg_id.trim().length===0) {
+        if ((!_channel.epg_id || _channel.epg_id.trim().length===0) && _channel.options && _channel.options.length>0) {
           _channel.epg_id = _channel.name.replace(/\s/g, '_') + '.' + (_channel.country && _channel.country.length>0 ? _channel.country : _channel.options[0].format);
         }
         return _channel;
