@@ -118,7 +118,7 @@
                     }"></ng-container>
                     
                 </ng-container>
-                <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && !isMobile">
+                <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && (!isMobile || isTablet)">
                     <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
                 </ng-container>
             </div>
