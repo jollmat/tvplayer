@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
 
   countries: { name: string, iso2: string, numChannels: number }[] = [];
 
-  history: string[] = [];
+  history: TdtChannelDto[] = [];
 
   testURL: string = '';
 
@@ -105,19 +105,18 @@ export class AppComponent implements OnInit {
     console.log('doUpdateStreamUrl('+channelName+')', channel);
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     if (channel?.epg_id) {
-      this.history = this.history.filter((_id) => _id!==channel.epg_id);
-      this.history.unshift(channel.epg_id);
+      this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
+      this.history.unshift(channel);
       this.history = this.history.slice(0,5);
       this.updateHistory(this.history);
     }
   }
 
-  selectChannelFromHistory(channelId: string) {
-    const channel: TdtChannelDto | undefined = this.getChannel(channelId);
+  selectChannelFromHistory(channel: TdtChannelDto) {
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     if (channel?.epg_id) {
-      this.history = this.history.filter((_id) => _id!==channelId);
-      this.history.unshift(channel.epg_id);
+      this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
+      this.history.unshift(channel);
       this.history = this.history.slice(0,5);
       this.updateHistory(this.history);
       this.doFilterByCountry(channel);
@@ -159,7 +158,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  updateHistory(history: string[]) {
+  updateHistory(history: TdtChannelDto[]) {
     localStorage.setItem('APP_TVPLAYER_HISTORY', JSON.stringify(history))
   }
 
@@ -261,7 +260,7 @@ export class AppComponent implements OnInit {
       let channelName: string;
 
       if (this.history.length>0) {
-        const lasChannelViewed: TdtChannelDto | undefined = this.getChannel(this.history[0]);
+        const lasChannelViewed: TdtChannelDto | undefined = this.history[0];
         // this.streamUrl = lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url;
         this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
         channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;

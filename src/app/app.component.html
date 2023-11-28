@@ -147,7 +147,7 @@
 
                     <ng-container *ngIf="currentFormat===MediaTypesEnum.MP3">
                         <div class="d-flex flex-column audio-player-container justify-content-start align-items-start p-5">
-                            <img *ngIf="history && history.length>0" class="radio_img m-2" [src]="getChannel(history[0])?.logo">
+                            <img *ngIf="history && history.length>0" class="radio_img m-2" [src]="history[0].logo">
                             <vg-player>
                                 <audio #myMedia id="my-audio" [muted]="false" [autoplay]="true" autoplay controls>
                                     <source [src]="streamUrl" [type]="'audio/mp3'">
@@ -184,9 +184,9 @@
             'flex-column': !(isMobile && portrait),
             'mt-2': isMobile && portrait,
         }">
-        <ng-container *ngFor="let channelId of history">
-            <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channelId)">
-                <img [title]="getChannel(channelId)?.name" class="me-2 w-100 history_img" [src]="getChannel(channelId)?.logo">
+        <ng-container *ngFor="let channel of history">
+            <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channel)">
+                <img [title]="channel.name" class="me-2 w-100 history_img" [src]="channel.logo">
             </button>
         </ng-container>
     </div>
