@@ -40,6 +40,14 @@ small {
     border: 1px solid darkslategrey;
 }
 
+.tv-multiple-screen {
+    width: 300px;
+    height: 170px;
+    color: ivory;
+    border: 1px solid darkslategray;
+    overflow: hidden;
+}
+
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,

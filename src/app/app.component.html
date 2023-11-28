@@ -6,7 +6,7 @@
         }">
         
         <!-- Test URL -->
-        <ng-container *ngIf="!isMobile" [ngTemplateOutlet]="testTemplate"></ng-container>
+        <ng-container *ngIf="!isMobile && isLocalhost" [ngTemplateOutlet]="testTemplate"></ng-container>
 
         <div class="d-flex mt-2 mb-3" 
             [ngClass]="{
@@ -109,57 +109,16 @@
                 }">
                 <ng-container *ngIf="streamUrl">
 
-                    <ng-container *ngIf="currentFormat===MediaTypesEnum.M3U8">
-                        <ng-container *ngIf="isWindows || isAndroid || isMac">
-                            <vg-player>
-                                <video #myMedia
-                                       [vgHls]="streamUrl"
-                                       [vgHlsHeaders]="headers"
-                                       (onGetBitrates)="hlsBitrates = $event"
-                                       id="my-video"
-                                       type="video/mp4"
-                                       preload="metadata"
-                                       [muted]="true"
-                                       [autoplay]="true"
-                                       autoplay
-                                       controls>
-                                </video>
-                            </vg-player>
-                        </ng-container>
-        
-                        <ng-container *ngIf="isIOS">
-                            <vg-player>
-                                <video #myMedia
-                                       [vgHls]="streamUrl"
-                                       [vgHlsHeaders]="headers"
-                                       (onGetBitrates)="hlsBitrates = $event"
-                                       id="my-video"
-                                       type="video/mp4"
-                                       preload="metadata"
-                                       [muted]="true"
-                                       [autoplay]="true"
-                                       autoplay
-                                       controls>
-                                </video>
-                            </vg-player>
-                        </ng-container>
-                    </ng-container>
-
-                    <ng-container *ngIf="currentFormat===MediaTypesEnum.MP3">
-                        <div class="d-flex flex-column audio-player-container justify-content-start align-items-start p-5">
-                            <img *ngIf="history && history.length>0" class="radio_img m-2" [src]="history[0].logo">
-                            <vg-player>
-                                <audio #myMedia id="my-audio" [muted]="false" [autoplay]="true" autoplay controls>
-                                    <source [src]="streamUrl" [type]="'audio/mp3'">
-                                </audio>
-                            </vg-player>
-                        </div>
-                    </ng-container>
-
-                    <ng-container *ngIf="currentFormat===MediaTypesEnum.YOUTUBE && youtubeVideoId">
-                        <youtube-player [videoId]="youtubeVideoId"></youtube-player>
-                    </ng-container>
+                    <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                        url: streamUrl,
+                        format: currentFormat,
+                        youtubeId: youtubeVideoId,
+                        logo: logoUrl
+                    }"></ng-container>
                     
+                </ng-container>
+                <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && !isMobile">
+                    <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
                 </ng-container>
             </div>
             <ng-container *ngIf="isMobile && portrait && history.length>0" [ngTemplateOutlet]="historyTemplate"></ng-container>
@@ -188,6 +147,86 @@
             <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channel)">
                 <img [title]="channel.name" class="me-2 w-100 history_img" [src]="channel.logo">
             </button>
+        </ng-container>
+    </div>
+</ng-template>
+
+<ng-template let-url="url" let-format="format" let-youtubeId="youtubeId" let-logo="logo" let-mosaic="mosaic" #player>
+    <ng-container *ngIf="url && format">
+
+        <ng-container *ngIf="format===MediaTypesEnum.M3U8">
+            <ng-container *ngIf="isWindows || isAndroid || isMac">
+                <vg-player>
+                    <video #myMedia
+                           [vgHls]="url"
+                           [vgHlsHeaders]="headers"
+                           (onGetBitrates)="hlsBitrates = $event"
+                           id="my-video-{{logo}}"
+                           type="video/mp4"
+                           preload="metadata"
+                           [muted]="true"
+                           [autoplay]="true"
+                           autoplay
+                           controls>
+                    </video>
+                </vg-player>
+            </ng-container>
+
+            <ng-container *ngIf="isIOS">
+                <vg-player>
+                    <video #myMedia
+                           [vgHls]="url"
+                           [vgHlsHeaders]="headers"
+                           (onGetBitrates)="hlsBitrates = $event"
+                           id="my-video"
+                           type="video/mp4"
+                           preload="metadata"
+                           [muted]="true"
+                           [autoplay]="true"
+                           autoplay
+                           controls>
+                    </video>
+                </vg-player>
+            </ng-container>
+        </ng-container>
+
+        <ng-container *ngIf="format===MediaTypesEnum.MP3">
+            <div class="d-flex flex-column audio-player-container justify-content-start align-items-start p-5">
+                <img *ngIf="logo && logo.length>0" class="radio_img m-2" [src]="logo">
+                <vg-player>
+                    <ng-container *ngIf="!mosaic">
+                        <audio #myMedia id="my-audio" [muted]="false" [autoplay]="true" autoplay controls>
+                            <source [src]="url" [type]="'audio/mp3'">
+                        </audio>
+                    </ng-container>
+                    <ng-container *ngIf="mosaic">
+                        <audio #myMedia id="my-audio" [muted]="true" [autoplay]="false">
+                            <source [src]="url" [type]="'audio/mp3'">
+                        </audio>
+                    </ng-container>
+                </vg-player>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
+            <youtube-player [videoId]="youtubeId"></youtube-player>
+        </ng-container>
+        
+    </ng-container>
+</ng-template>
+
+<ng-template #mosaic>
+    <div class="d-flex justify-content-around align-items-center gap-3 h-100 flex-wrap w-100">
+        <ng-container *ngFor="let channel of history">
+            <div class="tv-multiple-screen d-flex justify-content-center align-items-center" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
+                <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                    url: channel.options[0].url,
+                    format: getFormat(channel.options[0].url),
+                    youtubeId: getYoutubeId(channel.options[0].url),
+                    logo: channel.logo,
+                    mosaic: true
+                }"></ng-container>
+            </div>
         </ng-container>
     </div>
 </ng-template>

@@ -40,6 +40,7 @@ export class AppComponent implements OnInit {
   // Streaming
   headers: any = {};
   hlsBitrates: any;
+  logoUrl?: string;
   streamUrl?: string;
   streamUrl$ = new BehaviorSubject<string>('');
   channels: TdtChannelDto [] = [];
@@ -53,6 +54,7 @@ export class AppComponent implements OnInit {
   countries: { name: string, iso2: string, numChannels: number }[] = [];
 
   history: TdtChannelDto[] = [];
+  historyLength: number = 5;
 
   testURL: string = '';
 
@@ -69,17 +71,18 @@ export class AppComponent implements OnInit {
       this.streamUrl = undefined;
       if (url && url.length>0) {
         
-        if (url.indexOf(MediaTypesEnum.M3U8)>=0) {
+          this.currentFormat = MediaTypesEnum.M3U8;
+        if (this.getFormat(url)===MediaTypesEnum.M3U8) {
           this.streamUrl = url;
           this.currentFormat = MediaTypesEnum.M3U8;
-        } else if (url.indexOf(MediaTypesEnum.MP3)>=0) {
+        } else if (this.getFormat(url)===MediaTypesEnum.MP3) {
           setTimeout(() => {
             this.streamUrl = url;
             this.currentFormat = MediaTypesEnum.MP3;
           }, 1000);
-        } else if (url.startsWith('https://www.youtube.com')) {
+        } else if (this.getFormat(url)===MediaTypesEnum.YOUTUBE) {
           this.streamUrl = url;
-          this.youtubeVideoId = url.substring(url.indexOf('v=')).replace('v=', '');
+          this.youtubeVideoId = this.getYoutubeId(url);
           this.currentFormat = MediaTypesEnum.YOUTUBE;
         } else {
           this.streamUrl = url;
@@ -89,6 +92,22 @@ export class AppComponent implements OnInit {
         this.streamUrl = undefined;
       }
     });
+  }
+
+  getFormat(url: string): MediaTypesEnum | undefined {
+    if (url.indexOf(MediaTypesEnum.M3U8)>=0) {
+      return MediaTypesEnum.M3U8;
+    } else if (url.indexOf(MediaTypesEnum.MP3)>=0) {
+      return MediaTypesEnum.MP3;
+    } else if (url.startsWith('https://www.youtube.com')) {
+      return MediaTypesEnum.YOUTUBE;
+    } else {
+      return undefined;
+    }
+  }
+
+  getYoutubeId(url: string): string {
+    return url.substring(url.indexOf('v=')).replace('v=', '');
   }
 
   doTestURL() {
@@ -104,20 +123,24 @@ export class AppComponent implements OnInit {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
     console.log('doUpdateStreamUrl('+channelName+')', channel);
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
+    this.logoUrl = channel?.logo;
+    console.log(channel, this.logoUrl);
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
-      this.history = this.history.slice(0,5);
+      this.history = this.history.slice(0,this.historyLength);
       this.updateHistory(this.history);
     }
   }
 
   selectChannelFromHistory(channel: TdtChannelDto) {
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
+    this.logoUrl = channel.logo;
+    console.log(channel, this.logoUrl);
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
-      this.history = this.history.slice(0,5);
+      this.history = this.history.slice(0,this.historyLength);
       this.updateHistory(this.history);
       this.doFilterByCountry(channel);
     }
@@ -182,6 +205,10 @@ export class AppComponent implements OnInit {
     console.log(this.deviceDetector.os);
     console.log(this.deviceDetector.orientation);
 
+    if (!this.isMobile) {
+      this.historyLength = 6;
+    }
+
     // Youtube API load
     if(!this.youtubeApiLoaded) {
       const tag = document.createElement('script');
@@ -226,7 +253,6 @@ export class AppComponent implements OnInit {
 
         // Set no image
         if (!_channel.logo || _channel.logo.length===0) {
-          console.log(_channel);
           _channel.logo = './assets/img/img-not-found.jpg';
         }
 
@@ -263,9 +289,11 @@ export class AppComponent implements OnInit {
         const lasChannelViewed: TdtChannelDto | undefined = this.history[0];
         // this.streamUrl = lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url;
         this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
+        this.logoUrl = (lasChannelViewed) ? lasChannelViewed.logo : undefined;
         channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
       } else {
         // this.streamUrl = this.channels[0].options[0].url;
+        this.logoUrl = this.channels[0].logo;
         this.streamUrl$.next(this.channels[0].options[0].url);
         channelName = this.channels[0].name;
       }
