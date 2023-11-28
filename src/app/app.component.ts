@@ -210,7 +210,7 @@ export class AppComponent implements OnInit {
     console.log(this.deviceDetector.os);
     console.log(this.deviceDetector.orientation);
 
-    if (!this.isMobile) {
+    if (!this.isMobile || this.isTablet) {
       this.historyLength = 6;
     }
 
