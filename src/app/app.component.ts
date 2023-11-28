@@ -173,8 +173,13 @@ export class AppComponent implements OnInit {
   }
 
   recoverHistory() {
-    const strHistory: string | null = localStorage.getItem('APP_TVPLAYER_HISTORY');
+    let strHistory: string | null = localStorage.getItem('APP_TVPLAYER_HISTORY');
+
     if (strHistory!=null && strHistory.length>0) {
+      if ((JSON.parse(strHistory) as any[]).length>0 && typeof (JSON.parse(strHistory) as any[])[0] === 'string') {
+        strHistory = '[]';
+        this.updateHistory([]);
+      }
       this.history = JSON.parse(strHistory);
     } else {
       this.history = [];
