@@ -207,9 +207,6 @@ export class AppComponent implements OnInit {
     this.portrait = this.deviceDetector.orientation === 'portrait';
     this.landscape = this.deviceDetector.orientation === 'lanscape';
 
-    console.log(this.deviceDetector.os);
-    console.log(this.deviceDetector.orientation);
-
     if (!this.isMobile || this.isTablet) {
       this.historyLength = 6;
     }
