@@ -4736,25 +4736,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "L\u00f2ria TV Andorra",
-                "web": "http://loriatv.com",
-                "logo": "https://graph.facebook.com/LoriaTV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ad',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCCCnrECJpv84QKM4olodZOQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "GBC Gibraltar",
                 "web": "https://www.gbc.gi/tv/watch-live",
                 "logo": "https://graph.facebook.com/GBCNewsroom/picture?width=200&height=200",
@@ -4788,23 +4769,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "EMB"
                 ]
-              },
-              {
-                "name": "Bloomberg Europe",
-                "web": "https://www.bloomberg.com/live/europe",
-                "logo": "https://pbs.twimg.com/profile_images/991792042094354432/DG1Ruupb_200x200.jpg",
-                "epg_id": "Bloom.TV",
-                "country": 'us',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://www.bloomberg.com/media-manifest/streams/eu.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "France 24 Francia",
@@ -4893,23 +4857,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": [
                   "EMB"
                 ]
-              },
-              {
-                "name": "Rai News 24 Italia",
-                "web": "https://www.rainews.it/dl/rainews/live/ContentItem-3156f2f2-dc70-4953-8e2f-70d7489d4ce9.html",
-                "logo": "https://graph.facebook.com/rainews.it/picture?width=200&height=200",
-                "epg_id": "RaiN.TV",
-                "country": 'it',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streamcdnb11-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/rainews1/hls/playlist_mo.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
-                  }
-                ],
-                "extra_info": []
               },
               {
                 "name": "Sport Italia",
@@ -5092,106 +5039,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "RTP 1 Portugal",
-                "web": "https://www.rtp.pt/play/direto/rtp1",
-                "logo": "https://graph.facebook.com/rtp1.pt/picture?width=200&height=200",
-                "epg_id": "RTP1.TV",
-                "country": 'pt',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp1HD.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "UAG"
-                ]
-              },
-              {
-                "name": "RTP 2 Portugal",
-                "web": "https://www.rtp.pt/play/direto/rtp2",
-                "logo": "https://graph.facebook.com/rtpdois/picture?width=200&height=200",
-                "epg_id": "RTP2.TV",
-                "country": 'pt',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtp2HD.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "UAG"
-                ]
-              },
-              {
-                "name": "RTP 3 Portugal",
-                "web": "https://www.rtp.pt/play/direto/rtp3",
-                "logo": "https://graph.facebook.com/rtp/picture?width=200&height=200",
-                "epg_id": "RTP3.TV",
-                "country": 'pt',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "UAG"
-                ]
-              },
-              {
-                "name": "RTP Madeira Portugal",
-                "web": "https://www.rtp.pt/play/direto/rtpmadeira",
-                "logo": "https://graph.facebook.com/rtpmadeira/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pt',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "PT"
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "UAG"
-                ]
-              },
-              {
-                "name": "RTP Açores Portugal",
-                "web": "https://www.rtp.pt/play/direto/rtpacores",
-                "logo": "https://graph.facebook.com/rtpacores/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pt',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpacores.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "PT"
-                  }
-                ],
-                "extra_info": [
-                  "NONAV",
-                  "UAG"
-                ]
-              },
-              {
                 "name": "CNN Portugal",
                 "web": "https://cnnportugal.iol.pt/direto",
                 "logo": "https://graph.facebook.com/cnnportugal/picture?width=200&height=200",
@@ -5236,23 +5083,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": "FR"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Digi24 Ruman\u00eda",
-                "web": "https://www.digi24.ro/live/digi24",
-                "logo": "https://graph.facebook.com/Digi24HD/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ro',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://pubads.g.doubleclick.net/ssai/event/OQfdjUhHSDSlb1fJVzehsQ/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "RO"
                   }
                 ],
                 "extra_info": []
@@ -5325,25 +5155,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "RTCG SAT Montenegro",
-                "web": "https://rtcg.me/cir/tv/gledaj-tvcgmne.html",
-                "logo": "https://graph.facebook.com/RTCG.me/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'me',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://proxysat.ipradio.rs:1936/rtcg/smil:rtcg.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
               },
               {
                 "name": "R\u00daV",
@@ -5651,23 +5462,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Canal 6 Multimedios Mexico",
-                "web": "https://www.multimedios.com/video",
-                "logo": "https://graph.facebook.com/multimediostv/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mx',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Milenio Mexico",
                 "web": "https://www.milenio.com/mileniotv",
                 "logo": "https://graph.facebook.com/MilenioDiario/picture?width=200&height=200",
@@ -5702,25 +5496,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Excelsior Mexico",
-                "web": "https://www.excelsior.com.mx/tv",
-                "logo": "https://graph.facebook.com/ExcelsiorMex/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mx',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=INIvWnWMR_w",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
               },
               {
                 "name": "FORO TV Mexico",
@@ -5977,23 +5752,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "https://streamtv.onliv3.online:1936/exito-tv/exito-tv/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Panamericana Per\u00fa",
-                "web": "https://panamericana.pe/tvenvivo/hd",
-                "logo": "https://graph.facebook.com/panamericana.pe/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pe',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdn75.iblups.com/hls/stream.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -6345,23 +6103,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Rede Massa Brasil",
-                "web": "https://www.redemassa.com.br/aovivo/",
-                "logo": "https://pbs.twimg.com/profile_images/1631743657266085888/Yvr_xWLh_200x200.jpg",
-                "epg_id": null,
-                "country": 'br',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdn-cdn-iguacu.ciclano.io:1443/cdn-iguacu/cdn-iguacu/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "Trinidad and Tobago Television",
                 "web": "https://www.ttt.live/stream/",
                 "logo": "https://graph.facebook.com/tttliveonline/picture?width=200&height=200",
@@ -6591,25 +6332,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Express News Pakistan",
-                "web": "https://www.express.pk/live/",
-                "logo": "https://graph.facebook.com/expressnewspk/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pk',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Jxu33YZtq4g",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "India Today",
                 "web": "https://www.indiatoday.in/livetv",
                 "logo": "https://graph.facebook.com/IndiaToday/picture?width=200&height=200",
@@ -6739,25 +6461,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "UNTV News & Rescue Filipinas",
-                "web": "https://www.untvweb.com/news/",
-                "logo": "https://graph.facebook.com/UNTVNewsRescue/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ph',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=RATzL-BmxoQ",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "TVK Camboya",
                 "web": "https://www.tvk.gov.kh",
                 "logo": "https://graph.facebook.com/cambodiatvk/picture?width=200&height=200",
@@ -6811,23 +6514,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Oman TV",
-                "web": "http://part.gov.om/part/",
-                "logo": "https://graph.facebook.com/OmanTvGeneral/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'om',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://partne.cdn.mangomolo.com/omantv/smil:omantv.stream.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               }
             ]
           },
@@ -6865,25 +6551,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Channels TV Nigeria",
-                "web": "https://www.channelstv.com",
-                "logo": "https://graph.facebook.com/channelsforum/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ng',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=ENHYOYm-kUE",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
                   }
                 ],
                 "extra_info": [

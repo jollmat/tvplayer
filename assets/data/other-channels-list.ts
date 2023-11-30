@@ -607,17 +607,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'PBS America',
-        logo: 'https://i.imgur.com/J4zE5z9.jpg',
-        epg_id: 'PBSAmerica.uk',
-        country: 'gb',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://pbs-samsunguk.amagi.tv/playlist.m3u8'
-          }
-        ]
-      },{
         name: 'TVM 3',
         logo: 'https://i.imgur.com/3v6iZE6.png',
         epg_id: 'TVM3.ch',
@@ -681,17 +670,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://playout172.livextend.cloud/liveiframe/_definst_/ngrp:liveartvabr_abr/playlist.m3u8'
-          }
-        ]
-      },{
-        name: 'Frikanalen',
-        logo: 'https://i.imgur.com/rY3Owxl.png',
-        epg_id: 'Frikanalen.no',
-        country: 'no',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://frikanalen.no/stream/index.m3u8'
           }
         ]
       },{
@@ -1995,17 +1973,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
       },{
         name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
-        epg_id: 'Euronews.uk',
-        country: 'gb',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=pykpO5kQJ98'
-          }
-        ]
-      },{
-        name: 'Euronews',
-        logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
         epg_id: 'Euronews.pt',
         country: 'pt',
         options: [
@@ -2422,17 +2389,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Canal 32',
-        logo: 'https://i.imgur.com/lAsE6kN.png',
-        epg_id: 'Canal32.fr',
-        country: 'fr',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://livevideo.vedge.infomaniak.com/livecast/ik:canal32/manifest.m3u8'
-          }
-        ]
-      },{
         name: 'Central TV',
         logo: 'https://i.imgur.com/2DU22BN.png',
         epg_id: 'CentralTV.es',
@@ -2565,17 +2521,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Vià Télé Paese',
-        logo: 'https://i.imgur.com/TLZsAKK.png',
-        epg_id: 'viaTelePaese.fr',
-        country: 'fr',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://srv.webtvmanager.fr:3118/live/viatelepaeselive.m3u8'
-          }
-        ]
-      },{
         name: 'Vosges Télévision',
         logo: 'https://i.imgur.com/7y7ancc.png',
         epg_id: 'VosgesTV.fr',
@@ -2584,17 +2529,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8'
-          }
-        ]
-      },{
-        name: 'Arise News',
-        logo: 'https://i.imgur.com/B5IXKIb.png',
-        epg_id: 'AriseNews.uk',
-        country: 'gb',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://liveedge-arisenews.visioncdn.com/live-hls/arisenews/arisenews/arisenews_web/master.m3u8'
           }
         ]
       },{
@@ -2983,17 +2917,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'ETV',
-        logo: 'https://i.imgur.com/Dsgpo4I.png',
-        epg_id: 'ETV.th',
-        country: 'th',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://150.95.66.20:1935/live/livestream/playlist.m3u8'
-          }
-        ]
-      },{
         name: 'Good Idea TV',
         logo: 'https://i.imgur.com/ETgVyTy.png',
         epg_id: 'GoodIdeaTV.th',
@@ -3368,17 +3291,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'Dorf TV',
-        logo: 'https://i.imgur.com/L0q19NR.png',
-        epg_id: 'DorfTV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://stream.openplayout.org/hls/dorftv/live.m3u8'
-          }
-        ]
-      },{
         name: 'FS1 Salzburg',
         logo: 'https://i.imgur.com/74gMaPK.png',
         epg_id: 'FS1Salzburg.at',
@@ -3442,17 +3354,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/playlist.m3u8'
-          }
-        ]
-      },{
-        name: 'Okto TV',
-        logo: 'https://www.europadialog.eu/wp-content/uploads/2015/02/OKTO_Logo-weiss_MailChimp.png',
-        epg_id: 'OktoTV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8'
           }
         ]
       },{
