@@ -136,22 +136,56 @@
     </div>
 </ng-template>
 
+<!-- Direct access Template-->
 <ng-template #historyTemplate>
-    <div class="d-flex justify-content-around" 
-        [ngClass]="{
-            'w-15': !(isMobile && portrait), 
-            'w-100': isMobile && portrait,
-            'flex-column': !(isMobile && portrait),
-            'mt-2': isMobile && portrait,
-        }">
-        <ng-container *ngFor="let channel of history">
-            <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channel)">
-                <img [title]="channel.name" class="me-2 w-100 history_img" [src]="channel.logo">
-            </button>
-        </ng-container>
-    </div>
+    
+        <div class="d-flex justify-content-around" 
+            [ngClass]="{
+                'w-15': !(isMobile && portrait), 
+                'w-100': isMobile && portrait,
+                'flex-column': !(isMobile && portrait),
+                'mt-2': isMobile && portrait,
+            }">
+            <form [formGroup]="gridViewForm" class="no-borders" [ngClass]="{'mb-2': !(isMobile && portrait)}">
+                <ng-select
+                    [items]="gridViewTypesFormValues"
+                    [hideSelected]="false"
+                    formControlName="gridViewType"
+                    [clearable]="false"
+                    name="gridViewType"
+                    bindValue="value"
+                    bindLabel="text">
+                    <ng-template ng-label-tmp let-item="item">
+                        <div class="d-flex align-items-center justify-content-start w-100">
+                            {{item.text}}
+                        </div>
+                    </ng-template>
+                    <ng-template ng-option-tmp let-item="item" let-index="index">
+                        <div class="d-flex align-items-center justify-content-start w-100">
+                            {{item.text}}
+                        </div>
+                    </ng-template>
+                </ng-select>
+            </form>
+            <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.LAST">
+                <ng-container *ngFor="let channel of history">
+                    <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channel)">
+                        <img [title]="channel.name" class="me-2 w-100 history_img" [src]="channel.logo">
+                    </button>
+                </ng-container>
+            </ng-container>
+            <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.TOP">
+                <ng-container *ngFor="let channelViews of topList">
+                    <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channelViews.channel)">
+                        <img [title]="channelViews.channel.name + ' ('+channelViews.views+' views)'" class="me-2 w-100 history_img" [src]="channelViews.channel.logo">
+                    </button>
+                </ng-container>
+            </ng-container>
+        </div>
 </ng-template>
+<!-- Direct access Template-->
 
+<!-- Player Template-->
 <ng-template let-url="url" let-format="format" let-youtubeId="youtubeId" let-logo="logo" let-mosaic="mosaic" #player>
     <ng-container *ngIf="url && format">
 
@@ -215,7 +249,9 @@
         
     </ng-container>
 </ng-template>
+<!-- End Player Template-->
 
+<!-- Mosaic Template-->
 <ng-template #mosaic>
     <div class="d-flex justify-content-around align-items-center gap-1 h-100 flex-wrap w-100">
         <ng-container *ngFor="let channel of history">
@@ -231,3 +267,4 @@
         </ng-container>
     </div>
 </ng-template>
+<!-- Mosaic Template-->

@@ -9,6 +9,7 @@ import { COUNTRIES } from 'src/assets/data/countries';
 import { MediaTypesEnum } from './model/enum/media-types.enum';
 import { BehaviorSubject } from 'rxjs';
 import { NgSelectComponent } from '@ng-select/ng-select';
+import { GridViewTypeEnum } from './model/enum/grid-view-type.enum';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit {
   supportedFormats: string[] = ['m3u8', 'mp3', 'youtube'];
   MediaTypesEnum = MediaTypesEnum;
   currentFormat?: MediaTypesEnum;
+  GridViewTypeEnum = GridViewTypeEnum;
 
   isMobile!: boolean;
   isTablet!: boolean;
@@ -53,8 +55,18 @@ export class AppComponent implements OnInit {
 
   countries: { name: string, iso2: string, numChannels: number }[] = [];
 
+  gridViewForm!: FormGroup;
+  gridViewType: GridViewTypeEnum = GridViewTypeEnum.LAST;
+  gridViewTypesFormValues: { text: string, value: GridViewTypeEnum} [] = [
+    { text: 'History', value: GridViewTypeEnum.LAST },
+    { text: '+ Views', value: GridViewTypeEnum.TOP }
+  ]
+
   history: TdtChannelDto[] = [];
   historyLength: number = 5;
+
+  topList: { channel: TdtChannelDto, views: number}[] = [];
+  topListLength: number = 5;
 
   testURL: string = '';
 
@@ -66,7 +78,6 @@ export class AppComponent implements OnInit {
   ) {
 
     this.streamUrl$.subscribe((url) => {
-      console.log(url);
       this.currentFormat = undefined;
       this.streamUrl = undefined;
       if (url && url.length>0) {
@@ -119,17 +130,34 @@ export class AppComponent implements OnInit {
     }
   }
 
+  doCountChannelView(channel: TdtChannelDto) {
+    console.log('doCountChannelView()', channel);
+    const channelIndex: number = this.topList.findIndex((_chViews) => _chViews.channel.epg_id===channel.epg_id );
+    if (channelIndex>=0) {
+      this.topList[channelIndex].views++;
+    } else {
+      this.topList.push({ channel: channel, views: 1 });
+    }
+    this.doUpdateChannelsViews();
+  }
+
+  doUpdateChannelsViews() {
+    this.topList = this.topList.sort((a, b) => {
+      return a.views >= b.views ? -1 : 1;
+    });
+    localStorage.setItem('APP_TVPLAYER_TOP', JSON.stringify(this.topList));
+  }
+
   doUpdateStreamUrl(channelName: string) {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
-    console.log('doUpdateStreamUrl('+channelName+')', channel);
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel?.logo;
-    console.log(channel, this.logoUrl);
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
       this.history = this.history.slice(0,this.historyLength);
       this.updateHistory(this.history);
+      this.doCountChannelView(channel);
     }
   }
 
@@ -209,7 +237,10 @@ export class AppComponent implements OnInit {
 
     if (!this.isMobile || this.isTablet) {
       this.historyLength = 6;
+      this.topListLength = 6;
     }
+
+    this.gridViewType = GridViewTypeEnum.LAST;
 
     // Youtube API load
     if(!this.youtubeApiLoaded) {
@@ -300,11 +331,24 @@ export class AppComponent implements OnInit {
         channelName = this.channels[0].name;
       }
 
+      // Top views
+      let topChannelViewed: string | null = localStorage.getItem('APP_TVPLAYER_TOP');
+      if (topChannelViewed) {
+        this.topList = JSON.parse(topChannelViewed) as { channel: TdtChannelDto, views: number } [];
+      } else {
+        this.topList = [];
+        this.doUpdateChannelsViews();
+      }
+
       // Init forms
 
       this.streamForm = new FormGroup({
         channel: new FormControl(channelName),
         country: new FormControl('')
+      });
+
+      this.gridViewForm = new FormGroup({
+        gridViewType: new FormControl(this.gridViewType)
       });
       
     });    

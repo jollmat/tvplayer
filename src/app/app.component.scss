@@ -90,6 +90,13 @@ input[type="color"]:focus,
         align-items: center;       
     }
 
+    .no-borders {
+        .ng-select .ng-select-container {
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+    }
+
     .ng-select.ng-select-opened>.ng-select-container {
         background: #000;
         border-color: darkslategrey;
