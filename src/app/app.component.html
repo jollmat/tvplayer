@@ -151,6 +151,7 @@
                     [items]="gridViewTypesFormValues"
                     [hideSelected]="false"
                     formControlName="gridViewType"
+                    (ngModelChange)="updateGridViewType()"
                     [clearable]="false"
                     name="gridViewType"
                     bindValue="value"
@@ -169,16 +170,26 @@
             </form>
             <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.LAST">
                 <ng-container *ngFor="let channel of history">
-                    <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channel)">
-                        <img [title]="channel.name" class="me-2 w-100 history_img" [src]="channel.logo">
+                    <button class="btn btn-sm p-2 cursor-default">
+                        <img 
+                            [title]="channel.name" 
+                            (click)="selectChannelFromHistory(channel)" 
+                            class="me-2 w-100 history_img cursor-pointer" 
+                            [src]="channel.logo">
                     </button>
                 </ng-container>
             </ng-container>
             <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.TOP">
-                <ng-container *ngFor="let channelViews of topList">
-                    <button class="btn btn-sm p-2" (click)="selectChannelFromHistory(channelViews.channel)">
-                        <img [title]="channelViews.channel.name + ' ('+channelViews.views+' views)'" class="me-2 w-100 history_img" [src]="channelViews.channel.logo">
-                    </button>
+                <ng-container *ngFor="let channelViews of topList; let idx = index;">
+                    <ng-container *ngIf="idx<topListLength">
+                        <button class="btn btn-sm p-2 cursor-default">
+                            <img 
+                                (click)="selectChannelFromHistory(channelViews.channel)" 
+                                [title]="channelViews.channel.name + ' ('+channelViews.views+' views)'" 
+                                class="me-2 w-100 history_img cursor-pointer" 
+                                [src]="channelViews.channel.logo">
+                        </button>
+                    </ng-container>                    
                 </ng-container>
             </ng-container>
         </div>
@@ -201,7 +212,6 @@
                            preload="metadata"
                            [muted]="true"
                            [autoplay]="true"
-                           autoplay
                            controls>
                     </video>
                 </vg-player>
@@ -218,7 +228,6 @@
                            preload="metadata"
                            [muted]="true"
                            [autoplay]="true"
-                           autoplay
                            controls>
                     </video>
                 </vg-player>
@@ -235,7 +244,7 @@
                         </audio>
                     </ng-container>
                     <ng-container *ngIf="mosaic">
-                        <audio #myMedia id="my-audio" [muted]="true" [autoplay]="false">
+                        <audio #myMedia id="my-audio" [muted]="true" [autoplay]="true">
                             <source [src]="url" [type]="'audio/mp3'">
                         </audio>
                     </ng-container>
@@ -254,17 +263,43 @@
 <!-- Mosaic Template-->
 <ng-template #mosaic>
     <div class="d-flex justify-content-around align-items-center gap-1 h-100 flex-wrap w-100">
-        <ng-container *ngFor="let channel of history">
-            <div class="tv-multiple-screen d-flex justify-content-center align-items-center" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
-                <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
-                    url: channel.options[0].url,
-                    format: getFormat(channel.options[0].url),
-                    youtubeId: getYoutubeId(channel.options[0].url),
-                    logo: channel.logo,
-                    mosaic: true
-                }"></ng-container>
-            </div>
+        <ng-container *ngIf="gridViewType===GridViewTypeEnum.LAST">
+            <ng-container *ngFor="let channel of history">
+                <div class="tv-multiple-screen d-flex flex-column justify-content-start align-items-start" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
+                    <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                        url: channel.options[0].url,
+                        format: getFormat(channel.options[0].url),
+                        youtubeId: getYoutubeId(channel.options[0].url),
+                        logo: channel.logo,
+                        mosaic: true
+                    }"></ng-container>
+                    <div class="w-100 d-flex justify-content-between align-items-center px-2">
+                        <div class="text-info">{{channel.name}}</div>
+                        <i *ngIf="channel.country && channel.country.length>0" [title]="getCountryName(channel.country)" class="fi fi-{{channel.country}}"></i>
+                    </div>
+                </div>
+            </ng-container>
         </ng-container>
+        <ng-container *ngIf="gridViewType===GridViewTypeEnum.TOP">
+            <ng-container *ngFor="let channelView of topList; let idx = index;">
+                <ng-container *ngIf="idx<topListLength">
+                    <div class="tv-multiple-screen d-flex flex-column justify-content-start align-items-start" title="{{channelView.channel.name}} ({{getFormat(channelView.channel.options[0].url)}})">
+                        <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                            url: channelView.channel.options[0].url,
+                            format: getFormat(channelView.channel.options[0].url),
+                            youtubeId: getYoutubeId(channelView.channel.options[0].url),
+                            logo: channelView.channel.logo,
+                            mosaic: true
+                        }"></ng-container>
+                        <div class="w-100 d-flex justify-content-between align-items-center px-2">
+                            <div class="text-info">{{channelView.channel.name}}</div>
+                            <i *ngIf="channelView.channel.country && channelView.channel.country.length>0" [title]="getCountryName(channelView.channel.country)" class="fi fi-{{channelView.channel.country}}"></i>
+                        </div>
+                    </div>
+                </ng-container>
+            </ng-container>
+        </ng-container>
+
     </div>
 </ng-template>
 <!-- Mosaic Template-->

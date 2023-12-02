@@ -34,6 +34,9 @@ body {
     background-color: gold;
 }
 
+.cursor-default { cursor: default !important; }
+.cursor-pointer { cursor: pointer !important; }
+
 .link, a {
     color: blue;
     cursor: pointer;
