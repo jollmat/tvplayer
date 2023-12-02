@@ -231,7 +231,7 @@ export class AppComponent implements OnInit {
     this.isLocalhost = window.location.hostname === 'localhost';
 
     this.isMobile = this.deviceDetector.isMobile();
-    this.isTablet = this.deviceDetector.isTablet();
+    this.isTablet = screen.width>=321 && screen.width<=768;
     this.isWindows = this.deviceDetector.os === 'Windows';
     this.isMac = this.deviceDetector.os === 'Mac';
     this.isIOS = this.deviceDetector.os === 'iOS';
