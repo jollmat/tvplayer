@@ -155,6 +155,7 @@ export class AppComponent implements OnInit {
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
+      this.history = this.history.slice(0,this.historyLength);
       this.updateHistory(this.history);
       this.doCountChannelView(channel);
     }
@@ -207,7 +208,7 @@ export class AppComponent implements OnInit {
         strHistory = '[]';
         this.updateHistory([]);
       }
-      this.history = JSON.parse(strHistory);
+      this.history = JSON.parse(strHistory).slice(0,this.historyLength);
     } else {
       this.history = [];
     }
