@@ -128,6 +128,7 @@
     </div>
 </div>
 
+<!-- Test url Template -->
 <ng-template #testTemplate>
     <div class="d-flex justify-content-start align-items-center w-75">
         <div class="form-group w-100 d-flex mt-1 mb-1">
@@ -135,6 +136,7 @@
         </div>
     </div>
 </ng-template>
+<!-- End Test url Template -->
 
 <!-- Direct access Template-->
 <ng-template #historyTemplate>
@@ -206,6 +208,7 @@
                     <video #myMedia
                            [vgHls]="url"
                            [vgHlsHeaders]="headers"
+                           [poster]="logo"
                            (onGetBitrates)="hlsBitrates = $event"
                            id="my-video-{{logo}}"
                            type="video/mp4"
@@ -218,17 +221,9 @@
             </ng-container>
 
             <ng-container *ngIf="isIOS">
+                <span class="text-warning">iOs</span>
                 <vg-player>
-                    <video #myMedia
-                           [vgHls]="url"
-                           [vgHlsHeaders]="headers"
-                           (onGetBitrates)="hlsBitrates = $event"
-                           id="my-video"
-                           type="video/mp4"
-                           preload="metadata"
-                           [muted]="true"
-                           [autoplay]="true"
-                           controls>
+                    <video #media [vgMedia]="$any(media)" [vgHls]="url" id="singleVideo" controls crossorigin>
                     </video>
                 </vg-player>
             </ng-container>
@@ -253,7 +248,7 @@
         </ng-container>
 
         <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
-            <youtube-player [videoId]="youtubeId"></youtube-player>
+            <youtube-player [ngClass]="{mosaic: mosaic}" [videoId]="youtubeId"></youtube-player>
         </ng-container>
         
     </ng-container>

@@ -124,6 +124,9 @@ input[type="color"]:focus,
         iframe {
             width: 100% !important;
         }
+        &.mosaic {
+            max-height: 100px;
+        }
     }
 
 }

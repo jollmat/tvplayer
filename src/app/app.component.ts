@@ -1,10 +1,10 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StreamService } from './services/stream.service';
 import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { OTHER_CHANNELS_LIST } from 'src/assets/data/other-channels-list';
-import { VgHlsDirective } from '@videogular/ngx-videogular/streaming';
+import { VgDashDirective, VgHlsDirective } from '@videogular/ngx-videogular/streaming';
 import { COUNTRIES } from 'src/assets/data/countries';
 import { MediaTypesEnum } from './model/enum/media-types.enum';
 import { BehaviorSubject } from 'rxjs';
@@ -240,6 +240,11 @@ export class AppComponent implements OnInit {
     this.portrait = this.deviceDetector.orientation === 'portrait';
     this.landscape = this.deviceDetector.orientation === 'lanscape';
 
+    console.group('Device specifications:');
+    console.log('OS', this.deviceDetector.os);
+    console.log('Orientation', this.deviceDetector.orientation);
+    console.groupEnd();
+
     if (!this.isMobile || this.isTablet) {
       this.historyLength = 6;
       this.topListLength = 6;
@@ -358,4 +363,5 @@ export class AppComponent implements OnInit {
       
     });    
   }
+
 }
