@@ -199,7 +199,7 @@
 <!-- Direct access Template-->
 
 <!-- Player Template-->
-<ng-template let-url="url" let-format="format" let-youtubeId="youtubeId" let-logo="logo" let-mosaic="mosaic" #player>
+<ng-template let-url="url" let-logo="logo" let-format="format" let-youtubeId="youtubeId" let-mosaic="mosaic" #player>
     <ng-container *ngIf="url && format">
 
         <ng-container *ngIf="format===MediaTypesEnum.M3U8">
@@ -230,25 +230,22 @@
         </ng-container>
 
         <ng-container *ngIf="format===MediaTypesEnum.MP3">
-            <div class="d-flex flex-column audio-player-container justify-content-start align-items-start p-5">
-                <img *ngIf="logo && logo.length>0" class="radio_img m-2" [src]="logo">
-                <vg-player>
-                    <ng-container *ngIf="!mosaic">
-                        <audio #myMedia id="my-audio" [muted]="false" [autoplay]="true" autoplay controls>
+            <div class="d-flex flex-column audio-player-container justify-content-start align-items-start" [ngClass]="{'p-5':!mosaic}">
+                <img *ngIf="logo && logo.length>0 && !mosaic" class="radio_img m-2" [src]="logo">
+                <ng-container *ngIf="!mosaic">
+                    <vg-player>                    
+                        <audio #myMedia id="my-audio" [muted]="mosaic" [autoplay]="!mosaic" controls>
                             <source [src]="url" [type]="'audio/mp3'">
-                        </audio>
-                    </ng-container>
-                    <ng-container *ngIf="mosaic">
-                        <audio #myMedia id="my-audio" [muted]="true" [autoplay]="true">
-                            <source [src]="url" [type]="'audio/mp3'">
-                        </audio>
-                    </ng-container>
-                </vg-player>
+                        </audio>                    
+                    </vg-player>
+            </ng-container>
             </div>
         </ng-container>
 
         <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
-            <youtube-player [ngClass]="{mosaic: mosaic}" [videoId]="youtubeId"></youtube-player>
+            <ng-container *ngIf="!mosaic">
+                <youtube-player [videoId]="youtubeId"></youtube-player>
+            </ng-container>
         </ng-container>
         
     </ng-container>
@@ -269,7 +266,7 @@
                         mosaic: true
                     }"></ng-container>
                     <div class="w-100 d-flex justify-content-between align-items-center px-2">
-                        <div class="text-info">{{channel.name}}</div>
+                        <div class="text-info cursor-pointer" (click)="selectChannelFromHistory(channel)">{{channel.name}}</div>
                         <i *ngIf="channel.country && channel.country.length>0" [title]="getCountryName(channel.country)" class="fi fi-{{channel.country}}"></i>
                     </div>
                 </div>
@@ -287,7 +284,7 @@
                             mosaic: true
                         }"></ng-container>
                         <div class="w-100 d-flex justify-content-between align-items-center px-2">
-                            <div class="text-info">{{channelView.channel.name}}</div>
+                            <div class="text-info cursor-pointer" (click)="selectChannelFromHistory(channelView.channel)">{{channelView.channel.name}}</div>
                             <i *ngIf="channelView.channel.country && channelView.channel.country.length>0" [title]="getCountryName(channelView.channel.country)" class="fi fi-{{channelView.channel.country}}"></i>
                         </div>
                     </div>
