@@ -7,7 +7,7 @@ import { OTHER_CHANNELS_LIST } from 'src/assets/data/other-channels-list';
 import { VgDashDirective, VgHlsDirective } from '@videogular/ngx-videogular/streaming';
 import { COUNTRIES } from 'src/assets/data/countries';
 import { MediaTypesEnum } from './model/enum/media-types.enum';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { NgSelectComponent } from '@ng-select/ng-select';
 import { GridViewTypeEnum } from './model/enum/grid-view-type.enum';
 
@@ -208,7 +208,14 @@ export class AppComponent implements OnInit {
         strHistory = '[]';
         this.updateHistory([]);
       }
-      this.history = JSON.parse(strHistory).slice(0,this.historyLength);
+      this.history = (JSON.parse(strHistory) as TdtChannelDto[]).slice(0,this.historyLength);
+
+      this.history.forEach((_channel) => {
+        if (!_channel.logoBgStyle) {
+          this.setChannelLogoBg(_channel);
+        }
+      });
+
     } else {
       this.history = [];
     }
@@ -225,6 +232,11 @@ export class AppComponent implements OnInit {
 
   getChannel(channelId: string): TdtChannelDto | undefined {
     return this.channels.find((_channel) => _channel.epg_id===channelId);
+  }
+
+  /* Set logo img bg style depending on image luminosity */
+  setChannelLogoBg(channel: TdtChannelDto) {
+    channel.logoBgStyle = (channel.logoBgStyle) ? channel.logoBgStyle : 'light';
   }
 
   ngOnInit(): void {
@@ -298,6 +310,9 @@ export class AppComponent implements OnInit {
         if (!_channel.logo || _channel.logo.length===0) {
           _channel.logo = './assets/img/img-not-found.jpg';
         }
+
+        // Set logo bg
+        this.setChannelLogoBg(_channel);
 
         // Get countries
         if (_channel.country && _channel.country?.length>0 && !this.countries.find((_c) => _c.iso2===_channel.country )) {

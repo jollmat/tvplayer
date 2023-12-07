@@ -69,7 +69,14 @@
                             <ng-template ng-label-tmp let-item="item">
                                 <div class="d-flex align-items-center justify-content-between w-100">
                                     <div class="d-flex align-items-center">
-                                        <img [src]="item.logo" class="logo me-2">
+                                        <img 
+                                            [src]="item.logo" 
+                                            class="logo me-2"
+                                            [ngClass]="{
+                                                'light': item.logoBgStyle==='light',
+                                                'dark': item.logoBgStyle==='dark',
+                                            }"
+                                        >
                                         <div [ngClass]="{'wrap-200':isMobile}">{{item.name}}</div>
                                     </div>
                                     <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
@@ -78,7 +85,14 @@
                             <ng-template ng-option-tmp let-item="item" let-index="index">
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="d-flex align-items-center">
-                                        <img [src]="item.logo" class="logo me-2">
+                                        <img 
+                                            [src]="item.logo" 
+                                            class="logo me-2"
+                                            [ngClass]="{
+                                                'light': item.logoBgStyle==='light',
+                                                'dark': item.logoBgStyle==='dark',
+                                            }"
+                                        >
                                         <div [ngClass]="{'wrap-200':isMobile}">{{item.name}}</div>
                                     </div>
                                     <div>
@@ -101,12 +115,12 @@
                 'flex-column': isMobile && portrait
             }">
             
-            <ng-container *ngIf="!(isMobile && portrait) && history.length>0" [ngTemplateOutlet]="historyTemplate"></ng-container>
+            <ng-container *ngIf="!(isMobile && portrait) && (history.length>0 || topList.length>0)" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
 
-            <div class="d-flex flex-column justify-content-start align-items-top" 
+            <div class="player-container-big d-flex flex-column justify-content-center align-items-center" 
                 [ngClass]="{
-                    'w-85': !(isMobile && portrait) && history.length>0, 
-                    'w-100': (isMobile && portrait) || history.length===0
+                    'w-85': !(isMobile && portrait) && (history.length>0 || topList.length>0), 
+                    'w-100': (isMobile && portrait) || (history.length===0 && topList.length===0)
                 }">
                 <ng-container *ngIf="streamUrl">
 
@@ -122,7 +136,7 @@
                     <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
                 </ng-container>
             </div>
-            <ng-container *ngIf="isMobile && portrait && history.length>0" [ngTemplateOutlet]="historyTemplate"></ng-container>
+            <ng-container *ngIf="isMobile && portrait && history.length>0" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
             
         </div>
     </div>
@@ -139,7 +153,7 @@
 <!-- End Test url Template -->
 
 <!-- Direct access Template-->
-<ng-template #historyTemplate>
+<ng-template #directAccessTemplate>
     
         <div class="d-flex justify-content-around" 
             [ngClass]="{
@@ -176,7 +190,11 @@
                         <img 
                             [title]="channel.name" 
                             (click)="selectChannelFromHistory(channel)" 
-                            class="me-2 w-100 history_img cursor-pointer" 
+                            class="me-2 w-100 history_img cursor-pointer {{channel.logoBgStyle}}"
+                            [ngClass]="{
+                                'light': channel.logoBgStyle==='light',
+                                'dark': channel.logoBgStyle==='dark',
+                            }" 
                             [src]="channel.logo">
                     </button>
                 </ng-container>
@@ -189,6 +207,10 @@
                                 (click)="selectChannelFromHistory(channelViews.channel)" 
                                 [title]="channelViews.channel.name + ' ('+channelViews.views+' views)'" 
                                 class="me-2 w-100 history_img cursor-pointer" 
+                                [ngClass]="{
+                                    'light': channelViews.channel.logoBgStyle==='light',
+                                    'dark': channelViews.channel.logoBgStyle==='dark',
+                                }" 
                                 [src]="channelViews.channel.logo">
                         </button>
                     </ng-container>                    
@@ -246,6 +268,9 @@
             <ng-container *ngIf="!mosaic">
                 <youtube-player [videoId]="youtubeId"></youtube-player>
             </ng-container>
+            <ng-container *ngIf="mosaic">
+                <img [src]="logo" class="w-100 h-100">
+            </ng-container>
         </ng-container>
         
     </ng-container>
@@ -257,7 +282,7 @@
     <div class="d-flex justify-content-around align-items-center gap-1 h-100 flex-wrap w-100">
         <ng-container *ngIf="gridViewType===GridViewTypeEnum.LAST">
             <ng-container *ngFor="let channel of history">
-                <div class="tv-multiple-screen d-flex flex-column justify-content-start align-items-start" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
+                <div class="tv-multiple-screen d-flex flex-column justify-content-end align-items-start" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
                     <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
                         url: channel.options[0].url,
                         format: getFormat(channel.options[0].url),
@@ -275,7 +300,7 @@
         <ng-container *ngIf="gridViewType===GridViewTypeEnum.TOP">
             <ng-container *ngFor="let channelView of topList; let idx = index;">
                 <ng-container *ngIf="idx<topListLength">
-                    <div class="tv-multiple-screen d-flex flex-column justify-content-start align-items-start" title="{{channelView.channel.name}} ({{getFormat(channelView.channel.options[0].url)}})">
+                    <div class="tv-multiple-screen d-flex flex-column justify-content-end align-items-start" title="{{channelView.channel.name}} ({{getFormat(channelView.channel.options[0].url)}})">
                         <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
                             url: channelView.channel.options[0].url,
                             format: getFormat(channelView.channel.options[0].url),

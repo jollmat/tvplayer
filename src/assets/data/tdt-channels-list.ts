@@ -5674,25 +5674,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "C5N Argentina",
-                "web": "https://www.c5n.com/vivo",
-                "logo": "https://graph.facebook.com/C5N.Noticias/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Tqwhq_8QAGk",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "La Naci\u00f3n Argentina",
                 "web": "https://lnmas.lanacion.com.ar",
                 "logo": "https://graph.facebook.com/lanacion/picture?width=200&height=200",

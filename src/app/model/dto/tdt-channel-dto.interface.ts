@@ -2,6 +2,7 @@ export interface TdtChannelDto {
     name: string,
     web?: string | null,
     logo: string,
+    logoBgStyle?: 'dark' | 'light',
     epg_id?: string | null,
     country?: string,
     options: {
