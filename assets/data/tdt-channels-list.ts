@@ -6243,7 +6243,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Al Arabiya Emiratos \u00c1rabes",
+                "name": "Al Arabiya",
                 "web": "https://www.alarabiya.net/ar/live-stream",
                 "logo": "https://graph.facebook.com/AlArabiya/picture?width=200&height=200",
                 "epg_id": null,
@@ -6260,7 +6260,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "Dubai One Emiratos \u00c1rabes",
+                "name": "Dubai One",
                 "web": "https://www.dubaione.ae/content/dubaione/en-ae/live.html",
                 "logo": "https://graph.facebook.com/dubaionetv/picture?width=200&height=200",
                 "epg_id": null,
