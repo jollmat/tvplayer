@@ -103,6 +103,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
       },{
         name: 'Andorra TV',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Logo_Andorra_Televisi%C3%B3.png',
+        logoBgStyle: 'dark',
         epg_id: 'AndorraTV.ad',
         country: 'ad',
         options: [
@@ -114,6 +115,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
       },{
         name: 'Tec TV',
         logo: 'https://i.imgur.com/EGCq1wc.png',
+        logoBgStyle: 'dark',
         epg_id: 'TECTV.ar',
         country: 'ar',
         options: [
@@ -1599,6 +1601,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
       },{
         name: 'CGTN Français',
         logo: 'https://i.imgur.com/fMsJYzl.png',
+        logoBgStyle: 'dark',
         epg_id: 'CGTNFrench.cn',
         country: 'cn',
         options: [
