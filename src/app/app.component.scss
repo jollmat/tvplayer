@@ -17,6 +17,8 @@ img.radio_img {
 img.light { background-color: #fff; }
 img.dark { background-color: #000; }
 
+img.mosaic-logo { max-height: 115px; object-fit: cover; }
+
 small {
     &.country_name { color: #999; }
     &.title { color: #999; }

@@ -61,6 +61,7 @@
                             [items]="channelsFiltered"
                             (ngModelChange)="doUpdateStreamUrl($event)"
                             [hideSelected]="false"
+                            [virtualScroll]="true"
                             formControlName="channel"
                             name="type"
                             bindValue="name"
@@ -221,9 +222,9 @@
 <!-- Direct access Template-->
 
 <!-- Player Template-->
-<ng-template let-url="url" let-logo="logo" let-format="format" let-youtubeId="youtubeId" let-mosaic="mosaic" #player>
+<ng-template let-channel="channel" let-url="url" let-logo="logo" let-format="format" let-youtubeId="youtubeId" let-mosaic="mosaic" #player>
     <ng-container *ngIf="url && format">
-
+        <div class="d-flex w-100 h-100 align-items-center justify-content-center">
         <ng-container *ngIf="format===MediaTypesEnum.M3U8">
             <ng-container *ngIf="isWindows || isAndroid || isMac">
                 <vg-player>
@@ -243,7 +244,6 @@
             </ng-container>
 
             <ng-container *ngIf="isIOS">
-                <span class="text-warning">iOs</span>
                 <vg-player>
                     <video #media [vgMedia]="$any(media)" [vgHls]="url" id="singleVideo" controls crossorigin>
                     </video>
@@ -253,7 +253,7 @@
 
         <ng-container *ngIf="format===MediaTypesEnum.MP3">
             <div class="d-flex flex-column audio-player-container justify-content-start align-items-start" [ngClass]="{'p-5':!mosaic}">
-                <img *ngIf="logo && logo.length>0 && !mosaic" class="radio_img m-2" [src]="logo">
+                <img *ngIf="logo && logo.length>0 && !mosaic" class="radio_img m-2 cursor-pointer" [src]="logo">
                 <ng-container *ngIf="!mosaic">
                     <vg-player>                    
                         <audio #myMedia id="my-audio" [muted]="mosaic" [autoplay]="!mosaic" controls>
@@ -269,9 +269,10 @@
                 <youtube-player [videoId]="youtubeId"></youtube-player>
             </ng-container>
             <ng-container *ngIf="mosaic">
-                <img [src]="logo" class="w-100 h-100">
+                <img [src]="logo" class="w-100 mosaic-logo cursor-pointer" (click)="selectChannelFromHistory(channel)">
             </ng-container>
         </ng-container>
+        </div>
         
     </ng-container>
 </ng-template>
@@ -282,8 +283,9 @@
     <div class="d-flex justify-content-around align-items-center gap-1 h-100 flex-wrap w-100">
         <ng-container *ngIf="gridViewType===GridViewTypeEnum.LAST">
             <ng-container *ngFor="let channel of history">
-                <div class="tv-multiple-screen d-flex flex-column justify-content-end align-items-start" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
+                <div class="tv-multiple-screen d-flex flex-column justify-content-between align-items-start" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
                     <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                        channel: channel,
                         url: channel.options[0].url,
                         format: getFormat(channel.options[0].url),
                         youtubeId: getYoutubeId(channel.options[0].url),
@@ -302,6 +304,7 @@
                 <ng-container *ngIf="idx<topListLength">
                     <div class="tv-multiple-screen d-flex flex-column justify-content-end align-items-start" title="{{channelView.channel.name}} ({{getFormat(channelView.channel.options[0].url)}})">
                         <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                            channel: channelView.channel,
                             url: channelView.channel.options[0].url,
                             format: getFormat(channelView.channel.options[0].url),
                             youtubeId: getYoutubeId(channelView.channel.options[0].url),
