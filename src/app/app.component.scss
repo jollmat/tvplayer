@@ -61,6 +61,11 @@ small {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    .player-container {
+        max-height: 125px;
+        overflow: hidden;
+    }
 }
 
 .player-container-big {

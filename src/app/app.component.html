@@ -224,7 +224,7 @@
 <!-- Player Template-->
 <ng-template let-channel="channel" let-url="url" let-logo="logo" let-format="format" let-youtubeId="youtubeId" let-mosaic="mosaic" #player>
     <ng-container *ngIf="url && format">
-        <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+        <div class="d-flex w-100 h-100 align-items-center justify-content-center player-container">
         <ng-container *ngIf="format===MediaTypesEnum.M3U8">
             <ng-container *ngIf="isWindows || isAndroid || isMac">
                 <vg-player>
