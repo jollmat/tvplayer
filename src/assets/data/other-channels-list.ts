@@ -3944,6 +3944,28 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://www.youtube.com/watch?v=ydYDqZQpim8'
           }
         ]
+      },{
+        name: 'The World Live Showcase 24/7',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKa-xGpROAHbNFxNgTblZCz68dessgfCFyPuGoOGiQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'TheWorldLiveShowcase',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=buAV1t5-23w'
+          }
+        ]
+      },{
+        name: 'Live: NASA Live Stream of Earth from Space ISS 24/7',
+        logo: 'https://yt3.ggpht.com/lc4VXSLsHlSTLfXX2Lum27k7tgQqD-uLnj55UyrJUoens_Za3K3m60Xm5j5whddOXknRnu1n1V8=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NASALiveStreamOfEarth.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=EceyCgxG1c8'
+          }
+        ]
       }/*,{
         name: '',
         logo: '',
