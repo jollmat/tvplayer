@@ -158,17 +158,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'OE24',
-        logo: 'https://i.imgur.com/8UTkcPn.png',
-        epg_id: 'Oe24TV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/chunklist_b1900000.m3u8'
-          }
-        ]
-      },{
         name: 'R9',
         logo: 'https://i.imgur.com/2fxVYsL.jpg',
         epg_id: 'R9.at',
@@ -606,17 +595,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8'
-          }
-        ]
-      },{
-        name: 'TVM 3',
-        logo: 'https://i.imgur.com/3v6iZE6.png',
-        epg_id: 'TVM3.ch',
-        country: 'ch',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://livevideo.infomaniak.com/streaming/livecast/tvm3/playlist.m3u8'
           }
         ]
       },{
@@ -3346,17 +3324,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://streaming13.huberwebmedia.at/LiveApp/streams/985585225397790082777809.m3u8'
-          }
-        ]
-      },{
-        name: 'oe24 TV',
-        logo: '',
-        epg_id: 'Oe24TV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/playlist.m3u8'
           }
         ]
       },{
