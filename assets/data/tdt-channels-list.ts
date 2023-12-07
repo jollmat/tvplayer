@@ -5133,7 +5133,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "TRT Haber Turqu\u00eda",
+                "name": "TRT World",
                 "web": "https://www.trthaber.com/canli-yayin-izle.html",
                 "logo": "https://graph.facebook.com/trthaber/picture?width=200&height=200",
                 "epg_id": null,
@@ -5298,7 +5298,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Int. Am\u00e9rica",
             "channels": [
               {
-                "name": "FOX Live Now USA",
+                "name": "FOX Live Now",
                 "web": "https://www.foxnews.com",
                 "logo": "https://graph.facebook.com/livenowfox/picture?width=200&height=200",
                 "epg_id": null,
@@ -6108,7 +6108,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Int. Asia",
             "channels": [
               {
-                "name": "CGTN",
+                "name": "CGTN (español)",
                 "web": "https://espanol.cgtn.com/en-directo",
                 "logo": "https://graph.facebook.com/cgtnenespanol/picture?width=200&height=200",
                 "epg_id": "CGTN.TV",
@@ -6120,30 +6120,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://news.cgtn.com/resource/live/espanol/cgtn-e.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "CGTN News",
-                "web": "https://www.cgtn.com/tv",
-                "logo": "https://graph.facebook.com/ChinaGlobalTVNetwork/picture?width=200&height=200",
-                "epg_id": "CGTNN.TV",
-                "country": 'cn',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
                   }
                 ],
                 "extra_info": []

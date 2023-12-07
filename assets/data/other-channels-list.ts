@@ -158,17 +158,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'OE24',
-        logo: 'https://i.imgur.com/8UTkcPn.png',
-        epg_id: 'Oe24TV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/chunklist_b1900000.m3u8'
-          }
-        ]
-      },{
         name: 'R9',
         logo: 'https://i.imgur.com/2fxVYsL.jpg',
         epg_id: 'R9.at',
@@ -606,17 +595,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8'
-          }
-        ]
-      },{
-        name: 'TVM 3',
-        logo: 'https://i.imgur.com/3v6iZE6.png',
-        epg_id: 'TVM3.ch',
-        country: 'ch',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://livevideo.infomaniak.com/streaming/livecast/tvm3/playlist.m3u8'
           }
         ]
       },{
@@ -1599,7 +1577,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'CGTN Français',
+        name: 'CGTN (français)',
         logo: 'https://i.imgur.com/fMsJYzl.png',
         logoBgStyle: 'dark',
         epg_id: 'CGTNFrench.cn',
@@ -1608,6 +1586,18 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://news.cgtn.com/resource/live/french/cgtn-f.m3u8'
+          }
+        ]
+      },{
+        name: 'CGTN (english)',
+        logo: 'https://i.imgur.com/fMsJYzl.png',
+        logoBgStyle: 'dark',
+        epg_id: 'CGTNEnglish.cn',
+        country: 'cn',
+        options: [
+          {
+            format: 'm3u8',
+            url: 'https://www.youtube.com/watch?v=Zv60F39Is_c'
           }
         ]
       },{
@@ -3019,8 +3009,9 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'CNA',
+        name: 'CNA (City News Albania)',
         logo: 'https://codeit.al/wp-content/uploads/2020/08/cna.png',
+        logoBgStyle: 'light',
         epg_id: 'CNA.al',
         country: 'al',
         options: [
@@ -3349,17 +3340,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ]
       },{
-        name: 'oe24 TV',
-        logo: '',
-        epg_id: 'Oe24TV.at',
-        country: 'at',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/playlist.m3u8'
-          }
-        ]
-      },{
         name: 'RTV',
         logo: '',
         epg_id: 'RTV.at',
@@ -3643,6 +3623,182 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'm3u8',
             url: 'https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8'
+          }
+        ]
+      },{
+        name: 'The Good Life Radio',
+        logo: '',
+        epg_id: 'GoodLiveRadio',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=36YnV9STBqc'
+          }
+        ]
+      },{
+        name: 'CNA (Channel News Asia)',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKZCco_7jujlLWP2xCc97sneeWJ3fEHTDqeCOqW78w=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'CNA.sg',
+        country: 'sg',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=XWq5kBlakcQ'
+          }
+        ]
+      },{
+        name: 'Wion Live News',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKaa1ioKuDqWfvsTsZIYMZqLH0knHdIYJPtiWBGj1g=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WionLiveNews.in',
+        country: 'in',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=gadjsB5BkK4'
+          }
+        ]
+      },{
+        name: 'News 12 New York',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKabEm3pEJAngegSuTA0Eip3P5CmANJwS3FA9Reg0g=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'News12NY.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=37OKlipyVFc'
+          }
+        ]
+      },{
+        name: 'Channels Television',
+        logo: 'https://yt3.ggpht.com/mz3T74jFl9DpLb8nNH3ETqIuUXqAztMzOYUckw7YZWmCjnmLiaUU5T0BLEIBJk74Q0eoq0CRbw=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ChannelsTelevision',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=dfB0qmJo1eM'
+          }
+        ]
+      },{
+        name: 'Paw Patrol Official & Friends',
+        logo: 'https://yt3.ggpht.com/d83FgJTp4AB_v1KAuNC_WXIrS2lAYslBLRKQSRB3zFW3QSzd1Pn2NMMlKW0I-0f2qL1HNsk0=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'PawPatrol',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=yI3H8Dnrn9M'
+          }
+        ]
+      },{
+        name: 'Nat Geo Wild',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKYumGr54VqQryV2K6gfGULpTJR3z4AauFbnkEjWMg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NatGeoWild',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=BJ3Yv572V1A'
+          }
+        ]
+      },{
+        name: 'NASA TV Official',
+        logo: 'https://yt3.ggpht.com/2kw8s66dhLUegJ3XrqZSkZMfp77CRhCfYm1NurDwDB2L9sT_-CaoUix_iWjoE_t66b07JzoR=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NASATV.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=21X5lGlDOfg'
+          }
+        ]
+      },{
+        name: 'OT Oficial 24h',
+        logo: 'https://yt3.ggpht.com/8-FF68XYdvQnX2_6l9eZa_kaZeApqY06vmmnbnZMiMtuMruDhhRwibu2EW606eM8z-MnMTkc=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'OTOficial.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=0BeNCwHDiiI'
+          }
+        ]
+      },{
+        name: 'Epidemic Pop Radio',
+        logo: 'https://yt3.ggpht.com/t_VmCQuVMtzURrk2Xlbh8JU7RCi1jUGk5i-jYXMDIT3x5ge8Q9B4x9qDwdei8HlvJbi7iw-6sA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'EpidemicPopRadio',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=wrEckgZZapI'
+          }
+        ]
+      },{
+        name: 'UK Webcam Oxford',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKbntrDFyGDeRQWEhvFEZ-ZLpZ-bqIY4QjrT-YsF=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'UKWebcamOxford.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=St7aTfoIdYQ'
+          }
+        ]
+      },{
+        name: 'Christmas Instrumental Jazz Music',
+        logo: 'https://yt3.ggpht.com/zcs1leNSr4HhRn-_IHzR3CA_U3Tt7AN7jQVgKkIIgpVKoXyr9a2nzl3g7mhWirvrKzfUAD4cYN0=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ChristmasInstrumentalJazz',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=0PA9uFSBjAc'
+          }
+        ]
+      },{
+        name: 'Christmas Music Radio (from Ballistic Live)',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKazov_b68dHEwv_8CNL-wXjhxJBTeS50vCbcy47og=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ChristmasMusicRadioBallisticLive',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=iD5U9Qt_0N4'
+          }
+        ]
+      },{
+        name: 'Classic Christmas Music',
+        logo: 'https://yt3.ggpht.com/2sYYb_3kO4LGiT1kr9CEhLP2_d-YBrYRUI3b7L4grvlUqblyg1jz1lFX96NzeNkL3OzgifPd=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ClassicChristmasMusic',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=rCzlNnczxhw'
+          }
+        ]
+      },{
+        name: 'Ambient de Nadal (Christmas, Smoothing Sounds)',
+        logo: 'https://yt3.ggpht.com/EnD3DCDikLwHQH3Cl7gPhVBhcyyvJuvut4_cAXywT57fEk2ZiwsL3dHhDrbyi0NV9iMmnrWxbQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ChristmasSmoothingSounds',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=-aCwLs2wTAE'
+          }
+        ]
+      },{
+        name: 'Live Santa from The North Pole (Christmas countdown)',
+        logo: 'https://yt3.ggpht.com/M4KiRxTKcUaZibZxOqsYOgsCesL0r1oBJmBB_AaQhYqGi2AbUps-UxKGqZ-LE44oKyXDlaaatUI=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ChristmasCountdownNorthPole',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=piD_gf82drc'
           }
         ]
       }/*,{
