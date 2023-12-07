@@ -3801,6 +3801,149 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             url: 'https://www.youtube.com/watch?v=piD_gf82drc'
           }
         ]
+      },{
+        name: 'Wetter Panorama 24/7 live',
+        logo: '',
+        epg_id: 'WetterPanorama.at',
+        country: 'at',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=NIuO6hrFTrg'
+          }
+        ]
+      },{
+        name: 'Live Vaclav Pavel Prague Airport',
+        logo: '',
+        epg_id: 'LiveVaclavPavelAirport.cz',
+        country: 'cz',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=0jUGiYZKAMg'
+          }
+        ]
+      },{
+        name: 'Tokio Walk 24/7',
+        logo: '',
+        epg_id: 'TokioWalk247.jp',
+        country: 'jp',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=cH7VBI4QQzA'
+          }
+        ]
+      },{
+        name: 'Peppa Pig All Episodes 24/7',
+        logo: '',
+        epg_id: 'PeppaPigFull',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=ZI_onAbHTWw'
+          }
+        ]
+      },{
+        name: 'Alan Becker TV 24/7 Livestream',
+        logo: '',
+        epg_id: 'AlanBeckerLivestream',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=UHkg8kdfnu0'
+          }
+        ]
+      },{
+        name: '24/7 Animal Cam',
+        logo: '',
+        epg_id: '247AnimalCam',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=RBikkVw4maE'
+          }
+        ]
+      },{
+        name: 'Tallinn City Cam 24/7',
+        logo: '',
+        epg_id: 'TallinCityCam.ee',
+        country: 'ee',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=VhVgZi2lGv0'
+          }
+        ]
+      },{
+        name: 'CNBC Marathon Documentaries and deep dives 24/7',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKbSMbYWQ5TLMPPDKBf_oJX6QHvatlPZkJt6YLpj9Oc=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'CNBCMarathonDD.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=9NyxcX3rhQs'
+          }
+        ]
+      },{
+        name: 'LAX Airport live traffic 24/7',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKaijYCKZWYiG3TAGuQvO_59oWgUdiieGF7nbf7uHg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LaxAirportLive.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=t0GrpAgdBFI'
+          }
+        ]
+      },{
+        name: 'New York Walk 24/7',
+        logo: 'https://yt3.ggpht.com/iKOzwmGVq42ILIPS94YS4GgfTG2ppMK2k_k9JcSGH358ElQYEVgf7Bf661W2C37-wCXyzLxO=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NYWalk247.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=vsfEE30aiis'
+          }
+        ]
+      },{
+        name: 'Manizales Live Cam 24/7, Colombia',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKYhAPE57rJYTL-qCbajBGe3pug-5aJIUCNk5-i1lQx-qX9XHuubgRvgtVKuoUud=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ManizalesLive.co',
+        country: 'co',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=PVc2KuPFafQ'
+          }
+        ]
+      },{
+        name: 'Space Ambient 24/7',
+        logo: 'https://yt3.ggpht.com/ytc/APkrFKYg3b2mIk7Fq1l5g28MPPALSaWvCAVMoD2IvSLztw=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'SpaceAmbient',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=tNkZsRW7h2c'
+          }
+        ]
+      },{
+        name: 'Namibia: Live stream in the Namib Desert',
+        logo: 'https://yt3.ggpht.com/UogOtvk3RzzWVlnmoBPb0lP3w_yEHMfgxlQd3R8bEdqS8yZlb04o2JBTchLjPG8osLE0R4UB=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NamibiaNamibDesert.na',
+        country: 'na',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=ydYDqZQpim8'
+          }
+        ]
       }/*,{
         name: '',
         logo: '',
