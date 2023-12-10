@@ -10,6 +10,7 @@ import { MediaTypesEnum } from './model/enum/media-types.enum';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { NgSelectComponent } from '@ng-select/ng-select';
 import { GridViewTypeEnum } from './model/enum/grid-view-type.enum';
+import { ContentTypesEnum } from './model/enum/content-types.enum';
 
 @Component({
   selector: 'app-root',
@@ -54,6 +55,7 @@ export class AppComponent implements OnInit {
   streamForm!: FormGroup;
 
   countries: { name: string, iso2: string, numChannels: number }[] = [];
+  contentTypes: ContentTypesEnum[] = [];
 
   gridViewForm!: FormGroup;
   gridViewType: GridViewTypeEnum = GridViewTypeEnum.LAST;
@@ -170,7 +172,7 @@ export class AppComponent implements OnInit {
       this.history.unshift(channel);
       this.history = this.history.slice(0,this.historyLength);
       this.updateHistory(this.history);
-      this.doFilterByCountry(channel);
+      this.doFilter(channel);
     }
   }
 
@@ -182,15 +184,21 @@ export class AppComponent implements OnInit {
     return country ? country.name.common : countryName;
   }
 
-  doFilterByCountry(selectedChannel?: TdtChannelDto) {
+  doFilter(selectedChannel?: TdtChannelDto) {
     if (!this.streamForm.get('country')?.value || this.streamForm.get('country')?.value.length===0) {
       this.channelsFiltered = [...this.channels];
     } else {
       this.channelsFiltered = [...this.channels.filter((_channel) => _channel.country===this.streamForm.get('country')?.value )];
-      if (!selectedChannel) {
-        //this.channelSelector.open();
-      }
     }
+
+    if (!this.streamForm.get('contentType')?.value || this.streamForm.get('contentType')?.value.length===0) {
+      this.channelsFiltered = [...this.channelsFiltered];
+    } else {
+      this.channelsFiltered = [...this.channelsFiltered.filter((_channel) => {
+        return _channel.contentTypes && _channel.contentTypes.includes(this.streamForm.get('contentType')?.value);
+      })];
+    }
+    
     if (!selectedChannel) {
       this.streamForm.patchValue({'channel': undefined});
     } else {
@@ -198,7 +206,7 @@ export class AppComponent implements OnInit {
       this.streamForm.patchValue({'channel': selectedChannel.name});
       this.streamUrl$.next(selectedChannel.options[0].url);
     }
-  }
+  } 
 
   recoverHistory() {
     let strHistory: string | null = localStorage.getItem('APP_TVPLAYER_HISTORY');
@@ -330,6 +338,8 @@ export class AppComponent implements OnInit {
       this.countries.sort((a,b) => a.name<=b.name ? -1 : 1 );
       this.countries.unshift({ name: 'All countries', iso2: '', numChannels: this.channels.length });
 
+      this.contentTypes = Object.values(ContentTypesEnum).map((_key) => _key  ).sort();
+
       this.channels.sort((a,b) => {
         return a.name<b.name ? -1 : 1;
       });
@@ -369,7 +379,8 @@ export class AppComponent implements OnInit {
 
       this.streamForm = new FormGroup({
         channel: new FormControl(channelName),
-        country: new FormControl('')
+        country: new FormControl(''),
+        contentType: new FormControl(undefined)
       });
 
       this.gridViewForm = new FormGroup({

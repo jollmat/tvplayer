@@ -1,3 +1,5 @@
+import { ContentTypesEnum } from "../enum/content-types.enum"
+
 export interface TdtChannelDto {
     name: string,
     web?: string | null,
@@ -13,5 +15,6 @@ export interface TdtChannelDto {
         lang?: string | null
     }[],
     extra_info?: string[] | null,
-    referer?: string | null
+    referer?: string | null,
+    contentTypes?: ContentTypesEnum[]
 }

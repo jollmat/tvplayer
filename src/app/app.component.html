@@ -18,18 +18,18 @@
                 <form [formGroup]="streamForm" class="w-100 d-flex" [ngClass]="{'d-flex': !isMobile}">
                     <div 
                         [ngClass]="{
-                            'w-50': !isMobile,
+                            'w-33': !isMobile,
                             'w-100': isMobile 
                         }">
                         <ng-select
                             class="mb-2"
                             [items]="countries"
-                            (ngModelChange)="doFilterByCountry(undefined)"
-                            (clear)="doFilterByCountry()"
+                            (ngModelChange)="doFilter(undefined)"
+                            (clear)="doFilter()"
                             [hideSelected]="false"
                             formControlName="country"
                             [clearable]="true"
-                            name="type"
+                            name="country"
                             bindValue="iso2"
                             bindLabel="name"
                             placeholder="Search a country">
@@ -50,9 +50,29 @@
                             </ng-template>
                         </ng-select>
                     </div>
+
                     <div 
                         [ngClass]="{
-                            'w-50': !isMobile,
+                            'w-33': !isMobile,
+                            'w-100': isMobile,
+                            'ps-1': !isMobile
+                        }">
+                        <ng-select
+                            #contentTypeSelector
+                            [items]="contentTypes"
+                            (ngModelChange)="doFilter(undefined)"
+                            (clear)="doFilter()"
+                            [hideSelected]="false"
+                            [virtualScroll]="true"
+                            formControlName="contentType"
+                            name="type"
+                            placeholder="Search content types">
+                        </ng-select>
+                    </div>
+                    
+                    <div 
+                        [ngClass]="{
+                            'w-33': !isMobile,
                             'w-100': isMobile,
                             'ps-1': !isMobile
                         }">
@@ -63,7 +83,7 @@
                             [hideSelected]="false"
                             [virtualScroll]="true"
                             formControlName="channel"
-                            name="type"
+                            name="channel"
                             bindValue="name"
                             bindLabel="name"
                             placeholder="Search a channel">
@@ -104,7 +124,7 @@
                             </ng-template>
                         </ng-select>
                     </div>
-                    
+
                 </form>
             </ng-container>
         </div>

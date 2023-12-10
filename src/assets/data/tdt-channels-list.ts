@@ -1,4 +1,5 @@
 import { TdtChannelsDto } from "src/app/model/dto/tdt-channels-response-dto.interface";
+import { ContentTypesEnum } from "src/app/model/enum/content-types.enum";
 
 export const TDT_CHANNELS: TdtChannelsDto = {
     "license": {
@@ -487,6 +488,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
+                "contentTypes": [ContentTypesEnum.SPORTS],
                 "extra_info": []
               },
               {
@@ -4887,6 +4889,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
+                "contentTypes": [ContentTypesEnum.SPORTS],
                 "extra_info": []
               },
               {
@@ -5372,6 +5375,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": "EN"
                   }
                 ],
+                "contentTypes": [ContentTypesEnum.BUSINESS],
                 "extra_info": []
               },
               {
@@ -6866,6 +6870,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "epg_id": null,
                 "country": 'pe',
                 "options": [],
+                "contentTypes": [ContentTypesEnum.SPORTS],
                 "extra_info": [
                   "W3U",
                   "EXTA"
