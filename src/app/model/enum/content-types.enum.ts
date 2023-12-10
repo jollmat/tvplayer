@@ -21,5 +21,6 @@ export enum ContentTypesEnum {
     RELIGION = "RELIGION",
     POLITICS = "POLITICS",
     COOKING = "COOKING",
-    KIDS = "KIDS"
+    KIDS = "KIDS",
+    CHRISTMAS = "CHRISTMAS"
 }
