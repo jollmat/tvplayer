@@ -1,4 +1,5 @@
 import { TdtChannelDto } from "src/app/model/dto/tdt-channel-dto.interface";
+import { ContentTypesEnum } from "src/app/model/enum/content-types.enum";
 
 export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
     {
@@ -11,7 +12,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'RadioItaliaTV',
         logo: 'https://i.imgur.com/4VCEJuJ.png',
@@ -22,7 +24,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: []
       },{
         name: 'RTV Noord',
         logo: 'https://i.imgur.com/pO5Mexa.png',
@@ -33,7 +36,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://media.rtvnoord.nl/live/rtvnoord/tv/3e8fe3c1-0868-49b0-b2f3-7dd6eb30651f/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Omroep Flevoland',
         logo: 'https://i.imgur.com/d1CmTcI.png',
@@ -44,18 +48,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8'
           }
-        ]
-      },{
-        name: 'Omroep Brabant',
-        logo: 'https://i.imgur.com/Jv7IjHJ.png',
-        epg_id: 'OmroepBrabantTV.nl',
-        country: 'nl',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'http://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8'
-          }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Expressen TV',
         logo: 'https://i.imgur.com/8EjMSr7.png',
@@ -66,7 +60,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx2/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Kanal 10 Sverige',
         logo: 'https://i.imgur.com/vlh699v.png',
@@ -77,7 +72,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://rrr.sz.xlcdn.com/?account=cn_kanal10media&file=live_transcoded&type=live&service=wowza&protocol=https&output=playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Di TV',
         logo: 'https://i.imgur.com/zApTDWn.png',
@@ -88,7 +84,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx4/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.BUSINESS]
       },{
         name: 'Stories – Rakuten TV Italia',
         logo: 'https://i.imgur.com/tMcUvjI.jpg',
@@ -99,7 +96,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://rakuten-spotlight-6-eu.rakuten.wurl.tv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'Andorra TV',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/3/32/Logo_Andorra_Televisi%C3%B3.png',
@@ -111,7 +109,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://videos.rtva.ad/live/rtva/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tec TV',
         logo: 'https://i.imgur.com/EGCq1wc.png',
@@ -123,7 +122,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tv.initium.net.ar:3939/live/tectvmainlive.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Net TV',
         logo: 'https://i.imgur.com/EWmshtx.png',
@@ -134,7 +134,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TV Universidad',
         logo: 'https://i.imgur.com/tvLHiAT.png',
@@ -145,7 +146,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'El Trece',
         logo: 'https://i.imgur.com/ZK7AQFg.png',
@@ -167,7 +169,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ms01.w24.at/R9/smil:liveeventR9.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Belros',
         logo: 'https://i.imgur.com/HWqxjGl.png',
@@ -178,7 +181,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live2.mediacdn.ru/sr1/tro/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Vitebsk Telekanal',
         logo: 'https://i.imgur.com/FXAqELU.jpg',
@@ -189,7 +193,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://flu.vtv.by/tvt-non-by/tracks-v1a1/mono.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL, ContentTypesEnum.GENERAL]
       },{
         name: 'BX1',
         logo: 'https://i.imgur.com/YjKqWru.png',
@@ -200,7 +205,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://59959724487e3.streamlock.net/stream/live/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ALL Sports Brasil',
         logo: 'https://i.imgur.com/wULpnYR.png',
@@ -211,7 +217,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5cf4a2c2512a2.streamlock.net/dgrau/dgrau/chunklist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'AgroBrasil TV',
         logo: 'https://upload.wikimedia.org/wikipedia/pt/6/60/Logo_AgroBrasilTV.jpg',
@@ -222,7 +229,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'RBC',
         logo: 'https://portal.rbc1.com.br/public/portal/img/layout/logorbc.png',
@@ -233,7 +241,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://rbc.directradios.com:1935/rbc/rbc/live.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RELIGION]
       },{
         name: 'TV Câmara',
         logo: 'https://i.imgur.com/UpV2PRk.png',
@@ -244,7 +253,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream3.camara.gov.br/tv1/manifest.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.POLITICS]
       },{
         name: 'TVE RS',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/Logotipo_da_TVE_RS.png',
@@ -255,7 +265,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://selpro1348.procergs.com.br:1935/tve/stve/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TV1 Bulgaria',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Tv1-new.png',
@@ -266,7 +277,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tv1.cloudcdn.bg/temp/livestream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'CPAC',
         logo: 'https://i.imgur.com/AbdFD0S.png',
@@ -277,7 +289,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://d7z3qjdsxbwoq.cloudfront.net/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1351db/live.isml/.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.POLITICS, ContentTypesEnum.GENERAL]
       },{
         name: 'ICI RDI',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ICI_RDI_logo.svg/640px-ICI_RDI_logo.svg.png',
@@ -288,7 +301,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Télé Québec',
         logo: 'https://i.imgur.com/8grBWK9.png',
@@ -299,7 +313,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://bcovlive-a.akamaihd.net/575d86160eb143458d51f7ab187a4e68/us-east-1/6101674910001/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
       },{
         name: 'Savoir Média',
         logo: 'https://i.imgur.com/pa4wOVY.png',
@@ -310,7 +325,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://hls.savoir.media/live/stream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'ICI Montreal',
         logo: 'https://i.imgur.com/Z1b2TJD.png',
@@ -321,7 +337,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://amdici.akamaized.net/hls/live/873426/ICI-Live-Stream/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
       },{
         name: 'Canal 1',
         logo: 'https://cloudfront-us-east-1.images.arcpublishing.com/gruponacion/2XI5OC6MQZFXXBDGMRRDOZSL2Q.jpg',
@@ -332,7 +349,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://video20.klm99.com:3993/live/canal1crlive.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: '88 Stereo',
         logo: 'http://www.88stereo.com/wp-content/uploads/2017/05/88Stereo-logoweb.png',
@@ -343,7 +361,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'CMC TV',
         logo: 'https://i.imgur.com/Fh2vawT.png',
@@ -354,7 +373,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream.cmctv.hr:49998/cmc/live.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'RIK Sat',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Logo_RIK_Sat_2017.svg/640px-Logo_RIK_Sat_2017.svg.png',
@@ -365,7 +385,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://l3.cloudskep.com/cybcsat/abr/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'BRT 1',
         logo: 'https://i.imgur.com/gOPAi2c.png',
@@ -376,7 +397,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://sc-kuzeykibrissmarttv.ercdn.net/brt1hd/bant1/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'BRT 2',
         logo: 'https://i.imgur.com/t5kbIuj.png" tvg-id="BRT2.cy',
@@ -387,7 +409,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://sc-kuzeykibrissmarttv.ercdn.net/brt2hd/bant1/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'JOJ Family',
         logo: 'https://i.imgur.com/IZHIAAj.png',
@@ -398,7 +421,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.cdn.joj.sk/live/hls/family-540.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Óčko',
         logo: 'https://i.imgur.com/iPmpsnN.png',
@@ -409,7 +433,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Óčko Star',
         logo: 'https://i.imgur.com/tGzQFWw.png',
@@ -420,7 +445,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Óčko Expres',
         logo: 'https://i.imgur.com/e731JNS.png',
@@ -431,7 +457,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Praha TV',
         logo: 'https://www.praga2018.cz/wp-content/uploads/logo-prahatv.png',
@@ -442,7 +469,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream.polar.cz/prahatv/prahatvlive-1/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Folketinget TV',
         logo: 'https://i.imgur.com/RqQDUzX.png',
@@ -453,7 +481,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdnapi.kaltura.com/p/2158211/sp/327418300/playManifest/entryId/1_24gfa7qq/protocol/https/format/applehttp/a.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'TV Sy',
         logo: 'https://i.imgur.com/k2jf591.png',
@@ -464,7 +493,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tvsyd.dk/env/cluster-1-e.live.nvp1/live/hls/p/1956351/e/0_e9slj9wh/tl/main/st/0/t/rFEtaqAbdhUFGef_BNF4WQ/index-s32.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'TV 2/Fyn',
         logo: 'https://i.imgur.com/4L6AIMH.png',
@@ -475,7 +505,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tv2fyn.dk/env/cluster-1-e.live.nvp1/live/hls/p/1966291/e/0_vsfrv0zm/tl/main/st/0/t/EgP1FA1D39taZFVewCa42w/index-s32.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TV 2/Øst',
         logo: 'https://i.imgur.com/H9l6Ulw.png',
@@ -486,7 +517,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tveast.dk/env/cluster-1-e.live.nvp1/live/hls/p/1953381/e/0_zphj9q61/tl/main/st/0/t/THUB80e-ZMufZCE4pDhO0g/index-s32.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'TV 2/Nord',
         logo: 'https://i.imgur.com/tEJ22UW.png',
@@ -497,7 +529,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tv2nord.dk/env/cluster-1-e.live.nvp1/live/hls/p/1956931/e/1_h9yfe7h2/tl/main/st/1/t/_FUn1YHQ6_P6lES4U6mmsA/index-s32.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'TV 2 Kosmopol',
         logo: 'https://i.imgur.com/oVmCoKY.png',
@@ -508,7 +541,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tv2lorry.dk/env/cluster-1-d.live.nvp1/live/hls/p/2045321/e/1_grusx1zd/tl/main/st/0/t/rCct87c-v2SFFCvQK1BBOg/index-s32.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TV/Midt-Vest',
         logo: 'https://i.imgur.com/OU7xIVa.png',
@@ -519,7 +553,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tvmidtvest.dk/env/cluster-1-d.live.frp1/live/hls/p/1953371/e/1_9x5lzos9/tl/main/st/0/t/9MTEhotxVwKuatx1EVXdGg/index-s34.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'TV 2/Østjylland',
         logo: 'https://i.imgur.com/qEUXjHp.png',
@@ -530,7 +565,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn-lt-live.tvmidtvest.dk/env/cluster-1-d.live.frp1/live/hls/p/1953371/e/1_9x5lzos9/tl/main/st/0/t/9MTEhotxVwKuatx1EVXdGg/index-s34.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'TV 2/Bornholm',
         logo: 'https://i.imgur.com/cEOpXU6.png',
@@ -541,7 +577,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.tv2bornholm.dk/stream/live/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Sport2U',
         logo: 'https://i.imgur.com/WW0lNk1.png',
@@ -552,7 +589,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream9.xdevel.com/video0s976916-1685/stream/playlist_dvr.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'Full Moon',
         logo: 'https://i.imgur.com/0xT7bZP.jpg',
@@ -563,7 +601,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://minerva-fullmoon-1-it.samsung.wurl.tv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.MOVIES]
       },{
         name: 'Canale Europa',
         logo: 'https://i.imgur.com/Zw2ZIfz.jpg',
@@ -574,7 +613,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://canaleeuropa-canaleeuropa-1-it.samsung.wurl.tv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Reuters TV',
         logo: 'https://i.imgur.com/AbvCnoH.png',
@@ -585,7 +625,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://reuters-reutersnow-1-eu.rakuten.wurl.tv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'CBS News US',
         logo: 'https://i.imgur.com/nki2HDQ.png',
@@ -596,7 +637,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'JOJ',
         logo: 'https://i.imgur.com/5BAWD0z.png',
@@ -607,7 +649,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.cdn.joj.sk/live/andromeda/joj-1080.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'JOJ Plus',
         logo: 'https://i.imgur.com/fKPliTj.png',
@@ -618,7 +661,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.cdn.joj.sk/live/andromeda/plus-1080.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Telestar1',
         logo: 'https://i.imgur.com/UZQjEsd.png',
@@ -629,7 +673,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://89.47.97.15/telestar/telestar.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Prima TV',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Prima_TV_%28Rumaenien%29_Logo.svg/512px-Prima_TV_%28Rumaenien%29_Logo.svg.png',
@@ -640,7 +685,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ADtv',
         logo: 'https://i.imgur.com/FvlcU3z.png',
@@ -651,7 +697,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://playout172.livextend.cloud/liveiframe/_definst_/ngrp:liveartvabr_abr/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.POLITICS]
       },{
         name: 'INTV',
         logo: 'https://i.imgur.com/K7BSjqY.png',
@@ -662,7 +709,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://tv1.intv.mk:1935/live/intv/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Folk Club TV',
         logo: 'https://i.imgur.com/vkGFSl8.png',
@@ -673,7 +721,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://tv1.intv.mk:1935/live2/folkklub/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'TVCG MNE',
         logo: 'https://i.imgur.com/pf8VEwf.png',
@@ -684,7 +733,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://cdn3.bcdn.rs:1935/cgsat/smil:cgsat.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TVCG 3',
         logo: 'https://i.imgur.com/XC7zVog.png',
@@ -695,7 +745,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://parlament.rtcg.me:1936/pr/smil:parlament.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'TVCG 2',
         logo: 'https://i.imgur.com/WECmUKH.png',
@@ -706,7 +757,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://cdn3.bcdn.rs:1935/cg2/smil:cg2.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'NRT 4 Monclova',
         logo: 'https://i.imgur.com/IudKE0n.png',
@@ -717,7 +769,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://59e88b197fb16.streamlock.net:4443/live/canal4/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Alcarria TV',
         logo: 'https://i.imgur.com/zNSuxVZ.jpg',
@@ -728,7 +781,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://cls.alcarria.tv/live/alcarriatv-livestream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'LRT Lituanica',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/LRT_Lituanica_Logo_2022.svg/640px-LRT_Lituanica_Logo_2022.svg.png',
@@ -739,7 +793,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://lituanica.lrt.lt/lituanica/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'EBS English',
         logo: 'https://i.imgur.com/qceaIf7.png',
@@ -750,7 +805,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'EBS Plus 2',
         logo: 'https://i.imgur.com/mgFRZFq.png',
@@ -761,7 +817,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'EBS Plus 1',
         logo: 'https://i.imgur.com/ImUHRG2.png',
@@ -772,7 +829,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.EDUCATION]
       },{
         name: 'Arirang',
         logo: 'https://i.imgur.com/RuHZ6Dx.png',
@@ -783,7 +841,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.CULTURE]
       },{
         name: 'JIBS TV',
         logo: 'https://i.imgur.com/RVWpBoz.png',
@@ -794,7 +853,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://123.140.197.22/stream/1/play.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'CJB TV',
         logo: 'https://i.imgur.com/MvxdZhX.png',
@@ -805,7 +865,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://1.222.207.80:1935/live/cjbtv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'QVC',
         logo: 'https://i.imgur.com/B74hZKd.png',
@@ -816,18 +877,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://cdn-live1.qvc.jp/iPhone/800/800.m3u8'
           }
-        ]
-      },{
-        name: 'WLTV',
-        logo: 'https://i.imgur.com/aL8jKtU.png',
-        epg_id: 'wltv.it',
-        country: 'it',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://5db313b643fd8.streamlock.net/WLTV/WLTV/playlist.m3u8'
-          }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SHOPPING]
       },{
         name: 'Vuemme Tv',
         logo: 'https://i.imgur.com/x5A0xU6.png',
@@ -838,18 +889,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8'
           }
-        ]
-      },{
-        name: 'Vintage Radio Tv',
-        logo: 'https://i.imgur.com/n3LtBNT.jpg',
-        epg_id: 'vintageradiotv.it',
-        country: 'it',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://5f22d76e220e1.streamlock.net/vintageradiotv/vintageradiotv/playlist.m3u8'
-          }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'VB33',
         logo: 'https://i.imgur.com/ygDuIxU.png',
@@ -860,7 +901,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.ipstream.it/vb33/vb33.stream/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Vera Tv',
         logo: 'https://i.imgur.com/djMvkvN.png',
@@ -871,7 +913,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Umbria Tv',
         logo: 'https://i.imgur.com/kccGe02.png',
@@ -882,7 +925,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tvr Xenon',
         logo: 'https://i.imgur.com/kLzW1Pf.jpg',
@@ -893,7 +937,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdn3-ger.azotosolutions.com/cdnedge4/live4/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TVR Più TeleRegione',
         logo: 'https://i.imgur.com/Wzb5qaT.png',
@@ -904,7 +949,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://dacastmmd.mmdlive.lldns.net/dacastmmd/a14a9d0455b34b02842e05e6a4ad0572/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tva Vicenza',
         logo: 'https://i.imgur.com/FtFuPCC.png',
@@ -915,7 +961,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://fms.tvavicenza.it:1935/live/diretta_1/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tv Yes',
         logo: 'https://i.imgur.com/1wsO8U7.png',
@@ -926,18 +973,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream1.aswifi.it/radioyes/live/index.m3u8'
           }
-        ]
-      },{
-        name: 'Tv Qui Modena',
-        logo: 'https://i.imgur.com/4bOYlfg.png',
-        epg_id: 'tv-qui-modena',
-        country: 'it',
-        options: [
-          {
-            format: 'm3u8',
-            url: 'https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8'
-          }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'Tv Prato',
         logo: 'https://i.imgur.com/zDeVpZd.png',
@@ -948,7 +985,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.mariatvcdn.com/tvprato/2db0dd5674586686a867ec52c3aa8e06.sdp/mono.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tuscia Sabina 2000Tv',
         logo: 'https://i.imgur.com/Tq5nEAy.png',
@@ -959,7 +997,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/chunks.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tele Nord Genova',
         logo: 'https://i.imgur.com/I6yegEK.png',
@@ -970,7 +1009,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5db313b643fd8.streamlock.net/Telenord/Telenord/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Tele Mantova',
         logo: 'https://i.imgur.com/bkSPcs4.png',
@@ -981,7 +1021,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5ce9406b73c33.streamlock.net/TeleMantova/livestream/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Senato TV',
         logo: 'https://i.imgur.com/FoQoNZW.png',
@@ -992,7 +1033,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.POLITICS]
       },{
         name: 'Knesset',
         logo: 'https://i.imgur.com/PEdXHSE.png',
@@ -1003,7 +1045,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://contact.gostreaming.tv/Knesset/myStream/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'חינוכית',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/KanHinuchit.svg/640px-KanHinuchit.svg.png',
@@ -1014,7 +1057,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'مكان 33',
         logo: 'https://upload.wikimedia.org/wikipedia/en/5/56/MeKan_33_logo_2017.png',
@@ -1025,7 +1069,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://makan.media.kan.org.il/hls/live/2024680/2024680/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ערוץ 14',
         logo: 'https://i.imgur.com/Iq2Kb69.png',
@@ -1036,7 +1081,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://now14.g-mana.live/media/91517161-44ab-4e46-af70-e9fe26117d2e/mainManifest.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'ערוץ 13',
         logo: 'https://upload.wikimedia.org/wikipedia/he/thumb/1/17/Reshet13Logo2022.svg/559px-Reshet13Logo2022.svg.png',
@@ -1047,7 +1093,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://d2xg1g9o5vns8m.cloudfront.net/out/v1/0855d703f7d5436fae6a9c7ce8ca5075/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'כאן 11',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kan11Logo.svg/640px-Kan11Logo.svg.png',
@@ -1058,7 +1105,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://kan11.media.kan.org.il/hls/live/2024514/2024514/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Zagros TV',
         logo: 'https://i.imgur.com/UjIuIQX.png',
@@ -1069,7 +1117,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'iNEWS',
         logo: 'https://i.imgur.com/PeuBkaH.png',
@@ -1080,7 +1129,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://svs.itworkscdn.net/inewsiqlive/inewsiq.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Dijlah Tarab',
         logo: 'https://i.imgur.com/2SBjjBQ.png',
@@ -1091,7 +1141,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ghaasiflu.online/tarab/tracks-v1a1/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Al-Sharqiya',
         logo: 'https://i.imgur.com/bPYyXNf.png',
@@ -1102,7 +1153,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5d94523502c2d.streamlock.net/home/mystream/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Al-Sharqiya News',
         logo: 'https://i.imgur.com/P6p17ZY.jpg',
@@ -1113,7 +1165,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Press TV',
         logo: 'https://i.imgur.com/X3YP2Gg.png',
@@ -1124,7 +1177,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdnlive.presstv.ir/cdnlive/smil:cdnlive.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'ABP News',
         logo: 'https://i.imgur.com/DKHUFVQ.png',
@@ -1135,7 +1189,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'RÚV 2',
         logo: 'https://i.imgur.com/yDKRuXQ.png',
@@ -1146,7 +1201,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ruvlive.akamaized.net/out/v1/2ff7673de40f419fa5164498fae89089/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TV Eger',
         logo: 'https://i.imgur.com/GUVW073.png',
@@ -1157,7 +1213,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://stream.tveger.hu:8010/live.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Bajai TV',
         logo: 'https://i.imgur.com/cyReGWh.png',
@@ -1168,7 +1225,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cloudfront41.lexanetwork.com:1344/relay01/livestream002.sdp/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'DTV',
         logo: 'https://i.imgur.com/YSpqmSO.png',
@@ -1179,7 +1237,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://cloudfront44.lexanetwork.com:1732/hlsrelay003/hls/livestream.sdp.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'Zalaegerszeg TV',
         logo: 'https://zegtv.hu/wp-content/themes/assembly/images/zegtv-logo.png',
@@ -1190,7 +1249,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cloudfront44.lexanetwork.com:1344/freerelay/zegtv.sdp/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Lóverseny közvetítés',
         logo: 'https://kincsempark.hu/wp-content/uploads/2016/11/fejlec_logo_f-1.png',
@@ -1201,7 +1261,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cloudfront41.lexanetwork.com:1344/xrelay/loverseny2.sdp/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'Kecskemét TV',
         logo: 'https://kecskemetitv.hu/templates/kecskemetitv/img/ktv_logo.png',
@@ -1212,7 +1273,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://eurobioinvest.hu:444/live/ktv.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Gyöngyös TV',
         logo: 'https://i.imgur.com/RHgaPCk.png',
@@ -1223,7 +1285,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cloudfront41.lexanetwork.com:1344/relay02/livestream005.sdp/playlist.m3u8?key=hkNHP'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'AlföldTV',
         logo: 'http://www.dealood.com/content/uploads/images/March2019/5c9721a07ea87-images-large.png',
@@ -1234,7 +1297,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cloudfront41.lexanetwork.com:1344/relay01/livestream006.sdp/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'CityTV (Belváros Lipótváros)',
         logo: 'https://www.citytv.hu/images/logo.png',
@@ -1245,7 +1309,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://citytv.hu/media/live/stream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: '16TV',
         logo: 'http://www.16tv.hu/images/xlogo-green.png.pagespeed.ic.79XBdS6JYn.png',
@@ -1256,7 +1321,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Hegyvidék TV',
         logo: 'https://hegyvidektv.hu/wp-content/uploads/2020/08/hegyvidek.jpg',
@@ -1267,7 +1333,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tv.hegyvidek.hu/hvtv/hvstream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RELIGION]
       },{
         name: 'TV7 Bekescsaba',
         logo: 'https://i.imgur.com/G9Ib5K3.png',
@@ -1278,7 +1345,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream.y5.hu/stream/stream_bekescsaba/stream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Balaton TV',
         logo: 'https://i.imgur.com/ip8L5Vt.jpg',
@@ -1289,7 +1357,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream.iptvservice.eu/hls/balatontv.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ATV',
         logo: 'https://onlinestream.live/logos/4739.png',
@@ -1300,7 +1369,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://streamservers.atv.hu:80/atvlive/atvstream_2_aac/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Kontra',
         logo: 'https://i.imgur.com/zMgczHY.png',
@@ -1311,7 +1381,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SHOPPING]
       },{
         name: 'Open TV',
         logo: 'https://i.imgur.com/T99OSnk.png',
@@ -1322,7 +1393,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SHOPPING]
       },{
         name: 'Skai TV',
         logo: 'https://i.imgur.com/TSg7B8X.png',
@@ -1333,7 +1405,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://skai-live.siliconweb.com/media/cambria4/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Star',
         logo: 'https://i.imgur.com/CJOtJlL.png',
@@ -1344,7 +1417,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'NDR International',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
@@ -1355,7 +1429,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ndrint.akamaized.net/hls/live/2020766/ndr_int/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'DW Deutsch+',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Deutsche_Welle_Logo.svg/320px-Deutsche_Welle_Logo.svg.png',
@@ -1366,7 +1441,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://dwamdstream110.akamaized.net/hls/live/2017971/dwstream110/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'DW Deutsch',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Deutsche_Welle_Logo.svg/320px-Deutsche_Welle_Logo.svg.png',
@@ -1377,7 +1453,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://dwamdstream111.akamaized.net/hls/live/2017972/dwstream111/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'SR',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/SR_Fernsehen.svg/639px-SR_Fernsehen.svg.png',
@@ -1388,7 +1465,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'NDR Schleswig-Holstein',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
@@ -1399,7 +1477,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'NDR Niedersachsen',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
@@ -1410,7 +1489,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'NDR Mecklenburg-Vorpommern',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
@@ -1421,7 +1501,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'NDR Hamburg',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logo_NDR_Fernsehen_2017.svg/578px-Logo_NDR_Fernsehen_2017.svg.png',
@@ -1432,7 +1513,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'HR',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hr-fernsehen_Logo_2015.svg/640px-Hr-fernsehen_Logo_2015.svg.png',
@@ -1443,7 +1525,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://hrhls.akamaized.net/hls/live/2024525/hrhls/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'BR Süd',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Logo_BR_Fernsehen_2021.svg/768px-Logo_BR_Fernsehen_2021.svg.png',
@@ -1454,7 +1537,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Deluxe Lounge HD',
         logo: 'https://i.imgur.com/JN6Kd0q.png',
@@ -1465,7 +1549,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://stream.ads.ottera.tv/playlist.m3u8?network_id=2664'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC, ContentTypesEnum.RELAX]
       },{
         name: 'Schlager Deluxe',
         logo: 'https://i.imgur.com/YPpgUOg.png',
@@ -1476,7 +1561,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'ARD Alpha',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/ARD_alpha_Logo.jpg" tvg-id="ARDalpha.de',
@@ -1487,7 +1573,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://mcdn.br.de/br/fs/ard_alpha/hls/de/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Das Erste',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Das_Erste_2014.svg/640px-Das_Erste_2014.svg.png',
@@ -1498,7 +1585,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://mcdn.daserste.de/daserste/de/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Formula',
         logo: 'https://i.imgur.com/fsqBn8G.png',
@@ -1509,7 +1597,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://c4635.cdn.xsg.ge/c4635/TVFormula/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Mtavari Arkhi',
         logo: 'https://i.imgur.com/tLtGnJW.png',
@@ -1520,7 +1609,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://bozztv.com/36bay2/mtavariarxi/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Imedi TV',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Imlogo_2020.png',
@@ -1531,7 +1621,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tv.cdn.xsg.ge/imedihd/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'First Channel - Education (2TV)',
         logo: 'https://upload.wikimedia.org/wikipedia/ka/c/c9/2_Tv_Logo.jpg',
@@ -1542,7 +1633,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tv.cdn.xsg.ge/gpb-2tv/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.EDUCATION]
       },{
         name: 'First Channel (1TV)',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pirveli_Arkhi_Logo_2022.svg/512px-Pirveli_Arkhi_Logo_2022.svg.png',
@@ -1553,7 +1645,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tv.cdn.xsg.ge/gpb-1tv/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'TV5 Monde Europe',
         logo: 'https://i.imgur.com/uPmwTo9.png',
@@ -1564,7 +1657,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'TV5 Monde Info',
         logo: 'https://i.imgur.com/NcysrWH.png',
@@ -1575,7 +1669,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://ott.tv5monde.com/Content/HLS/Live/channel(info)/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'CGTN (français)',
         logo: 'https://i.imgur.com/fMsJYzl.png',
@@ -1587,7 +1682,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://news.cgtn.com/resource/live/french/cgtn-f.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'CGTN (english)',
         logo: 'https://i.imgur.com/fMsJYzl.png',
@@ -1599,7 +1695,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://www.youtube.com/watch?v=Zv60F39Is_c'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'När-TV',
         logo: 'https://i.imgur.com/Ht5yePq.png',
@@ -1610,7 +1707,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://streaming.nartv.fi/live/ngrp:NAR_TV.stream_all/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'MTV Uutiset Live',
         logo: 'https://i.imgur.com/IyB6mIb.png',
@@ -1621,7 +1719,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.streaming.a2d.tv/asset/20025962.isml/.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Himlen TV7',
         logo: 'https://i.imgur.com/a4iNVXA.png',
@@ -1632,7 +1731,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://vod.tv7.fi/tv7-se/_definst_/smil:tv7-se.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Taivas TV7',
         logo: 'https://i.imgur.com/a4iNVXA.png',
@@ -1643,7 +1743,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://vod.tv7.fi/tv7-fi/_definst_/smil:tv7-fi.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'OnniTV',
         logo: 'https://i.imgur.com/HzILf2H.png',
@@ -1654,7 +1755,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://kotitv.digitacdn.net/amlst:kotitv.amlst/playlist.m3u8?organizationId=83459409&suiteItemId=83459780'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'TBN Baltia',
         logo: 'https://i.imgur.com/rKBaK56.png',
@@ -1665,7 +1767,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://dc.tbnbaltia.eu:8088/dvr/rewind-21600.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RELIGION]
       },{
         name: 'Life TV Europe',
         logo: 'https://i.imgur.com/JhrTB82.png',
@@ -1676,7 +1779,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://lifetv.bitflip.ee/live/stream1.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Life TV Estonia',
         logo: 'https://i.imgur.com/JhrTB82.png',
@@ -1687,7 +1791,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://lifetv.bitflip.ee/live/stream2.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Taevas TV7',
         logo: 'https://i.imgur.com/usXedIj.png',
@@ -1698,7 +1803,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://vod.tv7.fi/tv7-ee/_definst_/smil:tv7-ee.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ETV+',
         logo: 'https://i.imgur.com/YAubPlU.png',
@@ -1709,7 +1815,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://sb.err.ee/live/etvpluss.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ETV2',
         logo: 'https://i.imgur.com/fUjGHDa.png',
@@ -1720,7 +1827,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://sb.err.ee/live/etv2.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'ETV',
         logo: 'https://i.imgur.com/5URjPgG.png',
@@ -1731,7 +1839,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://sb.err.ee/live/etv.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Canal RTVD 4',
         logo: 'https://static.wikia.nocookie.net/logopedia/images/4/4e/CERTV_4_2015.png',
@@ -1742,7 +1851,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Viaplay xtra',
         logo: 'https://i.imgur.com/kzZHsLp.png',
@@ -1753,7 +1863,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://i.mjh.nz/SamsungTVPlus/GBBB4300001NX.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'TG4',
         logo: 'https://i.imgur.com/DslaAXr.png',
@@ -1764,7 +1875,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://dx4452e0qv6r9.cloudfront.net/tg4_vod_national.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Oireachtas TV',
         logo: 'https://i.imgur.com/aC4fsCI.png',
@@ -1775,7 +1887,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://d33zah5htxvoxb.cloudfront.net/el/live/oirtv/hls.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.POLITICS]
       },{
         name: 'Catalunya Ràdio',
         logo: 'https://images.radio.orange.com/radios/large_radio_catalonia.png',
@@ -1786,7 +1899,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://directes-radio-int.ccma.cat/live-content/catalunya-radio-hls/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Canal Sur Radio',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Canal_Sur_Radio.png',
@@ -1797,7 +1911,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cdnlive.codev8.net/rtvalive/smil:channel4.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Euskadi Irratia',
         logo: 'https://images11.eitb.eus/multimedia/images/2012/01/24/602517/602517_euskadi_irratia_logo4_foto610x342.jpg',
@@ -1808,7 +1923,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://multimedia.eitb.eus/live-content/euskadirratia-hls/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Cadena 100',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Cadena100.svg/1200px-Cadena100.svg.png',
@@ -1819,7 +1935,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://cadena100-cope.flumotion.com/chunks.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.MUSIC]
       },{
         name: 'Europa FM',
         logo: 'https://fotografias.atresmediapublicidad.com/clipping/cmsimages01/2022/10/05/49FAFB71-2DCC-44D8-AB04-FC5C8EEBFAE4/nuevo-logo-europa-fmdegradado-fondo-blanco_58.jpg',
@@ -1830,7 +1947,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://livefastly-webs.europafm.com/europafm/audio/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.MUSIC]
       },{
         name: 'Rock FM',
         logo: 'https://rockfm-cdnsta.agilecontent.com/rockfm-frontend/public/assets/img/default-image-f7d2568e0307650b0c23f03e46649312.svg',
@@ -1841,7 +1959,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://rockfm-cope.flumotion.com/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.MUSIC]
       },{
         name: 'Radio Clásica RNE',
         logo: 'https://myradioonline.es/public/uploads/radio_img/radio-clasica/fb_cover.jpg',
@@ -1852,7 +1971,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://rtvelivestream.akamaized.net/rtvesec/rne/rne_r2_main.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.MUSIC]
       },{
         name: 'Catalunya Informació',
         logo: 'https://static.mytuner.mobi/media/tvos_radios/AHxQzFyFbJ.png',
@@ -1863,7 +1983,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://directes-radio-int.ccma.cat/live-content/catalunya-informacio-hls/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.NEWS]
       },{
         name: 'Catalunya Música',
         logo: 'https://static.mytuner.mobi/media/tvos_radios/Ld3QR4ngWx.png',
@@ -1874,7 +1995,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://directes-radio-int.ccma.cat/live-content/catalunya-musica-hls/master.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.MUSIC]
       },{
         name: 'RAC1',
         logo: 'https://d2xcuvj0f1yuza.cloudfront.net/2020/01/LOGO-RAC1.png',
@@ -1885,7 +2007,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/RAC_1.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Radio Marca',
         logo: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/46/bf/80/46bf8000-16fe-bc2c-733c-fbdfe66ae5a5/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png',
@@ -1896,7 +2019,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMARCA_NACIONAL.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO, ContentTypesEnum.SPORTS]
       },{
         name: 'Radio Tele-Taxi',
         logo: 'https://myradioonline.es/public/uploads/radio_img/radio-teletaxi/fb_cover.jpg',
@@ -1907,7 +2031,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'https://radiott-web.streaming-pro.com:6103/radiott.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'SER Catalunya',
         logo: 'https://sdmedia.playser.cadenaser.com/playser/image/20231/20/1674202565250_957.jpeg',
@@ -1918,7 +2043,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'https://playerservices.streamtheworld.com/api/livestream-redirect/SER_CAT.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'COPE Barcelona Miramar',
         logo: 'https://static.mytuner.mobi/media/tvos_radios/SapDLY5pB3.png',
@@ -1929,7 +2055,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'https://wecast-b01-04.flumotion.com/copesedes/barcelona.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Canal Blau Ràdio',
         logo: 'https://fegp.cat/wp-content/uploads/images/radio-canal-blau.png',
@@ -1940,7 +2067,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'http://streaming.enantena.com:8000/canalblau128.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Radio Maricel',
         logo: 'https://www.radiomaricel.cat/wp-content/uploads/2022/10/maricel_logo_a_03072019-scaled.jpg',
@@ -1951,7 +2079,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'mp3',
             url: 'https://radioserver.radiomaricel.cat/proxy/radio_maricel?mp=/stream.mp3'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.RADIO]
       },{
         name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
@@ -1962,7 +2091,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'youtube',
             url: 'https://www.youtube.com/watch?v=O9mOtdZ-nSk'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
@@ -1973,7 +2103,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'youtube',
             url: 'https://www.youtube.com/watch?v=fLtn2L7OdeI'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Euronews',
         logo: 'https://staticcyl.euronews.com/wp-content/uploads/2022/12/euronews-logo-our-brands-neon-300x132.png',
@@ -1984,7 +2115,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'youtube',
             url: 'https://www.youtube.com/watch?v=NiRIbKwAejk'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: '12 канал (Channel12)',
         logo: 'https://i.imgur.com/OA9hm6e.png',
@@ -1995,7 +2127,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://12channel.bonus-tv.ru/cdn/12channel/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: '24 Техно (T24)',
         logo: 'https://i.imgur.com/1W6R14o.png',
@@ -2006,7 +2139,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/24techno/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: '365 дней ТВ (365 Days TV)',
         logo: 'https://i.imgur.com/NfnAiTR.png',
@@ -2017,7 +2151,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/365day/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'HD Life',
         logo: 'https://i.imgur.com/tKgmhxh.png',
@@ -2028,7 +2163,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/hdlife/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'Da Vinci Russia',
         logo: 'https://i.imgur.com/iBx7K1M.png',
@@ -2039,7 +2175,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/davinci/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Leomax 24',
         logo: 'https://i.imgur.com/qU9ohQu.png',
@@ -2050,7 +2187,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tvshops.bonus-tv.ru/cdn/shop24/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SHOPPING]
       },{
         name: 'MMA-TV.com',
         logo: 'https://i.imgur.com/QhdxNsB.png',
@@ -2061,7 +2199,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/m1/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Music Box Russia',
         logo: 'https://i.imgur.com/iWJdeD1.png',
@@ -2072,7 +2211,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://strm.yandex.ru/kal/rmbox/rmbox0.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Астрахань.Ru Sport (Astrahan.Ru Sport)',
         logo: 'https://i.imgur.com/BKaEtqL.png',
@@ -2083,7 +2223,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL, ContentTypesEnum.SPORTS]
       },{
         name: 'Астрахань.Ru TV (Astrahan.Ru TV)',
         logo: 'https://i.imgur.com/w4ys6zm.png',
@@ -2094,7 +2235,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Белгород 24 (Belgorod 24)',
         logo: 'https://i.imgur.com/EEirvyx.png',
@@ -2105,7 +2247,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Бокс ТВ (Boks TV)',
         logo: 'https://i.imgur.com/R1UjyfX.png',
@@ -2116,7 +2259,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/boxtv/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.SPORTS]
       },{
         name: 'БСТ (BST)',
         logo: 'https://i.imgur.com/IDotHmQ.png',
@@ -2127,7 +2271,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://bsttv.bonus-tv.ru/cdn/bst/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Дагестан (Dagestan)',
         logo: 'https://i.imgur.com/jumkRvc.png',
@@ -2138,7 +2283,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://dagestan.mediacdn.ru/cdn/dagestan/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.REGIONAL]
       },{
         name: 'Детский мир (Detski Mir)',
         logo: 'https://i.imgur.com/bBVEP0S.png',
@@ -2149,7 +2295,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/detskymir/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.KIDS]
       },{
         name: 'Диалоги о рыбалке (Dialogi o rybalke)',
         logo: 'https://i.imgur.com/OuBtnGU.png',
@@ -2160,7 +2307,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://strm.yandex.ru/kal/dialogi/dialogi0.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'Дождь (TV Rain)',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tvrain.svg/512px-Tvrain.svg.png',
@@ -2171,7 +2319,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://1527562093.rsc.cdn77.org/transcode/ngrp:ses_all/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Еврокино (Eurokino)',
         logo: 'https://i.imgur.com/8LPtPf6.png',
@@ -2182,7 +2331,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/eurokino/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MOVIES]
       },{
         name: 'Звезда (Zvezda)',
         logo: 'https://i.imgur.com/4PAcpfM.png',
@@ -2193,7 +2343,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Иллюзион+ (Illusions+)',
         logo: 'https://i.imgur.com/9GvuHQ5.png',
@@ -2204,7 +2355,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/illuzionplus/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MOVIES]
       },{
         name: 'Индийское Кино (Indiyskoye Kino)',
         logo: 'https://i.imgur.com/LL8GyCh.png',
@@ -2215,7 +2367,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/indiyskoekino/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MOVIES]
       },{
         name: 'Конный Мир (Konniy Mir)',
         logo: 'https://i.imgur.com/X6otbK0.png',
@@ -2226,7 +2379,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://cdn-01.bonus-tv.ru/konnyimir/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL]
       },{
         name: 'Кто есть кто (Kto est kto)',
         logo: 'https://i.imgur.com/PmD17UQ.png',
@@ -2237,7 +2391,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://tbs01-edge11.itdc.ge/ktoestkto/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'Миллет (Millet)',
         logo: 'https://i.imgur.com/hUjLRLy.png',
@@ -2248,7 +2403,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://live.trkmillet.ru/millet/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.KIDS]
       },{
         name: 'Мир 24 (Mir 24)',
         logo: 'https://i.imgur.com/dj9c8Yd.png',
@@ -2259,7 +2415,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Мир (Mir)',
         logo: 'https://i.imgur.com/AqWaJT8.png',
@@ -2270,7 +2427,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://strm.yandex.ru/kal/mir24/mir0.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'Мир Белагорья (MirBelogorya)',
         logo: 'https://mirbelogorya.ru/images/logo/Logo_Mir_Belogorya_purple_gradient.png',
@@ -2281,7 +2439,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.NEWS]
       },{
         name: 'МТВ (Волгоград)',
         logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MTV-2021.svg/512px-MTV-2021.svg.png',
@@ -2292,7 +2451,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.MUSIC]
       },{
         name: 'Наша Сибирь (Nasha Sibir)',
         logo: 'https://i.imgur.com/uXOz2d9.png',
@@ -2303,7 +2463,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://strm.yandex.ru/kal/sibir/sibir0.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS]
       },{
         name: 'Небеса ТВ7 (Nebesa TV7)',
         logo: 'https://www.nebesatv7.com/wp-content/themes/tv7-theme/assets/img/logo_nebesa_short.png',
@@ -2314,7 +2475,8 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
             format: 'm3u8',
             url: 'https://vod.tv7.fi/tv7-ru/tv7-ru.smil/playlist.m3u8'
           }
-        ]
+        ],
+        contentTypes: [ContentTypesEnum.DOCUMENTALS, ContentTypesEnum.RELIGION]
       },{
         name: 'Нижний Новгород 24 (Nizhniy Novgorod 24)',
         logo: 'https://i.imgur.com/ZWgPVIC.png',
