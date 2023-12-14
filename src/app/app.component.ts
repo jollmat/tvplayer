@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
   private youtubeApiLoaded = false;
   youtubeVideoId?: string;
   youtubePlayerConfig: any = {
-    controls: 0,
+    controls: 1,
     mute: 1,
     autoplay: 1
   };
