@@ -266,7 +266,7 @@ export class AppComponent implements OnInit {
       country: string,
       contentType: ContentTypesEnum
     };
-    return this.channelsFiltered.filter((_channel) => {
+    return this.channels.filter((_channel) => {
       const matches: boolean = _channel && _channel.contentTypes!=undefined && _channel.contentTypes.includes(type);
       if (!matches || (formValues.country && formValues.country.length>0 && _channel.country!=formValues.country)) {
         return false;
