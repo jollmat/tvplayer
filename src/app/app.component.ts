@@ -51,6 +51,11 @@ export class AppComponent implements OnInit {
 
   private youtubeApiLoaded = false;
   youtubeVideoId?: string;
+  youtubePlayerConfig: any = {
+    controls: 0,
+    mute: 1,
+    autoplay: 1
+  };
 
   streamForm!: FormGroup;
 
@@ -61,7 +66,7 @@ export class AppComponent implements OnInit {
   gridViewType: GridViewTypeEnum = GridViewTypeEnum.LAST;
   gridViewTypesFormValues: { text: string, value: GridViewTypeEnum} [] = [
     { text: 'Historic', value: GridViewTypeEnum.LAST },
-    { text: 'Top viewed', value: GridViewTypeEnum.TOP }
+    { text: '+ Views', value: GridViewTypeEnum.TOP }
   ]
 
   history: TdtChannelDto[] = [];
@@ -245,6 +250,29 @@ export class AppComponent implements OnInit {
   /* Set logo img bg style depending on image luminosity */
   setChannelLogoBg(channel: TdtChannelDto) {
     channel.logoBgStyle = (channel.logoBgStyle) ? channel.logoBgStyle : 'light';
+  }
+
+  contentTypeHasChannels(type: ContentTypesEnum): boolean {
+    return this.getTypeCount(type) > 0;
+  }
+
+  getTypeCount(type: ContentTypesEnum): number {
+    const formValues: { 
+      channel?: string,
+      country?: string,
+      contentType?: ContentTypesEnum
+    } = this.streamForm.getRawValue() as { 
+      channel: string,
+      country: string,
+      contentType: ContentTypesEnum
+    };
+    return this.channelsFiltered.filter((_channel) => {
+      const matches: boolean = _channel && _channel.contentTypes!=undefined && _channel.contentTypes.includes(type);
+      if (!matches || (formValues.country && formValues.country.length>0 && _channel.country!=formValues.country)) {
+        return false;
+      }
+      return matches;
+    }).length;
   }
 
   ngOnInit(): void {

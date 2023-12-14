@@ -16,9 +16,10 @@
                 'w-100': isMobile && portrait                
             }">
             <ng-container *ngIf="channels.length>0 && streamForm">
-                <form [formGroup]="streamForm" class="w-100 d-flex" [ngClass]="{
-                        'd-flex': !isMobile
-                    }">
+                <form [formGroup]="streamForm" class="w-100" [ngClass]="{
+                    'd-flex': !isMobile,
+                    'justify-content-between': !isMobile
+                }">
                     <div 
                         [ngClass]="{
                             'w-33': !isMobile,
@@ -26,7 +27,7 @@
                             'ng-mobile': isMobile
                         }">
                         <ng-select
-                            class="mb-2"
+                            class="mb-2 w-100"
                             [items]="countries"
                             (ngModelChange)="doFilter(undefined)"
                             (clear)="doFilter()"
@@ -64,7 +65,7 @@
                         }">
                         <ng-select
                             #contentTypeSelector
-                            class="mb-2"
+                            class="mb-2 w-100"
                             [items]="contentTypes"
                             (ngModelChange)="doFilter(undefined)"
                             (clear)="doFilter()"
@@ -73,6 +74,18 @@
                             formControlName="contentType"
                             name="type"
                             placeholder="Search content types">
+                            <ng-template ng-label-tmp let-item="item">
+                                <div class="d-flex align-items-center justify-content-between w-100">
+                                    <div>{{item}}</div>
+                                    <small class="num_channels ms-2">({{getTypeCount(item)}} channels)</small>
+                                </div>
+                            </ng-template>
+                            <ng-template ng-option-tmp let-item="item" let-index="index">
+                                <div class="d-flex align-items-center justify-content-between w-100">
+                                    <div>{{item}}</div>
+                                    <small class="num_channels ms-2">({{getTypeCount(item)}} channels)</small>
+                                </div>
+                            </ng-template>
                         </ng-select>
                     </div>
                     
@@ -85,6 +98,7 @@
                         }">
                         <ng-select
                             #channelSelector
+                            class="w-100"
                             [items]="channelsFiltered"
                             (ngModelChange)="doUpdateStreamUrl($event)"
                             [hideSelected]="false"
@@ -199,6 +213,7 @@
                 'flex-column': !(isMobile && portrait),
                 'flex-wrap': isMobile,
                 'mt-2': isMobile && portrait,
+                'no-borders': !(isMobile && portrait)
             }">
             <form [formGroup]="gridViewForm" [ngClass]="{
                     'mb-2': isMobile || !(isMobile && portrait),
@@ -306,12 +321,14 @@
         </ng-container>
 
         <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
-            <ng-container *ngIf="!mosaic">
-                <youtube-player [videoId]="youtubeId"></youtube-player>
+            <ng-container *ngIf="true">
+                <youtube-player [playerVars]="youtubePlayerConfig" [videoId]="youtubeId"></youtube-player>
             </ng-container>
+            <!--
             <ng-container *ngIf="mosaic">
                 <img [src]="logo" class="w-100 mosaic-logo cursor-pointer" (click)="selectChannelFromHistory(channel)">
             </ng-container>
+            -->
         </ng-container>
         </div>
         
