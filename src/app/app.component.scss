@@ -116,7 +116,14 @@ input[type="color"]:focus,
 
     .ng-mobile {
         .ng-select .ng-select-container {
-            min-height: 56px;     
+            min-height: 56px;
+
+            .ng-clear-wrapper {
+                margin-right:5px;
+                .ng-clear {
+                    font-size: 30px;
+                }
+            }
         }
         .ng-option {
             line-height: 40px;
