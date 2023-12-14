@@ -114,6 +114,15 @@ input[type="color"]:focus,
         align-items: center;       
     }
 
+    .ng-mobile {
+        .ng-select .ng-select-container {
+            min-height: 56px;     
+        }
+        .ng-option {
+            line-height: 40px;
+        }
+    }
+
     .no-borders {
         .ng-select .ng-select-container {
             border: 1px solid transparent;

@@ -60,8 +60,8 @@ export class AppComponent implements OnInit {
   gridViewForm!: FormGroup;
   gridViewType: GridViewTypeEnum = GridViewTypeEnum.LAST;
   gridViewTypesFormValues: { text: string, value: GridViewTypeEnum} [] = [
-    { text: 'History', value: GridViewTypeEnum.LAST },
-    { text: '+ Views', value: GridViewTypeEnum.TOP }
+    { text: 'Historic', value: GridViewTypeEnum.LAST },
+    { text: 'Top viewed', value: GridViewTypeEnum.TOP }
   ]
 
   history: TdtChannelDto[] = [];

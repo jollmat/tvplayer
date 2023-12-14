@@ -9,17 +9,21 @@
         <!-- Test URL -->
         <ng-container *ngIf="!isMobile && isLocalhost" [ngTemplateOutlet]="testTemplate"></ng-container>
 
+        <!-- Form -->
         <div class="d-flex mt-1 mb-3" 
             [ngClass]="{
                 'w-75': !(isMobile && portrait), 
                 'w-100': isMobile && portrait                
             }">
             <ng-container *ngIf="channels.length>0 && streamForm">
-                <form [formGroup]="streamForm" class="w-100 d-flex" [ngClass]="{'d-flex': !isMobile}">
+                <form [formGroup]="streamForm" class="w-100 d-flex" [ngClass]="{
+                        'd-flex': !isMobile
+                    }">
                     <div 
                         [ngClass]="{
                             'w-33': !isMobile,
-                            'w-100': isMobile 
+                            'w-100': isMobile,
+                            'ng-mobile': isMobile
                         }">
                         <ng-select
                             class="mb-2"
@@ -55,10 +59,12 @@
                         [ngClass]="{
                             'w-33': !isMobile,
                             'w-100': isMobile,
-                            'ps-1': !isMobile
+                            'ps-1': !isMobile,
+                            'ng-mobile': isMobile
                         }">
                         <ng-select
                             #contentTypeSelector
+                            class="mb-2"
                             [items]="contentTypes"
                             (ngModelChange)="doFilter(undefined)"
                             (clear)="doFilter()"
@@ -74,7 +80,8 @@
                         [ngClass]="{
                             'w-33': !isMobile,
                             'w-100': isMobile,
-                            'ps-1': !isMobile
+                            'ps-1': !isMobile,
+                            'ng-mobile': isMobile
                         }">
                         <ng-select
                             #channelSelector
@@ -128,6 +135,7 @@
                 </form>
             </ng-container>
         </div>
+        <!-- End Form -->
 
         <div class="d-flex justify-content-between align-items-top" 
             [ngClass]="{
@@ -138,6 +146,7 @@
             
             <ng-container *ngIf="!(isMobile && portrait) && (history.length>0 || topList.length>0)" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
 
+            <!-- Player -->
             <div class="player-container-big d-flex flex-column justify-content-center align-items-center" 
                 [ngClass]="{
                     'w-85': !(isMobile && portrait) && (history.length>0 || topList.length>0), 
@@ -153,12 +162,19 @@
                     }"></ng-container>
                     
                 </ng-container>
-                <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && (!isMobile || isTablet)">
-                    <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
+
+                <ng-container *ngIf="!isMobile">
+                    <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && (!isMobile || isTablet)">
+                        <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
+                    </ng-container>
                 </ng-container>
+                
             </div>
+            <!-- End Player -->
+
+            <!--
             <ng-container *ngIf="isMobile && portrait && history.length>0" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
-            
+            -->
         </div>
     </div>
 </div>
@@ -181,9 +197,14 @@
                 'w-15': !(isMobile && portrait), 
                 'w-100': isMobile && portrait,
                 'flex-column': !(isMobile && portrait),
+                'flex-wrap': isMobile,
                 'mt-2': isMobile && portrait,
             }">
-            <form [formGroup]="gridViewForm" class="no-borders" [ngClass]="{'mb-2': !(isMobile && portrait)}">
+            <form [formGroup]="gridViewForm" [ngClass]="{
+                    'mb-2': isMobile || !(isMobile && portrait),
+                    'w-100': isMobile,
+                    'mt-2': isMobile
+                }">
                 <ng-select
                     [items]="gridViewTypesFormValues"
                     [hideSelected]="false"
@@ -207,7 +228,7 @@
             </form>
             <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.LAST">
                 <ng-container *ngFor="let channel of history">
-                    <button class="btn btn-sm p-2 cursor-default">
+                    <button class="btn btn-sm p-2 cursor-default" [ngClass]="{'w-33':isMobile}">
                         <img 
                             [title]="channel.name" 
                             (click)="selectChannelFromHistory(channel)" 
@@ -223,7 +244,7 @@
             <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.TOP">
                 <ng-container *ngFor="let channelViews of topList; let idx = index;">
                     <ng-container *ngIf="idx<topListLength">
-                        <button class="btn btn-sm p-2 cursor-default">
+                        <button class="btn btn-sm p-2 cursor-default" [ngClass]="{'w-33':isMobile}">
                             <img 
                                 (click)="selectChannelFromHistory(channelViews.channel)" 
                                 [title]="channelViews.channel.name + ' ('+channelViews.views+' views)'" 
@@ -265,7 +286,7 @@
 
             <ng-container *ngIf="isIOS">
                 <vg-player>
-                    <video #media [vgMedia]="$any(media)" [vgHls]="url" id="singleVideo" controls crossorigin>
+                    <video #media [vgMedia]="$any(media)" [autoplay]="true" [vgHls]="url" id="singleVideo" controls crossorigin>
                     </video>
                 </vg-player>
             </ng-container>
