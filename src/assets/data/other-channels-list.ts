@@ -4171,6 +4171,198 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.SCIENCE]
+      },{
+        name: 'Open Heart Music 4k',
+        logo: '',
+        epg_id: 'OpenHeartMusic',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=XcVgkOYEwG8'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
+      },{
+        name: 'Aquarium 4k',
+        logo: '',
+        epg_id: 'Aquarium4k',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=PEGt_HYQVdw'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
+      },{
+        name: 'Winter Wildlife',
+        logo: '',
+        epg_id: 'WinterWildlife',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=ITBBwYV5H1s'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
+      },{
+        name: 'Negocios TV',
+        logo: 'https://pbs.twimg.com/profile_images/1321367703731523584/bNMmbetI_200x200.jpg',
+        epg_id: 'NegociosTV.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=dA53JW8U6Ak'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.BUSINESS]
+      },{
+        name: 'Blu Radio',
+        logo: 'https://yt3.ggpht.com/S-pOgrepbqVdyHzXL6Tf_Yw9TInzodzsgsIJte_zzB-LLVMek2VYCc7jfZ8r2gSne92lIatzdI4=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'BluRadio.co',
+        country: 'co',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=4Qd1bBX3PCc'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
+      },{
+        name: 'Cadena SER',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZRzryfM_sVm_npc1OvOuKt2_u9ebaceLRZRXWeP=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'CadenaSER.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=XzdABNRKzTY'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RADIO]
+      },{
+        name: 'Noticias Caracol',
+        logo: 'https://yt3.ggpht.com/GbWS4FAUjTkj5KinXso5MKfS2SAUvSs6L9jaslwWZCDOhPziHEBiPeQQAwAC2xEE-TRDeuRtfA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NoticiasCaracol.co',
+        country: 'co',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=oQgM6peiUKY'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
+      },{
+        name: 'Tatty y Misifú',
+        logo: 'https://yt3.ggpht.com/L2Nrf_VghWsAYwaLqJ-Vx53-b8FQwk87zB9lHlTgiXwAU8kzNcW7WKcMH23fAWHyi0AW-6KZ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'TattyMisifu',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=HrfTFVEKqDI'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.KIDS]
+      },{
+        name: 'A24',
+        logo: 'https://yt3.ggpht.com/UUDeuubaQlPaVvvMJhseVjpR0n3g3bk1kBdyN8iTmbbvK371YcZqYDzzBxqbmerAnWRl21Lp=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'A24.ar',
+        country: 'ar',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=QGpHLgRnrx4'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
+      },{
+        name: 'QSVS',
+        logo: 'https://yt3.ggpht.com/hZmWKCTflx0jS-0PbViBr56HRI_EoRHP_1YpEjLCMSji0JnwawizOR_Er6sKJrfmwh1Je8_c=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'QSVS.it',
+        country: 'it',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=V1CCAvFCLBU'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
+      },{
+        name: 'A Spor',
+        logo: 'https://yt3.ggpht.com/GrNhc9daQVb86vZckXJSFvnZz--hGg0xQNnJw5Rc4C9pt4Is7s67X0XFU-lKtUoEDsMSO6T-=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ASpor.tr',
+        country: 'tr',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=xrf_RbM_MNk'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
+      },{
+        name: 'SportsRadio 610',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQhDKhL6Lyd4fItzfnwjtqCfSJ0wZugOKgmQ4MB=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'SportsRadio610.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=jsdrSFf09kc'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
+      },{
+        name: 'CBS Sports Radio',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZTuf_809CVRTgCVqGhRROkVh_ROgdS7l1hfRC6juw=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'CBSSportsRadio.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=4ApwzNPVexY'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
+      },{
+        name: 'beIN SPORTS Türkiye',
+        logo: 'https://yt3.ggpht.com/_SYeayAB7OHzATSVuZgGyPj4leRcF5FZQVqF0x1lXfAYZHrXuh1wdNBJC0VtWVjtjK4HjYpR2A=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'beINSPORTS.tr',
+        country: 'tr',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=OypUpUTYAHI'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
+      },{
+        name: 'Live @ Santa Claus Village (City of Rovaniemi)',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZT4E8pdGLD7gYQ-sX2-Cr45HbHMN6am0GCcAt3uJQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LiveSantaClausVillage.fi',
+        country: 'fi',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=Cp4RRAEgpeU'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.CHRISTMAS]
+      },{
+        name: 'London Waterloo bridge Live webcam',
+        logo: 'https://yt3.ggpht.com/2TMsNszBqIsOpgHZr85cawKKnIuj6Ou5eVIeX7ePQf2cKYBuUhw300edMke66EC_5zZtjrEAbOc=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LondonWaterlooBridgeWebcam.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=oUgyyXT0rfc'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
       }/*,{
         name: '',
         logo: '',

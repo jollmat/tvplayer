@@ -395,24 +395,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Negocios TV",
-                "web": "https://www.negocios.com/directo",
-                "logo": "https://pbs.twimg.com/profile_images/1321367703731523584/bNMmbetI_200x200.jpg",
-                "epg_id": "Negocios.TV",
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=7m6v_0NTvmw",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
                 "name": "El Confidencial",
                 "web": "https://www.elconfidencial.com/television/",
                 "logo": "https://graph.facebook.com/elconfidencial/picture?width=200&height=200",
