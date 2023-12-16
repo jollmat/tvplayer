@@ -342,6 +342,7 @@
         <ng-container *ngIf="gridViewType===GridViewTypeEnum.LAST">
             <ng-container *ngFor="let channel of history">
                 <div class="tv-multiple-screen d-flex flex-column justify-content-between align-items-start" title="{{channel.name}} ({{getFormat(channel.options[0].url)}})">
+                    
                     <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
                         channel: channel,
                         url: channel.options[0].url,
@@ -354,6 +355,7 @@
                         <div class="text-info cursor-pointer" (click)="selectChannelFromHistory(channel)">{{channel.name}}</div>
                         <i *ngIf="channel.country && channel.country.length>0" [title]="getCountryName(channel.country)" class="fi fi-{{channel.country}}"></i>
                     </div>
+
                 </div>
             </ng-container>
         </ng-container>
@@ -361,6 +363,7 @@
             <ng-container *ngFor="let channelView of topList; let idx = index;">
                 <ng-container *ngIf="idx<topListLength">
                     <div class="tv-multiple-screen d-flex flex-column justify-content-end align-items-start" title="{{channelView.channel.name}} ({{getFormat(channelView.channel.options[0].url)}})">
+                        
                         <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
                             channel: channelView.channel,
                             url: channelView.channel.options[0].url,
@@ -373,6 +376,7 @@
                             <div class="text-info cursor-pointer" (click)="selectChannelFromHistory(channelView.channel)">{{channelView.channel.name}}</div>
                             <i *ngIf="channelView.channel.country && channelView.channel.country.length>0" [title]="getCountryName(channelView.channel.country)" class="fi fi-{{channelView.channel.country}}"></i>
                         </div>
+                        
                     </div>
                 </ng-container>
             </ng-container>

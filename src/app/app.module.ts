@@ -20,12 +20,14 @@ import { ToastrModule } from 'ngx-toastr';
 import { HighlighterPipe } from './pipes/highlighter.pipe';
 import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { MediaPlayerComponent } from './components/views/media-player/media-player.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HighlighterPipe,
-    SafeUrlPipe
+    SafeUrlPipe,
+    MediaPlayerComponent
   ],
   imports: [
     BrowserModule,

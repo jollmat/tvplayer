@@ -3584,18 +3584,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.GENERAL]
       },{
-        name: 'Fireplace 4k with Crackling Fire Sounds',
-        logo: '',
-        epg_id: '',
-        country: '',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=O9palxot6BU'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
-      },{
         name: 'Christmas Fireplace Music',
         logo: '',
         epg_id: '',
@@ -3609,24 +3597,12 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.CHRISTMAS]
       },{
         name: 'Live Webcam around the World',
-        logo: '',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZRl7Bp53kTq9WZnvj4Nhac374yxJPgPNGsS3IVcPA=s48-c-k-c0x00ffffff-no-rj',
         epg_id: '',
         country: '',
         options: [
           {
             format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=8KGXSjtS5pk'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
-      },{
-        name: 'Live Webcam around the world',
-        logo: 'https://i.imgur.com/LQB6G3s.jpg',
-        epg_id: 'LiveWebcamAroundWorld',
-        country: '',
-        options: [
-          {
-            format: 'm3u8',
             url: 'https://www.youtube.com/watch?v=8KGXSjtS5pk'
           }
         ],
@@ -3848,18 +3824,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
       },{
-        name: 'News 12 New York',
-        logo: 'https://yt3.ggpht.com/ytc/APkrFKabEm3pEJAngegSuTA0Eip3P5CmANJwS3FA9Reg0g=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'News12NY.us',
-        country: 'us',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=37OKlipyVFc'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
-      },{
         name: 'Paw Patrol Official & Friends',
         logo: 'https://yt3.ggpht.com/d83FgJTp4AB_v1KAuNC_WXIrS2lAYslBLRKQSRB3zFW3QSzd1Pn2NMMlKW0I-0f2qL1HNsk0=s48-c-k-c0x00ffffff-no-rj',
         epg_id: 'PawPatrol',
@@ -3896,18 +3860,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SCIENCE]
       },{
-        name: 'OT Oficial 24h',
-        logo: 'https://yt3.ggpht.com/8-FF68XYdvQnX2_6l9eZa_kaZeApqY06vmmnbnZMiMtuMruDhhRwibu2EW606eM8z-MnMTkc=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'OTOficial.es',
-        country: 'es',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=0BeNCwHDiiI'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.GENERAL]
-      },{
         name: 'Epidemic Pop Radio',
         logo: 'https://yt3.ggpht.com/t_VmCQuVMtzURrk2Xlbh8JU7RCi1jUGk5i-jYXMDIT3x5ge8Q9B4x9qDwdei8HlvJbi7iw-6sA=s48-c-k-c0x00ffffff-no-rj',
         epg_id: 'EpidemicPopRadio',
@@ -3932,18 +3884,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
       },{
-        name: 'Christmas Instrumental Jazz Music',
-        logo: 'https://yt3.ggpht.com/zcs1leNSr4HhRn-_IHzR3CA_U3Tt7AN7jQVgKkIIgpVKoXyr9a2nzl3g7mhWirvrKzfUAD4cYN0=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'ChristmasInstrumentalJazz',
-        country: '',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=0PA9uFSBjAc'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.CHRISTMAS, ContentTypesEnum.MUSIC]
-      },{
         name: 'Christmas Music Radio (from Ballistic Live)',
         logo: 'https://yt3.ggpht.com/ytc/APkrFKazov_b68dHEwv_8CNL-wXjhxJBTeS50vCbcy47og=s48-c-k-c0x00ffffff-no-rj',
         epg_id: 'ChristmasMusicRadioBallisticLive',
@@ -3967,30 +3907,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.CHRISTMAS, ContentTypesEnum.MUSIC]
-      },{
-        name: 'Ambient de Nadal (Christmas, Smoothing Sounds)',
-        logo: 'https://yt3.ggpht.com/EnD3DCDikLwHQH3Cl7gPhVBhcyyvJuvut4_cAXywT57fEk2ZiwsL3dHhDrbyi0NV9iMmnrWxbQ=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'ChristmasSmoothingSounds',
-        country: '',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=-aCwLs2wTAE'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.CHRISTMAS, ContentTypesEnum.MUSIC]
-      },{
-        name: 'Live Santa from The North Pole (Christmas countdown)',
-        logo: 'https://yt3.ggpht.com/M4KiRxTKcUaZibZxOqsYOgsCesL0r1oBJmBB_AaQhYqGi2AbUps-UxKGqZ-LE44oKyXDlaaatUI=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'ChristmasCountdownNorthPole',
-        country: '',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=piD_gf82drc'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.CHRISTMAS]
       },{
         name: 'Wetter Panorama 24/7 live',
         logo: '',
@@ -4027,18 +3943,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
-      },{
-        name: 'Peppa Pig All Episodes 24/7',
-        logo: '',
-        epg_id: 'PeppaPigFull',
-        country: '',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=ZI_onAbHTWw'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.KIDS]
       },{
         name: 'Alan Becker TV 24/7 Livestream',
         logo: '',
@@ -4112,18 +4016,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
       },{
-        name: 'Manizales Live Cam 24/7, Colombia',
-        logo: 'https://yt3.ggpht.com/ytc/APkrFKYhAPE57rJYTL-qCbajBGe3pug-5aJIUCNk5-i1lQx-qX9XHuubgRvgtVKuoUud=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'ManizalesLive.co',
-        country: 'co',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=PVc2KuPFafQ'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
-      },{
         name: 'Space Ambient 24/7',
         logo: 'https://yt3.ggpht.com/ytc/APkrFKYg3b2mIk7Fq1l5g28MPPALSaWvCAVMoD2IvSLztw=s48-c-k-c0x00ffffff-no-rj',
         epg_id: 'SpaceAmbient',
@@ -4184,18 +4076,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
       },{
-        name: 'Aquarium 4k',
-        logo: '',
-        epg_id: 'Aquarium4k',
-        country: '',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=PEGt_HYQVdw'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
-      },{
         name: 'Winter Wildlife',
         logo: '',
         epg_id: 'WinterWildlife',
@@ -4208,18 +4088,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RELAX]
       },{
-        name: 'Negocios TV',
-        logo: 'https://pbs.twimg.com/profile_images/1321367703731523584/bNMmbetI_200x200.jpg',
-        epg_id: 'NegociosTV.es',
-        country: 'es',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=dA53JW8U6Ak'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.BUSINESS]
-      },{
         name: 'Blu Radio',
         logo: 'https://yt3.ggpht.com/S-pOgrepbqVdyHzXL6Tf_Yw9TInzodzsgsIJte_zzB-LLVMek2VYCc7jfZ8r2gSne92lIatzdI4=s48-c-k-c0x00ffffff-no-rj',
         epg_id: 'BluRadio.co',
@@ -4231,18 +4099,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
-      },{
-        name: 'Cadena SER',
-        logo: 'https://yt3.ggpht.com/ytc/AIf8zZRzryfM_sVm_npc1OvOuKt2_u9ebaceLRZRXWeP=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'CadenaSER.es',
-        country: 'es',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=XzdABNRKzTY'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.RADIO]
       },{
         name: 'Noticias Caracol',
         logo: 'https://yt3.ggpht.com/GbWS4FAUjTkj5KinXso5MKfS2SAUvSs6L9jaslwWZCDOhPziHEBiPeQQAwAC2xEE-TRDeuRtfA=s48-c-k-c0x00ffffff-no-rj',
@@ -4304,30 +4160,6 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
       },{
-        name: 'SportsRadio 610',
-        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQhDKhL6Lyd4fItzfnwjtqCfSJ0wZugOKgmQ4MB=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'SportsRadio610.us',
-        country: 'us',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=jsdrSFf09kc'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
-      },{
-        name: 'CBS Sports Radio',
-        logo: 'https://yt3.ggpht.com/ytc/AIf8zZTuf_809CVRTgCVqGhRROkVh_ROgdS7l1hfRC6juw=s48-c-k-c0x00ffffff-no-rj',
-        epg_id: 'CBSSportsRadio.us',
-        country: 'us',
-        options: [
-          {
-            format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=4ApwzNPVexY'
-          }
-        ],
-        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.SPORTS]
-      },{
         name: 'beIN SPORTS Türkiye',
         logo: 'https://yt3.ggpht.com/_SYeayAB7OHzATSVuZgGyPj4leRcF5FZQVqF0x1lXfAYZHrXuh1wdNBJC0VtWVjtjK4HjYpR2A=s48-c-k-c0x00ffffff-no-rj',
         epg_id: 'beINSPORTS.tr',
@@ -4360,6 +4192,210 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           {
             format: 'youtube',
             url: 'https://www.youtube.com/watch?v=oUgyyXT0rfc'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'EarthCam Live: Dublin',
+        logo: 'https://yt3.ggpht.com/D1bW3c7hxe9KVXWOzQ0asiHh7WNxh4IeIDRBsRS-dpmdZcuyzstFY_o397Fg4M7UtUaDZ6msYQ4=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'EarthCamDublin.ie',
+        country: 'ie',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=_P9hB5maZU4'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Jerusalem live Western Wall',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZR9VBOXzJECM63gKE_oY0dpFvTXLgp60tfQBIjypQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'JerisalemWesternWall.il',
+        country: 'il',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=7hE36E508Dk'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Winter on Rails (Swedish Railcam)',
+        logo: 'https://yt3.ggpht.com/3X9O3mYU3lsYbhiQWoeEiQEm1Ifl7ebUbXZsriOqgTTtxwiGNXAANinPg9rCEUw6mjBdpmqubQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WinterOnRailsSwe.se',
+        country: 'se',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=N27WCrvM4tU'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.TRAVEL]
+      },{
+        name: 'London Underground First Person 24/7',
+        logo: 'https://yt3.ggpht.com/I8Y_555OXTq_e4lJWDWRbLPkhby3JyNH8V4LAGK_yvX5XKbFhYQgQ2bABBBxRr26wKmK6QDmMQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LondonUndergroundFirstPerson.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=2g-0sA13Sp8'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.TRAVEL]
+      },{
+        name: 'Korea walking tour live TV',
+        logo: 'https://yt3.ggpht.com/MSSsFRjbn8fYUICVDe_nnSs1qGFs2IoZ4tLza4jipnGSa5hE-xg77eafqNSTWXnQpDOPXx61OJg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'KoreaWalkingTourLiveTV.kr',
+        country: 'kr',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=EfLGvGVM7Jc'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.TRAVEL]
+      },{
+        name: 'The Best Of Norway\'s Railway Cab Views',
+        logo: 'https://yt3.ggpht.com/w7ypnC99hE2BTYOC9k2g5Ud1_gYmY6V0QsaeeRO0hsdeAvxzK4-S7Hb0NcAT63EaK73uvFkylw=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'NorwaysRailwayCabView.no',
+        country: 'no',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=g7CJ3pm-e7s'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.TRAVEL]
+      },{
+        name: 'Venice Beach Live Camera (LA)',
+        logo: 'https://yt3.ggpht.com/nFPdAExld62YriGSqN9HXb0qZbmec80loWMC9WEcfxB5IZtXTDz5VAplcorlRiHgneBRw3pl=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'VeniceBeachLiveCamera.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=3LXQWU67Ufk'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Times Square: 1540 Broadway View Live',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZRw7hOLiAsjHMWGRP_5Tt2Gm7EmVay0fkbqdUxv=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'TimesSquareViewLive.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=GSmCh4DrbWY'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Live Webcam from Lanzarote Airport',
+        logo: 'https://yt3.ggpht.com/xlPDUyHlO9RHr9wqzgwQQnPSgjo4Lb8FzBORFnQBZi8-6V7a9SZCCyV08e73-FpRjBPnXQ1Q=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LiveLanzaroteAirport.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=AAlo3eCPVbk'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'The Royal Albert Bridge Cam',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQ279AOWEmluP7rgSJDAs6TTg99efDJcCtG86aZ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'RoyalAlbertBridgeCam.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=1vkt_B2N9qA'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Africam Tau by Explore.org',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZToeBf3Rnbe0atR0kYwaN3WM3hz99nV-nHZ6QkE=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'AfricamTau.za',
+        country: 'za',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=DsNtwGJXTTs'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Live Bangkok tour',
+        logo: 'https://yt3.ggpht.com/MSSsFRjbn8fYUICVDe_nnSs1qGFs2IoZ4tLza4jipnGSa5hE-xg77eafqNSTWXnQpDOPXx61OJg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LiveBangkokTour.th',
+        country: 'th',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=QQIXL81-F-c'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS, ContentTypesEnum.TRAVEL]
+      },{
+        name: 'Sea Breeze Café Cam in Dawlish (Devon, UK)',
+        logo: 'https://yt3.ggpht.com/1IlNxr0B0loiEZK-d_0_oDPEkGPsSiUstKBOpUtFrcssVJpXgy6Lj-3yuwKHDuiolzXP6RNyEQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'SeaBreezeDawlish.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=QQIXL81-F-c'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'York ROC Camera (Yorkshire, UK)',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQ279AOWEmluP7rgSJDAs6TTg99efDJcCtG86aZ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'YorkROCCamera.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=-CFAcRLZqnM'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Midway Airport (Chicago, IL)',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQRZkNT2rHHGf11_w1kgzjBF6nUOcelLADI2T64=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'MidwayAirportChicago.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=kQQkpnATvv8'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'White House Live Cam',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZRSHnAtiHenqx8X299UrJTHkvfmGHeM1uhPL-dq1w=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WhiteHouseLiveCam.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=mzCc5yX9soY'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Rathmines Live Webcam (Dublin)',
+        logo: 'https://yt3.ggpht.com/siCmiFyPu3aAnW3tY_tCXP1E9GCyfH8eQhtgU8pifimWr_gHkRjvZp2gklkzRDroITFmcUiRqg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'RathminesLiveWebcam.ie',
+        country: 'ie',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=HOBbYac86vE'
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]

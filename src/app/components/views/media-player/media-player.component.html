@@ -1,0 +1,51 @@
+<div class="d-flex w-100 h-100 align-items-center justify-content-center player-container">
+    <ng-container *ngIf="format===MediaTypesEnum.M3U8">
+        <ng-container *ngIf="isWindows || isAndroid || isMac">
+            <vg-player>
+                <video #myMedia
+                       [vgHls]="url"
+                       [vgHlsHeaders]="headers"
+                       [poster]="logo"
+                       (onGetBitrates)="hlsBitrates = $event"
+                       id="my-video-{{logo}}"
+                       type="video/mp4"
+                       preload="metadata"
+                       [muted]="true"
+                       [autoplay]="true"
+                       controls>
+                </video>
+            </vg-player>
+        </ng-container>
+
+        <ng-container *ngIf="isIOS">
+            <vg-player>
+                <video #media [vgMedia]="$any(media)" [autoplay]="true" [vgHls]="url" id="singleVideo" controls crossorigin>
+                </video>
+            </vg-player>
+        </ng-container>
+    </ng-container>
+
+    <ng-container *ngIf="format===MediaTypesEnum.MP3">
+        <div class="d-flex flex-column audio-player-container justify-content-start align-items-start" [ngClass]="{'p-5':!mosaic}">
+            <img *ngIf="logo && logo.length>0 && !mosaic" class="radio_img m-2 cursor-pointer" [src]="logo">
+            <ng-container *ngIf="!mosaic">
+                <vg-player>                    
+                    <audio #myMedia id="my-audio" [muted]="mosaic" [autoplay]="!mosaic" controls>
+                        <source [src]="url" [type]="'audio/mp3'">
+                    </audio>                    
+                </vg-player>
+        </ng-container>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
+        <ng-container *ngIf="true">
+            <youtube-player [playerVars]="youtubePlayerConfig" [videoId]="youtubeId"></youtube-player>
+        </ng-container>
+        <!--
+        <ng-container *ngIf="mosaic">
+            <img [src]="logo" class="w-100 mosaic-logo cursor-pointer" (click)="selectChannelFromHistory(channel)">
+        </ng-container>
+        -->
+    </ng-container>
+    </div>
