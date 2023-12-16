@@ -4399,6 +4399,18 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Live Storm Chaser',
+        logo: 'https://yt3.ggpht.com/mx0NNc_IyIWgQLAkTBxXe6-8dXTkv5tkiaOXeqYFmp22biWyM2_GWVQ8YJMoHEZuwFU8WFGs=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LiveStormChaser.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=6LNYUKy51ps'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
       }/*,{
         name: '',
         logo: '',
