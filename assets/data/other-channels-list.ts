@@ -4347,7 +4347,7 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
         options: [
           {
             format: 'youtube',
-            url: 'https://www.youtube.com/watch?v=QQIXL81-F-c'
+            url: 'https://www.youtube.com/watch?v=OhjzT8DJtNw'
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
@@ -4411,6 +4411,270 @@ export const OTHER_CHANNELS_LIST: TdtChannelDto[] = [
           }
         ],
         contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'MEDview: DN-Skrapan, Stockholm',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZTzcaHHJUF0-s5f4s_mn86RnKddODrck31H1M3D=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'MEDviewDN-Skrapan.se',
+        country: 'se',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=NCfMPD5A6hQ'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Oslo LIVE',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZST1jjFx9RNwbgx0yAk3c2DUI2uTfaZJ0SfJwoV6A=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'OsloLive.no',
+        country: 'no',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=RCeiyWlN8wA'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'The Brian Boru Pub Live Webcam 2 Glasnevin (Dublin, Ireland)',
+        logo: 'https://yt3.ggpht.com/siCmiFyPu3aAnW3tY_tCXP1E9GCyfH8eQhtgU8pifimWr_gHkRjvZp2gklkzRDroITFmcUiRqg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'BrianBoruGlasnevin.ie',
+        country: 'ie',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=qMDvwuS284k'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Live Webcam Cabra (Dublin, Ireland)',
+        logo: 'https://yt3.ggpht.com/siCmiFyPu3aAnW3tY_tCXP1E9GCyfH8eQhtgU8pifimWr_gHkRjvZp2gklkzRDroITFmcUiRqg=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LiveCamCabra.ie',
+        country: 'ie',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=QbtiT6h5_f0'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Larne, Northern Ireland - Live Webcam',
+        logo: 'https://yt3.ggpht.com/rfqo66cL9mD9MpQjdn-zb78Y9uaSbpMfE8Tc1JBGvc7e6vvh69BGltovoSb5hVaq-KZdU3fJHQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LarneNorternIreland.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=5SeKI0wV6oQ'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Iceland LIVE Earthquake Data And Volcano Eruption Webcams',
+        logo: 'https://yt3.ggpht.com/fMAI42NT5NpLccrxeIqv0bYiAs66MWLbskHML-F--wH6AImoZigfzl2-KMY3_3yOiDmP5SYN7Q=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'IcelandVolcoholicsLive.is',
+        country: 'is',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=TF44Z7wta-s'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Hvar, Croatia - LIVE 24/7 WebCam',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZToO9F6FCU4lW1UIQk_WCKBjIKQ1hGrKMmgOxyY=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'HvarLiveWebCam.hr',
+        country: 'hr',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=7TMUvbju4zM'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'WebCam.NL | bizdam.nl | live Camera Beurs van Berlage, Amsterdam',
+        logo: 'https://yt3.ggpht.com/EzqBV7Hxio5AO16YSPkr-bPh0x3B3KjPiqJR8o4cnAnSC9R9ZjZJquz6sje_DMdry1KW7Qc2pQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WebCamBizdamBerlage.nl',
+        country: 'nl',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=zvx4y0BL50Q'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Amsterdam - Stationseiland - Centraal station',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQVdEUU_p3O9KnSVyRbyk30quF2mahEN3J01YJrrA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'AmsterdamStationseiland.nl',
+        country: 'nl',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=1phWWCgzXgM'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Europe 100+Live Webcams City Virtual Tour',
+        logo: 'https://yt3.ggpht.com/2TMsNszBqIsOpgHZr85cawKKnIuj6Ou5eVIeX7ePQf2cKYBuUhw300edMke66EC_5zZtjrEAbOc=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'Europe100+LiveWebcams',
+        country: '',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=jBoJyMazCOE'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'WebcamSittard Camera (Sittard, Netherlands)',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZTreceYxIF8c53ZzipRNFQ7h30uEOMZVFywoA_g=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WebcamSittard.nl',
+        country: 'nl',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=6e7xeWfxxiE'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Platja d\'Aro Center Live',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZTCyPORfXYOke133IJhrVEzXZwxdA8cOpg-WhS8iQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'PlatjaAroCenterWebcam.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=czV_hXEMk8M'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Webcam Tossa de Mar (Girona)',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQmP57gzIILupeR5XsYc3vEha7W7CvYttdP0ZosaA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WebcamTossadeMar.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=nWFcWooDAxI'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Valencia Webcam LIVE - Plaza del Ayuntamiento, Spain',
+        logo: 'https://yt3.ggpht.com/h6TtdARMDJ_Zw8psqNYSV6qFg1RhOmKE2XCOoIGRgC2Halm-9ipd90MNQgXdEwd4mHYs9z3RqA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'ValenciaWebcamAyuntamiento.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=iiv6KjsO7gE'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Lekeitioko Udala Webcam',
+        logo: 'https://yt3.ggpht.com/CLUmDzsvno0xwIADOZDU1Q3llKBFmi8o9ATC_AtzXpY1PnQ6QWWXxELKAYLAkQhmRSjOLI54cA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LekeitiokoUdala.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=KTvzATgyRik'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Webcam Plaça Mercadal - Ajuntament de Reus',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZQq-xpCWYYEpHMLQ4kTPXIKCLcvKeqLsUFZdT3E=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'PlacaMercadalReus.es',
+        country: 'es',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=L9HyLjRVN8E'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Webcam Live Manarola (SP) - Cinque Terre',
+        logo: 'https://yt3.ggpht.com/ZlaDl0RHVjNYfZ3EiK5wcxUgBZo2okwzjvEETeMK5n8PpwSA9hDWJz2T4uZ-62FIm1rugTwwCTE=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'WebcamManarola.it',
+        country: 'it',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=QpqsJKI0Wfk'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Leavenworth Washington Live Webcam from Downtown',
+        logo: 'https://yt3.ggpht.com/n02I9Hi4eVjRc75WmAFr84vEUraa-LvILtq8QwgtuMNtQ-AxAzOgmZi4snPs6rWgySiauNJNfQ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LeavenworthWashingtonWebcam.us',
+        country: 'us',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=XjhxRZEm638'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'Live Camera Arvidsjaur',
+        logo: 'https://yt3.ggpht.com/ytc/AIf8zZRAqKd_QeZsQUs74rdtkTPlPreXxpRt5lo0uTlHXqkSvwYiMwpUL19F6zk1ZfDZ=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'LiveCameraArvidsjaur.se',
+        country: 'se',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=Dnw_l8f9rUc'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.WEBCAMS]
+      },{
+        name: 'India TV',
+        logo: 'https://yt3.ggpht.com/xvSPpZd-kEa6T3KgnlWv5YYkzLxf9UjWwnjlVBhtJR67qcipOq0sBjrgOd5_46mdoCE3cglT_w=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'IndiaTV.in',
+        country: 'in',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=sfSLgOpYmW8'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.NEWS]
+      },{
+        name: 'Citizen TV Live',
+        logo: 'https://yt3.ggpht.com/vqgyK9trRKgIFfaVhikZoo1l30ANBVkgwVRIpD81rcqZL0sBB8zwPAnmNQ-zI9mDllHlPlJEadA=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'CitizenTVLive.ke',
+        country: 'ke',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=tTfXu8AybPE'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.GENERAL]
+      },{
+        name: 'Talk TV Live',
+        logo: 'https://yt3.ggpht.com/F0VPUEmuanwqpek33CMZUhPeoKbhyIL6TEga60ImpXszlbxf10aLFkCRkpqUlo22N3mR0P-uIUM=s48-c-k-c0x00ffffff-no-rj',
+        epg_id: 'TalkTVLive.gb',
+        country: 'gb',
+        options: [
+          {
+            format: 'youtube',
+            url: 'https://www.youtube.com/watch?v=WguRyzIb4bE'
+          }
+        ],
+        contentTypes: [ContentTypesEnum.YOUTUBE, ContentTypesEnum.GENERAL]
       }/*,{
         name: '',
         logo: '',

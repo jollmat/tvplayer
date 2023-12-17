@@ -2506,22 +2506,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   }
                 ],
                 "extra_info": []
-              },
-              {
-                "name": "Canal 2000",
-                "web": "http://www.canal2000.com",
-                "logo": "https://graph.facebook.com/canal2000/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://canal2000.berkano-systems.net/streaming/streams/canal2000-720p.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
               }
             ]
           },
@@ -3139,22 +3123,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                   {
                     "format": "m3u8",
                     "url": "http://51.254.47.72:1935/piera/smil:piera.smil/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Canal 10 Empord\u00e0",
-                "web": "http://www.canal10.cat/endirecte",
-                "logo": "https://graph.facebook.com/canal10emporda/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://ventdelnord.tv:8080/escala/directe.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
@@ -6746,24 +6714,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [],
                 "extra_info": [
                   "W3U",
-                  "EMB"
-                ]
-              },
-              {
-                "name": "FIBA",
-                "web": "https://www.livebasketball.tv/home",
-                "logo": "https://graph.facebook.com/FIBA/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=YiW26xS_Sl8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
                   "EMB"
                 ]
               },
