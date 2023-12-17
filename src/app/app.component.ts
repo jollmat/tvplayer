@@ -44,8 +44,10 @@ export class AppComponent implements OnInit {
   headers: any = {};
   hlsBitrates: any;
   logoUrl?: string;
+  channelName: string = '';
   streamUrl?: string;
   streamUrl$ = new BehaviorSubject<string>('');
+  
   channels: TdtChannelDto [] = [];
   channelsFiltered: TdtChannelDto [] = [];
 
@@ -159,6 +161,7 @@ export class AppComponent implements OnInit {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel?.logo;
+    this.channelName = channelName;
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
@@ -171,6 +174,7 @@ export class AppComponent implements OnInit {
   selectChannelFromHistory(channel: TdtChannelDto) {
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel.logo;
+    this.channelName = channel.name;
     console.log(channel, this.logoUrl);
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
@@ -275,6 +279,77 @@ export class AppComponent implements OnInit {
     }).length;
   }
 
+  setupChannels() {
+    this.channels.forEach((_channel) => {
+      // Set no image
+      if (!_channel.logo || _channel.logo.length===0) {
+        _channel.logo = './assets/img/img-not-found.jpg';
+      }
+      // Set logo bg
+      this.setChannelLogoBg(_channel);
+    });
+    this.channels.sort((a,b) => {
+      return a.name<b.name ? -1 : 1;
+    });
+    this.channelsFiltered = [...this.channels];
+  }
+
+  setupCountries() {
+    this.countries = [];
+    this.channels.forEach((_channel) => {
+      if (_channel.country && _channel.country?.length>0 && !this.countries.find((_c) => _c.iso2===_channel.country )) {
+        const countryName: string = this.getCountryName(_channel.country);
+        if (countryName?.length>0) {
+          this.countries.push({
+            iso2: _channel.country,
+            name: this.getCountryName(_channel.country),
+            numChannels: this.channels.filter((_c) => _c.country===_channel.country ).length
+          });
+        }
+      }
+    });
+    this.countries.sort((a,b) => a.name<=b.name ? -1 : 1 );
+    this.countries.unshift({ name: 'All countries', iso2: '', numChannels: this.channels.length });
+  }
+
+  initForms() {
+    this.streamForm = new FormGroup({
+      channel: new FormControl(this.channelName),
+      country: new FormControl(''),
+      contentType: new FormControl(undefined)
+    });
+    this.gridViewForm = new FormGroup({
+      gridViewType: new FormControl(this.gridViewType)
+    });
+  }
+
+  configHistory() {
+    this.recoverHistory();
+
+    if (this.history.length>0) {
+      const lasChannelViewed: TdtChannelDto | undefined = this.history[0];
+      // this.streamUrl = lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url;
+      this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
+      this.logoUrl = (lasChannelViewed) ? lasChannelViewed.logo : undefined;
+      this.channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
+    } else {
+      // this.streamUrl = this.channels[0].options[0].url;
+      this.logoUrl = this.channels[0].logo;
+      this.streamUrl$.next(this.channels[0].options[0].url);
+      this.channelName = this.channels[0].name;
+    }
+  }
+
+  configTopViews() {
+    let topChannelViewed: string | null = localStorage.getItem('APP_TVPLAYER_TOP');
+    if (topChannelViewed) {
+      this.topList = JSON.parse(topChannelViewed) as { channel: TdtChannelDto, views: number } [];
+    } else {
+      this.topList = [];
+      this.doUpdateChannelsViews();
+    }
+  }
+
   ngOnInit(): void {
 
     this.isLocalhost = window.location.hostname === 'localhost';
@@ -340,80 +415,23 @@ export class AppComponent implements OnInit {
 
       this.channels = this.channels.concat(otherChannels);
 
-      this.channels.forEach((_channel) => {
-
-        // Set no image
-        if (!_channel.logo || _channel.logo.length===0) {
-          _channel.logo = './assets/img/img-not-found.jpg';
-        }
-
-        // Set logo bg
-        this.setChannelLogoBg(_channel);
-
-        // Get countries
-        if (_channel.country && _channel.country?.length>0 && !this.countries.find((_c) => _c.iso2===_channel.country )) {
-          const countryName: string = this.getCountryName(_channel.country);
-          if (countryName?.length>0) {
-            this.countries.push({
-              iso2: _channel.country,
-              name: this.getCountryName(_channel.country),
-              numChannels: this.channels.filter((_c) => _c.country===_channel.country ).length
-            });
-          }
-        }
-      });
-
-      this.countries.sort((a,b) => a.name<=b.name ? -1 : 1 );
-      this.countries.unshift({ name: 'All countries', iso2: '', numChannels: this.channels.length });
-
-      this.contentTypes = Object.values(ContentTypesEnum).map((_key) => _key  ).sort();
-
-      this.channels.sort((a,b) => {
-        return a.name<b.name ? -1 : 1;
-      });
-
-      this.channelsFiltered = [...this.channels];
+      this.setupChannels();
+      this.setupCountries();
 
       console.log('countries', this.countries);
       console.log('channels', this.channels);
 
-      // History
-      this.recoverHistory();
-      let channelName: string;
+      // Content types
+      this.contentTypes = Object.values(ContentTypesEnum).map((_key) => _key  ).sort();
 
-      if (this.history.length>0) {
-        const lasChannelViewed: TdtChannelDto | undefined = this.history[0];
-        // this.streamUrl = lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url;
-        this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
-        this.logoUrl = (lasChannelViewed) ? lasChannelViewed.logo : undefined;
-        channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
-      } else {
-        // this.streamUrl = this.channels[0].options[0].url;
-        this.logoUrl = this.channels[0].logo;
-        this.streamUrl$.next(this.channels[0].options[0].url);
-        channelName = this.channels[0].name;
-      }
+      // History
+      this.configHistory();
 
       // Top views
-      let topChannelViewed: string | null = localStorage.getItem('APP_TVPLAYER_TOP');
-      if (topChannelViewed) {
-        this.topList = JSON.parse(topChannelViewed) as { channel: TdtChannelDto, views: number } [];
-      } else {
-        this.topList = [];
-        this.doUpdateChannelsViews();
-      }
+      this.configTopViews();
 
       // Init forms
-
-      this.streamForm = new FormGroup({
-        channel: new FormControl(channelName),
-        country: new FormControl(''),
-        contentType: new FormControl(undefined)
-      });
-
-      this.gridViewForm = new FormGroup({
-        gridViewType: new FormControl(this.gridViewType)
-      });
+      this.initForms();          
       
     });    
   }

@@ -119,7 +119,7 @@
                                                 'dark': item.logoBgStyle==='dark',
                                             }"
                                         >
-                                        <div [ngClass]="{'wrap-200':isMobile}">{{item.name}}</div>
+                                        <div [ngClass]="{'wrap-150':!isMobile,'wrap-125':isMobile}">{{item.name}}</div>
                                     </div>
                                     <i *ngIf="item.country?.length>0" [title]="getCountryName(item.country)" class="ms-auto fi fi-{{item.country}}"></i>
                                 </div>
@@ -135,7 +135,7 @@
                                                 'dark': item.logoBgStyle==='dark',
                                             }"
                                         >
-                                        <div [ngClass]="{'wrap-200':isMobile}">{{item.name}}</div>
+                                        <div [ngClass]="{'wrap-150':!isMobile,'wrap-125':isMobile}">{{item.name}}</div>
                                     </div>
                                     <div>
                                         <small class="me-2 country_name">{{item.country}}</small>
@@ -166,6 +166,13 @@
                     'w-85': !(isMobile && portrait) && (history.length>0 || topList.length>0), 
                     'w-100': (isMobile && portrait) || (history.length===0 && topList.length===0)
                 }">
+                
+                <!-- Channel name (no mosaic) -->
+                <ng-container *ngIf="!(isMobile && portrait) && (history.length>0 || topList.length>0)">
+                    <small class="w-100 channel_name text-center">{{channelName}}</small>
+                </ng-container>
+                <!-- End Channel name (no mosaic) -->
+
                 <ng-container *ngIf="streamUrl">
 
                     <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
