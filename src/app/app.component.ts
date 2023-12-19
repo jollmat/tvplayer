@@ -1,23 +1,25 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StreamService } from './services/stream.service';
 import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
 import { DeviceDetectorService } from 'ngx-device-detector';
-import { OTHER_CHANNELS_LIST } from 'src/assets/data/other-channels-list';
-import { VgDashDirective, VgHlsDirective } from '@videogular/ngx-videogular/streaming';
+import { VgHlsDirective } from '@videogular/ngx-videogular/streaming';
 import { COUNTRIES } from 'src/assets/data/countries';
 import { MediaTypesEnum } from './model/enum/media-types.enum';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, Subscription } from 'rxjs';
 import { NgSelectComponent } from '@ng-select/ng-select';
 import { GridViewTypeEnum } from './model/enum/grid-view-type.enum';
 import { ContentTypesEnum } from './model/enum/content-types.enum';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
+
+  backoffice: boolean = false;
 
   @ViewChild(VgHlsDirective) vgHls!: VgHlsDirective;
 
@@ -51,6 +53,9 @@ export class AppComponent implements OnInit {
   channels: TdtChannelDto [] = [];
   channelsFiltered: TdtChannelDto [] = [];
 
+  loadChannelsSubscription?: Subscription;
+  routeQueryParamsSubscription?: Subscription;
+
   private youtubeApiLoaded = false;
   youtubeVideoId?: string;
   youtubePlayerConfig: any = {
@@ -83,7 +88,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private streamService: StreamService,
-    private deviceDetector: DeviceDetectorService
+    private deviceDetector: DeviceDetectorService,
+    private route: ActivatedRoute
   ) {
 
     this.streamUrl$.subscribe((url) => {
@@ -113,7 +119,7 @@ export class AppComponent implements OnInit {
       }
     });
   }
-
+  
   getFormat(url: string): MediaTypesEnum | undefined {
     if (url.indexOf(MediaTypesEnum.M3U8)>=0) {
       return MediaTypesEnum.M3U8;
@@ -280,17 +286,6 @@ export class AppComponent implements OnInit {
   }
 
   setupChannels() {
-    this.channels.forEach((_channel) => {
-      // Set no image
-      if (!_channel.logo || _channel.logo.length===0) {
-        _channel.logo = './assets/img/img-not-found.jpg';
-      }
-      // Set logo bg
-      this.setChannelLogoBg(_channel);
-    });
-    this.channels.sort((a,b) => {
-      return a.name<b.name ? -1 : 1;
-    });
     this.channelsFiltered = [...this.channels];
   }
 
@@ -332,6 +327,7 @@ export class AppComponent implements OnInit {
       this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
       this.logoUrl = (lasChannelViewed) ? lasChannelViewed.logo : undefined;
       this.channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
+      console.log(this.channelName);
     } else {
       // this.streamUrl = this.channels[0].options[0].url;
       this.logoUrl = this.channels[0].logo;
@@ -351,6 +347,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    console.log(this.route.snapshot.paramMap);
 
     this.isLocalhost = window.location.hostname === 'localhost';
 
@@ -383,37 +381,8 @@ export class AppComponent implements OnInit {
       this.youtubeApiLoaded = true;
     }
 
-    // Get stream list
-    this.streamService.getStreams().subscribe((_streamResponse) => {
-      this.channels = []
-
-      _streamResponse.countries.forEach((_country) => {
-        _country.ambits.forEach((_ambit) => {
-          _ambit.channels.forEach((_channel) => {
-            _channel.country = _country.name === 'Spain' ? 'es' : _channel.country;
-            if (!_channel.epg_id || _channel.epg_id.trim().length===0) {
-              _channel.epg_id = _channel.name.trim().replace(/\s/g, '_') + '.' + _channel.country;
-            }
-            if (_channel.options) {
-              const streamingOptionIndex: number = _channel.options.findIndex((_option) => this.supportedFormats.includes(_option.format));
-              if (streamingOptionIndex>=0) {
-                _channel.options = [_channel.options[streamingOptionIndex]];
-                this.channels.push(_channel);
-              }
-            }
-          });
-        });
-      });
-
-      let otherChannels: TdtChannelDto[] = OTHER_CHANNELS_LIST;
-      otherChannels = otherChannels.map((_channel) => {
-        if ((!_channel.epg_id || _channel.epg_id.trim().length===0) && _channel.options && _channel.options.length>0) {
-          _channel.epg_id = _channel.name.replace(/\s/g, '_') + '.' + (_channel.country && _channel.country.length>0 ? _channel.country : _channel.options[0].format);
-        }
-        return _channel;
-      });
-
-      this.channels = this.channels.concat(otherChannels);
+    this.loadChannelsSubscription = this.streamService.streams$.subscribe((_channels) => {
+      this.channels = _channels;
 
       this.setupChannels();
       this.setupCountries();
@@ -431,9 +400,21 @@ export class AppComponent implements OnInit {
       this.configTopViews();
 
       // Init forms
-      this.initForms();          
-      
-    });    
+      this.initForms();  
+    });
+
+    this.routeQueryParamsSubscription = this.route.queryParams
+      .subscribe(params => {
+        console.log('params', params);
+        this.backoffice = params && params['backoffice']==='true' && !this.isMobile;
+      }
+    );
+
+  }
+
+  ngOnDestroy(): void {
+    if (this.loadChannelsSubscription) this.loadChannelsSubscription.unsubscribe();
+    if (this.routeQueryParamsSubscription) this.routeQueryParamsSubscription.unsubscribe();
   }
 
 }

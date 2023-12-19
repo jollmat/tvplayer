@@ -79,6 +79,21 @@ small {
     max-height: calc(100vh - 175px); 
 }
 
+table {
+    &.table {
+        tbody {
+            tr {
+                td {
+                    img {
+                        max-width: 20px;
+                        max-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -119,6 +134,16 @@ input[type="color"]:focus,
         border: 1px solid darkslategrey;
         min-height: 36px;
         align-items: center;       
+    }
+
+    .ng-option-marked {
+        color: black !important;
+        background-color: #ccc !important;
+    }
+
+    .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected, .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected.ng-option-marked {
+        color: #ccc;
+        background-color: #202122;
     }
 
     .ng-mobile {

@@ -1,19 +1,23 @@
 <div class="w-100 h-100" style="height: calc(100vh) !important;overflow: auto;">
     <div class="d-flex align-items-center w-100 h-100 px-1" 
         [ngClass]="{
-            'justify-content-start': isMobile,
-            'justify-content-center': !isMobile,
+            'justify-content-start': isMobile || backoffice,
+            'justify-content-center': !(isMobile || backoffice),
             'flex-column': true
         }">
         
         <!-- Test URL -->
-        <ng-container *ngIf="!isMobile && isLocalhost" [ngTemplateOutlet]="testTemplate"></ng-container>
+        <ng-container *ngIf="!isMobile && isLocalhost && !backoffice" [ngTemplateOutlet]="testTemplate"></ng-container>
 
         <!-- Form -->
-        <div class="d-flex mt-1 mb-3" 
+        <div class="d-flex" 
             [ngClass]="{
                 'w-75': !(isMobile && portrait), 
-                'w-100': isMobile && portrait                
+                'w-100': isMobile && portrait,
+                'mb-3': !backoffice,
+                'mt-1': !backoffice,
+                'mb-1': backoffice,
+                'mt-2': backoffice
             }">
             <ng-container *ngIf="channels.length>0 && streamForm">
                 <form [formGroup]="streamForm" class="w-100" [ngClass]="{
@@ -22,7 +26,8 @@
                 }">
                     <div 
                         [ngClass]="{
-                            'w-33': !isMobile,
+                            'w-33': !isMobile && !backoffice,
+                            'w-50': !isMobile && backoffice,
                             'w-100': isMobile,
                             'ng-mobile': isMobile
                         }">
@@ -58,7 +63,8 @@
 
                     <div 
                         [ngClass]="{
-                            'w-33': !isMobile,
+                            'w-33': !isMobile && !backoffice,
+                            'w-50': !isMobile && backoffice,
                             'w-100': isMobile,
                             'ps-1': !isMobile,
                             'ng-mobile': isMobile
@@ -89,7 +95,8 @@
                         </ng-select>
                     </div>
                     
-                    <div 
+                    <div
+                        [hidden]="backoffice"
                         [ngClass]="{
                             'w-33': !isMobile,
                             'w-100': isMobile,
@@ -151,52 +158,87 @@
         </div>
         <!-- End Form -->
 
-        <div class="d-flex justify-content-between align-items-top" 
-            [ngClass]="{
-                'w-75': !(isMobile && portrait), 
-                'w-100': isMobile && portrait,
-                'flex-column': isMobile && portrait
-            }">
-            
-            <ng-container *ngIf="!(isMobile && portrait) && (history.length>0 || topList.length>0)" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
-
-            <!-- Player -->
-            <div class="player-container-big d-flex flex-column justify-content-center align-items-center" 
+        <!-- Contents -->
+        <ng-container *ngIf="!backoffice">
+            <div class="d-flex justify-content-between align-items-top" 
                 [ngClass]="{
-                    'w-85': !(isMobile && portrait) && (history.length>0 || topList.length>0), 
-                    'w-100': (isMobile && portrait) || (history.length===0 && topList.length===0)
+                    'w-75': !(isMobile && portrait), 
+                    'w-100': isMobile && portrait,
+                    'flex-column': isMobile && portrait
                 }">
                 
-                <!-- Channel name (no mosaic) -->
-                <ng-container *ngIf="!(isMobile && portrait) && (history.length>0 || topList.length>0)">
-                    <small class="w-100 channel_name text-center">{{channelName}}</small>
-                </ng-container>
-                <!-- End Channel name (no mosaic) -->
+                <ng-container *ngIf="!(isMobile && portrait) && (history.length>0 || topList.length>0)" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
 
-                <ng-container *ngIf="streamUrl">
-
-                    <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
-                        url: streamUrl,
-                        format: currentFormat,
-                        youtubeId: youtubeVideoId,
-                        logo: logoUrl
-                    }"></ng-container>
+                <!-- Player -->
+                <div class="player-container-big d-flex flex-column justify-content-center align-items-center" 
+                    [ngClass]="{
+                        'w-85': !(isMobile && portrait) && (history.length>0 || topList.length>0), 
+                        'w-100': (isMobile && portrait) || (history.length===0 && topList.length===0)
+                    }">
                     
-                </ng-container>
-
-                <ng-container *ngIf="!isMobile">
-                    <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && (!isMobile || isTablet)">
-                        <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
+                    <!-- Channel name (no mosaic) -->
+                    <ng-container *ngIf="streamUrl && channelName">
+                        <small class="w-100 channel_name text-center mt-1">{{channelName}}</small>
                     </ng-container>
-                </ng-container>
-                
-            </div>
-            <!-- End Player -->
+                    <!-- End Channel name (no mosaic) -->
 
-            <!--
-            <ng-container *ngIf="isMobile && portrait && history.length>0" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
-            -->
-        </div>
+                    <ng-container *ngIf="streamUrl">
+
+                        <ng-container [ngTemplateOutlet]="player" [ngTemplateOutletContext]="{
+                            url: streamUrl,
+                            format: currentFormat,
+                            youtubeId: youtubeVideoId,
+                            logo: logoUrl
+                        }"></ng-container>
+                        
+                    </ng-container>
+
+                    <ng-container *ngIf="!isMobile">
+                        <ng-container *ngIf="(!streamUrl || streamUrl.length===0) && (!isMobile || isTablet)">
+                            <ng-container [ngTemplateOutlet]="mosaic"></ng-container>
+                        </ng-container>
+                    </ng-container>
+                    
+                </div>
+                <!-- End Player -->
+
+                <!--
+                <ng-container *ngIf="isMobile && portrait && history.length>0" [ngTemplateOutlet]="directAccessTemplate"></ng-container>
+                -->
+            </div>
+        </ng-container>        
+        <!-- End Contents -->
+
+        <!-- Backoffice -->
+        <ng-container *ngIf="backoffice">
+            <div class="d-flex w-75">
+                <table class="table table-dark table-striped table-hover table-sm w-100">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Format</th>
+                            <th>Content types</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ng-container *ngFor="let channel of channelsFiltered">
+                            <tr>
+                                <td><img [src]="channel.logo"></td>
+                                <td>{{channel.name}}</td>
+                                <td><i *ngIf="channel.country" [title]="getCountryName(channel.country)" class="me-2 fi fi-{{channel.country}}"></i>{{getCountryName(channel.country || '')}}</td>
+                                <td>{{channel.options[0].format}}</td>
+                                <td>{{channel.contentTypes}}</td>
+                            </tr>
+                        </ng-container>                        
+                    </tbody>
+                </table>
+            </div>
+        </ng-container>
+        <!-- End Backoffice -->
+
+
     </div>
 </div>
 

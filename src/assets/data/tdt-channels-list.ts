@@ -26,20 +26,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/1688877.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/1688877.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "La 2",
@@ -49,180 +39,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/1688885.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream.akamaized.net/rtvesec/la2/la2_main_dvr.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/1688885.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Antena 3",
-                "web": "https://www.atresplayer.com/directos/antena3/",
-                "logo": "https://graph.facebook.com/antena3/picture?width=200&height=200",
-                "epg_id": "Antena3.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Cuatro",
-                "web": "https://www.mitele.es/directo/cuatro",
-                "logo": "https://graph.facebook.com/cuatro/picture?width=200&height=200",
-                "epg_id": "Cuatro.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Telecinco",
-                "web": "https://www.mitele.es/directo/telecinco",
-                "logo": "https://graph.facebook.com/tele5/picture?width=200&height=200",
-                "epg_id": "Telecinco.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "laSexta",
-                "web": "https://www.atresplayer.com/directos/lasexta/",
-                "logo": "https://graph.facebook.com/laSexta/picture?width=200&height=200",
-                "epg_id": "LaSexta.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Neox",
-                "web": "https://www.atresplayer.com/directos/neox/",
-                "logo": "https://graph.facebook.com/neox/picture?width=200&height=200",
-                "epg_id": "Neox.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Nova",
-                "web": "https://www.atresplayer.com/directos/nova/",
-                "logo": "https://graph.facebook.com/novatdt/picture?width=200&height=200",
-                "epg_id": "Nova.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Mega",
-                "web": "https://www.atresplayer.com/directos/mega/",
-                "logo": "https://graph.facebook.com/megaTDT/picture?width=200&height=200",
-                "epg_id": "Mega.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Atreseries",
-                "web": "https://www.atresplayer.com/directos/atreseries/",
-                "logo": "https://graph.facebook.com/atreseries/picture?width=200&height=200",
-                "epg_id": "Atreseries.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "FDF",
-                "web": "https://www.mitele.es/directo/fdf",
-                "logo": "https://graph.facebook.com/factoriadeficcion/picture?width=200&height=200",
-                "epg_id": "FDF.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Energy",
-                "web": "https://www.mitele.es/directo/energy",
-                "logo": "https://graph.facebook.com/E.EnergyTV/picture?width=200&height=200",
-                "epg_id": "Energy.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Divinity",
-                "web": "https://www.mitele.es/directo/divinity",
-                "logo": "https://graph.facebook.com/divinityes/picture?width=200&height=200",
-                "epg_id": "Divinity.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Be Mad",
-                "web": "https://www.mitele.es/directo/bemad",
-                "logo": "https://graph.facebook.com/BeMadTV/picture?width=200&height=200",
-                "epg_id": "Bemad.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "TRECE",
-                "web": "https://www.cope.es/directos/trece",
-                "logo": "https://graph.facebook.com/TRECEtves/picture?width=200&height=200",
-                "epg_id": "13.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "El Toro TV",
@@ -232,96 +52,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://edge-nodo-002.streaming.hitcloser.net/eltorotv-streaming-web/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "mtmad 24h",
-                "web": "https://www.mitele.es/directo/mtmad-24h",
-                "logo": "https://graph.facebook.com/mtmad.es/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "GH VIP 24h",
-                "web": "https://www.mitele.es/directo/gh-vip-24h-senal-1/",
-                "logo": "https://graph.facebook.com/granhermano/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "DMAX",
-                "web": "https://dmax.marca.com/en-directo",
-                "logo": "https://graph.facebook.com/DMAXes/picture?width=200&height=200",
-                "epg_id": "DMax.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Ten",
-                "web": "https://tentv.es",
-                "logo": "https://graph.facebook.com/televisionten/picture?width=200&height=200",
-                "epg_id": "TEN.TV",
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
-              },
-              {
-                "name": "DKISS",
-                "web": "https://www.dkiss.es",
-                "logo": "https://graph.facebook.com/DKissTV/picture?width=200&height=200",
-                "epg_id": "DKISS.TV",
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
-              },
-              {
-                "name": "Paramount Network",
-                "web": "https://www.paramountnetwork.es",
-                "logo": "https://graph.facebook.com/ParamountNetworkES/picture?width=200&height=200",
-                "epg_id": "Paramount.TV",
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
-              },
-              {
-                "name": "BOM Cine",
-                "web": "https://www.bomcine.com",
-                "logo": "https://graph.facebook.com/BOMCINEtv/picture?width=200&height=200",
-                "epg_id": "BOMCine.TV",
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
+                contentTypes: [ContentTypesEnum.GENERAL]
               }
             ]
           },
@@ -336,20 +70,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream.akamaized.net/rtvesec/24h/24h_main_dvr.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/1694255.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "El Pa\u00eds",
@@ -359,40 +83,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2xqbi89ghm9hh.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-79fx3huimw4xc-ssai-prd/fast-channel-el-pais.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCnsvJeZO4RigQ898WdDNoBw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://d2xqbi89ghm9hh.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-79fx3huimw4xc-ssai-prd/fast-channel-el-pais.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Libertad Digital TV",
-                "web": "https://tv.libertaddigital.com/directo.html",
-                "logo": "https://graph.facebook.com/libertad.digital.tv/picture?width=200&height=200",
-                "epg_id": "Libertad.TV",
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/xnm032?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS, ContentTypesEnum.DOCUMENTALS]
               },
               {
                 "name": "El Confidencial",
@@ -402,13 +96,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://daqnsnf5phf17.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-sde7fypd1420w-prod/fast-channel-elconfidencial/fast-channel-elconfidencial.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://daqnsnf5phf17.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-sde7fypd1420w-prod/fast-channel-elconfidencial/fast-channel-elconfidencial.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS, ContentTypesEnum.DOCUMENTALS]
               }
             ]
           },
@@ -423,31 +114,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/1712295.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream-clnx.rtve.es/rtvesec/tdp/tdp_main.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/1712295.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "GOL Play",
-                "web": "https://www.goltelevision.com/en-directo",
-                "logo": "https://graph.facebook.com/goltv.es/picture?width=200&height=200",
-                "epg_id": "GOL.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                contentTypes: [ContentTypesEnum.SPORTS]
               },
               {
                 "name": "Esport 3",
@@ -457,21 +127,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/esport3-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-es.ccma.cat/live-origin/esport3-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-cat.ccma.cat/live-origin/esport3-hls/master.m3u8"
                   }
                 ],
-                "contentTypes": [ContentTypesEnum.SPORTS],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.SPORTS]
               },
               {
                 "name": "ETB Deportes",
@@ -485,23 +144,9 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/oka2hd-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/oka3hd-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.SPORTS]
               },
               {
                 "name": "Vinx TV Asturias",
@@ -511,106 +156,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://tv.radiocast.es:5443/vinxtv/streams/vinxtvlive.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCJDjXO0kv_ZOtLntIO0d4bw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://tv.radiocast.es:5443/vinxtv/streams/vinxtvlive.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Real Madrid TV",
-                "web": "https://www.realmadrid.com/real-madrid-tv",
-                "logo": "https://graph.facebook.com/RealMadrid/picture?width=200&height=200",
-                "epg_id": "RMTV.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Bar\u00e7a TV",
-                "web": "https://www.fcbarcelona.es/es/culers",
-                "logo": "https://graph.facebook.com/fcbarcelona/picture?width=200&height=200",
-                "epg_id": "BarcaTV.TV",
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
-              },
-              {
-                "name": "Sevilla TV",
-                "web": "https://live.sevillafc.es",
-                "logo": "https://graph.facebook.com/sevillafc/picture?width=200&height=200",
-                "epg_id": "SevillaTV.TV",
-                "options": [],
-                "extra_info": []
-              },
-              {
-                "name": "Betis TV",
-                "web": "https://www.realbetisbalompie.es/rtvbetis/directo-tv/",
-                "logo": "https://graph.facebook.com/realbetisbalompie/picture?width=200&height=200",
-                "epg_id": "BetisTV.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "El 10 del Bar\u00e7a",
-                "web": "https://xn--el10delbara-v9a.com",
-                "logo": "https://graph.facebook.com/El10delBarsa/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=2YbxNZBOues",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Cazaflix",
-                "web": "https://cazaflix.com/tv-directo/",
-                "logo": "https://graph.facebook.com/cazaflixoficial/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.viloud.tv/embed/channel/292a2a75da8d1d6335cd7b6e600b04e8?autoplay=1&volume=1&controls=1&title=0&share=0&open_playlist=0",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.SPORTS]
               },
               {
                 "name": "Mundo Nautica",
@@ -620,34 +169,16 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/mundonautica/mundonautica.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/mundonautica/mundonautica.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
+                "contentTypes": [ContentTypesEnum.SPORTS, ContentTypesEnum.DOCUMENTALS]
               }
             ]
           },
           {
             "name": "Infantiles",
             "channels": [
-              {
-                "name": "Boing",
-                "web": "https://www.mitele.es/directo/boing",
-                "logo": "https://graph.facebook.com/boinges/picture?width=200&height=200",
-                "epg_id": "Boing.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
               {
                 "name": "Clan",
                 "web": "https://www.rtve.es/play/videos/directo/clan/",
@@ -656,20 +187,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream.akamaized.net/rtvesec/clan/clan_main_dvr.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/5466990.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.KIDS]
               },
               {
                 "name": "Kidz",
@@ -679,13 +200,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648c271d2bfab0e4177a0d61/648c271d2bfab0e4177a0d61/2.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648c271d2bfab0e4177a0d61/648c271d2bfab0e4177a0d61/2.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.KIDS]
               },
               {
                 "name": "Pequeradio TV",
@@ -695,13 +213,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.KIDS]
               },
               {
                 "name": "Cartoon Network Latino",
@@ -711,38 +226,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://playout.cdn.cartoonnetwork.com.br/playout_02/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://playout.cdn.cartoonnetwork.com.br/playout_04/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://playout.cdn.cartoonnetwork.com.br/playout_02/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "LEGO Friends",
-                "web": "https://www.youtube.com/channel/UCP-Ng5SXUEt0VE-TXqRdL6g",
-                "logo": "https://pbs.twimg.com/profile_images/378800000257143498/6dbc45c353f641ef85ca51f75533a7e1_200x200.jpeg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=_i3JW8ZI7eM",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.KIDS]
               },
               {
                 "name": "Little Baby Bum",
@@ -752,15 +239,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Thrl_DXz1os",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=Thrl_DXz1os"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.KIDS]
               },
               {
                 "name": "Talking Tom and Friends",
@@ -770,15 +252,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=xeR3ASwhyCo",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=xeR3ASwhyCo"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.KIDS]
               }
             ]
           },
@@ -786,55 +263,52 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Eventuales",
             "channels": [
               {
-                "name": "+24",
+                "name": "+24 (1)",
                 "web": "https://www.rtve.es/play/videos/directo/informativos/",
                 "logo": "https://img.rtve.es/imagenes/multisenal-24/1361962728583.png",
-                "epg_id": null,
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6108696.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6108703.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6108704.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6108706.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6108720.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6108721.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6108696.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.JUSTICE]
+              },
+              {
+                "name": "+24 (2)",
+                "web": "https://www.rtve.es/play/videos/directo/informativos/",
+                "logo": "https://img.rtve.es/imagenes/multisenal-24/1361962728583.png",
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://ztnr.rtve.es/ztnr/6108703.m3u8"
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.JUSTICE]
+              },
+              {
+                "name": "+24 (3)",
+                "web": "https://www.rtve.es/play/videos/directo/informativos/",
+                "logo": "https://img.rtve.es/imagenes/multisenal-24/1361962728583.png",
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://ztnr.rtve.es/ztnr/6108704.m3u8"
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.JUSTICE]
+              },
+              {
+                "name": "+24 (4)",
+                "web": "https://www.rtve.es/play/videos/directo/informativos/",
+                "logo": "https://img.rtve.es/imagenes/multisenal-24/1361962728583.png",
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://ztnr.rtve.es/ztnr/6108720.m3u8"
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.JUSTICE]
               },
               {
                 "name": "\u00a1HOLA! Play",
@@ -844,13 +318,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://022d66c197dd4a1e9008e0134a74f34e.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-es_HolaPlay/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://022d66c197dd4a1e9008e0134a74f34e.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-es_HolaPlay/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "flooxer",
@@ -860,13 +331,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/5c1285e47ed1a861f8125285/5c1285e47ed1a861f8125285.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/5c1285e47ed1a861f8125285/5c1285e47ed1a861f8125285.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.STREAMERS]
               },
               {
                 "name": "Atresplayer Cl\u00e1sicos",
@@ -876,13 +344,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e4507e0d61.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e4507e0d61.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MOVIES]
               },
               {
                 "name": "Atresplayer Comedia",
@@ -892,13 +357,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef23d2bfab0e4557e0d61/648ef23d2bfab0e4557e0d61.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef23d2bfab0e4557e0d61/648ef23d2bfab0e4557e0d61.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MOVIES]
               },
               {
                 "name": "Atresplayer Mentes Inquietas",
@@ -908,13 +370,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef3162bfab0e4587e0d61/648ef3162bfab0e4587e0d61.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef3162bfab0e4587e0d61/648ef3162bfab0e4587e0d61.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.DOCUMENTALS]
               },
               {
                 "name": "Atresplayer Multicine",
@@ -924,13 +383,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MOVIES]
               },
               {
                 "name": "El Hormiguero",
@@ -940,13 +396,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef5882bfab0e4627e0d61/648ef5882bfab0e4627e0d61.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.TVSHOWS]
               },
               {
                 "name": "El club de la comedia",
@@ -962,7 +415,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.TVSHOWS]
               },
               {
                 "name": "Equipo de investigaci\u00f3n",
@@ -972,13 +425,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef5551756b0e429af83cc/648ef5551756b0e429af83cc.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef5551756b0e429af83cc/648ef5551756b0e429af83cc.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.DOCUMENTALS]
               },
               {
                 "name": "Aqu\u00ed no hay qui\u00e9n viva",
@@ -988,13 +438,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.TVSERIES]
               },
               {
                 "name": "F\u00edsica o qu\u00edmica",
@@ -1004,13 +451,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fast-channels.atresmedia.com/648ef50a2bfab0e4607e0d61/648ef50a2bfab0e4607e0d61.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fast-channels.atresmedia.com/648ef50a2bfab0e4607e0d61/648ef50a2bfab0e4607e0d61.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.TVSERIES]
               },
               {
                 "name": "RTVE Crimen",
@@ -1020,13 +464,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6924117.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6924117.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MOVIES]
               },
               {
                 "name": "RTVE \u00c9poca",
@@ -1036,13 +477,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6922467.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6922467.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MOVIES]
               },
               {
                 "name": "RTVE Cu\u00e9ntame",
@@ -1052,13 +490,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6909843.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6909843.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.TVSERIES]
               },
               {
                 "name": "RTVE Somos Cine",
@@ -1068,13 +503,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6909845.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6909845.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MOVIES]
               },
               {
                 "name": "RTVE Docs",
@@ -1084,37 +516,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6987938.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6987938.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Mitele Comedia",
-                "web": "https://www.mitele.es/directo/mitele-comedia/",
-                "logo": "https://graph.facebook.com/mitele.es/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Mitele Viajes",
-                "web": "https://www.mitele.es/directo/mitele-viajes/",
-                "logo": "https://graph.facebook.com/mitele.es/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
+                "contentTypes": [ContentTypesEnum.DOCUMENTALS]
               },
               {
                 "name": "Canal Parlamento",
@@ -1130,51 +535,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Congreso de los Diputados",
-                "web": "http://www.congreso.es/portal/page/portal/Congreso/Congreso/CongresoTV/ConDir",
-                "logo": "https://graph.facebook.com/CongresodelosDiputados/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://congresodirecto.akamaized.net/hls/live/2038274/canal1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://congresodirecto.akamaized.net/hls/live/2038276/canal3/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://congresodirecto.akamaized.net/hls/live/2038277/canal4/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://congresodirecto.akamaized.net/hls/live/2038278/canal5/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.POLITICS]
               },
               {
                 "name": "Radio Nacional",
@@ -1184,13 +545,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/1938076.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/1938076.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.RADIO, ContentTypesEnum.WEBCAMS]
               },
               {
                 "name": "Radio 3",
@@ -1200,13 +558,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/2795617.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/2795617.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.RADIO, ContentTypesEnum.WEBCAMS]
               },
               {
                 "name": "R\u00e0dio 4",
@@ -1216,13 +571,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/6782425.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/6782425.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.RADIO, ContentTypesEnum.WEBCAMS]
               }
             ]
           },
@@ -1237,20 +589,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UChtLgH7ZJLqLGWJpBnzy9Lg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Sur 2 Accesible",
@@ -1260,13 +602,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnlive.codev8.net/rtvalive/smil:channel22.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnlive.codev8.net/rtvalive/smil:channel22.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Andaluc\u00eda Cocina",
@@ -1276,16 +615,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/acocina/acocina.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
+                "contentTypes": [ContentTypesEnum.COOKING, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Andaluc\u00eda Turismo",
@@ -1295,44 +628,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/aturismo/aturismo.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/aturismo/aturismo.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
-              },
-              {
-                "name": "7TV Andaluc\u00eda",
-                "web": "https://7tvandalucia.es",
-                "logo": "https://graph.facebook.com/7TelevisionAndalucia/picture?width=200&height=200",
-                "epg_id": "7Andalucia.TV",
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
-              },
-              {
-                "name": "Jerez TV",
-                "web": "https://jereztelevision.com",
-                "logo": "https://graph.facebook.com/jerez.television/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Qx20n1qcgNk",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.TRAVEL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "101TV M\u00e1laga",
@@ -1342,20 +641,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://limited38.todostreaming.es/live/101tv-web101tv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCJzt0XyxSwpsNODokzG4iRw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://limited38.todostreaming.es/live/101tv-web101tv.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Onda C\u00e1diz",
@@ -1365,13 +654,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ondacadiztv.es:30443/octv/directo_multi/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ondacadiztv.es:30443/octv/directo_multi/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Huelva TV",
@@ -1381,13 +667,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5d8d85cf2c308.streamlock.net:1936/huelvatv/htvdirecto/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5d8d85cf2c308.streamlock.net:1936/huelvatv/htvdirecto/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Sierra de C\u00e1diz",
@@ -1397,13 +680,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://s.emisoras.tv:8081/sierradecadiz/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://s.emisoras.tv:8081/sierradecadiz/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal 45 TV",
@@ -1413,13 +693,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://nlb1-live.emitstream.com/hls/625csn5et2iszm9oze65/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://nlb1-live.emitstream.com/hls/625csn5et2iszm9oze65/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "PTV M\u00e1laga",
@@ -1429,15 +706,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamer.zapitv.com/PTV-malaga/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamer.zapitv.com/PTV-malaga/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Teleonuba",
@@ -1447,13 +719,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5d8d85cf2c308.streamlock.net:1936/Teleonuba/endirecto/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5d8d85cf2c308.streamlock.net:1936/Teleonuba/endirecto/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Condavisi\u00f3n",
@@ -1463,13 +732,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5d8d85cf2c308.streamlock.net:1936/Condavision/endirecto/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5d8d85cf2c308.streamlock.net:1936/Condavision/endirecto/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "CanalCosta",
@@ -1479,25 +745,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5d8d85cf2c308.streamlock.net:1936/CanalcostaTV/endirecto/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5d8d85cf2c308.streamlock.net:1936/CanalcostaTV/endirecto/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Uvitel TV",
-                "web": "https://www.uvitel.tv/directo/",
-                "logo": "https://graph.facebook.com/uviteltv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Interalmer\u00eda TV",
@@ -1507,13 +758,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://interalmeria.tv/directo/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://interalmeria.tv/directo/live.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Tuya La Janda TV",
@@ -1523,40 +771,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8232/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCKvB2Fo1y3JMttk7bJm2gGQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8232/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "M\u00e1s Jerez",
-                "web": "https://masjerez.com/programas-tv",
-                "logo": "https://graph.facebook.com/masjerez/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCOoSrqLzlo_S5yQK3OmFqWw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal San Roque",
@@ -1566,13 +784,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnlivevlc.codev8.net/aytosanroquelive/smil:channel1.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnlivevlc.codev8.net/aytosanroquelive/smil:channel1.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Onda Algeciras TV",
@@ -1582,13 +797,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudtv.provideo.es/live/algecirastv-livestream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Estepona TV",
@@ -1598,13 +810,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8022/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8022/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Luz Televisi\u00f3n",
@@ -1614,13 +823,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5d8d85cf2c308.streamlock.net:1936/CanalLuz/enDirecto/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5d8d85cf2c308.streamlock.net:1936/CanalLuz/enDirecto/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Do\u00f1ana",
@@ -1630,35 +836,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://secure5.todostreaming.es/live/division-alm.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://secure5.todostreaming.es/live/division-alm.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Onda Jerez TV",
-                "web": "http://www.ondajerez.com",
-                "logo": "https://graph.facebook.com/OndaJerezRTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "OndaMezquita 7 TV",
-                "web": "https://www.ahoracordoba.es",
-                "logo": "https://yt3.googleusercontent.com/ytc/AGIKgqP3vjaXvm2380fv6OFwZuOIzGvHUl8wcim44tQjMw=s200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "PTV Linares",
@@ -1668,33 +849,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamer.zapitv.com/ptv-linarez/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamer.zapitv.com/ptv-linarez/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "Tel\u00e9cija",
-                "web": "https://ecijadigital.es",
-                "logo": "https://graph.facebook.com/telecija.televisioncomarcal/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=telecija&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Marbella TV",
@@ -1704,67 +862,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming.rtvmarbella.tv/hls/streamingweb.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming.rtvmarbella.tv/hls/streamingweb.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "M\u00e1laga 24h TV",
-                "web": "http://malaga24h.com",
-                "logo": "https://graph.facebook.com/Malaga24hTv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=8MQbkxsMhKQ",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Telequivir",
-                "web": "http://www.telequivir.com",
-                "logo": "https://graph.facebook.com/telequivirtv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=telequivir&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Telemotril",
-                "web": "https://telemotril.com/telemotril-en-vivo/",
-                "logo": "https://graph.facebook.com/telemotriltv/picture?width=200&height=200",
-                "epg_id": "Telemotril.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8431/8431/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Diez TV \u00dabeda",
@@ -1774,13 +875,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming.cloud.innovasur.es/mmj/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming.cloud.innovasur.es/mmj/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Diez TV Las Villas",
@@ -1790,13 +888,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming.cloud.innovasur.es/mmj2/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming.cloud.innovasur.es/mmj2/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "RTV Tarifa",
@@ -1806,15 +901,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=G_suTKIcImc",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=G_suTKIcImc"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "CostadelSol TV",
@@ -1824,13 +914,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://limited11.todostreaming.es/live/benalmadena-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://limited11.todostreaming.es/live/benalmadena-livestream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Bail\u00e9n TV",
@@ -1840,20 +927,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://cpd.bailen.tv:8080/Playlist_CANAL_24H/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "http://cpd.bailen.tv:8080/Directos/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://cpd.bailen.tv:8080/Playlist_CANAL_24H/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "101TV Antequera",
@@ -1863,13 +940,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming101tv.es/hls/webantequera.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming101tv.es/hls/webantequera.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "101TV C\u00e1diz",
@@ -1879,13 +953,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming101tv.es/hls/webcadiz.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming101tv.es/hls/webcadiz.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "101TV Ronda",
@@ -1895,13 +966,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming101tv.es/hls/webronda.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming101tv.es/hls/webronda.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Sal TV",
@@ -1911,13 +979,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8254/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8254/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Vivam\u00f3vil TV",
@@ -1927,13 +992,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5d8d85cf2c308.streamlock.net:1936/AlcalaTV/endirecto/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5d8d85cf2c308.streamlock.net:1936/AlcalaTV/endirecto/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal M\u00e1laga",
@@ -1943,13 +1005,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://canalmalaga-tv-live.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://canalmalaga-tv-live.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "101TV Axarqu\u00eda",
@@ -1959,13 +1018,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming101tv.es/hls/webaxarquia.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming101tv.es/hls/webaxarquia.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Mijas 3.40 TV",
@@ -1975,13 +1031,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming004.gestec-video.com/hls/MIJAS.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming004.gestec-video.com/hls/MIJAS.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "PTV Granada",
@@ -1991,31 +1044,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamer.zapitv.com/PTV-granada/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamer.zapitv.com/PTV-granada/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "Fuengirola TV",
-                "web": "https://fuengirolatv.com/directo-ftv/",
-                "logo": "https://graph.facebook.com/fuengirolatvoficial/picture?width=200&height=200",
-                "epg_id": "FuengirolaTV.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://secure.todostreaming.es/live/nerja-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "PTV Sevilla",
@@ -2025,15 +1057,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamer.zapitv.com/PTV_sevilla/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamer.zapitv.com/PTV_sevilla/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "PTV C\u00f3rdoba",
@@ -2043,15 +1070,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamer.zapitv.com/PTV_CORDOBA/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamer.zapitv.com/PTV_CORDOBA/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Co\u00edn",
@@ -2061,13 +1083,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://canalcoin.garjim.es/hls/directo.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://canalcoin.garjim.es/hls/directo.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TVM C\u00f3rdoba",
@@ -2077,31 +1096,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5924d3ad0efcf.streamlock.net/cordoba/cordobalive/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5924d3ad0efcf.streamlock.net/cordoba/cordobalive/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Play Andaluc\u00eda TV",
-                "web": "https://live.playandalucia.tv/",
-                "logo": "https://i0.wp.com/www.audiovisual451.com/wp-content/uploads/2023/03/AndaluciaTV_logo-y-web-1.jpg?resize=250%2C200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.viloud.tv/embed/channel/a4f73fcf6aa51b102d11e53265e3b4cf?autoplay=1&volume=1&controls=1&title=0&share=0&open_playlist=0",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "PTV Almer\u00eda",
@@ -2111,52 +1109,62 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamer.zapitv.com/ptv_almeria/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamer.zapitv.com/ptv_almeria/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
-                "name": "Parlamento de Andaluc\u00eda",
+                "name": "Parlamento de Andaluc\u00eda (Canal 1)",
                 "web": "https://www.parlamentodeandalucia.es/stream/canal4.html",
                 "logo": "https://graph.facebook.com/parlamentodeandalucia.es/picture?width=200&height=200",
                 "epg_id": null,
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion1/realizacion1/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion2/realizacion2/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion3/realizacion3/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion4/realizacion4/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion1/realizacion1/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
+              },
+              {
+                "name": "Parlamento de Andaluc\u00eda (Canal 2)",
+                "web": "https://www.parlamentodeandalucia.es/stream/canal4.html",
+                "logo": "https://graph.facebook.com/parlamentodeandalucia.es/picture?width=200&height=200",
+                "epg_id": null,
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion2/realizacion2/playlist.m3u8"
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
+              },
+              {
+                "name": "Parlamento de Andaluc\u00eda (Canal 3)",
+                "web": "https://www.parlamentodeandalucia.es/stream/canal4.html",
+                "logo": "https://graph.facebook.com/parlamentodeandalucia.es/picture?width=200&height=200",
+                "epg_id": null,
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion3/realizacion3/playlist.m3u8"
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
+              },
+              {
+                "name": "Parlamento de Andaluc\u00eda (Canal 4)",
+                "web": "https://www.parlamentodeandalucia.es/stream/canal4.html",
+                "logo": "https://graph.facebook.com/parlamentodeandalucia.es/picture?width=200&height=200",
+                "epg_id": null,
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://stream2.parlamentodeandalucia.es:1943/realizacion4/realizacion4/playlist.m3u8"
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -2171,13 +1179,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal 25 Barbastro TV",
@@ -2187,13 +1192,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -2208,63 +1210,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=6LlZXt8nk4s",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=6LlZXt8nk4s"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "La 1 Canarias",
-                "web": "https://www.rtve.es/play/videos/directo/tve-canarias/",
-                "logo": "https://pbs.twimg.com/profile_images/899385012801470464/akSvNCqE_200x200.jpg",
-                "epg_id": "La1_CAT.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/5190066.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "La 2 Canarias",
-                "web": "https://www.rtve.es/play/videos/directo/tve-canarias/la-2-can/",
-                "logo": "https://graph.facebook.com/la2detve/picture?width=200&height=200",
-                "epg_id": "La2_CAT.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/5468585.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "24h Canarias",
-                "web": "https://www.rtve.es/play/videos/directo/tve-canarias/24-h-can/",
-                "logo": "https://pbs.twimg.com/profile_images/1144547866393882626/2R0Khn5n_200x200.png",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/5473142.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "M\u00edrame TV",
@@ -2274,13 +1223,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://bit.controlstreams.com:5443/LiveApp/streams/mirametv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://bit.controlstreams.com:5443/LiveApp/streams/mirametv.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal 4 Tenerife",
@@ -2290,13 +1236,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/Directo2/Directo2/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5940924978228.streamlock.net/Directo2/Directo2/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "NORTEvisi\u00f3n",
@@ -2306,13 +1249,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://amaru.dyndns.org:8870/0.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://amaru.dyndns.org:8870/0.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Lancelot TV",
@@ -2328,7 +1268,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Este Canal TV",
@@ -2338,15 +1278,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://synclosdragos1.syncsolutions.es:8008/live3/emision/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://synclosdragos1.syncsolutions.es:8008/live3/emision/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Fuerteventura TV",
@@ -2356,13 +1291,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Factor\u00eda de Carnaval",
@@ -2372,13 +1304,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://eu1.servers10.com:8081/8116/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://eu1.servers10.com:8081/8116/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.MUSIC, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Afortunadas TV",
@@ -2388,13 +1317,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8108/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8108/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -2409,13 +1335,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -2430,16 +1353,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnapi.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_01fn4ycl/format/applehttp/.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnapi.kaltura.com/p/2288691/sp/228869100/playManifest/entryId/1_01fn4ycl/format/applehttp/.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Guada TV Media",
@@ -2449,16 +1366,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/guadatv/guadatv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/guadatv/guadatv.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Visi\u00f3n 6 TV",
@@ -2468,28 +1379,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming.proceso.info:8888/vision6-web/stream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming.proceso.info:8888/vision6-web/stream.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "CanalImagen Almansa",
-                "web": "https://zonacliente.almatelecom.es/videos/canalimagen",
-                "logo": "https://graph.facebook.com/TvAlmansa/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA",
-                  "REF"
-                ],
-                "referer": "https://zonacliente.almatelecom.es/videos/canalimagen"
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal 4 Mancha Centro",
@@ -2499,168 +1392,16 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
           {
             "name": "Castilla y Le\u00f3n",
             "channels": [
-              {
-                "name": "La 7",
-                "web": "https://www.cyltv.es/live/La7",
-                "logo": "https://graph.facebook.com/cyltv/picture?width=200&height=200",
-                "epg_id": "La7.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Avila",
-                "web": "https://www.cyltv.es/live/La8Avila",
-                "logo": "https://pbs.twimg.com/profile_images/1364545643319087104/7qp4nrtS_200x200.jpg",
-                "epg_id": "8Avila.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Bierzo",
-                "web": "https://www.cyltv.es/Live/La8Bierzo",
-                "logo": "https://graph.facebook.com/La8Bierzo/picture?width=200&height=200",
-                "epg_id": "8Bierzo.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Burgos",
-                "web": "https://www.cyltv.es/live/La8Burgos",
-                "logo": "https://graph.facebook.com/La8Burgos/picture?width=200&height=200",
-                "epg_id": "8Burgos.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Leon",
-                "web": "https://www.cyltv.es/live/La8Leon",
-                "logo": "https://pbs.twimg.com/profile_images/1367754156711288839/c01QAS89_200x200.jpg",
-                "epg_id": "8Leon.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Palencia",
-                "web": "https://www.cyltv.es/live/La8Palencia",
-                "logo": "https://graph.facebook.com/La8Palencia/picture?width=200&height=200",
-                "epg_id": "8Palencia.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Salamanca",
-                "web": "https://www.cyltv.es/live/La8Salamanca",
-                "logo": "https://graph.facebook.com/la8salamanca/picture?width=200&height=200",
-                "epg_id": "8Salamanca.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Segovia",
-                "web": "https://www.cyltv.es/live/La8Segovia",
-                "logo": "https://graph.facebook.com/la8segovia/picture?width=200&height=200",
-                "epg_id": "8Segovia",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Soria",
-                "web": "https://www.cyltv.es/live/La8Soria",
-                "logo": "https://graph.facebook.com/La8Soria/picture?width=200&height=200",
-                "epg_id": "8Soria.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Valladolid",
-                "web": "https://www.cyltv.es/live/La8Valladolid",
-                "logo": "https://graph.facebook.com/la8valladolid/picture?width=200&height=200",
-                "epg_id": "8Valladolid.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "La 8 Zamora",
-                "web": "https://www.cyltv.es/live/La8Zamora",
-                "logo": "https://graph.facebook.com/la8zamora/picture?width=200&height=200",
-                "epg_id": "8Zamora.TV",
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "TV Benavente",
-                "web": "https://www.tvbenavente.es",
-                "logo": "https://graph.facebook.com/benaventetv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
-              },
-              {
-                "name": "Canal 54",
-                "web": "https://www.canal54.es/directo/",
-                "logo": "https://graph.facebook.com/Canal54Burgos/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=canal54tvburgos&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
               {
                 "name": "TV Aranda",
                 "web": "http://www.telearanda.es",
@@ -2669,31 +1410,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.streamingconnect.tv/hls/telearanda/telearanda.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.streamingconnect.tv/hls/telearanda/telearanda.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Canal 9 Soria",
-                "web": "https://soriatv.com",
-                "logo": "https://graph.facebook.com/100830372347460/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=canal9_soria&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Junta Castilla y Le\u00f3n",
@@ -2703,13 +1423,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://16escalones-live2.flumotion.com/chunks.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://16escalones-live2.flumotion.com/chunks.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -2724,20 +1441,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/tv3-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-es.ccma.cat/live-origin/tv3-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-cat.ccma.cat/live-origin/tv3-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "324",
@@ -2747,13 +1454,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-int.ccma.cat/live-origin/canal324-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-int.ccma.cat/live-origin/canal324-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.NEWS, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "33",
@@ -2763,20 +1467,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/c33-super3-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-es.ccma.cat/live-origin/c33-super3-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-cat.ccma.cat/live-origin/c33-super3-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "SX3",
@@ -2786,89 +1480,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/super3-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-es.ccma.cat/live-origin/super3-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-cat.ccma.cat/live-origin/super3-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "3CAT Exclusiu 1",
-                "web": "https://www.ccma.cat/tv3/programes/exclusiu-web/",
-                "logo": "https://graph.facebook.com/som3Cat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/oca1-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-es.ccma.cat/live-origin/oca1-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "3CAT Exclusiu 2",
-                "web": "https://www.ccma.cat/tv3/programes/exclusiu-web/",
-                "logo": "https://graph.facebook.com/som3Cat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/oca2-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/oca2-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "3CAT Exclusiu 3",
-                "web": "https://www.ccma.cat/tv3/programes/exclusiu-web/",
-                "logo": "https://graph.facebook.com/som3Cat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-cat.ccma.cat/live-origin/oca3-hls/master.m3u8",
-                    "geo2": "CAT",
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://directes-tv-es.ccma.cat/live-origin/oca3-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.KIDS, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "La 1 Catalunya",
@@ -2878,20 +1493,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/3293681.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream.akamaized.net/rtvesec/cat/la1_cat_main_dvr.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/3293681.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "La 2 Catalunya",
@@ -2901,20 +1506,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/3987218.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtvelivestream.akamaized.net/rtvesec/cat/la2_cat_main_dvr.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/3987218.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "24h Catalunya",
@@ -2924,13 +1519,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ztnr.rtve.es/ztnr/4952053.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ztnr.rtve.es/ztnr/4952053.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.NEWS, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Bon Dia TV",
@@ -2940,21 +1532,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-int.ccma.cat/live-origin/bondia-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-int.ccma.cat/live-origin/bondia-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Canal Parlament",
-                "web": "https://parlament.cat/ext/f?p=700:1",
-                "logo": "https://graph.facebook.com/parlamentcat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "betev\u00e9",
@@ -2964,15 +1545,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Terres de l'Ebre",
@@ -2982,13 +1558,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest1-video.streaming-pro.com/canalteABR/ctestream/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest1-video.streaming-pro.com/canalteABR/ctestream/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Empord\u00e0 TV",
@@ -2998,13 +1571,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://video3.lhdserver.es/empordatv2/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://video3.lhdserver.es/empordatv2/live.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TAC 12",
@@ -3014,13 +1584,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest1-video.streaming-pro.com/nimble/tac12/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest1-video.streaming-pro.com/nimble/tac12/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Terrassa",
@@ -3036,15 +1603,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "La Xarxa",
-                "web": "https://laxarxames.cat/directe",
-                "logo": "https://graph.facebook.com/laxarxa/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Taronja Central",
@@ -3054,15 +1613,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/central/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/central/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "UAGLI"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Taronja Anoia",
@@ -3072,15 +1626,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/anoia/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/anoia/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "UAGLI"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal Taronja Osona i Moian\u00e9s",
@@ -3090,13 +1639,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/osona/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/osona/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TV de Girona",
@@ -3106,13 +1652,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://ventdelnord.tv:8080/girona/directe.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://ventdelnord.tv:8080/girona/directe.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Piera TV",
@@ -3122,13 +1665,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://51.254.47.72:1935/piera/smil:piera.smil/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://51.254.47.72:1935/piera/smil:piera.smil/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Mar TV",
@@ -3138,31 +1678,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://iptv.services.everywan.net:8080/martv-web/video.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://iptv.services.everywan.net:8080/martv-web/video.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "TV Sant Cugat",
-                "web": "https://www.tvsantcugat.cat/cobertura/directe-tv-hd/",
-                "logo": "https://graph.facebook.com/tvsantcugat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=QaVsxXTk6k4",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TV Sabadell Vall\u00e8s",
@@ -3172,15 +1691,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "UAGLI"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Fitel Television",
@@ -3190,31 +1704,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://tv.mywifisocial.es/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://tv.mywifisocial.es/live.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "TV de Sant Mart\u00ed",
-                "web": "https://granviaradio8.wixsite.com/rtvsm/directe",
-                "logo": "https://graph.facebook.com/1397103013646307/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=qcEyduUWWIw",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.TECNOLOGY, ContentTypesEnum.DOCUMENTALS]
               }
             ]
           },
@@ -3237,13 +1730,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnlive.codev8.net/rtvcelive/smil:channel1.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnlive.codev8.net/rtvcelive/smil:channel1.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -3258,13 +1748,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://tvradio-1-23.secure2.footprint.net/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://tvradio-1-23.secure2.footprint.net/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.RADIO, ContentTypesEnum.WEBCAMS]
               },
               {
                 "name": "Telegan\u00e9s",
@@ -3274,13 +1761,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.emitstream.com/hls/5z6oj7ziwxzfnj78vg2m/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://live.emitstream.com/hls/5z6oj7ziwxzfnj78vg2m/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Distrito TV",
@@ -3290,23 +1774,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Telesur Madrid",
-                "web": "https://telesurmadrid.wordpress.com",
-                "logo": "https://graph.facebook.com/telesurmadrid/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "NOEM"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "C33 Madrid",
@@ -3316,13 +1787,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5ab29cc78f681.streamlock.net/canal33tvmadridgmailcom/livestream/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5ab29cc78f681.streamlock.net/canal33tvmadridgmailcom/livestream/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "EsTuTele",
@@ -3332,50 +1800,16 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/estutele/estutele.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/estutele/estutele.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
-              },
-              {
-                "name": "Canal Red",
-                "web": "https://canalred.tv",
-                "logo": "https://graph.facebook.com/canalredtelevision/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=zNEHMu8-MUU",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
           {
             "name": "C. Foral de Navarra",
             "channels": [
-              {
-                "name": "Navarra TV",
-                "web": "https://www.navarratelevision.es/Directo",
-                "logo": "https://graph.facebook.com/NavarraTelevision/picture?width=200&height=200",
-                "epg_id": "NaTV.TV",
-                "options": [],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
               {
                 "name": "TeleRibera",
                 "web": "https://teleribera.com",
@@ -3384,36 +1818,36 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://video1.lhdserver.es/teleribera/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://video1.lhdserver.es/teleribera/live.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
-                "name": "Parlamento de Navarra",
+                "name": "Parlamento de Navarra (1)",
                 "web": "https://www.parlamentodenavarra.es",
                 "logo": "https://pbs.twimg.com/profile_images/1517046445030924289/r4OIw84T_200x200.jpg",
                 "epg_id": null,
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://broadcasting.parlamentodenavarra.es/live/canal1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
+                    "url": "https://broadcasting.parlamentodenavarra.es/live/canal1/master.m3u8"
+                  }                  
+                ],
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
+              },
+              {
+                "name": "Parlamento de Navarra (2)",
+                "web": "https://www.parlamentodenavarra.es",
+                "logo": "https://pbs.twimg.com/profile_images/1517046445030924289/r4OIw84T_200x200.jpg",
+                "epg_id": null,
+                "options": [
+                 {
                     "format": "m3u8",
-                    "url": "https://broadcasting.parlamentodenavarra.es/live/canal2/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://broadcasting.parlamentodenavarra.es/live/canal2/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -3428,29 +1862,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://bcovlive-a.akamaihd.net/469e448f034b4d46afa4bcac53297d60/eu-central-1/6057955885001/playlist_dvr.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://bcovlive-a.akamaihd.net/469e448f034b4d46afa4bcac53297d60/eu-central-1/6057955885001/playlist_dvr.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "7 TeleValencia",
-                "web": "https://7televalencia.com/directo-7televalencia/",
-                "logo": "https://pbs.twimg.com/profile_images/1398557359065157634/HnJZTLR-_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Ribera TV",
@@ -3460,13 +1875,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://common01.todostreaming.es/live/ribera-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://common01.todostreaming.es/live/ribera-livestream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "La 8 Mediterr\u00e1neo",
@@ -3476,31 +1888,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming004.gestec-video.com/hls/8TV.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming004.gestec-video.com/hls/8TV.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "TV Castell\u00f3",
-                "web": "https://tvcs.tv/en-directe/",
-                "logo": "https://graph.facebook.com/TelevisiondeCastellon/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=televisiodecastello&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "12TV Alicante",
@@ -3510,34 +1901,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/12tv/12tv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/12tv/12tv.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
-              },
-              {
-                "name": "Levante TV",
-                "web": "https://www.levante-emv.com/videos/levante-tv",
-                "logo": "https://graph.facebook.com/levantetv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=levante_tv&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TV Vega Baja",
@@ -3547,13 +1914,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming.tvt.es:8080/hls/tvb_interno/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming.tvt.es:8080/hls/tvb_interno/live.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Burriana TV",
@@ -3563,29 +1927,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://www.burrianateve.com/hls/btv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.burrianateve.com/hls/btv.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Distrito TV Valencia",
-                "web": "https://eldistrito.es/distrito-tv-llega-a-la-comunidad-valenciana-a-traves-de-la-tdt/",
-                "logo": "https://graph.facebook.com/2004860103163343/picture?width=200&height=200",
-                "epg_id": "Distrito.TV",
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live.emitstream.com/hls/3mn7wpcv7hbmxmdzaxap/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Tevequatre TV",
@@ -3595,13 +1940,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://nlb1-live.emitstream.com/hls/646wzsnqyforndavy6de/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://nlb1-live.emitstream.com/hls/646wzsnqyforndavy6de/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Maestrat TV",
@@ -3611,13 +1953,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://stream.maestrat.tv/hls/stream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://stream.maestrat.tv/hls/stream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Univers TV",
@@ -3627,13 +1966,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud2.streaminglivehd.com:1936/universfaller/universfaller/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TV Almassora",
@@ -3643,13 +1979,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.fullsport.es/hls/tvalmassora_src/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://live.fullsport.es/hls/tvalmassora_src/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Onda 15 TV",
@@ -3659,13 +1992,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8034/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8034/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "R\u00e0dio Bocairent TV",
@@ -3675,20 +2005,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://iptv.wifibytes.com/RadioBocairentTV_Trasnscod/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "http://185.81.77.4/BocairentTV/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://iptv.wifibytes.com/RadioBocairentTV_Trasnscod/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL, ContentTypesEnum.RADIO]
               },
               {
                 "name": "Punt 3 Vall Uix\u00f3",
@@ -3698,13 +2018,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Ciudades Del Ocio TV",
@@ -3714,15 +2031,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8024/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8024/index.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.TRAVEL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Onda Valencia",
@@ -3732,49 +2044,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8116/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8116/index.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Veteve",
-                "web": "https://veteve.es/",
-                "logo": "https://yt3.googleusercontent.com/dUy97uBRPzF6LrRPXs72Terta2gamHMK3morI-yaPZ-9np4CMRU63OWhd0ujZC5AJM9oP8yfmA=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=veteve&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Enguera TV",
-                "web": "https://www.enguera.es/content/enguera-tv",
-                "logo": "https://yt3.googleusercontent.com/ytc/AL5GRJWP8ahafBlFAbCsP3tT17ooK6arGKNmcx6VES4o=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=engueratv&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "33TV Valencia",
@@ -3784,13 +2057,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://limited43.todostreaming.es/live/simbana-livestream.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://limited43.todostreaming.es/live/simbana-livestream.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Corts Valencianes",
@@ -3800,13 +2070,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamserver3.seneca.tv/cval_live/cdn_enc_3/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamserver3.seneca.tv/cval_live/cdn_enc_3/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.POLITICS, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -3821,75 +2088,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnapi.kaltura.com/p/5581662/sp/558166200/playManifest/entryId/1_in8cxw3w/protocol/https/format/applehttp/a.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://cdnapi.kaltura.com/p/5581662/sp/558166200/playManifest/entryId/1_pkmdctkt/protocol/https/format/applehttp/a.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnapi.kaltura.com/p/5581662/sp/558166200/playManifest/entryId/1_in8cxw3w/protocol/https/format/applehttp/a.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "TV Extreme\u00f1a",
-                "web": "https://www.xn--televisionextremea-30b.com/directo/",
-                "logo": "https://graph.facebook.com/TELEVISIONEXTREMENA/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=tvextremena&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Nuestra Comarca TV",
-                "web": "https://www.nuestracomarca.com",
-                "logo": "https://graph.facebook.com/nuestra.comarca/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=nuestracomarcatelevision&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Zafra TV",
-                "web": "https://webtv.radiotvzafra.es",
-                "logo": "https://graph.facebook.com/ZFtelevision/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/radiotvzafra/radiotvzafra.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -3904,13 +2106,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://europa-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://europa-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TVG 2",
@@ -3920,13 +2119,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://amodino-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://amodino-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TVG Xabarin",
@@ -3936,13 +2132,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://infantil-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://infantil-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.KIDS]
               },
               {
                 "name": "TVG Pequerrech@s",
@@ -3952,13 +2145,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://xabarintv-r1-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://xabarintv-r1-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.KIDS]
               },
               {
                 "name": "TVG Cativ@s",
@@ -3968,13 +2158,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://xabarintv-r2-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://xabarintv-r2-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.KIDS]
               },
               {
                 "name": "TVG Moci\u00f1@s",
@@ -3984,13 +2171,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://xabarintv-r3-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://xabarintv-r3-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.KIDS]
               },
               {
                 "name": "TVG Musigal",
@@ -4000,13 +2184,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://musigal-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://musigal-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.MUSIC]
               },
               {
                 "name": "TVG Cultura",
@@ -4016,13 +2197,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cultural-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cultural-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.CULTURE]
               },
               {
                 "name": "TVG Momentos G",
@@ -4032,13 +2210,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://momentog-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://momentog-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.GENERAL]
               },
               {
                 "name": "TVG Eventos",
@@ -4048,41 +2223,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://events1-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://events2-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://events3-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://events4-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://events5-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://events1-crtvg.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.REGIONAL, ContentTypesEnum.POLITICS]
               },
               {
                 "name": "TeleVigo",
@@ -4092,92 +2236,16 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REF"
-                ],
-                "referer": "http://www.televigo.com"
-              },
-              {
-                "name": "Hermes TV",
-                "web": "http://www.hermesvigo.com/directo-tv.php",
-                "logo": "https://graph.facebook.com/491789551017784/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://player.twitch.tv/?channel=hermestelevisionvigo&parent=tdtchannels.com&parent=www.tdtchannels.com",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Anove TV",
-                "web": "https://anove.gal",
-                "logo": "https://graph.facebook.com/anove.tv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://205245.gvideo.io/cmaf/205245_786753/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Auria TV",
-                "web": "http://www.auria.es",
-                "logo": "https://yt3.ggpht.com/a-/AAuE7mBbJ5XfzqqDgg1IkOk23GJ6JZntYZtYT-n1CA=s200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=kyZXzeEONf4",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
           {
             "name": "Illes Balears",
             "channels": [
-              {
-                "name": "IB3 Global",
-                "web": "https://ib3.org/directe",
-                "logo": "https://graph.facebook.com/IB3org/picture?width=200&height=200",
-                "epg_id": "IB3.TV",
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=MOSIGlJRNVU",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
               {
                 "name": "TEF",
                 "web": "https://teftv.com/la-tef-en-directe/",
@@ -4186,15 +2254,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/EIVISSA_2/EIVISSA_2/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5940924978228.streamlock.net/EIVISSA_2/EIVISSA_2/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal 4 Televisi\u00f3",
@@ -4204,13 +2267,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://limited35.todostreaming.es/live/mitjans-livestream1.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://limited35.todostreaming.es/live/mitjans-livestream1.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Fibwi Diario",
@@ -4220,29 +2280,16 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://hostcdn3.fibwi.com/fibwi_diario/index.fmp4.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
           {
             "name": "La Rioja",
             "channels": [
-              {
-                "name": "7 La Rioja",
-                "web": "https://www.7rioja.tv/Directo",
-                "logo": "https://graph.facebook.com/7riojatv/picture?width=200&height=200",
-                "epg_id": "7Rioja.TV",
-                "options": [],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
               {
                 "name": "Cocina Familiar",
                 "web": "https://cocina-familiar.com",
@@ -4251,16 +2298,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/cocinafamiliar/cocinafamiliar.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/cocinafamiliar/cocinafamiliar.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
+                "contentTypes": [ContentTypesEnum.COOKING, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -4275,13 +2316,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://tvmelilla-hls-rm-lw.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://tvmelilla-hls-rm-lw.flumotion.com/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -4296,13 +2334,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "ETB 2",
@@ -4312,13 +2347,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "ETB Eventos 1",
@@ -4328,13 +2360,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/oka1hd-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://multimedia.eitb.eus/live-content/oka1hd-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "ETB Eventos 2",
@@ -4344,13 +2373,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/oka2hd-hls/master.m3u8",
-                    "geo2": "SP",
-                    "res": null,
-                    "lang": null
+                    "url": "https://multimedia.eitb.eus/live-content/oka2hd-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Hamaika TV",
@@ -4360,13 +2386,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Tele 7",
@@ -4376,13 +2399,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Goiena Eus",
@@ -4392,13 +2412,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://zuzenean.goienamedia.eus/goiena-telebista.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://zuzenean.goienamedia.eus/goiena-telebista.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Durangaldeko TV",
@@ -4408,13 +2425,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.emitstream.com/hls/5f9asjsehd7gmyxsdpzu/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://live.emitstream.com/hls/5f9asjsehd7gmyxsdpzu/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Goierri Irrati TV",
@@ -4424,13 +2438,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8155/8155/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5940924978228.streamlock.net/8155/8155/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "28 Kanala",
@@ -4440,13 +2451,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8157/8157/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5940924978228.streamlock.net/8157/8157/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Erlo TV",
@@ -4456,13 +2464,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/8159/8159/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5940924978228.streamlock.net/8159/8159/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Urola TV",
@@ -4472,15 +2477,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5940924978228.streamlock.net/j_Directo2/mp4:j_Directo2/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5940924978228.streamlock.net/j_Directo2/mp4:j_Directo2/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -4495,16 +2495,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnlive.codev8.net/rtpalive/smil:directo/playlist.m3u8?DVR",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnlive.codev8.net/rtpalive/smil:directo/playlist.m3u8?DVR"
                   }
                 ],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           },
@@ -4519,20 +2513,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://rtv-murcia-live.globalmest.com/principal/smil:principal.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://rtv-murcia-live.globalmest.com/secundario/smil:secundario.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://rtv-murcia-live.globalmest.com/principal/smil:principal.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Popular TV Murcia",
@@ -4542,16 +2526,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/populartvrm/populartvrm.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.fastchannel.es/mic/manifiest/hls/populartvrm/populartvrm.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REFG1"
-                ],
-                "referer": "https://player.streamingconnect.com/"
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Canal 1 Mar Menor Torre Pacheco",
@@ -4561,13 +2539,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directo.tuwebtv.es/canal1.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://directo.tuwebtv.es/canal1.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "Arabi TV",
@@ -4577,13 +2552,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamtv2.elitecomunicacion.cloud:3956/live/arabitvlive.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamtv2.elitecomunicacion.cloud:3956/live/arabitvlive.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               }
             ]
           }
@@ -4628,13 +2600,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://directes-tv-int.ccma.cat/live-origin/tvi-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://directes-tv-int.ccma.cat/live-origin/tvi-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "EITB Basque",
@@ -4645,13 +2614,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
                 "name": "TVG Am\u00e9rica",
@@ -4688,15 +2654,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "extra_info": []
               },
               {
-                "name": "GBC Gibraltar",
-                "web": "https://www.gbc.gi/tv/watch-live",
-                "logo": "https://graph.facebook.com/GBCNewsroom/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'gb',
-                "options": [],
-                "extra_info": []
-              },
-              {
                 "name": "CNN Internacional",
                 "web": "https://cnnespanol.cnn.com",
                 "logo": "https://graph.facebook.com/cnninternational/picture?width=320&height=320",
@@ -4718,9 +2675,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
                 "name": "France 24 Francia",
@@ -4735,25 +2690,9 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCCCPCZNChQdGa9EkATeye4g/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
                 "name": "TV5Monde Francia",
@@ -4781,15 +2720,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=Z-Nwo-ypKtM",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
+                    "url": "https://www.youtube.com/watch?v=Z-Nwo-ypKtM"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
                 "name": "CNEWS Francia",
@@ -4811,7 +2745,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 ]
               },
               {
-                "name": "Sport Italia",
+                "name": "Sport Italia (1)",
                 "web": "https://sportitalia.com/video/index",
                 "logo": "https://graph.facebook.com/sportitaliatv/picture?width=200&height=200",
                 "epg_id": null,
@@ -4823,14 +2757,34 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": "IT"
-                  },
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.SPORTS]
+              },
+              {
+                "name": "Sport Italia (2)",
+                "web": "https://sportitalia.com/video/index",
+                "logo": "https://graph.facebook.com/sportitaliatv/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'it',
+                "options": [
                   {
                     "format": "m3u8",
                     "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sisolocalcio.smil/playlist.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
-                  },
+                  }
+                ],
+                "contentTypes": [ContentTypesEnum.SPORTS]
+              },
+              {
+                "name": "Sport Italia (3)",
+                "web": "https://sportitalia.com/video/index",
+                "logo": "https://graph.facebook.com/sportitaliatv/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'it',
+                "options": [
                   {
                     "format": "m3u8",
                     "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/silive24.smil/playlist.m3u8",
@@ -4839,8 +2793,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "contentTypes": [ContentTypesEnum.SPORTS],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.SPORTS]
               },
               {
                 "name": "La7 Italia",
@@ -4851,13 +2804,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS-B/Live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS-B/Live.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "La7d Italia",
@@ -4868,13 +2818,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d15umi5iaezxgx.cloudfront.net/LA7D/CLN/HLS-B/Live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://d15umi5iaezxgx.cloudfront.net/LA7D/CLN/HLS-B/Live.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "DW Alemania",
@@ -4916,13 +2863,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "DE"
+                    "url": "https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Tagesschau24",
@@ -4950,10 +2894,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://linear021-gb-hls1-prd-ak.cdn.skycdp.com/Content/HLS_001_sd/Live/channel(skynews)/index_hd.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://linear021-gb-hls1-prd-ak.cdn.skycdp.com/Content/HLS_001_sd/Live/channel(skynews)/index_hd.m3u8"
                   },
                   {
                     "format": "youtube",
@@ -4963,7 +2904,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": "EN"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "GB News UK",
@@ -4974,54 +2915,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://amg01076-lightningintern-gbnews-samsunguk-0lu52.amagi.tv/playlist/amg01076-lightningintern-gbnews-samsunguk/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC0vn8ISa4LKMunLbzaXLnOQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://amg01076-lightningintern-gbnews-samsunguk-0lu52.amagi.tv/playlist/amg01076-lightningintern-gbnews-samsunguk/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "CNN Portugal",
-                "web": "https://cnnportugal.iol.pt/direto",
-                "logo": "https://graph.facebook.com/cnnportugal/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pt',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Porto Canal Portugal",
-                "web": "http://portocanal.sapo.pt/live",
-                "logo": "https://graph.facebook.com/portocanal/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pt',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x8egnb8?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "PT"
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "LN24 B\u00e9lgica",
@@ -5032,58 +2929,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.digiteka.com/1/bEg0RmFLb1JMYXRI/dGhqbmIw/hls/live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
+                    "url": "https://live.digiteka.com/1/bEg0RmFLb1JMYXRI/dGhqbmIw/hls/live/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "TVP Polonia",
-                "web": "https://polonia.tvp.pl/44562671/tvp-polonia-stream",
-                "logo": "https://graph.facebook.com/tvppolonia/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pl',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://polonia.tvp.pl/sess/TVPlayer2/embed.php?ID=51251441",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Televixin Malta",
-                "web": "https://www.tvm.com.mt/mt/tvmi/live/",
-                "logo": "https://graph.facebook.com/TelevisionMalta/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mt',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://media.tvm.com.mt/16958960.ihtml/player.html?source=embed&live_id=16966825",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "stream",
-                    "url": "https://media.tvm.com.mt/16958960.ihtml/player.html?source=embed&live_id=16973314",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "TRT World",
@@ -5094,23 +2943,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://tv-trtworld.live.trt.com.tr/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://tv-trthaber.medya.trt.com.tr/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://tv-trtworld.live.trt.com.tr/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "R\u00daV",
+                "name": "R\u00daV)",
                 "web": "https://www.ruv.is/sjonvarp/beint/ruv",
                 "logo": "https://graph.facebook.com/RUVohf/picture?width=200&height=200",
                 "epg_id": null,
@@ -5118,23 +2957,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ruv-web-live.akamaized.net/streymi/ruverl/ruverl.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://ruvlive.akamaized.net/out/v1/2ff7673de40f419fa5164498fae89089/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ruv-web-live.akamaized.net/streymi/ruverl/ruverl.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "San Marino RTV",
+                "name": "San Marino RTV (1)",
                 "web": "https://www.sanmarinortv.sm/programmi/web-tv",
                 "logo": "https://graph.facebook.com/SanMarinoRTV/picture?width=200&height=200",
                 "epg_id": null,
@@ -5142,20 +2971,24 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch01/_definst_/smil:ch-01.smil/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/_definst_/smil:ch-02.smil/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch01/_definst_/smil:ch-01.smil/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
+              },
+              {
+                "name": "San Marino RTV (2)",
+                "web": "https://www.sanmarinortv.sm/programmi/web-tv",
+                "logo": "https://graph.facebook.com/SanMarinoRTV/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'sm',
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/_definst_/smil:ch-02.smil/master.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "1+1 Ucrania",
@@ -5166,18 +2999,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=ASndlvhI8p0",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=ASndlvhI8p0"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Ukraine 24 Ucrania",
+                "name": "Ukraine 24",
                 "web": "https://u24.ua",
                 "logo": "https://graph.facebook.com/www.ukraine24.ua/picture?width=200&height=200",
                 "epg_id": null,
@@ -5185,13 +3013,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://streamvideol1.luxnet.ua/news24/news24.stream/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://streamvideol1.luxnet.ua/news24/news24.stream/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "ICTV Ucrania",
@@ -5202,15 +3027,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=T88RnpKNN_s",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=T88RnpKNN_s"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "UATV Ucrania",
@@ -5221,29 +3041,24 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://freedom.cdn-03.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://freedom.cdn-03.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "Current Time TV",
                 "web": "https://www.currenttime.tv/live",
                 "logo": "https://graph.facebook.com/currenttimetv/picture?width=200&height=200",
-                "epg_id": null,
+                "epg_id": "CurrentTimeTV.ru",
+                "country": 'ru',
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               }
             ]
           },
@@ -5259,16 +3074,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "ABC News USA",
+                "name": "ABC News",
                 "web": "https://abcnews.go.com/Live",
                 "logo": "https://graph.facebook.com/ABCNews/picture?width=200&height=200",
                 "epg_id": null,
@@ -5276,16 +3088,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "NBC News USA",
+                "name": "NBC News",
                 "web": "https://www.nbcnews.com/now",
                 "logo": "https://graph.facebook.com/NBCNews/picture?width=200&height=200",
                 "epg_id": null,
@@ -5293,15 +3102,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=S9wmU9hA9os",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://www.youtube.com/watch?v=S9wmU9hA9os"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "Bloomberg USA",
@@ -5316,17 +3120,9 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "geo2": null,
                     "res": null,
                     "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://www.bloomberg.com/media-manifest/streams/us-event.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
                   }
                 ],
-                "contentTypes": [ContentTypesEnum.BUSINESS],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.BUSINESS]
               },
               {
                 "name": "CourtTV USA",
@@ -5354,16 +3150,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2ferbiwcx1539.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8zd06wicndthf-ssai-prd/WNNationalSamsung/WNNationalSamsung.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://d2ferbiwcx1539.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8zd06wicndthf-ssai-prd/WNNationalSamsung/WNNationalSamsung.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.WEATHER, ContentTypesEnum.NEWS]
               },
               {
-                "name": "America's Voice USA",
+                "name": "America's Voice",
                 "web": "https://americasvoice.news",
                 "logo": "https://graph.facebook.com/RealAmericasVoice/picture?width=200&height=200",
                 "epg_id": null,
@@ -5371,16 +3164,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2jiqiw4g5lj5k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/AmericasVoiceChannel-prod/AVSamsung/AVSamsung.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://d2jiqiw4g5lj5k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/AmericasVoiceChannel-prod/AVSamsung/AVSamsung.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "BUZZR TV USA",
+                "name": "BUZZR TV",
                 "web": "https://buzzrtv.com/watch",
                 "logo": "https://graph.facebook.com/BUZZRtv/picture?width=200&height=200",
                 "epg_id": null,
@@ -5388,13 +3178,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://buzzr-samsungus.amagi.tv/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://buzzr-samsungus.amagi.tv/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.TVSHOWS]
               },
               {
                 "name": "NTN24 Am\u00e9rica",
@@ -5405,54 +3192,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=JxpMmv1Wm2M",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=JxpMmv1Wm2M"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Milenio Mexico",
-                "web": "https://www.milenio.com/mileniotv",
-                "logo": "https://graph.facebook.com/MilenioDiario/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mx',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=f3zGoEXJhz8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "El Financiero Mexico",
-                "web": "https://www.elfinanciero.com.mx/tv",
-                "logo": "https://graph.facebook.com/ElFinancieroMx/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mx',
-                "options": [
-                  {
-                    "format": "mpd",
-                    "url": "https://d3mhf0ikztdylu.cloudfront.net/out/v1/817cf22a7bc24a778898407b3a2bfdb3/index.mpd",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "FORO TV Mexico",
+                "name": "FORO TV",
                 "web": "https://noticieros.televisa.com/noticias-vivo-forotv/",
                 "logo": "https://pbs.twimg.com/profile_images/1508338964771459074/JG2pfMx1_200x200.jpg",
                 "epg_id": null,
@@ -5460,13 +3206,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://channel02-notusa.akamaized.net/hls/live/2023914-b/event01/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://channel02-notusa.akamaized.net/hls/live/2023914-b/event01/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "ADN40 Mexico",
@@ -5477,13 +3220,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "Canal Once Mexico",
@@ -5494,51 +3234,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Quiero TV Mexico",
-                "web": "https://quierotv.mx/videoenvivo/",
-                "logo": "https://graph.facebook.com/quierotvGDL/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mx',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x8lng9k?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Mexico Travel TV",
-                "web": "https://www.mexicotravelchannel.com.mx",
-                "logo": "https://graph.facebook.com/MexicoTravelChannelTV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'mx',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x7v76vf?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Turistik TV Mexico",
