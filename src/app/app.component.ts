@@ -129,7 +129,7 @@ export class AppComponent implements OnInit, OnDestroy {
     } else if (url.startsWith('https://www.youtube.com')) {
       return MediaTypesEnum.YOUTUBE;
     } else {
-      return undefined;
+      return MediaTypesEnum.STREAM;
     }
   }
 

@@ -375,7 +375,7 @@
             -->
         </ng-container>
 
-        <ng-container *ngIf="currentFormat===MediaTypesEnum.STREAM">
+        <ng-container *ngIf="format===MediaTypesEnum.STREAM">
             <iframe [src]="url | safeUrl" style="width: 100%; height: 100%;"></iframe>
         </ng-container>
         </div>
