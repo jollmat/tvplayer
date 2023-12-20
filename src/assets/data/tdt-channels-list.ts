@@ -2620,40 +2620,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "contentTypes": [ContentTypesEnum.GENERAL, ContentTypesEnum.REGIONAL]
               },
               {
-                "name": "TVG Am\u00e9rica",
-                "web": "http://www.crtvg.es/tvg/tvg-en-directo/canle/galicia-tv-america",
-                "logo": "https://graph.facebook.com/CRTVG/picture?width=200&height=200",
-                "epg_id": "TVGA.TV",
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://america-crtvg.flumotion.com/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Telemadrid Internacional",
-                "web": "https://www.telemadrid.es/emision-en-directo-telemadrid-int/",
-                "logo": "https://graph.facebook.com/telemadrid/picture?width=200&height=200",
-                "epg_id": "TeleMadridInt.TV",
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://new-international-23.secure2.footprint.net/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
                 "name": "CNN Internacional",
                 "web": "https://cnnespanol.cnn.com",
                 "logo": "https://graph.facebook.com/cnninternational/picture?width=320&height=320",
@@ -2662,23 +2628,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://dhzhj55w8hou6.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-bmoob4iijm59i/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UC_lEiu6917IJz03TnntWUaQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://dhzhj55w8hou6.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-bmoob4iijm59i/index.m3u8"
                   }
                 ],
                 "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
-                "name": "France 24 Francia",
+                "name": "France 24",
                 "web": "https://www.france24.com/es/en-vivo",
                 "logo": "https://graph.facebook.com/FRANCE24/picture?width=200&height=200",
                 "epg_id": "France24.TV",
@@ -2686,16 +2642,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=l8PMl7tUDIE",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=l8PMl7tUDIE"
                   }
                 ],
                 "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
-                "name": "TV5Monde Francia",
+                "name": "TV5 Monde",
                 "web": "https://europe.tv5monde.com/en/live",
                 "logo": "https://graph.facebook.com/tv5mondeofficiel/picture?width=200&height=200",
                 "epg_id": "TV5Monde.TV",
@@ -2703,13 +2656,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
+                    "url": "https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
                 "name": "franceinfo",
@@ -2726,25 +2676,6 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "contentTypes": [ContentTypesEnum.NEWS]
               },
               {
-                "name": "CNEWS Francia",
-                "web": "https://www.cnews.fr/le-direct",
-                "logo": "https://graph.facebook.com/CNEWSofficiel/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'fr',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x3b68jn?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "FR"
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
                 "name": "Sport Italia (1)",
                 "web": "https://sportitalia.com/video/index",
                 "logo": "https://graph.facebook.com/sportitaliatv/picture?width=200&height=200",
@@ -2753,10 +2684,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sihd/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sihd/playlist.m3u8"
                   }
                 ],
                 "contentTypes": [ContentTypesEnum.SPORTS]
@@ -2770,10 +2698,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sisolocalcio.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sisolocalcio.smil/playlist.m3u8"
                   }
                 ],
                 "contentTypes": [ContentTypesEnum.SPORTS]
@@ -2787,10 +2712,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/silive24.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/silive24.smil/playlist.m3u8"
                   }
                 ],
                 "contentTypes": [ContentTypesEnum.SPORTS]
@@ -2824,7 +2746,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "contentTypes": [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "DW Alemania",
+                "name": "DW",
                 "web": "https://www.dw.com/es/multimedia/tv-en-vivo/s-100837",
                 "logo": "https://graph.facebook.com/dw.espanol/picture?width=200&height=200",
                 "epg_id": "DW.TV",
@@ -2832,27 +2754,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "DE"
+                    "url": "https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "WDR",
@@ -2877,13 +2782,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "DE"
+                    "url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Sky News UK",
@@ -3108,7 +3010,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Bloomberg USA",
+                "name": "Bloomberg",
                 "web": "https://www.bloomberg.com/live/us/btv",
                 "logo": "https://pbs.twimg.com/profile_images/991792042094354432/DG1Ruupb_200x200.jpg",
                 "epg_id": null,
@@ -3116,16 +3018,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://www.bloomberg.com/media-manifest/streams/us.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://www.bloomberg.com/media-manifest/streams/us.m3u8"
                   }
                 ],
                 "contentTypes": [ContentTypesEnum.BUSINESS]
               },
               {
-                "name": "CourtTV USA",
+                "name": "CourtTV",
                 "web": "https://www.courttv.com/title/court-tv-live-stream-web/",
                 "logo": "https://graph.facebook.com/courttv/picture?width=200&height=200",
                 "epg_id": null,
@@ -3133,13 +3032,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://content.uplynk.com/channel/6c0bd0f94b1d4526a98676e9699a10ef.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://content.uplynk.com/channel/6c0bd0f94b1d4526a98676e9699a10ef.m3u8"
                   }
                 ],
-                "extra_info": []
+                "contentTypes": [ContentTypesEnum.JUSTICE]
               },
               {
                 "name": "WeatherNation USA",
@@ -3248,16 +3144,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5fa5de1a545ae.streamlock.net/8030/8030/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5fa5de1a545ae.streamlock.net/8030/8030/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.TRAVEL]
               },
               {
-                "name": "Canal Capital Colombia",
+                "name": "Canal Capital",
                 "web": "https://www.canalcapital.gov.co/content/canal-capital-vivo",
                 "logo": "https://pbs.twimg.com/profile_images/1678109025399865347/m07Vwdd6_200x200.jpg",
                 "epg_id": null,
@@ -3265,13 +3158,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://play.cdn.enetres.net/C99D9A0676F3401589C768D47D31605C021/021/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://play.cdn.enetres.net/C99D9A0676F3401589C768D47D31605C021/021/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Se\u00f1al Colombia",
@@ -3282,16 +3172,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "Telepacifico Colombia",
+                "name": "Telepacifico",
                 "web": "https://telepacifico.com/envivo/",
                 "logo": "https://graph.facebook.com/TelepacificoTV/picture?width=200&height=200",
                 "epg_id": null,
@@ -3299,16 +3186,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://stream.logicideas.media/telepacifico-live/smil:live.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://stream.logicideas.media/telepacifico-live/smil:live.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "Todo Noticias Argentina",
+                "name": "Todo Noticias",
                 "web": "https://tn.com.ar/envivo/24hs/",
                 "logo": "https://graph.facebook.com/todonoticias/picture?width=200&height=200",
                 "epg_id": null,
@@ -3316,37 +3200,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=cb12KmMMDJA",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=cb12KmMMDJA"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "La Naci\u00f3n Argentina",
-                "web": "https://lnmas.lanacion.com.ar",
-                "logo": "https://graph.facebook.com/lanacion/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=4e8Iw3Frf1A",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Am\u00e9rica TV Argentina",
+                "name": "Am\u00e9rica TV",
                 "web": "https://www.americatv.com.ar/vivo",
                 "logo": "https://graph.facebook.com/AmericaTV/picture?width=200&height=200",
                 "epg_id": null,
@@ -3354,30 +3214,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=zcWXboTnous",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=zcWXboTnous"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Canal 9 Argentina",
-                "web": "https://www.elnueve.com.ar/en-vivo/",
-                "logo": "https://graph.facebook.com/Canal9TV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ar',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Exitosa Noticias Per\u00fa",
+                "name": "Exitosa Noticias",
                 "web": "https://exitosanoticias.pe/v1/tvenvivo/",
                 "logo": "https://graph.facebook.com/Exitosanoticias/picture?width=200&height=200",
                 "epg_id": null,
@@ -3385,71 +3228,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamtv.onliv3.online:1936/exito-tv/exito-tv/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamtv.onliv3.online:1936/exito-tv/exito-tv/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Willax Per\u00fa",
-                "web": "https://willax.tv/en-vivo/",
-                "logo": "https://graph.facebook.com/willaxtv/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pe',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x7x4dgx?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "TV Per\u00fa",
-                "web": "https://www.tvperu.gob.pe/play",
-                "logo": "https://graph.facebook.com/TVPeruOficial/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pe',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "TV Per\u00fa Noticias",
-                "web": "https://www.tvperu.gob.pe/noticias/play",
-                "logo": "https://graph.facebook.com/noticias.tvperu/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pe',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Canal IPe Per\u00fa",
-                "web": "https://www.canalipe.tv/streaming",
-                "logo": "https://graph.facebook.com/canalipe/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pe',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "TeleSUR Venezuela",
+                "name": "TeleSUR",
                 "web": "https://www.telesurtv.net/seccion/programas/",
                 "logo": "https://graph.facebook.com/teleSUR/picture?width=200&height=200",
                 "epg_id": "TeleSUR.TV",
@@ -3457,35 +3242,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnesmain.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnesmain.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Venezolana de Televisi\u00f3n",
-                "web": "https://vtv.gob.ve/en-vivo/",
-                "logo": "https://graph.facebook.com/VTVtuCanal/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 've',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x828i6j?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "VPI TV Venezuela",
+                "name": "VPI TV",
                 "web": "https://vpitv.com/en-vivo/",
                 "logo": "https://graph.facebook.com/vpitv/picture?width=200&height=200",
                 "epg_id": null,
@@ -3493,102 +3256,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ott.streann.com/loadbalancer/services/public/channels-secure/5d23d5882cdce61dae029fd8/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://ott.streann.com/loadbalancer/services/public/channels-secure/5d23d5882cdce61dae029fd8/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "La Tele Tuya Venezuela",
-                "web": "https://teletuya.net/en-vivo/",
-                "logo": "https://graph.facebook.com/TeleTuya/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 've',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x8my9op?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "TC TV Ecuador",
-                "web": "https://www.tctelevision.com/en-vivo",
-                "logo": "https://graph.facebook.com/tctelevision10/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ec',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x7wijay?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Red Pat Bolivia",
-                "web": "https://www.redpat.tv/envivolpz",
-                "logo": "https://graph.facebook.com/patboliviahd/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'bo',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://w8.redpat.tv:7777/play/120/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "CDN 37 Rep\u00fablica Dominicana",
-                "web": "https://cdn.com.do/envivo/",
-                "logo": "https://graph.facebook.com/cdn.com.do/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'cu',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Color Visi\u00f3n Rep\u00fablica Dominicana",
-                "web": "https://colorvision.com.do/en-vivo/",
-                "logo": "https://graph.facebook.com/colorvisionc9/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'do',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x7gy059?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "HCH Honduras",
+                "name": "HCH",
                 "web": "https://hch.tv/live/",
                 "logo": "https://pbs.twimg.com/profile_images/1571129300623015936/-HJCmEk3_200x200.jpg",
                 "epg_id": null,
@@ -3596,18 +3270,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x81za5c?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.dailymotion.com/embed/video/x81za5c?autoplay=1"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "ABC TV Paraguay",
+                "name": "ABC TV",
                 "web": "https://www.abc.com.py/tv/",
                 "logo": "https://graph.facebook.com/ABCTVpy/picture?width=200&height=200",
                 "epg_id": null,
@@ -3615,16 +3284,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2e809bgs49c6y.cloudfront.net/live/d87c2b7b-9ecf-4e6e-b63b-b32772bd7851/live.isml/d87c2b7b-9ecf-4e6e-b63b-b32772bd7851.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://d2e809bgs49c6y.cloudfront.net/live/d87c2b7b-9ecf-4e6e-b63b-b32772bd7851/live.isml/d87c2b7b-9ecf-4e6e-b63b-b32772bd7851.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "Trece Paraguay",
+                "name": "Trece",
                 "web": "https://trece.com.py",
                 "logo": "https://graph.facebook.com/trecepy/picture?width=200&height=200",
                 "epg_id": null,
@@ -3632,13 +3298,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://rds3gen.desdeparaguay.net/trecetv/trecetv_alta/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://rds3gen.desdeparaguay.net/trecetv/trecetv_alta/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Unicanal Paraguay",
@@ -3649,25 +3312,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://rds3gen.desdeparaguay.net/unicanal/unicanal_alta/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://rds3gen.desdeparaguay.net/unicanal/unicanal_alta/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Nicavisi\u00f3n TV Nicaragua",
-                "web": "http://www.canal12.com.ni/en-vivo",
-                "logo": "https://graph.facebook.com/200823376627607/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ni',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "WTV Nicaragua",
@@ -3678,25 +3326,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8130/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8130/index.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Canal 33 El Salvador",
-                "web": "https://canal33.tv/home/tv-en-vivo/",
-                "logo": "https://graph.facebook.com/CANAL33.TV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'sv',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Trece Costa Rica",
@@ -3707,15 +3340,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x7vh8g3?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.dailymotion.com/embed/video/x7vh8g3?autoplay=1"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "CNN Brasil",
@@ -3726,34 +3354,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=_UIm7yCgUDM",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=_UIm7yCgUDM"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Trinidad and Tobago Television",
-                "web": "https://www.ttt.live/stream/",
-                "logo": "https://graph.facebook.com/tttliveonline/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'tt',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://tegostream.com/player/tego-player.php?broadcaster=ttt&channel=255",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               }
             ]
           },
@@ -3769,13 +3373,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://livees.cgtn.com/1000e/prog_index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://livees.cgtn.com/1000e/prog_index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "CGTN Documentary",

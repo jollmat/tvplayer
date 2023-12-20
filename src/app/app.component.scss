@@ -113,6 +113,26 @@ input[type="color"]:focus,
   border-color: darkslategrey !important;
 }
 
+.channel-card {
+    width: calc(100% - 10px);
+    height: 45px;
+    border: 1px solid darkslategrey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .4;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 0.7s;
+
+    &.current {
+        opacity: 1;
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+    }
+    &:hover { opacity: 1; filter: grayscale(0%); }
+}
+
 ::placeholder {
     color: darkgray;
     opacity: 1; /* Firefox */
@@ -123,7 +143,6 @@ input[type="color"]:focus,
     color: darkgray;
     font-weight: 100;
 }
-
 
 ::ng-deep {
 

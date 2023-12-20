@@ -4,7 +4,7 @@ import { BehaviorSubject, Observable, of } from 'rxjs';
 import { TdtChannelsDto } from '../model/dto/tdt-channels-response-dto.interface';
 import { TDT_CHANNELS } from 'src/assets/data/tdt-channels-list';
 import { TdtChannelDto } from '../model/dto/tdt-channel-dto.interface';
-import { OTHER_CHANNELS_LIST } from 'dist/assets/data/other-channels-list';
+import { OTHER_CHANNELS_LIST } from '../../assets/data/other-channels-list';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class StreamService {
 
   streams$ = new BehaviorSubject<TdtChannelDto[]>([]);
 
-  supportedFormats: string[] = ['m3u8', 'mp3', 'youtube'];
+  supportedFormats: string[] = ['m3u8', 'mp3', 'youtube', 'stream'];
 
   constructor(
     private http: HttpClient

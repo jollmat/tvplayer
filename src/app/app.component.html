@@ -42,7 +42,7 @@
                             name="country"
                             bindValue="iso2"
                             bindLabel="name"
-                            placeholder="Search a country">
+                            placeholder="Filter by country">
                             <ng-template ng-label-tmp let-item="item">
                                 <div class="d-flex align-items-center justify-content-start w-100">
                                     <i *ngIf="item.iso2.length>0" [title]="getCountryName(item.iso2)" class="me-2 fi fi-{{item.iso2}}"></i>
@@ -79,7 +79,7 @@
                             [virtualScroll]="true"
                             formControlName="contentType"
                             name="type"
-                            placeholder="Search content types">
+                            placeholder="Filter by content type">
                             <ng-template ng-label-tmp let-item="item">
                                 <div class="d-flex align-items-center justify-content-between w-100">
                                     <div>{{item}}</div>
@@ -114,7 +114,7 @@
                             name="channel"
                             bindValue="name"
                             bindLabel="name"
-                            placeholder="Search a channel">
+                            placeholder="Select a channel">
                             <ng-template ng-label-tmp let-item="item">
                                 <div class="d-flex align-items-center justify-content-between w-100">
                                     <div class="d-flex align-items-center">
@@ -178,7 +178,7 @@
                     
                     <!-- Channel name (no mosaic) -->
                     <ng-container *ngIf="streamUrl && channelName">
-                        <small class="w-100 channel_name text-center mt-1">{{channelName}}</small>
+                        <small class="w-100 channel_name text-center mt-1 mb-2">{{channelName}}</small>
                     </ng-container>
                     <!-- End Channel name (no mosaic) -->
 
@@ -292,39 +292,34 @@
             </form>
             <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.LAST">
                 <ng-container *ngFor="let channel of history">
-                    <button class="btn btn-sm p-2 cursor-default" [ngClass]="{'w-33':isMobile}">
-                        <img 
-                            [title]="channel.name" 
-                            (click)="selectChannelFromHistory(channel)" 
-                            class="me-2 w-100 history_img cursor-pointer {{channel.logoBgStyle}}"
-                            [ngClass]="{
-                                'light': channel.logoBgStyle==='light',
-                                'dark': channel.logoBgStyle==='dark',
-                            }" 
-                            [src]="channel.logo">
-                    </button>
+
+                    <ng-container [ngTemplateOutlet]="channelCard" [ngTemplateOutletContext]="{channel: channel}"></ng-container>
+
                 </ng-container>
             </ng-container>
             <ng-container *ngIf="gridViewForm.get('gridViewType')?.value===GridViewTypeEnum.TOP">
                 <ng-container *ngFor="let channelViews of topList; let idx = index;">
                     <ng-container *ngIf="idx<topListLength">
-                        <button class="btn btn-sm p-2 cursor-default" [ngClass]="{'w-33':isMobile}">
-                            <img 
-                                (click)="selectChannelFromHistory(channelViews.channel)" 
-                                [title]="channelViews.channel.name + ' ('+channelViews.views+' views)'" 
-                                class="me-2 w-100 history_img cursor-pointer" 
-                                [ngClass]="{
-                                    'light': channelViews.channel.logoBgStyle==='light',
-                                    'dark': channelViews.channel.logoBgStyle==='dark',
-                                }" 
-                                [src]="channelViews.channel.logo">
-                        </button>
+
+                        <ng-container [ngTemplateOutlet]="channelCard" [ngTemplateOutletContext]="{channel: channelViews.channel}"></ng-container>
+                        
                     </ng-container>                    
                 </ng-container>
             </ng-container>
         </div>
 </ng-template>
 <!-- Direct access Template-->
+
+<!-- Channel card template -->
+<ng-template let-channel="channel" #channelCard>
+    <div class="channel-card cursor-pointer mb-2" 
+        style="background-image: url({{channel.logo}});" 
+        [title]="channel.name"
+        [ngClass]="{'current': channelId===channel.epg_id}"
+        (click)="selectChannelFromHistory(channel)">
+    </div>
+</ng-template>
+<!-- End Channel card template -->
 
 <!-- Player Template-->
 <ng-template let-channel="channel" let-url="url" let-logo="logo" let-format="format" let-youtubeId="youtubeId" let-mosaic="mosaic" #player>
@@ -378,6 +373,10 @@
                 <img [src]="logo" class="w-100 mosaic-logo cursor-pointer" (click)="selectChannelFromHistory(channel)">
             </ng-container>
             -->
+        </ng-container>
+
+        <ng-container *ngIf="currentFormat===MediaTypesEnum.STREAM">
+            <iframe [src]="url | safeUrl" style="width: 100%; height: 100%;"></iframe>
         </ng-container>
         </div>
         

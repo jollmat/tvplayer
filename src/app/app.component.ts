@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { StreamService } from './services/stream.service';
 import { TdtChannelDto } from './model/dto/tdt-channel-dto.interface';
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   supportedFormats: string[] = ['m3u8', 'mp3', 'youtube'];
   MediaTypesEnum = MediaTypesEnum;
-  currentFormat?: MediaTypesEnum;
+  currentFormat?: MediaTypesEnum | string;
   GridViewTypeEnum = GridViewTypeEnum;
 
   isMobile!: boolean;
@@ -47,6 +47,7 @@ export class AppComponent implements OnInit, OnDestroy {
   hlsBitrates: any;
   logoUrl?: string;
   channelName: string = '';
+  channelId: string | null | undefined;
   streamUrl?: string;
   streamUrl$ = new BehaviorSubject<string>('');
   
@@ -146,7 +147,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   doCountChannelView(channel: TdtChannelDto) {
-    console.log('doCountChannelView()', channel);
     const channelIndex: number = this.topList.findIndex((_chViews) => _chViews.channel.epg_id===channel.epg_id );
     if (channelIndex>=0) {
       this.topList[channelIndex].views++;
@@ -168,6 +168,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel?.logo;
     this.channelName = channelName;
+    this.channelId = channel?.epg_id;
     if (channel?.epg_id) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
@@ -178,17 +179,21 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   selectChannelFromHistory(channel: TdtChannelDto) {
+    console.log('selectChannelFromHistory', channel, channel.epg_id);
+    const channelId: string | null | undefined = channel.epg_id;
+
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel.logo;
     this.channelName = channel.name;
-    console.log(channel, this.logoUrl);
-    if (channel?.epg_id) {
+    
+    if (channelId) {
       this.history = this.history.filter((_channel) => _channel.epg_id!==channel.epg_id);
       this.history.unshift(channel);
       this.history = this.history.slice(0,this.historyLength);
       this.updateHistory(this.history);
       this.doFilter(channel);
     }
+    this.channelId = channelId;
   }
 
   getCountryName(iso2: string) {
@@ -200,6 +205,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   doFilter(selectedChannel?: TdtChannelDto) {
+    console.log('doFilter()', selectedChannel);
     if (!this.streamForm.get('country')?.value || this.streamForm.get('country')?.value.length===0) {
       this.channelsFiltered = [...this.channels];
     } else {
@@ -220,6 +226,12 @@ export class AppComponent implements OnInit, OnDestroy {
       this.streamForm.patchValue({'country': selectedChannel.country});
       this.streamForm.patchValue({'channel': selectedChannel.name});
       this.streamUrl$.next(selectedChannel.options[0].url);
+
+      if (selectedChannel.epg_id) {
+        this.channelId = selectedChannel.epg_id;
+        this.channelName = selectedChannel.name;
+        this.currentFormat = selectedChannel.options[0].format;
+      }
     }
   } 
 
@@ -323,16 +335,17 @@ export class AppComponent implements OnInit, OnDestroy {
 
     if (this.history.length>0) {
       const lasChannelViewed: TdtChannelDto | undefined = this.history[0];
-      // this.streamUrl = lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url;
       this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
       this.logoUrl = (lasChannelViewed) ? lasChannelViewed.logo : undefined;
       this.channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
-      console.log(this.channelName);
+      this.channelId = (lasChannelViewed) ? lasChannelViewed.epg_id : undefined;
+      this.currentFormat = (lasChannelViewed) ?  lasChannelViewed.options[0].format : undefined;
     } else {
-      // this.streamUrl = this.channels[0].options[0].url;
       this.logoUrl = this.channels[0].logo;
       this.streamUrl$.next(this.channels[0].options[0].url);
       this.channelName = this.channels[0].name;
+      this.channelId = this.channels[0].epg_id;
+      this.currentFormat = this.channels[0].options[0].format || undefined;
     }
   }
 
