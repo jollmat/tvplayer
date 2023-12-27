@@ -27,5 +27,7 @@ export enum ContentTypesEnum {
     STREAMERS = "STREAMERS",
     TVSHOWS = "TVSHOWS",
     TVSERIES = "TVSERIES",
-    TECNOLOGY = "TECNOLOGY"
+    TECHNOLOGY = "TECHNOLOGY",
+    FASHION = "FASHION",
+    PETS = "PETS"
 }
