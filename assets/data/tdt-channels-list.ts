@@ -1707,7 +1707,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "url": "https://tv.mywifisocial.es/live.m3u8"
                   }
                 ],
-                "contentTypes": [ContentTypesEnum.TECNOLOGY, ContentTypesEnum.DOCUMENTALS]
+                "contentTypes": [ContentTypesEnum.TECHNOLOGY, ContentTypesEnum.DOCUMENTALS]
               }
             ]
           },
@@ -3376,7 +3376,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "url": "https://livees.cgtn.com/1000e/prog_index.m3u8"
                   }
                 ],
-                contentTypes: [ContentTypesEnum.NEWS]
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "CGTN Documentary",
@@ -3387,16 +3387,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://news.cgtn.com/resource/live/document/cgtn-doc.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.DOCUMENTALS]
               },
               {
-                "name": "Al Jazeera Qatar",
+                "name": "Al Jazeera (english)",
                 "web": "https://www.aljazeera.com/live",
                 "logo": "https://graph.facebook.com/aljazeera/picture?width=200&height=200",
                 "epg_id": "AlJQ.TV",
@@ -3404,23 +3401,27 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live-hls-web-aje.getaj.net/AJE/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "AR"
+                    "url": "https://live-hls-web-aje.getaj.net/AJE/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "NHK World Japan",
+                "name": "Al Jazeera (arabic)",
+                "web": "https://www.aljazeera.com/live",
+                "logo": "https://graph.facebook.com/aljazeera/picture?width=200&height=200",
+                "epg_id": "AlJQ.TV",
+                "country": 'qa',
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.NEWS]
+              },
+              {
+                "name": "NHK World",
                 "web": "https://www3.nhk.or.jp/nhkworld/en/live/",
                 "logo": "https://graph.facebook.com/nhkworld/picture?width=200&height=200",
                 "epg_id": "NHK.TV",
@@ -3428,16 +3429,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Nippon News TV Japan",
+                "name": "Nippon News TV",
                 "web": "https://www.news24.jp",
                 "logo": "https://graph.facebook.com/ntvnews24/picture?width=200&height=200",
                 "epg_id": null,
@@ -3445,32 +3443,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "KBS World Korea",
-                "web": "http://world.kbs.co.kr",
-                "logo": "https://graph.facebook.com/KBSWORLD/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'kr',
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=yC0OLhiEMLg",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "Al Arabiya",
@@ -3481,13 +3457,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "AR"
+                    "url": "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "Dubai One",
@@ -3498,13 +3471,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://dminnvll.cdn.mangomolo.com/dubaione/smil:dubaione.stream.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://dminnvll.cdn.mangomolo.com/dubaione/smil:dubaione.stream.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Ary News Pakistan",
@@ -3515,18 +3485,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=sUKwTVAc0Vo",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=sUKwTVAc0Vo"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Geo News Pakistan",
+                "name": "Geo News",
                 "web": "https://live.geo.tv",
                 "logo": "https://graph.facebook.com/GeoUrduDotTv/picture?width=200&height=200",
                 "epg_id": null,
@@ -3534,13 +3499,24 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://jk3lz82elw79-hls-live.5centscdn.com/GEONEWS/3500ba09d0538297440ca620c9dd46bf.sdp/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://jk3lz82elw79-hls-live.5centscdn.com/GEONEWS/3500ba09d0538297440ca620c9dd46bf.sdp/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
+              },
+              {
+                "name": "India Today (english)",
+                "web": "https://www.indiatoday.in/livetv",
+                "logo": "https://graph.facebook.com/IndiaToday/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'in',
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "India Today",
@@ -3551,23 +3527,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://feeds.intoday.in/aajtak/api/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://feeds.intoday.in/aajtak/api/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "New Delhi TV 24x7 India",
+                "name": "New Delhi TV 24x7 (english)",
                 "web": "https://www.ndtv.com/video/live/channel/ndtv24x7",
                 "logo": "https://graph.facebook.com/ndtv/picture?width=200&height=200",
                 "epg_id": null,
@@ -3575,16 +3541,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Republic World TV",
+                "name": "Republic World TV (english)",
                 "web": "https://www.republicworld.com/livetv",
                 "logo": "https://graph.facebook.com/RepublicWorld/picture?width=200&height=200",
                 "epg_id": null,
@@ -3592,16 +3555,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://weblive.republicworld.com/httppush/ottr_republic_english/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://weblive.republicworld.com/httppush/ottr_republic_english/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "Hispan TV Iran",
+                "name": "Hispan TV (spanish))",
                 "web": "https://www.hispantv.com/directo",
                 "logo": "https://pbs.twimg.com/profile_images/1489915604014354435/FoT4lMdj_200x200.jpg",
                 "epg_id": null,
@@ -3609,13 +3569,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdnlive.presstv.ir/cdnlive/smil:live.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdnlive.presstv.ir/cdnlive/smil:live.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL, ContentTypesEnum.DOCUMENTALS]
               },
               {
                 "name": "Channel NewsAsia",
@@ -3625,13 +3582,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "TVBS News Taiw\u00e1n",
@@ -3642,15 +3596,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=m_dhMSvUCIc"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "SET News Taiw\u00e1n",
@@ -3661,18 +3610,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=oZdzzvxTfUY",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=oZdzzvxTfUY"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
-                "name": "TVK Camboya",
+                "name": "TVK Camboya 1",
                 "web": "https://www.tvk.gov.kh",
                 "logo": "https://graph.facebook.com/cambodiatvk/picture?width=200&height=200",
                 "epg_id": null,
@@ -3680,23 +3624,27 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live.kh.malimarcdn.com/live/tvk.stream/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://live.kh.malimarcdn.com/live/tvk.stream/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "Teledifus\u00e3o de Macau",
+                "name": "TVK Camboya 2",
+                "web": "https://www.tvk.gov.kh",
+                "logo": "https://graph.facebook.com/cambodiatvk/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'kh',
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://live.kh.malimarcdn.com/live/tvk2.stream/playlist.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.GENERAL]
+              },
+              {
+                "name": "Teledifus\u00e3o de Macau 1",
                 "web": "https://www.tdm.com.mo/zh-hant/live",
                 "logo": "https://graph.facebook.com/Canal.Macau/picture?width=200&height=200",
                 "epg_id": null,
@@ -3704,18 +3652,32 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live4.tdm.com.mo/ch2/_definst_/ch2.live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "PT"
-                  },
+                    "url": "https://live4.tdm.com.mo/ch2/_definst_/ch2.live/playlist.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.GENERAL]
+              },
+              {
+                "name": "Teledifus\u00e3o de Macau 2",
+                "web": "https://www.tdm.com.mo/zh-hant/live",
+                "logo": "https://graph.facebook.com/Canal.Macau/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'mo',
+                "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live4.tdm.com.mo/ch1/_definst_/ch1.live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
+                    "url": "https://live4.tdm.com.mo/ch1/_definst_/ch1.live/playlist.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.GENERAL]
+              },
+              {
+                "name": "Teledifus\u00e3o de Macau 3",
+                "web": "https://www.tdm.com.mo/zh-hant/live",
+                "logo": "https://graph.facebook.com/Canal.Macau/picture?width=200&height=200",
+                "epg_id": null,
+                "country": 'mo',
+                "options": [
                   {
                     "format": "m3u8",
                     "url": "https://live4.tdm.com.mo/ch3/_definst_/ch3.live/playlist.m3u8",
@@ -3724,49 +3686,25 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": null
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               }
             ]
-          },
+          },    
           {
             "name": "Int. \u00c1frica",
             "channels": [
               {
-                "name": "AfricaNews",
+                "name": "AfricaNews (english)",
                 "web": "https://www.channelstv.com",
                 "logo": "https://graph.facebook.com/africanews.channel/picture?width=200&height=200",
                 "epg_id": null,
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=NQjabLGdP5g",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://www.youtube.com/watch?v=NQjabLGdP5g"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "Joy News TV Ghana",
-                "web": "https://www.myjoyonline.com/media/joy-news-live",
-                "logo": "https://graph.facebook.com/JoyNewsOnTV/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'gh',
-                "options": [
-                  {
-                    "format": "stream",
-                    "url": "https://www.dailymotion.com/embed/video/x7w7197?autoplay=1",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "TVGE 1 Guinea Ecuatorial",
@@ -3777,29 +3715,24 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://rrsatrtmp.tulix.tv/tvge1/tvge1multi.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://rrsatrtmp.tulix.tv/tvge1/tvge1multi.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
-                "name": "RASD TV",
+                "name": "RASD TV (TV Saharaui)",
                 "web": "https://rasd.tv",
                 "logo": "https://graph.facebook.com/televisionsaharaui/picture?width=200&height=200",
                 "epg_id": null,
+                "country": 'eh',
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloud.streamingconnect.tv/hls/rasdtv2/rasdtv2.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloud.streamingconnect.tv/hls/rasdtv2/rasdtv2.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "SenTV Senegal",
@@ -3810,20 +3743,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://live3.acangroup.org:1929/acanabr/sentv.stream_all/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://live3.acangroup.org:1929/acanabr/sentv.stream_all/playlist.m3u8"
                   },
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCKbMNmSR3KlI9v3xeInHEYA/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               }
             ]
           },
@@ -3831,7 +3754,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Int. Otros",
             "channels": [
               {
-                "name": "ABC News Australia",
+                "name": "ABC News",
                 "web": "https://iview.abc.net.au/show/abc-live-stream",
                 "logo": "https://graph.facebook.com/abcnews.au/picture?width=200&height=200",
                 "epg_id": null,
@@ -3839,24 +3762,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://abc-iview-mediapackagestreams-2.akamaized.net/out/v1/6e1cc6d25ec0480ea099a5399d73bc4b/index.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "United Nations TV",
-                "web": "https://media.un.org/en/webtv/",
-                "logo": "https://graph.facebook.com/unitednations/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                contentTypes: [ContentTypesEnum.NEWS]
               },
               {
                 "name": "Bloomberg Quicktake",
@@ -3872,30 +3781,37 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                     "lang": "EN"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.NEWS, ContentTypesEnum.BUSINESS, ContentTypesEnum.CULTURE, ContentTypesEnum.POLITICS, ContentTypesEnum.TECHNOLOGY]
               },
               {
-                "name": "Tastemade",
+                "name": "Tastemade (español)",
                 "web": "https://watch.tastemade.com/live-tv",
                 "logo": "https://graph.facebook.com/TastemadeEs/picture?width=200&height=200",
                 "epg_id": null,
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16international24i-ono/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadees16international24i-ono/playlist.m3u8"
                   },
                   {
                     "format": "m3u8",
-                    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadeinternationalenglish24i-ono/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadeinternationalenglish24i-ono/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.COOKING]
+              },
+              {
+                "name": "Tastemade (english)",
+                "web": "https://watch.tastemade.com/live-tv",
+                "logo": "https://graph.facebook.com/TastemadeEs/picture?width=200&height=200",
+                "epg_id": null,
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00047-tastemade-tastemadeinternationalenglish24i-ono/playlist.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.COOKING]
               },
               {
                 "name": "Fashion TV",
@@ -3905,13 +3821,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://fashs043.cloudycdn.services/scte/pg18/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://fashs043.cloudycdn.services/scte/pg18/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.FASHION]
               },
               {
                 "name": "Miami TV",
@@ -3922,27 +3835,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://59ec5453559f0.streamlock.net/miamitv/smil:miamitv/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
                     "url": "https://59ec5453559f0.streamlock.net/Latino/smil:WEB/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://59ec5453559f0.streamlock.net/JennyLive/JennyLive/playlist.m3u8",
                     "geo2": null,
                     "res": null,
                     "lang": null
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.GENERAL]
               },
               {
                 "name": "Classic Arts Showcase",
@@ -3952,89 +3851,42 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.CULTURE, ContentTypesEnum.DOCUMENTALS]
               },
               {
-                "name": "Mr Bean 24h",
-                "web": "https://www.mrbean.com",
-                "logo": "https://graph.facebook.com/MrBean/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCkAGrHCLFmlK3H2kd6isipg/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
-              {
-                "name": "AKC TV Dogs",
+                "name": "AKC TV Dogs 1",
                 "web": "https://akc.tv",
                 "logo": "https://graph.facebook.com/WatchAKCTV/picture?width=200&height=200",
                 "epg_id": null,
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://install.akctvcontrol.com/speed/broadcast/138/desktop-playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://install.akctvcontrol.com/speed/broadcast/141/desktop-playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://install.akctvcontrol.com/speed/broadcast/138/desktop-playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.PETS]
+              },
+              {
+                "name": "AKC TV Dogs 2",
+                "web": "https://akc.tv",
+                "logo": "https://graph.facebook.com/WatchAKCTV/picture?width=200&height=200",
+                "epg_id": null,
+                "options": [
+                  {
+                    "format": "m3u8",
+                    "url": "https://install.akctvcontrol.com/speed/broadcast/141/desktop-playlist.m3u8"
+                  }
+                ],
+                contentTypes: [ContentTypesEnum.PETS]
               }
             ]
           },
           {
             "name": "Deportivos Int.",
             "channels": [
-              {
-                "name": "Olympic Channel TV",
-                "web": "https://olympics.com/es/live/",
-                "logo": "https://graph.facebook.com/olympics/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EMB"
-                ]
-              },
-              {
-                "name": "World Padel Tour",
-                "web": "https://www.worldpadeltour.com/en-directo/",
-                "logo": "https://graph.facebook.com/worldpadeltour/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/channel/UCK59dYVs3Wgwoe73nDTH6jw/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "EMB"
-                ]
-              },
               {
                 "name": "Redbull TV",
                 "web": "https://www.redbull.com/int-en/tv/tv",
@@ -4043,29 +3895,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Channel Fight",
-                "web": "https://www.channelfight.com",
-                "logo": "https://graph.facebook.com/channelfightofficial/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://api-ott.channelfight.com/loggingmediaurlpassthrough/a.m3u8?version=12&id=269&partner=TDTChannels",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.SPORTS]
               },
               {
                 "name": "Garage TV Argentina",
@@ -4076,37 +3909,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://stream1.sersat.com/hls/garagetv.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://stream1.sersat.com/hls/garagetv.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "MsMotor TV",
-                "web": "https://www.msmotor.tv",
-                "logo": "https://graph.facebook.com/msmotortv/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
-              },
-              {
-                "name": "Best Cable Sports Per\u00fa",
-                "web": "https://bestcableperu.com.pe/tv6.html",
-                "logo": "https://graph.facebook.com/BestCableSportsCanal6/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'pe',
-                "options": [],
-                "contentTypes": [ContentTypesEnum.SPORTS],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                contentTypes: [ContentTypesEnum.SPORTS]
               }
             ]
           },
@@ -4114,7 +3920,7 @@ export const TDT_CHANNELS: TdtChannelsDto = {
             "name": "Musicales",
             "channels": [
               {
-                "name": "Sol M\u00fasica Espa\u00f1a",
+                "name": "Sol M\u00fasica",
                 "web": "https://tuamc.tv/sol-musica",
                 "logo": "https://graph.facebook.com/solmusica/picture?width=200&height=200",
                 "epg_id": null,
@@ -4122,16 +3928,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "Activa TV Espa\u00f1a",
+                "name": "Activa TV",
                 "web": "https://www.emisorasmusicales.net/activa-tv/",
                 "logo": "https://graph.facebook.com/activafm.radiomusical/picture?width=200&height=200",
                 "epg_id": null,
@@ -4139,16 +3942,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamtv.mediasector.es/hls/activatv/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamtv.mediasector.es/hls/activatv/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "Cadena Elite Espa\u00f1a",
+                "name": "Cadena Elite",
                 "web": "https://www.cadenaelite.es",
                 "logo": "https://graph.facebook.com/cadena.elitegranada/picture?width=200&height=200",
                 "epg_id": null,
@@ -4156,50 +3956,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "Molahits TV Espa\u00f1a",
-                "web": "http://www.molatv.cat",
-                "logo": "https://graph.facebook.com/molahitstv/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "http://ventdelnord.tv:8080/mola/directe.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "La Urban TV Espa\u00f1a",
-                "web": "https://www.urbanrevolution.es/emision-en-directo-de-la-urban-tv/",
-                "logo": "https://graph.facebook.com/fmurban/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://www.urbanrevolution.es:8443/live/TV/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Spektra TV Espa\u00f1a",
+                "name": "Spektra TV",
                 "web": "https://spektratv.com",
                 "logo": "https://graph.facebook.com/SpektraTelevision/picture?width=200&height=200",
                 "epg_id": null,
@@ -4207,34 +3970,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/8136/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://cloudvideo.servers10.com:8081/8136/index.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "STZ Telebista Espa\u00f1a",
-                "web": "https://stztelebista.com",
-                "logo": "https://graph.facebook.com/StzGrupo/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'es',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://cloudvideo.servers10.com:8081/stztelebista/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": [
-                  "REF",
-                  "NONAV"
-                ],
-                "referer": "https://stztelebista.com"
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Verbena TV Espa\u00f1a",
@@ -4245,13 +3984,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "RM TV Espa\u00f1a",
@@ -4262,16 +3998,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://limited43.todostreaming.es/live/simbana-livestream19.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://limited43.todostreaming.es/live/simbana-livestream19.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "RTL 102.5 Italia",
+                "name": "RTL 102.5",
                 "web": "https://www.rtl.it/radiovisione",
                 "logo": "https://graph.facebook.com/RTL102.5/picture?width=200&height=200",
                 "epg_id": null,
@@ -4279,66 +4012,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_video.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_video.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Virgin Radio Italia",
-                "web": "https://www.virginradio.it/sezioni/1099/video",
-                "logo": "https://graph.facebook.com/virginradioitaly/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'it',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live2.msr.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ew)/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "R 101 Italia",
-                "web": "https://www.r101.it/sezioni/2168/tv",
-                "logo": "https://graph.facebook.com/radioR101/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'it',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live2.msr.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
-                  }
-                ],
-                "extra_info": [
-                  "NONAV"
-                ]
-              },
-              {
-                "name": "Radio Montecarlo Italia",
-                "web": "https://www.mediasetplay.mediaset.it/programmi-tv/radiomontecarlo_b100002525",
-                "logo": "https://graph.facebook.com/radiomontecarlo/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'it',
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://live2.msr.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(bb)/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
-                  }
-                ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Kronehit Austria",
@@ -4349,16 +4026,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "QMusic Holanda",
+                "name": "QMusic",
                 "web": "https://qmusic.nl/live/kijk",
                 "logo": "https://graph.facebook.com/QmusicNL/picture?width=200&height=200",
                 "epg_id": null,
@@ -4366,16 +4040,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://dpp-qmusicnl-live.akamaized.net/streamx/QmusicNL.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "NL"
+                    "url": "https://dpp-qmusicnl-live.akamaized.net/streamx/QmusicNL.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "4FUN TV Polonia",
+                "name": "4FUN TV",
                 "web": "https://4fun.tv",
                 "logo": "https://graph.facebook.com/4FUN.TV/picture?width=200&height=200",
                 "epg_id": null,
@@ -4383,13 +4054,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://stream.4fun.tv:8888/hls/4f_high/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "PL"
+                    "url": "https://stream.4fun.tv:8888/hls/4f_high/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Tomorrowland TV",
@@ -4399,15 +4067,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=dCpd6_S0rnI",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=dCpd6_S0rnI"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Radio Italia TV",
@@ -4418,16 +4081,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "NumberOne Turqu\u00eda",
+                "name": "NumberOne",
                 "web": "https://www.numberone.com.tr/2015/12/18/nr1-tv-canli-yayin/",
                 "logo": "https://graph.facebook.com/Number1FM/picture?width=200&height=200",
                 "epg_id": null,
@@ -4435,13 +4095,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/broadcast_5c9e17cd59e8b.smil/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "m2o Italia",
@@ -4452,16 +4109,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "ON TV Portugal",
+                "name": "ON TV",
                 "web": "https://www.onfm.pt/",
                 "logo": "https://graph.facebook.com/ONFM93.8/picture?width=200&height=200",
                 "epg_id": null,
@@ -4469,29 +4123,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://5ce9406b73c33.streamlock.net/ONFM/livestream/master.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "V2Beat TV",
-                "web": "https://www.vibee.tv/webpage-player/",
-                "logo": "https://graph.facebook.com/vtwobeat/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://abr.de1se01.v2beat.live/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "The K-POP Korea",
@@ -4502,18 +4137,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://www.youtube.com/watch?v=JVocS7Yftw8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=JVocS7Yftw8"
                   }
                 ],
-                "extra_info": [
-                  "EMB"
-                ]
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "Power TV Turqu\u00eda",
+                "name": "Power TV",
                 "web": "https://www.powerapp.com.tr/tvs/power-tvs/powertv/",
                 "logo": "https://graph.facebook.com/powerapp/picture?width=200&height=200",
                 "epg_id": null,
@@ -4521,25 +4151,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlists.m3u8"
                   }
                 ],
-                "extra_info": []
-              },
-              {
-                "name": "Rock TV Romania",
-                "web": "https://www.rockfm.ro/rocktv",
-                "logo": "https://graph.facebook.com/rockfmro/picture?width=200&height=200",
-                "epg_id": null,
-                "country": 'ro',
-                "options": [],
-                "extra_info": [
-                  "W3U",
-                  "EXTA"
-                ]
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Otto FM Italia",
@@ -4550,13 +4165,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://streaming.bitonlive.net:8080/hls/ottofm2/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "IT"
+                    "url": "http://streaming.bitonlive.net:8080/hls/ottofm2/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Ibiza Global TV",
@@ -4567,16 +4179,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://ibgrtv.streaming-pro.com/hls/ibgrlive.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://ibgrtv.streaming-pro.com/hls/ibgrlive.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "Sonus FM Alemania",
+                "name": "Sonus FM",
                 "web": "http://www.sonus.fm",
                 "logo": "https://graph.facebook.com/sonusfmpage/picture?width=200&height=200",
                 "epg_id": null,
@@ -4584,33 +4193,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "http://www.sonus.fm:1935/public/stream_source/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "http://www.sonus.fm:1935/public/stream_source/playlist.m3u8"
                   }
                 ],
-                "extra_info": [
-                  "REF",
-                  "NONAV"
-                ],
-                "referer": "http://www.sonus.fm"
-              },
-              {
-                "name": "DanceStar TV",
-                "web": "https://dancestartv.com",
-                "logo": "https://graph.facebook.com/DancestarTV/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "m3u8",
-                    "url": "https://d3pyjh3ffabib0.cloudfront.net/scheduler/scheduleMaster/388.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
-                  }
-                ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "The Good Life Radio",
@@ -4620,48 +4206,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "youtube",
-                    "url": "https://youtu.be/36YnV9STBqc",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://www.youtube.com/watch?v=36YnV9STBqc"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "LoFi Hip-Hop Beats Music",
-                "web": "https://stzzzy.com",
-                "logo": "https://pbs.twimg.com/profile_images/1155872804786466817/z1k1zxIi_200x200.jpg",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/@steezyasfvck/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "Beautiful Piano Music",
-                "web": "https://soothingrelaxation.com",
-                "logo": "https://graph.facebook.com/SoothingRelaxation/picture?width=200&height=200",
-                "epg_id": null,
-                "options": [
-                  {
-                    "format": "youtube",
-                    "url": "https://www.youtube.com/live/2OM7adQl-YQ/live",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  }
-                ],
-                "extra_info": []
-              },
-              {
-                "name": "30A Music USA",
+                "name": "30A Music",
                 "web": "https://30a-tv.com/30a/30a-tv-music-channel/",
                 "logo": "https://graph.facebook.com/30atv/picture?width=200&height=200",
                 "epg_id": null,
@@ -4669,13 +4220,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://30a-tv.com/feeds/ceftech/30atvmusic.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://30a-tv.com/feeds/ceftech/30atvmusic.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "Vintage Music TV",
@@ -4685,16 +4233,13 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://storage.viewtvgroup.com/vintagetv/GeneSimmonsNickyHornePresents/index.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": "EN"
+                    "url": "https://storage.viewtvgroup.com/vintagetv/GeneSimmonsNickyHornePresents/index.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
-                "name": "Retro Plus TV Chile",
+                "name": "Retro Plus",
                 "web": "https://www.retroplustv.com/#se%C3%B1ales",
                 "logo": "https://graph.facebook.com/retroplustv/picture?width=200&height=200",
                 "epg_id": null,
@@ -4702,27 +4247,10 @@ export const TDT_CHANNELS: TdtChannelsDto = {
                 "options": [
                   {
                     "format": "m3u8",
-                    "url": "https://video06.logicahost.com.br/retroplustv/retroplustv/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://video06.logicahost.com.br/retroplussenal2/retroplussenal2/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
-                  },
-                  {
-                    "format": "m3u8",
-                    "url": "https://video06.logicahost.com.br/retroplussenal3/retroplussenal3/playlist.m3u8",
-                    "geo2": null,
-                    "res": null,
-                    "lang": null
+                    "url": "https://video06.logicahost.com.br/retroplustv/retroplustv/playlist.m3u8"
                   }
                 ],
-                "extra_info": []
+                contentTypes: [ContentTypesEnum.MUSIC]
               },
               {
                 "name": "California Music Channel USA",
