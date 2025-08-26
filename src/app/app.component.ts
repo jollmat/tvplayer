@@ -131,8 +131,8 @@ export class AppComponent implements OnInit, OnDestroy {
             });
           }
         } else {
-          this.streamUrl = url.replace('parent=play.tdtchannels.com', 'parent=localhost');
-          console.log('streamUrl', this.streamUrl.replace('parent=play.tdtchannels.com', 'parent=localhost'));
+          this.streamUrl = url.replace('parent=play.tdtchannels.com', `parent=${window.location.hostname}`);
+          console.log('streamUrl', this.streamUrl.replace('parent=play.tdtchannels.com', `parent=${window.location.hostname}`));
           this.currentFormat = MediaTypesEnum.STREAM;
         }
       } else {
