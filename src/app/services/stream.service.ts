@@ -4,13 +4,16 @@ import { BehaviorSubject, map, Observable, of } from 'rxjs';
 import { TdtChannelsDto } from '../model/dto/tdt-channels-response-dto.interface';
 import { TDT_CHANNELS } from 'src/assets/data/tdt-channels-list';
 import { TdtChannelDto } from '../model/dto/tdt-channel-dto.interface';
-import { OTHER_CHANNELS_LIST } from '../../assets/data/other-channels-list';
 import { TdtChannelEpgDto } from '../model/dto/tdt-channel-epg-dto.interface';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StreamService {
+
+  TDT_CHANNELS_URL = 'https://www.tdtchannels.com/lists/tv.json';
+  TDT_CHANNELS_EPG_URL = 'https://www.tdtchannels.com/epg/TV.json';
 
   streams$ = new BehaviorSubject<TdtChannelDto[]>([]);
 
@@ -19,7 +22,7 @@ export class StreamService {
   constructor(
     private http: HttpClient
   ) {
-    this.getTdtChannels(true).subscribe((_tdtChannelsResponse) => {
+    this.getTdtChannels().subscribe((_tdtChannelsResponse) => {
       let channels: TdtChannelDto[] = [];
 
       // Tdt channels
@@ -39,14 +42,6 @@ export class StreamService {
             }
           });
         });
-      });
-
-      let otherChannels: TdtChannelDto[] = this.getOtherChannels();
-      otherChannels = otherChannels.map((_channel) => {
-        if ((!_channel.epg_id || _channel.epg_id.trim().length===0) && _channel.options && _channel.options.length>0) {
-          _channel.epg_id = _channel.name.replace(/\s/g, '_') + '.' + (_channel.country && _channel.country.length>0 ? _channel.country : _channel.options[0].format);
-        }
-        return _channel;
       });
 
       //channels = channels.concat(otherChannels);
@@ -70,7 +65,7 @@ export class StreamService {
   }
 
   getYoutubeLiveVideoId(videoUrl: string): Observable<string> {
-    const apiKey = 'AIzaSyD2kkschRDlOtvEMUMq1PmNbn3i9xBly-A';
+    const apiKey = environment.youtubeApiKey;
     const youtubeChannelId = this.getYoutubeChannelId(videoUrl);
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${youtubeChannelId}&eventType=live&type=video&key=${apiKey}`;
 
@@ -91,19 +86,15 @@ export class StreamService {
     channel.logoBgStyle = (channel.logoBgStyle) ? channel.logoBgStyle : 'light';
   }
 
-  getTdtChannels(remote: boolean): Observable<TdtChannelsDto> {
+  getTdtChannels(remote?: boolean): Observable<TdtChannelsDto> {
     if (!remote) {
       return of(TDT_CHANNELS);
     }
-    return this.http.get<TdtChannelsDto>('https://www.tdtchannels.com/lists/tv.json');
+    return this.http.get<TdtChannelsDto>(this.TDT_CHANNELS_URL);
   }
 
   getEpg(): Observable<TdtChannelEpgDto[]> {
-    return this.http.get<TdtChannelEpgDto[]>('https://www.tdtchannels.com/epg/TV.json');
-  }
-
-  getOtherChannels(): TdtChannelDto[] {
-    return OTHER_CHANNELS_LIST as TdtChannelDto[];
+    return this.http.get<TdtChannelEpgDto[]>(this.TDT_CHANNELS_EPG_URL);
   }
 
   getStreams(): Observable<TdtChannelDto[]> {

@@ -496,6 +496,9 @@ export class AppComponent implements OnInit, OnDestroy {
           // Init forms
           this.initForms();  
         });
+      },
+      error: () => {
+        this.epgs = [];
       }
     });
 

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  youtubeApiKey: 'AIzaSyD2kkschRDlOtvEMUMq1PmNbn3i9xBly-A'
 };
