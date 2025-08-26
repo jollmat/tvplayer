@@ -94,6 +94,9 @@ export class StreamService {
   }
 
   getEpg(): Observable<TdtChannelEpgDto[]> {
+    if (window.location.hostname!=='localhost') {
+      return of([]);
+    }
     return this.http.get<TdtChannelEpgDto[]>(this.TDT_CHANNELS_EPG_URL);
   }
 
