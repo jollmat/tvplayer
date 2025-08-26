@@ -6,11 +6,12 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 import { VgHlsDirective } from '@videogular/ngx-videogular/streaming';
 import { COUNTRIES } from 'src/assets/data/countries';
 import { MediaTypesEnum } from './model/enum/media-types.enum';
-import { BehaviorSubject, Subscription } from 'rxjs';
+import { BehaviorSubject, Observable, of, Subscription } from 'rxjs';
 import { NgSelectComponent } from '@ng-select/ng-select';
 import { GridViewTypeEnum } from './model/enum/grid-view-type.enum';
 import { ContentTypesEnum } from './model/enum/content-types.enum';
 import { ActivatedRoute } from '@angular/router';
+import { TdtChannelEpgDto } from './model/dto/tdt-channel-epg-dto.interface';
 
 @Component({
   selector: 'app-root',
@@ -50,15 +51,22 @@ export class AppComponent implements OnInit, OnDestroy {
   channelId: string | null | undefined;
   streamUrl?: string;
   streamUrl$ = new BehaviorSubject<string>('');
+
+  // Epg
+  currentEpg?: TdtChannelEpgDto;
   
   channels: TdtChannelDto [] = [];
   channelsFiltered: TdtChannelDto [] = [];
 
+  epgs: TdtChannelEpgDto[] = [];
+  selectedEpgIndex = 0;
+
   loadChannelsSubscription?: Subscription;
   routeQueryParamsSubscription?: Subscription;
+  loadCEpgsSubscription?: Subscription;
 
   private youtubeApiLoaded = false;
-  youtubeVideoId?: string;
+  youtubeVideoIdentifier?: string;
   youtubePlayerConfig: any = {
     controls: 1,
     mute: 1,
@@ -97,7 +105,6 @@ export class AppComponent implements OnInit, OnDestroy {
       this.currentFormat = undefined;
       this.streamUrl = undefined;
       if (url && url.length>0) {
-        
           this.currentFormat = MediaTypesEnum.M3U8;
         if (this.getFormat(url)===MediaTypesEnum.M3U8) {
           this.streamUrl = url;
@@ -109,11 +116,24 @@ export class AppComponent implements OnInit, OnDestroy {
           }, 1000);
         } else if (this.getFormat(url)===MediaTypesEnum.YOUTUBE) {
           this.streamUrl = url;
-          this.youtubeVideoId = this.getYoutubeId(url);
           this.currentFormat = MediaTypesEnum.YOUTUBE;
+          if (url.indexOf('channel')>0) {
+            this.getYoutubeIdFromChannelUrl(url).subscribe({
+              next: (_id) => {
+                this.youtubeVideoIdentifier = _id
+              }  
+            });
+          } else {
+            this.getYoutubeVideoIdFromUrl(url).subscribe({
+              next: (_id) => {
+                this.youtubeVideoIdentifier = _id
+              }  
+            });
+          }
         } else {
-          this.streamUrl = url;
-          this.currentFormat = undefined;
+          this.streamUrl = url.replace('parent=play.tdtchannels.com', 'parent=localhost');
+          console.log('streamUrl', this.streamUrl.replace('parent=play.tdtchannels.com', 'parent=localhost'));
+          this.currentFormat = MediaTypesEnum.STREAM;
         }
       } else {
         this.streamUrl = undefined;
@@ -133,8 +153,23 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
-  getYoutubeId(url: string): string {
-    return url.substring(url.indexOf('v=')).replace('v=', '');
+  // Request youtube video id from a youtube channel url
+  getYoutubeIdFromChannelUrl(url: string): Observable<string> {
+    let channelId = url;
+    return this.streamService.getYoutubeLiveVideoId(channelId);
+  }
+
+  get youtubeVideoId() {
+    return this.youtubeVideoIdentifier;
+  }
+
+  // Get video id from a simple youtube url
+  getYoutubeVideoIdFromUrl(url: string): Observable<string> {
+    if (!url) return of('');
+    const regex = /(?:youtube\.com\/(?:.*v=|v\/|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+    const match = url.match(regex);
+    const res = match ? match[1] : '';
+    return of(res);
   }
 
   doTestURL() {
@@ -163,8 +198,30 @@ export class AppComponent implements OnInit, OnDestroy {
     localStorage.setItem('APP_TVPLAYER_TOP', JSON.stringify(this.topList));
   }
 
+  doUpdateCurrentEpg(channel: TdtChannelDto) {
+    this.currentEpg = undefined;
+    const epgIndex = this.epgs.findIndex((_epg) => _epg.name===channel.epg_id);
+    if (epgIndex>=0) {
+      this.currentEpg = this.epgs[epgIndex];
+      this.selectedEpgIndex = this.getCurrentEpgEventIndex();
+    } else {
+      this.selectedEpgIndex = 0;
+      this.currentEpg = undefined;
+    }
+    console.log('doUpdateCurrentEpg', {epgs: this.epgs, selectedEpgIndex: this.selectedEpgIndex});
+  }
+
   doUpdateStreamUrl(channelName: string) {
     const channel: TdtChannelDto | undefined = this.channels.find((_channel) => _channel.name===channelName );
+    console.log('doUpdateStreamUrl()', channel);
+
+    if (channel && channel.epg_id) {
+      this.doUpdateCurrentEpg(channel);
+    } else {
+      this.currentEpg = undefined;
+      this.selectedEpgIndex = 0;
+    }
+
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel?.logo;
     this.channelName = channelName;
@@ -179,8 +236,12 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   selectChannelFromHistory(channel: TdtChannelDto) {
-    console.log('selectChannelFromHistory', channel, channel.epg_id);
+    //console.log('selectChannelFromHistory', channel, channel.epg_id);
     const channelId: string | null | undefined = channel.epg_id;
+
+    if (channel && channel.epg_id) {
+      this.doUpdateCurrentEpg(channel);
+    }
 
     this.streamUrl$.next((channel?.options && channel?.options.length>0 && channel?.options[0].url) ? channel?.options[0].url : '');
     this.logoUrl = channel.logo;
@@ -205,7 +266,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   doFilter(selectedChannel?: TdtChannelDto) {
-    console.log('doFilter()', selectedChannel);
+    // console.log('doFilter()', selectedChannel);
     if (!this.streamForm.get('country')?.value || this.streamForm.get('country')?.value.length===0) {
       this.channelsFiltered = [...this.channels];
     } else {
@@ -335,6 +396,11 @@ export class AppComponent implements OnInit, OnDestroy {
 
     if (this.history.length>0) {
       const lasChannelViewed: TdtChannelDto | undefined = this.history[0];
+
+      if (lasChannelViewed && lasChannelViewed.epg_id) {
+        this.doUpdateCurrentEpg(lasChannelViewed);
+      }
+
       this.streamUrl$.next(lasChannelViewed ? lasChannelViewed.options[0].url : this.streamUrl = this.channels[0].options[0].url);
       this.logoUrl = (lasChannelViewed) ? lasChannelViewed.logo : undefined;
       this.channelName = (lasChannelViewed) ? lasChannelViewed.name : this.channels[0].name;
@@ -359,9 +425,21 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
+  parsedDate(dateNumber: number): Date {
+    return new Date(dateNumber * 1000);
+  }
+
+  getCurrentEpgEventIndex(): number {
+    const now = new Date();
+    const currentIndex = this.currentEpg?.events.findIndex((_epg) => {
+      return this.parsedDate(_epg.hi).getTime()<=now.getTime() && this.parsedDate(_epg.hf).getTime()>=now.getTime()
+    });
+    return currentIndex || 0;
+  }
+
   ngOnInit(): void {
 
-    console.log(this.route.snapshot.paramMap);
+    // console.log(this.route.snapshot.paramMap);
 
     this.isLocalhost = window.location.hostname === 'localhost';
 
@@ -374,10 +452,12 @@ export class AppComponent implements OnInit, OnDestroy {
     this.portrait = this.deviceDetector.orientation === 'portrait';
     this.landscape = this.deviceDetector.orientation === 'lanscape';
 
+    /*
     console.group('Device specifications:');
     console.log('OS', this.deviceDetector.os);
     console.log('Orientation', this.deviceDetector.orientation);
     console.groupEnd();
+    */
 
     if (!this.isMobile || this.isTablet) {
       this.historyLength = 6;
@@ -394,27 +474,32 @@ export class AppComponent implements OnInit, OnDestroy {
       this.youtubeApiLoaded = true;
     }
 
-    this.loadChannelsSubscription = this.streamService.streams$.subscribe((_channels) => {
-      this.channels = _channels;
+    this.loadCEpgsSubscription = this.streamService.getEpg().subscribe({
+      next: (_epgs) => {
+        this.epgs = _epgs;
 
-      this.setupChannels();
-      this.setupCountries();
+        this.loadChannelsSubscription = this.streamService.streams$.subscribe((_channels) => {
+          this.channels = _channels;
 
-      console.log('countries', this.countries);
-      console.log('channels', this.channels);
+          this.setupChannels();
+          this.setupCountries();
 
-      // Content types
-      this.contentTypes = Object.values(ContentTypesEnum).map((_key) => _key  ).sort();
+          // Content types
+          this.contentTypes = Object.values(ContentTypesEnum).map((_key) => _key  ).sort();
 
-      // History
-      this.configHistory();
+          // History
+          this.configHistory();
 
-      // Top views
-      this.configTopViews();
+          // Top views
+          this.configTopViews();
 
-      // Init forms
-      this.initForms();  
+          // Init forms
+          this.initForms();  
+        });
+      }
     });
+
+    
 
     this.routeQueryParamsSubscription = this.route.queryParams
       .subscribe(params => {
@@ -428,6 +513,7 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if (this.loadChannelsSubscription) this.loadChannelsSubscription.unsubscribe();
     if (this.routeQueryParamsSubscription) this.routeQueryParamsSubscription.unsubscribe();
+    if (this.loadCEpgsSubscription) this.loadCEpgsSubscription.unsubscribe();
   }
 
 }

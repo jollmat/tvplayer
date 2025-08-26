@@ -1,10 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject, map, Observable, of } from 'rxjs';
 import { TdtChannelsDto } from '../model/dto/tdt-channels-response-dto.interface';
 import { TDT_CHANNELS } from 'src/assets/data/tdt-channels-list';
 import { TdtChannelDto } from '../model/dto/tdt-channel-dto.interface';
 import { OTHER_CHANNELS_LIST } from '../../assets/data/other-channels-list';
+import { TdtChannelEpgDto } from '../model/dto/tdt-channel-epg-dto.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -18,14 +19,14 @@ export class StreamService {
   constructor(
     private http: HttpClient
   ) {
-    this.getTdtChannels().subscribe((_tdtChannelsResponse) => {
+    this.getTdtChannels(true).subscribe((_tdtChannelsResponse) => {
       let channels: TdtChannelDto[] = [];
 
       // Tdt channels
       _tdtChannelsResponse.countries.forEach((_country) => {
         _country.ambits.forEach((_ambit) => {
           _ambit.channels.forEach((_channel) => {
-            _channel.country = _country.name === 'Spain' ? 'es' : _channel.country;
+            _channel.country = _country.name === 'Spain' ? 'es' : 'international';
             if (!_channel.epg_id || _channel.epg_id.trim().length===0) {
               _channel.epg_id = _channel.name.trim().replace(/\s/g, '_') + '.' + _channel.country;
             }
@@ -48,7 +49,7 @@ export class StreamService {
         return _channel;
       });
 
-      channels = channels.concat(otherChannels);
+      //channels = channels.concat(otherChannels);
 
       channels.forEach((_channel) => {
         // Set no image
@@ -68,13 +69,37 @@ export class StreamService {
     });
   }
 
+  getYoutubeLiveVideoId(videoUrl: string): Observable<string> {
+    const apiKey = 'AIzaSyD2kkschRDlOtvEMUMq1PmNbn3i9xBly-A';
+    const youtubeChannelId = this.getYoutubeChannelId(videoUrl);
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${youtubeChannelId}&eventType=live&type=video&key=${apiKey}`;
+
+    return this.http.get<any>(url).pipe(
+      map(res => res.items?.length ? res.items[0].id.videoId : null)
+    );
+  }
+
+  getYoutubeChannelId(url: string): string {
+    if (!url) return '';
+    const regExp = /youtube\.com\/channel\/([^\/?]+)/;
+    const match = url.match(regExp);
+    return match && match[1] ? match[1] : '';
+  }
+
   /* Set logo img bg style depending on image luminosity */
   setChannelLogoBg(channel: TdtChannelDto) {
     channel.logoBgStyle = (channel.logoBgStyle) ? channel.logoBgStyle : 'light';
   }
 
-  getTdtChannels(): Observable<TdtChannelsDto> {
-    return of(TDT_CHANNELS);
+  getTdtChannels(remote: boolean): Observable<TdtChannelsDto> {
+    if (!remote) {
+      return of(TDT_CHANNELS);
+    }
+    return this.http.get<TdtChannelsDto>('https://www.tdtchannels.com/lists/tv.json');
+  }
+
+  getEpg(): Observable<TdtChannelEpgDto[]> {
+    return this.http.get<TdtChannelEpgDto[]>('https://www.tdtchannels.com/epg/TV.json');
   }
 
   getOtherChannels(): TdtChannelDto[] {

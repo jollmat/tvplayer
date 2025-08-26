@@ -24,6 +24,7 @@
                     'd-flex': !isMobile,
                     'justify-content-between': !isMobile
                 }">
+                    <!--
                     <div 
                         [ngClass]="{
                             'w-33': !isMobile && !backoffice,
@@ -94,13 +95,13 @@
                             </ng-template>
                         </ng-select>
                     </div>
+                    -->
                     
                     <div
                         [hidden]="backoffice"
                         [ngClass]="{
-                            'w-33': !isMobile,
-                            'w-100': isMobile,
-                            'ps-1': !isMobile,
+                            'w-100': true,
+                            'ps-1': false,
                             'ng-mobile': isMobile
                         }">
                         <ng-select
@@ -178,7 +179,7 @@
                     
                     <!-- Channel name (no mosaic) -->
                     <ng-container *ngIf="streamUrl && channelName">
-                        <small class="w-100 channel_name text-center mt-1 mb-2">{{channelName}}</small>
+                        <small class="w-100 channel_name text-center mt-1 mb-2">{{channelName}} ({{currentFormat}})</small>
                     </ng-container>
                     <!-- End Channel name (no mosaic) -->
 
@@ -313,7 +314,7 @@
 <!-- Channel card template -->
 <ng-template let-channel="channel" #channelCard>
     <div class="channel-card cursor-pointer mb-2" 
-        style="background-image: url({{channel.logo}});" 
+        style="background-image: url({{channel.logo}});background-size: contain;" 
         [title]="channel.name"
         [ngClass]="{'current': channelId===channel.epg_id}"
         (click)="selectChannelFromHistory(channel)">
@@ -325,60 +326,63 @@
 <ng-template let-channel="channel" let-url="url" let-logo="logo" let-format="format" let-youtubeId="youtubeId" let-mosaic="mosaic" #player>
     <ng-container *ngIf="url && format">
         <div class="d-flex w-100 h-100 align-items-center justify-content-center player-container">
-        <ng-container *ngIf="format===MediaTypesEnum.M3U8">
-            <ng-container *ngIf="isWindows || isAndroid || isMac">
-                <vg-player>
-                    <video #myMedia
-                           [vgHls]="url"
-                           [vgHlsHeaders]="headers"
-                           [poster]="logo"
-                           (onGetBitrates)="hlsBitrates = $event"
-                           id="my-video-{{logo}}"
-                           type="video/mp4"
-                           preload="metadata"
-                           [muted]="true"
-                           [autoplay]="true"
-                           controls>
-                    </video>
-                </vg-player>
-            </ng-container>
-
-            <ng-container *ngIf="isIOS">
-                <vg-player>
-                    <video #media [vgMedia]="$any(media)" [autoplay]="true" [vgHls]="url" id="singleVideo" controls crossorigin>
-                    </video>
-                </vg-player>
-            </ng-container>
-        </ng-container>
-
-        <ng-container *ngIf="format===MediaTypesEnum.MP3">
-            <div class="d-flex flex-column audio-player-container justify-content-start align-items-start" [ngClass]="{'p-5':!mosaic}">
-                <img *ngIf="logo && logo.length>0 && !mosaic" class="radio_img m-2 cursor-pointer" [src]="logo">
-                <ng-container *ngIf="!mosaic">
-                    <vg-player>                    
-                        <audio #myMedia id="my-audio" [muted]="mosaic" [autoplay]="!mosaic" controls>
-                            <source [src]="url" [type]="'audio/mp3'">
-                        </audio>                    
+            <ng-container *ngIf="format===MediaTypesEnum.M3U8">
+                <ng-container *ngIf="isWindows || isAndroid || isMac">
+                    <vg-player>
+                        <video #myMedia
+                            class="player-container"
+                            [vgHls]="url"
+                            [vgHlsHeaders]="headers"
+                            [poster]="logo"
+                            (onGetBitrates)="hlsBitrates = $event"
+                            id="my-video-{{logo}}"
+                            type="video/mp4"
+                            preload="metadata"
+                            [muted]="true"
+                            [autoplay]="true"
+                            controls>
+                        </video>
                     </vg-player>
-            </ng-container>
-            </div>
-        </ng-container>
+                </ng-container>
 
-        <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
-            <ng-container *ngIf="true">
-                <youtube-player [playerVars]="youtubePlayerConfig" [videoId]="youtubeId"></youtube-player>
+                <ng-container *ngIf="isIOS">
+                    <vg-player>
+                        <video #media class="player-container" [vgMedia]="$any(media)" [autoplay]="true" [vgHls]="url" id="singleVideo" controls crossorigin>
+                        </video>
+                    </vg-player>
+                </ng-container>
             </ng-container>
-            <!--
-            <ng-container *ngIf="mosaic">
-                <img [src]="logo" class="w-100 mosaic-logo cursor-pointer" (click)="selectChannelFromHistory(channel)">
-            </ng-container>
-            -->
-        </ng-container>
 
-        <ng-container *ngIf="format===MediaTypesEnum.STREAM">
-            <iframe [src]="url | safeUrl" style="width: 100%; height: 100%;"></iframe>
-        </ng-container>
+            <ng-container *ngIf="format===MediaTypesEnum.MP3">
+                <div class="d-flex flex-column audio-player-container justify-content-start align-items-start" [ngClass]="{'p-5':!mosaic}">
+                    <img *ngIf="logo && logo.length>0 && !mosaic" class="radio_img m-2 cursor-pointer" [src]="logo">
+                    <ng-container *ngIf="!mosaic">
+                        <vg-player>                    
+                            <audio #myMedia id="my-audio" [muted]="mosaic" [autoplay]="!mosaic" controls>
+                                <source [src]="url" [type]="'audio/mp3'">
+                            </audio>                    
+                        </vg-player>
+                </ng-container>
+                </div>
+            </ng-container>
+
+            <ng-container *ngIf="format===MediaTypesEnum.YOUTUBE && youtubeId">
+                <ng-container *ngIf="true">
+                    <youtube-player class="player-container" [playerVars]="youtubePlayerConfig" [videoId]="youtubeId"></youtube-player>
+                </ng-container>
+                <!--
+                <ng-container *ngIf="mosaic">
+                    <img [src]="logo" class="w-100 mosaic-logo cursor-pointer" (click)="selectChannelFromHistory(channel)">
+                </ng-container>
+                -->
+            </ng-container>
+
+            <ng-container *ngIf="format===MediaTypesEnum.STREAM">
+                <iframe class="player-container" [src]="url | safeUrl" style="width: 100%;" allowfullscreen="true"></iframe>
+            </ng-container>
         </div>
+
+        <ng-container *ngIf="currentEpg" [ngTemplateOutlet]="epgList"></ng-container>
         
     </ng-container>
 </ng-template>
@@ -395,7 +399,7 @@
                         channel: channel,
                         url: channel.options[0].url,
                         format: getFormat(channel.options[0].url),
-                        youtubeId: getYoutubeId(channel.options[0].url),
+                        youtubeId: getYoutubeIdFromChannelUrl(channel.options[0].url),
                         logo: channel.logo,
                         mosaic: true
                     }"></ng-container>
@@ -416,7 +420,7 @@
                             channel: channelView.channel,
                             url: channelView.channel.options[0].url,
                             format: getFormat(channelView.channel.options[0].url),
-                            youtubeId: getYoutubeId(channelView.channel.options[0].url),
+                            youtubeId: youtubeVideoId,
                             logo: channelView.channel.logo,
                             mosaic: true
                         }"></ng-container>
@@ -432,4 +436,21 @@
 
     </div>
 </ng-template>
-<!-- Mosaic Template-->
+<!-- End Mosaic Template-->
+
+<!-- EPG List template -->
+<ng-template #epgList>
+    <div class="w-100 justify-content-start align-items-center mt-1 epg">
+        <ng-container *ngFor="let epg of currentEpg?.events; let idx=index">
+            <div class="d-flex justify-content-between align-items-center px-3" *ngIf="selectedEpgIndex===idx">
+                <div [ngClass]="{'current_epg': getCurrentEpgEventIndex()===idx}">{{parsedDate(epg.hi) | date: 'HH:mm'}} - {{parsedDate(epg.hf) | date: 'HH:mm'}} <span class="ms-3">{{epg.t}}</span></div>
+                <div class="d-flex justify-content-end align-items-center">
+                    <a *ngIf="selectedEpgIndex>0" (click)="selectedEpgIndex=selectedEpgIndex-1"><i class="fas fa-caret-left text-light"></i></a>
+                    <button class="mx-3 btn btn-sm btn-secondary text-light" (click)="selectedEpgIndex=getCurrentEpgEventIndex()">Ara</button>
+                    <a *ngIf="currentEpg && currentEpg.events && selectedEpgIndex<currentEpg.events.length-1" (click)="selectedEpgIndex=selectedEpgIndex+1"><i class="fas fa-caret-right text-light"></i></a>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</ng-template>
+<!-- End EPG List template -->

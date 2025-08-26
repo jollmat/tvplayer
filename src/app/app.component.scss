@@ -114,7 +114,7 @@ input[type="color"]:focus,
 }
 
 .channel-card {
-    width: calc(100% - 10px);
+    width: 45px;
     height: 45px;
     border: 1px solid darkslategrey;
     background-position: center;
@@ -214,4 +214,17 @@ input[type="color"]:focus,
         width: 300px;
     }
 
+}
+
+.epg {
+    color: #ccc;
+    .current_epg {
+        opacity: 1;
+        color: orangered;
+    }  
+}
+
+.player-container {
+    height: 428px;
+    overflow: hidden;
 }

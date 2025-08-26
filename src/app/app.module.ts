@@ -11,7 +11,6 @@ import {VgStreamingModule} from '@videogular/ngx-videogular/streaming';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { OWL_DATE_TIME_LOCALE, OwlDateTimeModule, OwlNativeDateTimeModule } from '@danielmoncada/angular-datetime-picker';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgSelectModule} from "@ng-select/ng-select";
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
@@ -41,8 +40,6 @@ import { MediaPlayerComponent } from './components/views/media-player/media-play
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    OwlDateTimeModule,
-    OwlNativeDateTimeModule,
     NgSelectModule,
     NgbDropdownModule,
     SweetAlert2Module.forRoot(),
@@ -54,7 +51,6 @@ import { MediaPlayerComponent } from './components/views/media-player/media-play
     YouTubePlayerModule
   ],
   providers: [
-    {provide: OWL_DATE_TIME_LOCALE, useValue: 'ca'}
   ],
   bootstrap: [AppComponent]
 })
